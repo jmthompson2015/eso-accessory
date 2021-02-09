@@ -3,12 +3,14 @@
 import Recipe from "../artifact/Recipe.js";
 
 import IngredientUtils from "../model/IngredientUtilities.js";
+import ItemUtils from "../model/ItemUtilities.js";
 import RecipeUtils from "../model/RecipeUtilities.js";
 
 import TableColumns from "./TableColumns.js";
 
 const mapFunction = (recipe) => {
   const { categoryKey, craftKey, name, output, qualityKey, url } = recipe;
+  const averagePrice = ItemUtils.averagePrice(recipe.key);
   const product = IngredientUtils.thing(output);
   const { key: productKey } = product;
   const inputValue = RecipeUtils.inputValue(recipe);
@@ -18,6 +20,7 @@ const mapFunction = (recipe) => {
   return {
     name,
     qualityKey,
+    averagePrice,
     craftKey,
     categoryKey,
     inputValue,

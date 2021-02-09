@@ -50,6 +50,15 @@ const TableColumns = [
     },
   },
   {
+    key: "averagePrice",
+    label: "Avg. Price",
+    type: "number",
+    className: "tr",
+    convertFunction: (data) => round0(data.averagePrice),
+    cellFunction: (data) => formatNumber(data.averagePrice),
+    valueFunction: (row) => parseFloat(row.averagePrice),
+  },
+  {
     key: "craftKey",
     label: "Craft",
     type: "string",
