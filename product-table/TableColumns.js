@@ -29,6 +29,7 @@ const TableColumns = [
   },
   {
     key: "url",
+    label: "URL",
     isShown: false,
   },
   {
