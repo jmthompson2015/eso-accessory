@@ -9,7 +9,7 @@ body {
 }
 
 .frt-filter {
-  background: Green;
+  background: MediumBlue;
   font-size: small;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .frt-show-columns {
-  background: Green;
+  background: MediumBlue;
   font-size: small;
   padding: 5px;
 }
@@ -74,11 +74,11 @@ body {
 }
 
 .frt-table td {
-  border: 1px solid Green;
+  border: 1px solid MediumBlue;
 }
 
 .frt-table th {
-  background: Green;
+  background: MediumBlue;
   border: 1px solid White;
   color: White;
 }
