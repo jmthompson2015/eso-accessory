@@ -21,7 +21,7 @@ const round0 = (value) =>
 const TableColumns = [
   {
     key: "name",
-    label: "Resource",
+    label: "Product",
     type: "string",
     className: "tl",
     cellFunction: (row) =>
