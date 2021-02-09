@@ -59,6 +59,16 @@ const TableColumns = [
     valueFunction: (row) => parseFloat(row.averagePrice),
   },
   {
+    key: "ownerKey",
+    label: "Owner",
+    type: "string",
+    className: "tl",
+    valueFunction: (row) => {
+      const character = Resolver.character(row.ownerKey);
+      return character ? character.name : undefined;
+    },
+  },
+  {
     key: "craftKey",
     label: "Craft",
     type: "string",

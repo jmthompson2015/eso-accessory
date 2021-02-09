@@ -1,4 +1,5 @@
 import Category from "./Category.js";
+import Character from "./Character.js";
 import Craft from "./Craft.js";
 import Product from "./Product.js";
 import Quality from "./Quality.js";
@@ -9,6 +10,9 @@ const Resolver = {};
 
 Resolver.category = (categoryKey) =>
   categoryKey ? Category.properties[categoryKey] : null;
+
+Resolver.character = (characterKey) =>
+  characterKey ? Character.properties[characterKey] : null;
 
 Resolver.craft = (craftKey) => (craftKey ? Craft.properties[craftKey] : null);
 

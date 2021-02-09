@@ -1,4 +1,5 @@
 import CategoryTest from "./Category.test.js";
+import CharacterTest from "./Character.test.js";
 import CraftTest from "./Craft.test.js";
 import IngredientTest from "./Ingredient.test.js";
 import ProductTest from "./Product.test.js";

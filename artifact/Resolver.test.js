@@ -1,4 +1,5 @@
 import Category from "./Category.js";
+import Character from "./Character.js";
 import Craft from "./Craft.js";
 import Product from "./Product.js";
 import Quality from "./Quality.js";
@@ -12,6 +13,12 @@ QUnit.test("category()", (assert) => {
   assert.equal(Resolver.category(Category.COURTYARD).name, "Courtyard");
   assert.equal(Resolver.category(Category.WORKSHOP).name, "Workshop");
   assert.equal(Resolver.category(undefined), null);
+});
+
+QUnit.test("character()", (assert) => {
+  assert.equal(Resolver.character(Character.FRAK_LOCK).name, "Frak Lock");
+  assert.equal(Resolver.character(Character.ZAREK_LOCK).name, "Zarek Lock");
+  assert.equal(Resolver.character(undefined), null);
 });
 
 QUnit.test("craft()", (assert) => {
