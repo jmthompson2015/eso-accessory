@@ -104,6 +104,12 @@ const TableColumns = [
     label: "Product",
     type: "string",
     className: "tl",
+    cellFunction: (row) => {
+      const product = Resolver.product(row.productKey);
+      return product && product.url
+        ? createLink(product.url, product.name)
+        : undefined;
+    },
     valueFunction: (row) => {
       const product = Resolver.product(row.productKey);
       return product ? product.name : undefined;

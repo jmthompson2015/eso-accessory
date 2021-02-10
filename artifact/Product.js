@@ -44,6 +44,18 @@ const Product = {
   REDGUARD_STREETLAMP_SINGLE: "redguard streetlamp, single",
   REDGUARD_WAGON_MERCHANT: "redguard wagon, merchant",
   REDORAN_SPOON_WOODEN: "redoran spoon, wooden",
+  ROUGH_BAG_BURLAP: "rough bag, burlap",
+  ROUGH_BEDROLL_BASIC: "rough bedroll, basic",
+  ROUGH_BOWL_COMMON: "rough bowl, common",
+  ROUGH_BOX_BOARDED: "rough box, boarded",
+  ROUGH_CONTAINER_CARGO: "rough container, cargo",
+  ROUGH_CRATE_BOLTED: "rough crate, bolted",
+  ROUGH_CRATE_REINFORCED: "rough crate, reinforced",
+  ROUGH_CUP_EMPTY: "rough cup, empty",
+  ROUGH_HATCHET_PRACTICAL: "rough hatchet, practical",
+  ROUGH_KNIFE_BUTCHER: "rough knife, butcher",
+  ROUGH_PLATFORM_STAGE: "rough platform, stage",
+  ROUGH_STRETCHER_MILITARY: "rough stretcher, military",
   WITCHMOTHERS_POTENT_BREW: "witchmother's potent brew",
   WOOD_ELF_BAR_SHORT: "wood elf bar, short",
   WOOD_ELF_BONE_CHIMES: "wood elf bone chimes",
@@ -55,115 +67,96 @@ Product.properties = {
   "alinor amphora, delicate": {
     name: "Alinor Amphora, Delicate",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/high-elf-amphora-delicate/",
     key: "alinor amphora, delicate",
   },
   "argonian totem of skulls": {
     name: "Argonian Totem of Skulls",
     qualityKey: Quality.EPIC,
-    url: "https://eso.mmo-fashion.com/argonian-totem-of-skulls/",
     key: "argonian totem of skulls",
   },
   "ashlander platter, ceramic": {
     name: "Ashlander Platter, Ceramic",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/ashlander-platter-ceramic/",
     key: "ashlander platter, ceramic",
   },
   "breton amphora, ceramic": {
     name: "Breton Amphora, Ceramic",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/breton-amphora-ceramic/",
     key: "breton amphora, ceramic",
   },
   "breton desk": {
     name: "Breton Desk",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/breton-desk/",
     key: "breton desk",
   },
   "breton nightstand, open": {
     name: "Breton Nightstand, Open",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/breton-nightstand-open/",
     key: "breton nightstand, open",
   },
   "breton sconce, torch": {
     name: "Breton Sconce, Torch",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/breton-sconce-torch/",
     key: "breton sconce, torch",
   },
   "common candle, lasting": {
     name: "Common Candle, Lasting",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/common-candle-lasting/",
     key: "common candle, lasting",
   },
   "common candle, set": {
     name: "Common Candle, Set",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/common-candle-set/",
     key: "common candle, set",
   },
   "dark elf candle, claw base": {
     name: "Dark Elf Candle, Claw Base",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/dark-elf-candle-claw-base/",
     key: "dark elf candle, claw base",
   },
   "dark elf cauldron, banded": {
     name: "Dark Elf Cauldron, Banded",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/dark-elf-cauldron-banded/",
     key: "dark elf cauldron, banded",
   },
   "dark elf lantern, oil": {
     name: "Dark Elf Lantern, Oil",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/dark-elf-lantern-oil/",
     key: "dark elf lantern, oil",
   },
   "dres bowl, empty": {
     name: "Dres Bowl, Empty",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/dres-bowl-empty/",
     key: "dres bowl, empty",
   },
   "dres candles, meditation": {
     name: "Dres Candles, Meditation",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/dres-candles-meditation/",
     key: "dres candles, meditation",
   },
   "dres lantern, stationary": {
     name: "Dres Lantern, Stationary",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/dres-lantern-stationary/",
     key: "dres lantern, stationary",
   },
   "hagraven cauldron, ritual": {
     name: "Hagraven Cauldron, Ritual",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/hagraven-cauldron-ritual/",
     key: "hagraven cauldron, ritual",
   },
   "indoril streetlight, full stone": {
     name: "Indoril Streetlight, Full Stone",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/indoril-streetlight-full-stone/",
     key: "indoril streetlight, full stone",
   },
   "indoril streetlight, stone": {
     name: "Indoril Streetlight, Stone",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/indoril-streetlight-stone/",
     key: "indoril streetlight, stone",
   },
   "khajiit carpet, crescent moons": {
     name: "Khajiit Carpet, Crescent Moons",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/khajiit-carpet-crescent-moons/",
     key: "khajiit carpet, crescent moons",
   },
   "lava foot soup-and-saltrice": {
@@ -174,140 +167,177 @@ Product.properties = {
   "nord candleholder, cup": {
     name: "Nord Candleholder, Cup",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/nord-candleholder-cup/",
     key: "nord candleholder, cup",
   },
   "orcish banner, worn": {
     name: "Orcish Banner, Worn",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/orcish-banner-worn/",
     key: "orcish banner, worn",
   },
   "orcish brazier, smoldering": {
     name: "Orcish Brazier, Smoldering",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/orcish-brazier-smoldering/",
     key: "orcish brazier, smoldering",
   },
   "orcish chandelier, practical": {
     name: "Orcish Chandelier, Practical",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/orcish-chandelier-practical/",
     key: "orcish chandelier, practical",
   },
   "orcish lantern, hooded": {
     name: "Orcish Lantern, Hooded",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/orcish-lantern-hooded/",
     key: "orcish lantern, hooded",
   },
   "orcish vessel, sealed ceramic": {
     name: "Orcish Vessel, Sealed Ceramic",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/orcish-vessel-sealed-ceramic/",
     key: "orcish vessel, sealed ceramic",
   },
   "redguard armchair, cushioned": {
     name: "Redguard Armchair, Cushioned",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/redguard-armchair-cushioned/",
     key: "redguard armchair, cushioned",
   },
   "redguard armchair, starry": {
     name: "Redguard Armchair, Starry",
     qualityKey: Quality.EPIC,
-    url: "https://eso.mmo-fashion.com/redguard-armchair-starry/",
     key: "redguard armchair, starry",
   },
   "redguard bar, long cabinet": {
     name: "Redguard Bar, Long Cabinet",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/redguard-cabinet-bar/",
     key: "redguard bar, long cabinet",
   },
   "redguard bench, padded": {
     name: "Redguard Bench, Padded",
     qualityKey: Quality.EPIC,
-    url: "https://eso.mmo-fashion.com/redguard-bench-padded/",
     key: "redguard bench, padded",
   },
   "redguard bench, slatted": {
     name: "Redguard Bench, Slatted",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/redguard-bench-slatted/",
     key: "redguard bench, slatted",
   },
   "redguard bookcase, full": {
     name: "Redguard Bookcase, Full",
     qualityKey: Quality.EPIC,
-    url: "https://eso.mmo-fashion.com/redguard-bookcase-full/",
     key: "redguard bookcase, full",
   },
   "redguard bookcase, piled": {
     name: "Redguard Bookcase, Piled",
     qualityKey: Quality.EPIC,
-    url: "https://eso.mmo-fashion.com/redguard-bookcase-piled/",
     key: "redguard bookcase, piled",
   },
   "redguard candlestick, practical": {
     name: "Redguard Candlestick, Practical",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/redguard-candlestick-practical/",
     key: "redguard candlestick, practical",
   },
   "redguard carpet, dunes": {
     name: "Redguard Carpet, Dunes",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/redguard-carpet-dunes/",
     key: "redguard carpet, dunes",
   },
   "redguard curtain, smoky": {
     name: "Redguard Curtain, Smoky",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/redguard-curtain-smoky/",
     key: "redguard curtain, smoky",
   },
   "redguard mat, sunset": {
     name: "Redguard Mat, Sunset",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/redguard-mat-sunset/",
     key: "redguard mat, sunset",
   },
   "redguard pot, capped": {
     name: "Redguard Pot, Capped",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/redguard-pot-capped/",
     key: "redguard pot, capped",
   },
   "redguard pot, sealed": {
     name: "Redguard Pot, Sealed",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/redguard-pot-sealed/",
     key: "redguard pot, sealed",
   },
   "redguard runner, sun": {
     name: "Redguard Runner, Sun",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/redguard-runner-sun/",
     key: "redguard runner, sun",
   },
   "redguard streetlamp, single": {
     name: "Redguard Streetlamp, Single",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/redguard-streetlamp-single/",
     key: "redguard streetlamp, single",
   },
   "redguard wagon, merchant": {
     name: "Redguard Wagon, Merchant",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/redguard-wagon-merchant/",
     key: "redguard wagon, merchant",
   },
   "redoran spoon, wooden": {
     name: "Redoran Spoon, Wooden",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/redoran-spoon-wooden/",
     key: "redoran spoon, wooden",
+  },
+  "rough bag, burlap": {
+    name: "Rough Bag, Burlap",
+    qualityKey: Quality.NORMAL,
+    key: "rough bag, burlap",
+  },
+  "rough bedroll, basic": {
+    name: "Rough Bedroll, Basic",
+    qualityKey: Quality.NORMAL,
+    key: "rough bedroll, basic",
+  },
+  "rough bowl, common": {
+    name: "Rough Bowl, Common",
+    qualityKey: Quality.NORMAL,
+    key: "rough bowl, common",
+  },
+  "rough box, boarded": {
+    name: "Rough Box, Boarded",
+    qualityKey: Quality.NORMAL,
+    key: "rough box, boarded",
+  },
+  "rough container, cargo": {
+    name: "Rough Container, Cargo",
+    qualityKey: Quality.NORMAL,
+    key: "rough container, cargo",
+  },
+  "rough crate, bolted": {
+    name: "Rough Crate, Bolted",
+    qualityKey: Quality.NORMAL,
+    key: "rough crate, bolted",
+  },
+  "rough crate, reinforced": {
+    name: "Rough Crate, Reinforced",
+    qualityKey: Quality.NORMAL,
+    key: "rough crate, reinforced",
+  },
+  "rough cup, empty": {
+    name: "Rough Cup, Empty",
+    qualityKey: Quality.NORMAL,
+    key: "rough cup, empty",
+  },
+  "rough hatchet, practical": {
+    name: "Rough Hatchet, Practical",
+    qualityKey: Quality.NORMAL,
+    key: "rough hatchet, practical",
+  },
+  "rough knife, butcher": {
+    name: "Rough Knife, Butcher",
+    qualityKey: Quality.NORMAL,
+    key: "rough knife, butcher",
+  },
+  "rough platform, stage": {
+    name: "Rough Platform, Stage",
+    qualityKey: Quality.NORMAL,
+    key: "rough platform, stage",
+  },
+  "rough stretcher, military": {
+    name: "Rough Stretcher, Military",
+    qualityKey: Quality.NORMAL,
+    key: "rough stretcher, military",
   },
   "witchmother's potent brew": {
     name: "Witchmother's Potent Brew",
@@ -317,32 +347,44 @@ Product.properties = {
   "wood elf bar, short": {
     name: "Wood Elf Bar, Short",
     qualityKey: Quality.FINE,
-    url: "https://eso.mmo-fashion.com/wood-elf-bar-short/",
     key: "wood elf bar, short",
   },
   "wood elf bone chimes": {
     name: "Wood Elf Bone Chimes",
     qualityKey: Quality.EPIC,
-    url: "https://eso.mmo-fashion.com/wood-elf-bone-chimes/",
     key: "wood elf bone chimes",
   },
   "wood elf divider, relaxed": {
     name: "Wood Elf Divider, Relaxed",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/wood-elf-divider-relaxed/",
     key: "wood elf divider, relaxed",
   },
   "wood elf pitcher, painted": {
     name: "Wood Elf Pitcher, Painted",
     qualityKey: Quality.SUPERIOR,
-    url: "https://eso.mmo-fashion.com/wood-elf-pitcher-painted/",
     key: "wood elf pitcher, painted",
   },
+
+  // ///////////////////////////////////////////////////////////////////////////
 };
 
 Product.keys = () => Object.keys(Product.properties);
 
 Product.values = () => Object.values(Product.properties);
+
+// Add URLs.
+const URL_PREFIX = "https://eso.mmo-fashion.com/";
+const forEachFunction = (product) => {
+  let { url } = product;
+
+  if (R.isNil(url)) {
+    const { name } = product;
+    const suffix = name.replace(/[,']/g, "").replace(/ /g, "-");
+    url = URL_PREFIX + suffix;
+    Product.properties[product.key] = R.assoc("url", url, product);
+  }
+};
+R.forEach(forEachFunction, Product.values());
 
 Object.freeze(Product);
 
