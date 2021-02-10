@@ -68,13 +68,23 @@ const TableColumns = [
     label: "Owner",
     type: "string",
     className: "tl",
-    valueFunction: (row) => {
+    cellFunction: (row) => {
       const character = Resolver.character(row.ownerKey);
       let answer;
       if (character) {
         answer = character.name;
       } else {
         answer = row.ttcUrl ? createLink(row.ttcUrl, "WANT") : undefined;
+      }
+      return answer;
+    },
+    valueFunction: (row) => {
+      const character = Resolver.character(row.ownerKey);
+      let answer;
+      if (character) {
+        answer = character.name;
+      } else {
+        answer = row.ttcUrl ? "WANT" : undefined;
       }
       return answer;
     },

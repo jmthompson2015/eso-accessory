@@ -9,19 +9,10 @@ import RecipeUtils from "../model/RecipeUtilities.js";
 import TableColumns from "./TableColumns.js";
 
 const mapFunction = (recipe) => {
-  const {
-    categoryKey,
-    craftKey,
-    name,
-    output,
-    ownerKey,
-    qualityKey,
-    ttcUrl,
-    url,
-  } = recipe;
+  const { categoryKey, craftKey, name, output, ownerKey, ttcUrl, url } = recipe;
   const averagePrice = ItemUtils.averagePrice(recipe.key);
   const product = IngredientUtils.thing(output);
-  const { key: productKey } = product;
+  const { key: productKey, qualityKey } = product;
   const inputValue = RecipeUtils.inputValue(recipe);
   const outputValue = RecipeUtils.outputValue(recipe);
   const outputInputRatio = RecipeUtils.outputInputRatio(recipe);

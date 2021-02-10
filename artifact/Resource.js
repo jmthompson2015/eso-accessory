@@ -4,6 +4,7 @@ import ResourceType from "./ResourceType.js";
 const Resource = {
   ALCHEMICAL_RESIN: "alchemical resin",
   ASH_CANVAS: "ash canvas",
+  BARLEY: "barley",
   BAST: "bast",
   BERVEZ_JUICE: "bervez juice",
   BONE: "bone",
@@ -55,6 +56,11 @@ Resource.properties = {
     name: "Ash Canvas",
     resourceTypeKey: ResourceType.STYLE,
     key: "ash canvas",
+  },
+  barley: {
+    name: "Barley",
+    resourceTypeKey: ResourceType.PROVISION,
+    key: "barley",
   },
   bast: {
     name: "Bast",

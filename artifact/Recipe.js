@@ -3,7 +3,6 @@ import Character from "./Character.js";
 import Craft from "./Craft.js";
 import Ingredient from "./Ingredient.js";
 import Product from "./Product.js";
-import Quality from "./Quality.js";
 import Resource from "./Resource.js";
 
 const productIngredient = (productKey, amount) =>
@@ -22,6 +21,11 @@ const Recipe = {
     "blueprint: redguard candlestick, practical",
   BLUEPRINT_REDGUARD_WAGON_MERCHANT: "blueprint: redguard wagon, merchant",
   BLUEPRINT_REDORAN_SPOON_WOODEN: "blueprint: redoran spoon, wooden",
+  BLUEPRINT_ROUGH_BOX_BOARDED: "blueprint: rough box, boarded",
+  BLUEPRINT_ROUGH_CONTAINER_CARGO: "blueprint: rough container, cargo",
+  BLUEPRINT_ROUGH_CRATE_BOLTED: "blueprint: rough crate, bolted",
+  BLUEPRINT_ROUGH_CRATE_REINFORCED: "blueprint: rough crate, reinforced",
+  BLUEPRINT_ROUGH_PLATFORM_STAGE: "blueprint: rough platform, stage",
   BLUEPRINT_WOOD_ELF_BAR_SHORT: "blueprint: wood elf bar, short",
 
   DESIGN_ALINOR_AMPHORA_DELICATE: "design: alinor amphora, delicate",
@@ -34,6 +38,7 @@ const Recipe = {
   DESIGN_ORCHISH_VESSEL_SEALED_CERAMIC: "design: orcish vessel, sealed ceramic",
   DESIGN_REDGUARD_POT_CAPPED: "design: redguard pot, capped",
   DESIGN_REDGUARD_POT_SEALED: "design: redguard pot, sealed",
+  DESIGN_ROUGH_BAG_BURLAP: "design: rough bag, burlap",
   DESIGN_WOOD_ELF_BONE_CHIMES: "design: wood elf bone chimes",
   DESIGN_WOOD_ELF_PITCHER_PAINTED: "design: wood elf pitcher, painted",
 
@@ -44,6 +49,10 @@ const Recipe = {
   DIAGRAM_ORCISH_CHANDELIER_PRACTICAL: "diagram: orcish chandelier, practical",
   DIAGRAM_ORCISH_LANTERN_HOODED: "diagram: orcish lantern, hooded",
   DIAGRAM_REDGUARD_STREETLAMP_SINGLE: "diagram: redguard streetlamp, single",
+  DIAGRAM_ROUGH_BOWL_COMMON: "diagram: rough bowl, common",
+  DIAGRAM_ROUGH_CUP_EMPTY: "diagram: rough cup, empty",
+  DIAGRAM_ROUGH_HATCHET_PRACTICAL: "diagram: rough hatchet, practical",
+  DIAGRAM_ROUGH_KNIFE_BUTCHER: "diagram: rough knife, butcher",
 
   FORMULA_DARK_ELF_LANTERN_OIL: "formula: dark elf lantern, oil",
   FORMULA_DRES_LANTERN_STATIONARY: "formula: dres lantern, stationary",
@@ -61,6 +70,8 @@ const Recipe = {
   PATTERN_REDGUARD_CURTAIN_SMOKY: "pattern: redguard curtain, smoky",
   PATTERN_REDGUARD_MAT_SUNSET: "pattern: redguard mat, sunset",
   PATTERN_REDGUARD_RUNNER_SUN: "pattern: redguard runner, sun",
+  PATTERN_ROUGH_BEDROLL_BASIC: "pattern: rough bedroll, basic",
+  PATTERN_ROUGH_STRETCHER_MILITARY: "pattern: rough stretcher, military",
   PATTERN_WOOD_ELF_DIVIDER_RELAXED: "pattern: wood elf divider, relaxed",
 
   PRAXIS_BRETON_AMPHORA_CERAMIC: "praxis: breton amphora, ceramic",
@@ -85,8 +96,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.BRETON_DESK),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/breton-desk",
     key: "blueprint: breton desk",
   },
   "blueprint: breton nightstand, open": {
@@ -100,8 +109,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.BRETON_NIGHTSTAND_OPEN),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/breton-nightstand-open",
     key: "blueprint: breton nightstand, open",
   },
   "blueprint: redguard bar, long cabinet": {
@@ -115,8 +122,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_BAR_LONG_CABINET),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/redguard-bar-long-cabinet",
     key: "blueprint: redguard bar, long cabinet",
   },
   "blueprint: redguard bench, slatted": {
@@ -130,8 +135,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_BENCH_SLATTED),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/redguard-bench-slatted",
     key: "blueprint: redguard bench, slatted",
   },
   "blueprint: redguard bookcase, full": {
@@ -147,8 +150,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_BOOKCASE_FULL),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.EPIC,
-    url: "https://eso-housing.com/furniture/redguard-bookcase-full",
     key: "blueprint: redguard bookcase, full",
   },
   "blueprint: redguard bookcase, piled": {
@@ -163,10 +164,8 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.REDGUARD_BOOKCASE_PILED),
-    qualityKey: Quality.EPIC,
     ttcUrl:
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13664&ItemNamePattern=Blueprint%3A+Redguard+Bookcase%2C+Piled&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
-    url: "https://eso-housing.com/furniture/redguard-bookcase-piled",
     key: "blueprint: redguard bookcase, piled",
   },
   "blueprint: redguard candlestick, practical": {
@@ -180,8 +179,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_CANDLESTICK_PRACTICAL),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/redguard-candlestick-practical",
     key: "blueprint: redguard candlestick, practical",
   },
   "blueprint: redguard wagon, merchant": {
@@ -196,8 +193,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_WAGON_MERCHANT),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/redguard-wagon-merchant",
     key: "blueprint: redguard wagon, merchant",
   },
   "blueprint: redoran spoon, wooden": {
@@ -212,9 +207,67 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDORAN_SPOON_WOODEN),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/redoran-spoon-wooden",
     key: "blueprint: redoran spoon, wooden",
+  },
+  "blueprint: rough box, boarded": {
+    name: "Blueprint: Rough Box, Boarded",
+    categoryKey: Category.WORKSHOP,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 2),
+      resourceIngredient(Resource.NICKEL, 2),
+    ],
+    output: productIngredient(Product.ROUGH_BOX_BOARDED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: rough box, boarded",
+  },
+  "blueprint: rough container, cargo": {
+    name: "Blueprint: Rough Container, Cargo",
+    categoryKey: Category.WORKSHOP,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 2),
+      resourceIngredient(Resource.NICKEL, 2),
+    ],
+    output: productIngredient(Product.ROUGH_CONTAINER_CARGO),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: rough container, cargo",
+  },
+  "blueprint: rough crate, bolted": {
+    name: "Blueprint: Rough Crate, Bolted",
+    categoryKey: Category.WORKSHOP,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 2),
+      resourceIngredient(Resource.NICKEL, 2),
+    ],
+    output: productIngredient(Product.ROUGH_CRATE_BOLTED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: rough crate, bolted",
+  },
+  "blueprint: rough crate, reinforced": {
+    name: "Blueprint: Rough Crate, Reinforced",
+    categoryKey: Category.WORKSHOP,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 3),
+      resourceIngredient(Resource.NICKEL, 2),
+    ],
+    output: productIngredient(Product.ROUGH_CRATE_REINFORCED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: rough crate, reinforced",
+  },
+  "blueprint: rough platform, stage": {
+    name: "Blueprint: Rough Platform, Stage",
+    categoryKey: Category.STRUCTURES,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 3),
+      resourceIngredient(Resource.NICKEL, 2),
+    ],
+    output: productIngredient(Product.ROUGH_PLATFORM_STAGE),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: rough platform, stage",
   },
   "blueprint: wood elf bar, short": {
     name: "Blueprint: Wood Elf Bar, Short",
@@ -227,8 +280,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.WOOD_ELF_BAR_SHORT),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/wood-elf-bar-short",
     key: "blueprint: wood elf bar, short",
   },
   // ///////////////////////////////////////////////////////////////////////////
@@ -244,10 +295,8 @@ Recipe.properties = {
       resourceIngredient(Resource.CULANDA_LACQUER, 1),
       resourceIngredient(Resource.FLOUR, 20),
     ],
-    qualityKey: Quality.FINE,
     output: productIngredient(Product.ALINOR_AMPHORA_DELICATE),
     ownerKey: Character.FRAK_LOCK,
-    url: "https://eso-housing.com/furniture/alinor-amphora-delicate",
     key: "design: alinor amphora, delicate",
   },
   "design: argonian totem of skulls": {
@@ -263,8 +312,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.ARGONIAN_TOTEM_OF_SKULLS),
     ownerKey: Character.KALED_LOCK,
-    qualityKey: Quality.EPIC,
-    url: "https://eso-housing.com/furniture/argonian-totem-of-skulls",
     key: "design: argonian totem of skulls",
   },
   "design: ashlander platter, ceramic": {
@@ -280,8 +327,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.ASHLANDER_PLATTER_CERAMIC),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/ashlander-platter-ceramic",
     key: "design: ashlander platter, ceramic",
   },
   "design: common candle, lasting": {
@@ -297,8 +342,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.COMMON_CANDLE_LASTING),
     ownerKey: Character.KALED_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/common-candle-lasting",
     key: "design: common candle, lasting",
   },
   "design: common candle, set": {
@@ -312,8 +355,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.COMMON_CANDLE_SET),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/common-candle-set",
     key: "design: common candle, set",
   },
   "design: dres bowl, empty": {
@@ -328,8 +369,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.DRES_BOWL_EMPTY),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/dres-bowl-empty",
     key: "design: dres bowl, empty",
   },
   "design: dres candles, meditation": {
@@ -344,8 +383,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.DRES_CANDLES_MEDITATION),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/dres-candles-meditation",
     key: "design: dres candles, meditation",
   },
   "design: orcish vessel, sealed ceramic": {
@@ -359,8 +396,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.ORCISH_VESSEL_SEALED_CERAMIC),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/orcish-vessel-sealed-ceramic",
     key: "design: orcish vessel, sealed ceramic",
   },
   "design: redguard pot, capped": {
@@ -375,8 +410,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_POT_CAPPED),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/redguard-pot-capped",
     key: "design: redguard pot, capped",
   },
   "design: redguard pot, sealed": {
@@ -391,9 +424,20 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_POT_SEALED),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/redguard-pot-sealed",
     key: "design: redguard pot, sealed",
+  },
+  "design: rough bag, burlap": {
+    name: "Design: Rough Bag, Burlap",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 2),
+      resourceIngredient(Resource.NICKEL, 2),
+      resourceIngredient(Resource.BARLEY, 10),
+    ],
+    output: productIngredient(Product.ROUGH_BAG_BURLAP),
+    ownerKey: Character.KALED_LOCK,
+    key: "design: rough bag, burlap",
   },
   "design: wood elf bone chimes": {
     name: "Design: Wood Elf Bone Chimes",
@@ -408,8 +452,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.WOOD_ELF_BONE_CHIMES),
     ownerKey: Character.KALED_LOCK,
-    qualityKey: Quality.EPIC,
-    url: "https://eso-housing.com/furniture/wood-elf-bone-chimes",
     key: "design: wood elf bone chimes",
   },
   "design: wood elf pitcher, painted": {
@@ -426,8 +468,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.WOOD_ELF_PITCHER_PAINTED),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/wood-elf-pitcher-painted",
     key: "design: wood elf pitcher, painted",
   },
   // ///////////////////////////////////////////////////////////////////////////
@@ -444,8 +484,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.BRETON_SCONCE_TORCH),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/breton-sconce-torch",
     key: "diagram: breton sconce, torch",
   },
   "diagram: dark elf candle, claw base": {
@@ -461,8 +499,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.DARK_ELF_CANDLE_CLAW_BASE),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/dark-elf-candle-claw-base",
     key: "diagram: dark elf candle, claw base",
   },
   "diagram: dark elf cauldron, banded": {
@@ -477,8 +513,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.DARK_ELF_CAULDRON_BANDED),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/dark-elf-cauldron-banded",
     key: "diagram: dark elf cauldron, banded",
   },
   "diagram: nord candleholder, cup": {
@@ -494,8 +528,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.NORD_CANDLEHOLDER_CUP),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/nord-candleholder-cup",
     key: "diagram: nord candleholder, cup",
   },
   "diagram: orcish chandelier, practical": {
@@ -511,8 +543,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.ORCISH_CHANDELIER_PRACTICAL),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/orcish-chandelier-practical",
     key: "diagram: orcish chandelier, practical",
   },
   "diagram: orcish lantern, hooded": {
@@ -527,8 +557,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.ORCISH_LANTERN_HOODED),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/orcish-lantern-hooded",
     key: "diagram: orcish lantern, hooded",
   },
   "diagram: redguard streetlamp, single": {
@@ -543,9 +571,55 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_STREETLAMP_SINGLE),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/redguard-streetlamp-single",
     key: "diagram: redguard streetlamp, single",
+  },
+  "diagram: rough bowl, common": {
+    name: "Diagram: Rough Bowl, Common",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 1),
+      resourceIngredient(Resource.NICKEL, 2),
+    ],
+    output: productIngredient(Product.ROUGH_BOWL_COMMON),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: rough bowl, common",
+  },
+  "diagram: rough cup, empty": {
+    name: "Diagram: Rough Cup, Empty",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 1),
+      resourceIngredient(Resource.NICKEL, 2),
+    ],
+    output: productIngredient(Product.ROUGH_CUP_EMPTY),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: rough cup, empty",
+  },
+  "diagram: rough hatchet, practical": {
+    name: "Diagram: Rough Hatchet, Practical",
+    categoryKey: Category.WORKSHOP,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 1),
+      resourceIngredient(Resource.NICKEL, 2),
+    ],
+    output: productIngredient(Product.ROUGH_HATCHET_PRACTICAL),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: rough hatchet, practical",
+  },
+  "diagram: rough knife, butcher": {
+    name: "Diagram: Rough Knife, Butcher",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 1),
+      resourceIngredient(Resource.NICKEL, 2),
+    ],
+    output: productIngredient(Product.ROUGH_KNIFE_BUTCHER),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: rough knife, butcher",
   },
   // ///////////////////////////////////////////////////////////////////////////
   // Formula
@@ -561,8 +635,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.DARK_ELF_LANTERN_OIL),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/dark-elf-lantern-oil",
     key: "formula: dark elf lantern, oil",
   },
   "formula: dres lantern, stationary": {
@@ -576,8 +648,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.DRES_LANTERN_STATIONARY),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/dres-lantern-stationary",
     key: "formula: dres lantern, stationary",
   },
   "formula: indoril streetlight, full stone": {
@@ -591,8 +661,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.INDORIL_STREETLIGHT_FULL_STONE),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/indoril-streetlight-full-stone",
     key: "formula: indoril streetlight, full stone",
   },
   "formula: indoril streetlight, stone": {
@@ -606,8 +674,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.INDORIL_STREETLIGHT_STONE),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/indoril-streetlight-stone",
     key: "formula: indoril streetlight, stone",
   },
   // ///////////////////////////////////////////////////////////////////////////
@@ -624,8 +690,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.KHAJIIT_CARPET_CRESCENT_MOONS),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/khajiit-carpet-crescent-moons",
     key: "pattern: khajiit carpet, crescent moons",
   },
   "pattern: orcish banner, worn": {
@@ -640,8 +704,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.ORCISH_BANNER_WORN),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/orcish-banner-worn",
     key: "pattern: orcish banner, worn",
   },
   "pattern: redguard armchair, cushioned": {
@@ -655,10 +717,8 @@ Recipe.properties = {
       resourceIngredient(Resource.EMBROIDERY, 6),
     ],
     output: productIngredient(Product.REDGUARD_ARMCHAIR_CUSHIONED),
-    qualityKey: Quality.SUPERIOR,
     ttcUrl:
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14172&ItemNamePattern=Pattern:+Redguard+Armchair,+Cushioned&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
-    url: "https://eso-housing.com/furniture/redguard-armchair-cushioned",
     key: "pattern: redguard armchair, cushioned",
   },
   "pattern: redguard armchair, starry": {
@@ -673,10 +733,8 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.REDGUARD_ARMCHAIR_STARRY),
-    qualityKey: Quality.EPIC,
     ttcUrl:
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14040&ItemNamePattern=Pattern%3A+Redguard+Armchair%2C+Starry&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
-    url: "https://eso-housing.com/furniture/redguard-armchair-starry",
     key: "pattern: redguard armchair, starry",
   },
   "pattern: redguard bench, padded": {
@@ -692,10 +750,8 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.REDGUARD_BENCH_PADDED),
-    qualityKey: Quality.EPIC,
     ttcUrl:
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13900&ItemNamePattern=Pattern%3A+Redguard+Bench%2C+Padded&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
-    url: "https://eso-housing.com/furniture/redguard-bench-padded",
     key: "pattern: redguard bench, padded",
   },
   "pattern: redguard carpet, dunes": {
@@ -710,10 +766,8 @@ Recipe.properties = {
       resourceIngredient(Resource.EMBROIDERY, 6),
     ],
     output: productIngredient(Product.REDGUARD_CARPET_DUNES),
-    qualityKey: Quality.SUPERIOR,
     ttcUrl:
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14301&ItemNamePattern=Pattern%3A+Redguard+Carpet%2C+Dunes&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
-    url: "https://eso-housing.com/furniture/redguard-carpet-dunes",
     key: "pattern: redguard carpet, dunes",
   },
   "pattern: redguard curtain, smoky": {
@@ -728,8 +782,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_CURTAIN_SMOKY),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/redguard-curtain-smoky",
     key: "pattern: redguard curtain, smoky",
   },
   "pattern: redguard mat, sunset": {
@@ -745,13 +797,10 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_MAT_SUNSET),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/redguard-mat-sunset",
     key: "pattern: redguard mat, sunset",
   },
   "pattern: redguard runner, sun": {
     name: "Pattern: Redguard Runner, Sun",
-    qualityKey: Quality.SUPERIOR,
     categoryKey: Category.PARLOR,
     craftKey: Craft.CLOTHING,
     inputs: [
@@ -764,8 +813,32 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_RUNNER_SUN),
     ttcUrl:
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12073&ItemNamePattern=Pattern%3A+Redguard+Runner%2C+Sun&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
-    url: "https://eso-housing.com/furniture/redguard-runner-sun",
     key: "pattern: redguard runner, sun",
+  },
+  "pattern: rough bedroll, basic": {
+    name: "Pattern: Rough Bedroll, Basic",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 1),
+      resourceIngredient(Resource.NICKEL, 2),
+    ],
+    output: productIngredient(Product.ROUGH_BEDROLL_BASIC),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: rough bedroll, basic",
+  },
+  "pattern: rough stretcher, military": {
+    name: "Pattern: Rough Stretcher, Military",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 1),
+      resourceIngredient(Resource.NICKEL, 2),
+      resourceIngredient(Resource.BAST, 2),
+    ],
+    output: productIngredient(Product.ROUGH_STRETCHER_MILITARY),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: rough stretcher, military",
   },
   "pattern: wood elf divider, relaxed": {
     name: "Pattern: Wood Elf Divider, Relaxed",
@@ -780,8 +853,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.WOOD_ELF_DIVIDER_RELAXED),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/wood-elf-divider-relaxed",
     key: "pattern: wood elf divider, relaxed",
   },
   // ///////////////////////////////////////////////////////////////////////////
@@ -798,8 +869,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.BRETON_AMPHORA_CERAMIC),
     ownerKey: Character.KALED_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/breton-amphora-ceramic",
     key: "praxis: breton amphora, ceramic",
   },
   "praxis: hagraven cauldron, ritual": {
@@ -815,8 +884,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.HAGRAVEN_CAULDRON_RITUAL),
     ownerKey: Character.KALED_LOCK,
-    qualityKey: Quality.SUPERIOR,
-    url: "https://eso-housing.com/furniture/hagraven-cauldron-ritual",
     key: "praxis: hagraven cauldron, ritual",
   },
   "praxis: orcish brazier, smoldering": {
@@ -832,8 +899,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.ORCISH_BRAZIER_SMOLDERING),
     ownerKey: Character.FRAK_LOCK,
-    qualityKey: Quality.FINE,
-    url: "https://eso-housing.com/furniture/orcish-brazier-smoldering",
     key: "praxis: orcish brazier, smoldering",
   },
   // ///////////////////////////////////////////////////////////////////////////
@@ -849,7 +914,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.LAVA_FOOT_SOUP_AND_SALTRICE),
     ownerKey: Character.KALED_LOCK,
-    qualityKey: Quality.SUPERIOR,
     url: "https://www.esofinder.com/en/recipes/96967",
     key: "recipe: lava foot soup-and-saltrice",
   },
@@ -864,7 +928,6 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.WITCHMOTHERS_POTENT_BREW),
     ownerKey: Character.KALED_LOCK,
-    qualityKey: Quality.EPIC,
     url:
       "http://teso-guides.com/the-elder-scrolls-online-special-recipes-witchmothers-potent-brew",
     key: "recipe: witchmother's potent brew",
@@ -874,6 +937,21 @@ Recipe.properties = {
 Recipe.keys = () => Object.keys(Recipe.properties);
 
 Recipe.values = () => Object.values(Recipe.properties);
+
+// Add URLs.
+const URL_PREFIX = "https://eso-housing.com/furniture/";
+const forEachFunction = (recipe) => {
+  let { url } = recipe;
+
+  if (R.isNil(url)) {
+    const product = Product.properties[recipe.output.productKey];
+    const { name } = product;
+    const suffix = name.replace(/[,']/g, "").replace(/ /g, "-");
+    url = URL_PREFIX + suffix;
+    Recipe.properties[recipe.key] = R.assoc("url", url, recipe);
+  }
+};
+R.forEach(forEachFunction, Recipe.values());
 
 Object.freeze(Recipe);
 
