@@ -36,6 +36,11 @@ const TableColumns = [
     isShown: false,
   },
   {
+    key: "ttcUrl",
+    label: "TTC",
+    isShown: false,
+  },
+  {
     key: "qualityKey",
     label: "Quality",
     type: "string",
@@ -65,7 +70,13 @@ const TableColumns = [
     className: "tl",
     valueFunction: (row) => {
       const character = Resolver.character(row.ownerKey);
-      return character ? character.name : undefined;
+      let answer;
+      if (character) {
+        answer = character.name;
+      } else {
+        answer = row.ttcUrl ? createLink(row.ttcUrl, "WANT") : undefined;
+      }
+      return answer;
     },
   },
   {

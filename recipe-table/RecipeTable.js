@@ -16,6 +16,7 @@ const mapFunction = (recipe) => {
     output,
     ownerKey,
     qualityKey,
+    ttcUrl,
     url,
   } = recipe;
   const averagePrice = ItemUtils.averagePrice(recipe.key);
@@ -36,6 +37,7 @@ const mapFunction = (recipe) => {
     outputValue,
     outputInputRatio,
     productKey,
+    ttcUrl,
     url,
   };
 };

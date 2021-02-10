@@ -14,6 +14,7 @@ const Resource = {
   DECORATIVE_WAX: "decorative wax",
   DENATA: "denata",
   DWARVEN_OIL: "dwarven oil",
+  ELEGANT_LINING: "elegant lining",
   EMBROIDERY: "embroidery",
   FLINT: "flint",
   FLOUR: "flour",
@@ -106,6 +107,12 @@ Resource.properties = {
     qualityKey: Quality.SUPERIOR,
     resourceTypeKey: ResourceType.TEMPER,
     key: "dwarven oil",
+  },
+  "elegant lining": {
+    name: "Elegant Lining",
+    qualityKey: Quality.EPIC,
+    resourceTypeKey: ResourceType.TANNIN,
+    key: "elegant lining",
   },
   embroidery: {
     name: "Embroidery",
