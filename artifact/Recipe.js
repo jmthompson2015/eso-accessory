@@ -78,9 +78,11 @@ const Recipe = {
   DESIGN_SUGAR_PUMPKIN_WAX: "design: sugar pumpkin, wax",
   DESIGN_WINTER_SQUASH_DISPLAY: "design: winter squash, display",
   DESIGN_WOOD_ELF_BONE_CHIMES: "design: wood elf bone chimes",
+  DESIGN_WOOD_ELF_CUP_CERAMIC: "design: wood elf cup, ceramic",
   DESIGN_WOOD_ELF_PITCHER_PAINTED: "design: wood elf pitcher, painted",
 
   DIAGRAM_BRETON_SCONCE_TORCH: "diagram: breton sconce, torch",
+  DIAGRAM_BRETON_STREETLIGHT_PAIRED: "diagram: breton streetlight, paired",
   DIAGRAM_COMMON_PLATTER_SERVING: "diagram: common platter, serving",
   DIAGRAM_DARK_ELF_CANDLE_CLAW_BASE: "diagram: dark elf candle, claw base",
   DIAGRAM_DARK_ELF_CAULDRON_BANDED: "diagram: dark elf cauldron, banded",
@@ -136,6 +138,7 @@ const Recipe = {
   PATTERN_SIMPLE_BLUE_BANNER: "pattern: simple blue banner",
   PATTERN_WOOD_ELF_COUNTER_LONG_LEATHER:
     "pattern: wood elf counter, long leather",
+  PATTERN_WOOD_ELF_DIVIDER_NARROW: "pattern: wood elf divider, narrow",
   PATTERN_WOOD_ELF_DIVIDER_RELAXED: "pattern: wood elf divider, relaxed",
   PATTERN_WOOD_ELF_DIVIDER_STRETCHED: "pattern: wood elf divider, stretched",
   PATTERN_WOOD_ELF_STOOL_LEATHER: "pattern: wood elf stool, leather",
@@ -1027,6 +1030,20 @@ Recipe.properties = {
     ownerKey: Character.KALED_LOCK,
     key: "design: wood elf bone chimes",
   },
+  "design: wood elf cup, ceramic": {
+    name: "Design: Wood Elf Cup, Ceramic",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 4),
+      resourceIngredient(Resource.BONE, 5),
+      resourceIngredient(Resource.CITRINE, 4),
+      resourceIngredient(Resource.FLOUR, 20),
+    ],
+    output: productIngredient(Product.WOOD_ELF_CUP_CERAMIC),
+    ownerKey: Character.FRAK_LOCK,
+    key: "design: wood elf cup, ceramic",
+  },
   "design: wood elf pitcher, painted": {
     name: "Design: Wood Elf Pitcher, Painted",
     categoryKey: Category.HEARTH,
@@ -1058,6 +1075,21 @@ Recipe.properties = {
     output: productIngredient(Product.BRETON_SCONCE_TORCH),
     ownerKey: Character.FRAK_LOCK,
     key: "diagram: breton sconce, torch",
+  },
+  "diagram: breton streetlight, paired": {
+    name: "Diagram: Breton Streetlight, Paired",
+    categoryKey: Category.LIGHTING,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 10),
+      resourceIngredient(Resource.MUNDANE_RUNE, 5),
+      resourceIngredient(Resource.HEARTWOOD, 8),
+      resourceIngredient(Resource.MOLYBDENUM, 10),
+      resourceIngredient(Resource.DWARVEN_OIL, 6),
+    ],
+    output: productIngredient(Product.BRETON_STREETLIGHT_PAIRED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: breton streetlight, paired",
   },
   "diagram: common platter, serving": {
     name: "Diagram: Common Platter, Serving",
@@ -1570,8 +1602,7 @@ Recipe.properties = {
       resourceIngredient(Resource.EMBROIDERY, 6),
     ],
     output: productIngredient(Product.REDGUARD_ARMCHAIR_CUSHIONED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14172&ItemNamePattern=Pattern:+Redguard+Armchair,+Cushioned&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "pattern: redguard armchair, cushioned",
   },
   "pattern: redguard armchair, starry": {
@@ -1664,8 +1695,7 @@ Recipe.properties = {
       resourceIngredient(Resource.EMBROIDERY, 6),
     ],
     output: productIngredient(Product.REDGUARD_RUNNER_SUN),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12073&ItemNamePattern=Pattern%3A+Redguard+Runner%2C+Sun&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "pattern: redguard runner, sun",
   },
   "pattern: redoran carpet, volcanic sands": {
@@ -1678,6 +1708,7 @@ Recipe.properties = {
       resourceIngredient(Resource.HEMMING, 9),
     ],
     output: productIngredient(Product.REDORAN_CARPET_VOLCANIC_SANDS),
+    ownerKey: Character.FRAK_LOCK,
     key: "pattern: redoran carpet, volcanic sands",
   },
   "pattern: rough bedroll, basic": {
@@ -1731,6 +1762,19 @@ Recipe.properties = {
     output: productIngredient(Product.WOOD_ELF_COUNTER_LONG_LEATHER),
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: wood elf counter, long leather",
+  },
+  "pattern: wood elf divider, narrow": {
+    name: "Pattern: Wood Elf Divider, Narrow",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.CLEAN_PELT, 6),
+      resourceIngredient(Resource.BONE, 5),
+      resourceIngredient(Resource.HEMMING, 9),
+    ],
+    output: productIngredient(Product.WOOD_ELF_DIVIDER_NARROW),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: wood elf divider, narrow",
   },
   "pattern: wood elf divider, relaxed": {
     name: "Pattern: Wood Elf Divider, Relaxed",

@@ -40,7 +40,7 @@ QUnit.test("keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 48;
+  const length = 49;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Resource.ADAMANTITE);
   assert.equal(R.last(result), Resource.TURPEN);

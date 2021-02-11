@@ -10,6 +10,7 @@ const Resource = {
   BERVEZ_JUICE: "bervez juice",
   BONE: "bone",
   BRONZE: "bronze",
+  CITRINE: "citrine",
   CLEAN_PELT: "clean pelt",
   CORUNDUM: "corundum",
   CULANDA_LACQUER: "culanda lacquer",
@@ -92,6 +93,11 @@ Resource.properties = {
     name: "Bronze",
     resourceTypeKey: ResourceType.STYLE,
     key: "bronze",
+  },
+  citrine: {
+    name: "Citrine",
+    resourceTypeKey: ResourceType.GEM,
+    key: "citrine",
   },
   "clean pelt": {
     name: "Clean Pelt",

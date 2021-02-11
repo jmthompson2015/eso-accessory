@@ -18,6 +18,7 @@ const Product = {
   BRETON_SCONCE_TORCH: "breton sconce, torch",
   BRETON_SHELVES_DOUBLE: "breton shelves, double",
   BRETON_STREET_POST_STONE: "breton street post, stone",
+  BRETON_STREETLIGHT_PAIRED: "breton streetlight, paired",
   BRETON_TABLE_DINING: "breton table, dining",
   BRETON_TABLE_KITCHEN: "breton table, kitchen",
   BRETON_VASE_CERAMIC: "breton vase, ceramic",
@@ -122,6 +123,8 @@ const Product = {
   WOOD_ELF_BAR_SHORT: "wood elf bar, short",
   WOOD_ELF_BONE_CHIMES: "wood elf bone chimes",
   WOOD_ELF_COUNTER_LONG_LEATHER: "wood elf counter, long leather",
+  WOOD_ELF_CUP_CERAMIC: "wood elf cup, ceramic",
+  WOOD_ELF_DIVIDER_NARROW: "wood elf divider, narrow",
   WOOD_ELF_DIVIDER_RELAXED: "wood elf divider, relaxed",
   WOOD_ELF_DIVIDER_STRETCHED: "wood elf divider, stretched",
   WOOD_ELF_GRINDING_STONE: "wood elf grinding stone",
@@ -215,6 +218,11 @@ Product.properties = {
     name: "Breton Street Post, Stone",
     qualityKey: Quality.FINE,
     key: "breton street post, stone",
+  },
+  "breton streetlight, paired": {
+    name: "Breton Streetlight, Paired",
+    qualityKey: Quality.SUPERIOR,
+    key: "breton streetlight, paired",
   },
   "breton table, dining": {
     name: "Breton Table, Dining",
@@ -731,10 +739,20 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "wood elf bone chimes",
   },
+  "wood elf cup, ceramic": {
+    name: "Wood Elf Cup, Ceramic",
+    qualityKey: Quality.FINE,
+    key: "wood elf cup, ceramic",
+  },
   "wood elf counter, long leather": {
     name: "Wood Elf Counter, Long Leather",
     qualityKey: Quality.FINE,
     key: "wood elf counter, long leather",
+  },
+  "wood elf divider, narrow": {
+    name: "Wood Elf Divider, Narrow",
+    qualityKey: Quality.FINE,
+    key: "wood elf divider, narrow",
   },
   "wood elf divider, relaxed": {
     name: "Wood Elf Divider, Relaxed",

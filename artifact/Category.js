@@ -1,6 +1,7 @@
 const Category = {
   COURTYARD: "courtyard",
   DINING: "dining",
+  GALLERY: "gallery",
   HEARTH: "hearth",
   LIBRARY: "library",
   LIGHTING: "lighting",
@@ -20,6 +21,10 @@ Category.properties = {
   dining: {
     name: "Dining",
     key: "dining",
+  },
+  gallery: {
+    name: "Gallery",
+    key: "gallery",
   },
   hearth: {
     name: "Hearth",

@@ -40,7 +40,7 @@ QUnit.test("keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 11;
+  const length = 12;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Category.COURTYARD);
   assert.equal(R.last(result), Category.WORKSHOP);
