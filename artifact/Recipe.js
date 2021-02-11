@@ -42,6 +42,7 @@ const Recipe = {
   BLUEPRINT_ORCISH_TABLE_BLOCK: "blueprint: orcish table, block",
   BLUEPRINT_ORCISH_TRUNK_BRACED: "blueprint: orcish trunk, braced",
   BLUEPRINT_REDGUARD_BAR_LONG_CABINET: "blueprint: redguard bar, long cabinet",
+  BLUEPRINT_REDGUARD_BED_FULL_LATTICE: "blueprint: redguard bed, full lattice",
   BLUEPRINT_REDGUARD_BENCH_SLATTED: "blueprint: redguard bench, slatted",
   BLUEPRINT_REDGUARD_BOOKCASE_FULL: "blueprint: redguard bookcase, full",
   BLUEPRINT_REDGUARD_BOOKCASE_PILED: "blueprint: redguard bookcase, piled",
@@ -126,14 +127,21 @@ const Recipe = {
   PATTERN_ORCISH_CARPET_FRINGED: "pattern: orcish carpet, fringed",
   PATTERN_REDGUARD_ARMCHAIR_CUSHIONED: "pattern: redguard armchair, cushioned",
   PATTERN_REDGUARD_ARMCHAIR_STARRY: "pattern: redguard armchair, starry",
+  PATTERN_REDGUARD_BED_FULL_ARCHED: "pattern: redguard bed, full arched",
+  PATTERN_REDGUARD_BED_WIDE_GRAND: "pattern: redguard bed, wide grand",
   PATTERN_REDGUARD_BENCH_PADDED: "pattern: redguard bench, padded",
   PATTERN_REDGUARD_CARPET_DUNES: "pattern: redguard carpet, dunes",
+  PATTERN_REDGUARD_COUCH_PADDED: "pattern: redguard couch, padded",
+  PATTERN_REDGUARD_COUCH_SLATTED: "pattern: redguard couch, slatted",
+  PATTERN_REDGUARD_CURTAIN_DESERT_ROSE:
+    "pattern: redguard curtain, desert rose",
   PATTERN_REDGUARD_CURTAIN_SMOKY: "pattern: redguard curtain, smoky",
   PATTERN_REDGUARD_MAT_DESERT_SUN: "pattern: redguard mat, desert sun",
   PATTERN_REDGUARD_MAT_MEDITATION: "pattern: redguard mat, meditation",
   PATTERN_REDGUARD_MAT_SUNRISE: "pattern: redguard mat, sunrise",
   PATTERN_REDGUARD_MAT_SUNSET: "pattern: redguard mat, sunset",
   PATTERN_REDGUARD_RUNNER_SUN: "pattern: redguard runner, sun",
+  PATTERN_REDGUARD_TAPESTRY_LATTICE: "pattern: redguard tapestry, lattice",
   PATTERN_REDORAN_CARPET_VOLCANIC_SANDS:
     "pattern: redoran carpet, volcanic sands",
   PATTERN_ROUGH_BEDROLL_BASIC: "pattern: rough bedroll, basic",
@@ -564,6 +572,22 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_BAR_LONG_CABINET),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard bar, long cabinet",
+  },
+  "blueprint: redguard bed, full lattice": {
+    name: "Blueprint: Redguard Bed, Full Lattice",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 12),
+      resourceIngredient(Resource.BAST, 8),
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.MASTIC, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_BED_FULL_LATTICE),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14595&ItemNamePattern=Blueprint%3A+Redguard+Bed%2C+Full+Lattice&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "blueprint: redguard bed, full lattice",
   },
   "blueprint: redguard bench, slatted": {
     name: "Blueprint: Redguard Bench, Slatted",
@@ -1624,6 +1648,36 @@ Recipe.properties = {
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14040&ItemNamePattern=Pattern%3A+Redguard+Armchair%2C+Starry&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "pattern: redguard armchair, starry",
   },
+  "pattern: redguard bed, full arched": {
+    name: "Pattern: Redguard Bed, Full Arched",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 7),
+      resourceIngredient(Resource.HEARTWOOD, 5),
+      resourceIngredient(Resource.STARMETAL, 10),
+      resourceIngredient(Resource.EMBROIDERY, 6),
+    ],
+    output: productIngredient(Product.REDGUARD_BED_FULL_ARCHED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14029&ItemNamePattern=Pattern%3A+Redguard+Bed%2C+Full+Arched&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "pattern: redguard bed, full arched",
+  },
+  "pattern: redguard bed, wide grand": {
+    name: "Pattern: Redguard Bed, Wide Grand",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 9),
+      resourceIngredient(Resource.HEARTWOOD, 6),
+      resourceIngredient(Resource.STARMETAL, 10),
+      resourceIngredient(Resource.EMBROIDERY, 6),
+    ],
+    output: productIngredient(Product.REDGUARD_BED_WIDE_GRAND),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13582&ItemNamePattern=Pattern%3A+Redguard+Bed%2C+Wide+Grand&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "pattern: redguard bed, wide grand",
+  },
   "pattern: redguard bench, padded": {
     name: "Pattern: Redguard Bench, Padded",
     categoryKey: Category.DINING,
@@ -1656,6 +1710,53 @@ Recipe.properties = {
     ttcUrl:
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14301&ItemNamePattern=Pattern%3A+Redguard+Carpet%2C+Dunes&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "pattern: redguard carpet, dunes",
+  },
+  "pattern: redguard couch, padded": {
+    name: "Pattern: Redguard Couch, Padded",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 8),
+      resourceIngredient(Resource.HEARTWOOD, 6),
+      resourceIngredient(Resource.STARMETAL, 10),
+      resourceIngredient(Resource.EMBROIDERY, 6),
+    ],
+    output: productIngredient(Product.REDGUARD_COUCH_PADDED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13911&ItemNamePattern=Pattern%3A+Redguard+Couch%2C+Padded&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "pattern: redguard couch, padded",
+  },
+  "pattern: redguard couch, slatted": {
+    name: "Pattern: Redguard Couch, Slatted",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 11),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.HEARTWOOD, 9),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.RUBY, 14),
+      resourceIngredient(Resource.ELEGANT_LINING, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_COUCH_SLATTED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13813&ItemNamePattern=Pattern%3A+Redguard+Couch%2C+Slatted&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "pattern: redguard couch, slatted",
+  },
+  "pattern: redguard curtain, desert rose": {
+    name: "Pattern: Redguard Curtain, Desert Rose",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 6),
+      resourceIngredient(Resource.STARMETAL, 5),
+      resourceIngredient(Resource.RUBY, 8),
+      resourceIngredient(Resource.HEMMING, 9),
+    ],
+    output: productIngredient(Product.REDGUARD_CURTAIN_DESERT_ROSE),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12644&ItemNamePattern=Pattern%3A+Redguard+Curtain%2C+Desert+Rose&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "pattern: redguard curtain, desert rose",
   },
   "pattern: redguard curtain, smoky": {
     name: "Pattern: Redguard Curtain, Smoky",
@@ -1751,6 +1852,22 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_RUNNER_SUN),
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: redguard runner, sun",
+  },
+  "pattern: redguard tapestry, lattice": {
+    name: "Pattern: Redguard Tapestry, Lattice",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 10),
+      resourceIngredient(Resource.REGULUS, 5),
+      resourceIngredient(Resource.DECORATIVE_WAX, 5),
+      resourceIngredient(Resource.STARMETAL, 10),
+      resourceIngredient(Resource.EMBROIDERY, 6),
+    ],
+    output: productIngredient(Product.REDGUARD_TAPESTRY_LATTICE),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12152&ItemNamePattern=Pattern%3A+Redguard+Tapestry%2C+Lattice&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "pattern: redguard tapestry, lattice",
   },
   "pattern: redoran carpet, volcanic sands": {
     name: "Pattern: Redoran Carpet, Volcanic Sands",
