@@ -51,7 +51,7 @@ QUnit.test("Recipe ingredients", (assert) => {
     for (let i = 0; i < count; i += 1) {
       assert.ok(
         recipe.inputs[i].productKey || recipe.inputs[i].resourceKey,
-        `Missing recipe.inputs[${i}].[productKey||resourceKey] for ${recipe.output.productKey}`
+        `Missing recipe.inputs[${i}].[productKey||resourceKey] for ${recipe.name}`
       );
     }
   };
@@ -97,9 +97,9 @@ QUnit.test("keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 60;
+  const length = 127;
   assert.equal(result.length, length);
-  assert.equal(R.head(result), Recipe.BLUEPRINT_BRETON_DESK);
+  assert.equal(R.head(result), Recipe.BLUEPRINT_ARGONIAN_COUNTER_LONG);
   assert.equal(R.last(result), Recipe.RECIPE_WITCHMOTHERS_POTENT_BREW);
 });
 

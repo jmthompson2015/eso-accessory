@@ -2,6 +2,7 @@ import Quality from "./Quality.js";
 import ResourceType from "./ResourceType.js";
 
 const Resource = {
+  ADAMANTITE: "adamantite",
   ALCHEMICAL_RESIN: "alchemical resin",
   ASH_CANVAS: "ash canvas",
   BARLEY: "barley",
@@ -15,6 +16,7 @@ const Resource = {
   DECORATIVE_WAX: "decorative wax",
   DENATA: "denata",
   DWARVEN_OIL: "dwarven oil",
+  DWEMER_FRAME: "dwemer frame",
   ELEGANT_LINING: "elegant lining",
   EMBROIDERY: "embroidery",
   FLINT: "flint",
@@ -23,6 +25,7 @@ const Resource = {
   HEARTWOOD: "heartwood",
   HEMMING: "hemming",
   HONING_STONE: "honing stone",
+  JAZBAY_GRAPES: "jazbay grapes",
   JEJOTA: "jejota",
   MANGANESE: "manganese",
   MASTIC: "mastic",
@@ -35,18 +38,26 @@ const Resource = {
   OCHRE: "ochre",
   PITCH: "pitch",
   POTATO: "potato",
+  PUMPKIN: "pumpkin",
   RAKEIPA: "rakeipa",
   REGULUS: "regulus",
   RICE: "rice",
   RUBY: "ruby",
   SALTRICE: "saltrice",
+  SAPPHIRE: "sapphire",
   SCRIB_JELLY: "scrib jelly",
+  SHIMMERING_SAND: "shimmering sand",
   SMALL_GAME: "small game",
   STARMETAL: "starmetal",
   TURPEN: "turpen",
 };
 
 Resource.properties = {
+  adamantite: {
+    name: "Adamantite",
+    resourceTypeKey: ResourceType.STYLE,
+    key: "adamantite",
+  },
   "alchemical resin": {
     name: "Alchemical Resin",
     resourceTypeKey: ResourceType.FURNISHING,
@@ -114,6 +125,11 @@ Resource.properties = {
     resourceTypeKey: ResourceType.TEMPER,
     key: "dwarven oil",
   },
+  "dwemer frame": {
+    name: "Dwemer frame",
+    resourceTypeKey: ResourceType.STYLE,
+    key: "dwemer frame",
+  },
   "elegant lining": {
     name: "Elegant Lining",
     qualityKey: Quality.EPIC,
@@ -157,6 +173,11 @@ Resource.properties = {
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.TEMPER,
     key: "honing stone",
+  },
+  "jazbay grapes": {
+    name: "Jazbay Grapes",
+    resourceTypeKey: ResourceType.PROVISION,
+    key: "jazbay grapes",
   },
   jejota: {
     name: "Jejota",
@@ -221,6 +242,11 @@ Resource.properties = {
     resourceTypeKey: ResourceType.PROVISION,
     key: "potato",
   },
+  pumpkin: {
+    name: "Pumpkin",
+    resourceTypeKey: ResourceType.PROVISION,
+    key: "pumpkin",
+  },
   rakeipa: {
     name: "Rakeipa",
     resourceTypeKey: ResourceType.RUNESTONE,
@@ -246,6 +272,11 @@ Resource.properties = {
     resourceTypeKey: ResourceType.PROVISION,
     key: "saltrice",
   },
+  sapphire: {
+    name: "Sapphire",
+    resourceTypeKey: ResourceType.GEM,
+    key: "sapphire",
+  },
   starmetal: {
     name: "Starmetal",
     resourceTypeKey: ResourceType.STYLE,
@@ -255,6 +286,11 @@ Resource.properties = {
     name: "Scrib Jelly",
     resourceTypeKey: ResourceType.REAGENT,
     key: "scrib jelly",
+  },
+  "shimmering sand": {
+    name: "Shimmering Sand",
+    resourceTypeKey: ResourceType.STYLE,
+    key: "shimmering sand",
   },
   "small game": {
     name: "Small Game",
