@@ -55,7 +55,7 @@ QUnit.test("keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 130;
+  const length = 133;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Product.ALINOR_AMPHORA_DELICATE);
   assert.equal(R.last(result), Product.WOOD_ELF_TABLE_LEATHER);

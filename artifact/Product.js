@@ -95,6 +95,9 @@ const Product = {
   REDGUARD_CANDLESTICK_PRACTICAL: "redguard candlestick, practical",
   REDGUARD_CARPET_DUNES: "redguard carpet, dunes",
   REDGUARD_CURTAIN_SMOKY: "redguard curtain, smoky",
+  REDGUARD_MAT_DESERT_SUN: "redguard mat, desert sun",
+  REDGUARD_MAT_MEDITATION: "redguard mat, meditation",
+  REDGUARD_MAT_SUNRISE: "redguard mat, sunrise",
   REDGUARD_MAT_SUNSET: "redguard mat, sunset",
   REDGUARD_POT_CAPPED: "redguard pot, capped",
   REDGUARD_POT_SEALED: "redguard pot, sealed",
@@ -603,6 +606,21 @@ Product.properties = {
     name: "Redguard Curtain, Smoky",
     qualityKey: Quality.FINE,
     key: "redguard curtain, smoky",
+  },
+  "redguard mat, desert sun": {
+    name: "Redguard Mat, Desert Sun",
+    qualityKey: Quality.EPIC,
+    key: "redguard mat, desert sun",
+  },
+  "redguard mat, meditation": {
+    name: "Redguard Mat, Meditation",
+    qualityKey: Quality.EPIC,
+    key: "redguard mat, meditation",
+  },
+  "redguard mat, sunrise": {
+    name: "Redguard Mat, Sunrise",
+    qualityKey: Quality.EPIC,
+    key: "redguard mat, sunrise",
   },
   "redguard mat, sunset": {
     name: "Redguard Mat, Sunset",

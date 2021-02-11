@@ -129,6 +129,9 @@ const Recipe = {
   PATTERN_REDGUARD_BENCH_PADDED: "pattern: redguard bench, padded",
   PATTERN_REDGUARD_CARPET_DUNES: "pattern: redguard carpet, dunes",
   PATTERN_REDGUARD_CURTAIN_SMOKY: "pattern: redguard curtain, smoky",
+  PATTERN_REDGUARD_MAT_DESERT_SUN: "pattern: redguard mat, desert sun",
+  PATTERN_REDGUARD_MAT_MEDITATION: "pattern: redguard mat, meditation",
+  PATTERN_REDGUARD_MAT_SUNRISE: "pattern: redguard mat, sunrise",
   PATTERN_REDGUARD_MAT_SUNSET: "pattern: redguard mat, sunset",
   PATTERN_REDGUARD_RUNNER_SUN: "pattern: redguard runner, sun",
   PATTERN_REDORAN_CARPET_VOLCANIC_SANDS:
@@ -1667,6 +1670,57 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_CURTAIN_SMOKY),
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: redguard curtain, smoky",
+  },
+  "pattern: redguard mat, desert sun": {
+    name: "Pattern: Redguard Mat, Desert Sun",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 11),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.RUBY, 14),
+      resourceIngredient(Resource.MUNDANE_RUNE, 7),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 8),
+      resourceIngredient(Resource.ELEGANT_LINING, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_MAT_DESERT_SUN),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12882&ItemNamePattern=Pattern%3A+Redguard+Mat%2C+Desert+Sun&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=",
+    key: "pattern: redguard mat, desert sun",
+  },
+  "pattern: redguard mat, meditation": {
+    name: "Pattern: Redguard Mat, Meditation",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 11),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.RUBY, 14),
+      resourceIngredient(Resource.MUNDANE_RUNE, 7),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 8),
+      resourceIngredient(Resource.ELEGANT_LINING, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_MAT_MEDITATION),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13290&ItemNamePattern=Pattern%3A+Redguard+Mat%2C+Meditation&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=",
+    key: "pattern: redguard mat, meditation",
+  },
+  "pattern: redguard mat, sunrise": {
+    name: "Pattern: Redguard Mat, Sunrise",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 10),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.RUBY, 12),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 8),
+      resourceIngredient(Resource.DECORATIVE_WAX, 6),
+      resourceIngredient(Resource.ELEGANT_LINING, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_MAT_SUNRISE),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12479&ItemNamePattern=Pattern%3A+Redguard+Mat%2C+Sunrise&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "pattern: redguard mat, sunrise",
   },
   "pattern: redguard mat, sunset": {
     name: "Pattern: Redguard Mat, Sunset",
