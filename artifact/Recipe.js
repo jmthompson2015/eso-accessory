@@ -1674,8 +1674,7 @@ Recipe.properties = {
       resourceIngredient(Resource.EMBROIDERY, 6),
     ],
     output: productIngredient(Product.REDGUARD_BED_WIDE_GRAND),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13582&ItemNamePattern=Pattern%3A+Redguard+Bed%2C+Wide+Grand&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "pattern: redguard bed, wide grand",
   },
   "pattern: redguard bench, padded": {
@@ -1739,8 +1738,7 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.REDGUARD_COUCH_SLATTED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13813&ItemNamePattern=Pattern%3A+Redguard+Couch%2C+Slatted&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "pattern: redguard couch, slatted",
   },
   "pattern: redguard curtain, desert rose": {
