@@ -2,6 +2,7 @@ import Category from "./Category.js";
 import Character from "./Character.js";
 import Craft from "./Craft.js";
 import Product from "./Product.js";
+import ProductType from "./ProductType.js";
 import Quality from "./Quality.js";
 import Resolver from "./Resolver.js";
 import Resource from "./Resource.js";
@@ -34,6 +35,12 @@ QUnit.test("product()", (assert) => {
   );
   assert.equal(Resolver.product(Resource.ALCHEMICAL_RESIN), null);
   assert.equal(Resolver.product(undefined), null);
+});
+
+QUnit.test("productType()", (assert) => {
+  assert.equal(Resolver.productType(ProductType.FURNISHING).name, "Furnishing");
+  assert.equal(Resolver.productType(ProductType.PROVISION).name, "Provision");
+  assert.equal(Resolver.productType(undefined), null);
 });
 
 QUnit.test("quality()", (assert) => {

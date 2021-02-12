@@ -1,21 +1,18 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 
 import Product from "../artifact/Product.js";
+import Resolver from "../artifact/Resolver.js";
 
 import ItemUtils from "../model/ItemUtilities.js";
 
 import TableColumns from "./TableColumns.js";
 
 const mapFunction = (product) => {
-  const { name, qualityKey, url } = product;
   const value = ItemUtils.averagePrice(product.key);
+  const quality = Resolver.quality(product.qualityKey);
+  const productType = Resolver.productType(product.productTypeKey);
 
-  return {
-    name,
-    url,
-    qualityKey,
-    value,
-  };
+  return R.mergeRight(product, { quality, productType, value });
 };
 const tableRows = R.map(mapFunction, Product.values());
 

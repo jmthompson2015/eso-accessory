@@ -1,3 +1,4 @@
+import ProductType from "./ProductType.js";
 import Quality from "./Quality.js";
 
 const Product = {
@@ -146,6 +147,7 @@ const Product = {
 Product.properties = {
   "alinor amphora, delicate": {
     name: "Alinor Amphora, Delicate",
+    productTypeKey: ProductType.FURNISHING,
     qualityKey: Quality.FINE,
     key: "alinor amphora, delicate",
   },
@@ -476,6 +478,7 @@ Product.properties = {
   },
   "lava foot soup-and-saltrice": {
     name: "Lava Foot Soup-and-Saltrice",
+    productTypeKey: ProductType.PROVISION,
     qualityKey: Quality.SUPERIOR,
     key: "lava foot soup-and-saltrice",
   },
@@ -786,6 +789,7 @@ Product.properties = {
   },
   "witchmother's potent brew": {
     name: "Witchmother's Potent Brew",
+    productTypeKey: ProductType.PROVISION,
     qualityKey: Quality.EPIC,
     key: "witchmother's potent brew",
   },
@@ -850,17 +854,25 @@ Product.keys = () => Object.keys(Product.properties);
 
 Product.values = () => Object.values(Product.properties);
 
+// Add ProductType.
 // Add URLs.
+const PRODUCT_TYPE_KEY = ProductType.FURNISHING;
 const URL_PREFIX = "https://eso.mmo-fashion.com/";
 const forEachFunction = (product) => {
-  let { url } = product;
+  const { name, productTypeKey, url } = product;
+
+  const newProductTypeKey = productTypeKey || PRODUCT_TYPE_KEY;
+  let newUrl = url;
 
   if (R.isNil(url)) {
-    const { name } = product;
     const suffix = name.replace(/[,']/g, "").replace(/ /g, "-");
-    url = URL_PREFIX + suffix;
-    Product.properties[product.key] = R.assoc("url", url, product);
+    newUrl = URL_PREFIX + suffix;
   }
+
+  Product.properties[product.key] = R.mergeRight(product, {
+    productTypeKey: newProductTypeKey,
+    url: newUrl,
+  });
 };
 R.forEach(forEachFunction, Product.values());
 

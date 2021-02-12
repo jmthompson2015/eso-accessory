@@ -1,5 +1,3 @@
-import Resolver from "../artifact/Resolver.js";
-
 const createColorCell = (color, name) =>
   ReactDOMFactories.div({ style: { backgroundColor: color } }, name);
 
@@ -28,23 +26,27 @@ const TableColumns = [
       row.url ? createLink(row.url, row.name) : undefined,
   },
   {
-    key: "url",
-    label: "URL",
-    isShown: false,
-  },
-  {
-    key: "qualityKey",
+    key: "quality",
     label: "Quality",
     type: "string",
     className: "tl",
-    cellFunction: (row) => {
-      const quality = Resolver.quality(row.qualityKey);
-      return quality ? createColorCell(quality.color, quality.name) : undefined;
-    },
-    valueFunction: (row) => {
-      const quality = Resolver.quality(row.qualityKey);
-      return quality ? quality.name : undefined;
-    },
+    cellFunction: (row) =>
+      row.quality
+        ? createColorCell(row.quality.color, row.quality.name)
+        : undefined,
+    valueFunction: (row) => (row.quality ? row.quality.name : undefined),
+  },
+  {
+    key: "productType",
+    label: "Type",
+    type: "string",
+    className: "tl",
+    cellFunction: (row) =>
+      row.productType && row.productType.url
+        ? createLink(row.productType.url, row.productType.name)
+        : undefined,
+    valueFunction: (row) =>
+      row.productType ? row.productType.name : undefined,
   },
   {
     key: "value",
@@ -54,6 +56,11 @@ const TableColumns = [
     convertFunction: (data) => round0(data.value),
     cellFunction: (data) => formatNumber(data.value),
     valueFunction: (row) => parseFloat(row.value),
+  },
+  {
+    key: "url",
+    label: "URL",
+    isShown: false,
   },
 ];
 

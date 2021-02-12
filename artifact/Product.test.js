@@ -1,6 +1,7 @@
 /* eslint no-console: ["error", { allow: ["log", "warn"] }] */
 
 import Product from "./Product.js";
+import ProductType from "./ProductType.js";
 import Quality from "./Quality.js";
 
 QUnit.module("Product");
@@ -9,6 +10,7 @@ QUnit.test("Product properties Dres Lantern, Stationary", (assert) => {
   const productKey = Product.DRES_LANTERN_STATIONARY;
   const properties = Product.properties[productKey];
   assert.equal(properties.name, "Dres Lantern, Stationary");
+  assert.equal(properties.productTypeKey, ProductType.FURNISHING);
   assert.equal(properties.qualityKey, Quality.FINE);
   assert.equal(
     properties.url,
@@ -21,6 +23,7 @@ QUnit.test("Product properties Rough Bag, Burlap", (assert) => {
   const productKey = Product.ROUGH_BAG_BURLAP;
   const properties = Product.properties[productKey];
   assert.equal(properties.name, "Rough Bag, Burlap");
+  assert.equal(properties.productTypeKey, ProductType.FURNISHING);
   assert.equal(properties.qualityKey, Quality.NORMAL);
   assert.equal(properties.url, "https://eso.mmo-fashion.com/Rough-Bag-Burlap");
   assert.equal(properties.key, productKey);
