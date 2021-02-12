@@ -15,6 +15,7 @@ const Recipe = {
   BLUEPRINT_ARGONIAN_MUG_TOOTH: "blueprint: argonian mug, tooth",
   BLUEPRINT_BRETON_CHAIR_SLATTED: "blueprint: breton chair, slatted",
   BLUEPRINT_BRETON_DESK: "blueprint: breton desk",
+  BLUEPRINT_BRETON_DESK_SCHOLARS: "blueprint: breton desk, scholar's",
   BLUEPRINT_BRETON_NIGHTSTAND_OPEN: "blueprint: breton nightstand, open",
   BLUEPRINT_BRETON_SHELVES_DOUBLE: "blueprint: breton shelves, double",
   BLUEPRINT_BRETON_STREET_POST_STONE: "blueprint: breton street post, stone",
@@ -48,6 +49,12 @@ const Recipe = {
   BLUEPRINT_REDGUARD_BOOKCASE_PILED: "blueprint: redguard bookcase, piled",
   BLUEPRINT_REDGUARD_CANDLESTICK_PRACTICAL:
     "blueprint: redguard candlestick, practical",
+  BLUEPRINT_REDGUARD_DESK_BOLTED: "blueprint: redguard desk, bolted",
+  BLUEPRINT_REDGUARD_END_TABLE_INLAID: "blueprint: redguard end table, inlaid",
+  BLUEPRINT_REDGUARD_TABLE_FORMAL: "blueprint: redguard table, formal",
+  BLUEPRINT_REDGUARD_TABLE_GAME: "blueprint: redguard table, game",
+  BLUEPRINT_REDGUARD_TABLE_GRAND_INLAID:
+    "blueprint: redguard table, grand inlaid",
   BLUEPRINT_REDGUARD_WAGON_MERCHANT: "blueprint: redguard wagon, merchant",
   BLUEPRINT_REDORAN_SPOON_WOODEN: "blueprint: redoran spoon, wooden",
   BLUEPRINT_ROUGH_BOX_BOARDED: "blueprint: rough box, boarded",
@@ -122,6 +129,9 @@ const Recipe = {
   PATTERN_KHAJIIT_BEDDING_PADDED: "pattern: khajiit bedding, padded",
   PATTERN_KHAJIIT_CARPET_CRESCENT_MOONS:
     "pattern: khajiit carpet, crescent moons",
+  PATTERN_KHAJIIT_CARPET_SUN: "pattern: khajiit carpet, sun",
+  PATTERN_KHAJIIT_RUG_MOONS: "pattern: khajiit rug, moons",
+  PATTERN_KHAJIIT_RUN_SUN: "pattern: khajiit rug, sun",
   PATTERN_ORCISH_BANNER_WORN: "pattern: orcish banner, worn",
   PATTERN_ORCISH_BEDDING_FUR: "pattern: orcish bedding, fur",
   PATTERN_ORCISH_CARPET_FRINGED: "pattern: orcish carpet, fringed",
@@ -222,6 +232,22 @@ Recipe.properties = {
     output: productIngredient(Product.BRETON_DESK),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: breton desk",
+  },
+  "blueprint: breton desk, scholar's": {
+    name: "Blueprint: Breton Desk, Scholar's",
+    categoryKey: Category.LIBRARY,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 12),
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 8),
+      resourceIngredient(Resource.MOLYBDENUM, 15),
+      resourceIngredient(Resource.MASTIC, 3),
+    ],
+    output: productIngredient(Product.BRETON_DESK_SCHOLARS),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14617&ItemNamePattern=Blueprint%3A+Breton+Desk%2C+Scholar%27s&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "blueprint: breton desk, scholar's",
   },
   "blueprint: breton nightstand, open": {
     name: "Blueprint: Breton Nightstand, Open",
@@ -645,6 +671,87 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_CANDLESTICK_PRACTICAL),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard candlestick, practical",
+  },
+  "blueprint: redguard desk, bolted": {
+    name: "Blueprint: Redguard Desk, Bolted",
+    categoryKey: Category.LIBRARY,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 11),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 7),
+      resourceIngredient(Resource.MASTIC, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_DESK_BOLTED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13599&ItemNamePattern=Blueprint%3A+Redguard+Desk%2C+Bolted&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "blueprint: redguard desk, bolted",
+  },
+  "blueprint: redguard end table, inlaid": {
+    name: "Blueprint: Redguard End Table, Inlaid",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 10),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 6),
+      resourceIngredient(Resource.STARMETAL, 10),
+      resourceIngredient(Resource.TURPEN, 6),
+    ],
+    output: productIngredient(Product.REDGUARD_END_TABLE_INLAID),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14503&ItemNamePattern=Blueprint%3A+Redguard+End+Table%2C+Inlaid&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "blueprint: redguard end table, inlaid",
+  },
+  "blueprint: redguard table, formal": {
+    name: "Blueprint: Redguard Table, Formal",
+    categoryKey: Category.DINING,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 10),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.BAST, 8),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.MASTIC, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_TABLE_FORMAL),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14212&ItemNamePattern=Blueprint%3A+Redguard+Table%2C+Formal&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "blueprint: redguard table, formal",
+  },
+  "blueprint: redguard table, game": {
+    name: "Blueprint: Redguard Table, Game",
+    categoryKey: Category.DINING,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 11),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.MASTIC, 3),
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 7),
+    ],
+    output: productIngredient(Product.REDGUARD_TABLE_GAME),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14437&ItemNamePattern=Blueprint%3A+Redguard+Table%2C+Game&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "blueprint: redguard table, game",
+  },
+  "blueprint: redguard table, grand inlaid": {
+    name: "Blueprint: Redguard Table, Grand Inlaid",
+    categoryKey: Category.DINING,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 10),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.MASTIC, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_TABLE_GRAND_INLAID),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14202&ItemNamePattern=Blueprint%3A+Redguard+Table%2C+Grand+Inlaid&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "blueprint: redguard table, grand inlaid",
   },
   "blueprint: redguard wagon, merchant": {
     name: "Blueprint: Redguard Wagon, Merchant",
@@ -1576,6 +1683,53 @@ Recipe.properties = {
     output: productIngredient(Product.KHAJIIT_CARPET_CRESCENT_MOONS),
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: khajiit carpet, crescent moons",
+  },
+  "pattern: khajiit carpet, sun": {
+    name: "Pattern: Khajiit Carpet, Sun",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 6),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 3),
+      resourceIngredient(Resource.MOONSTONE, 5),
+      resourceIngredient(Resource.HEMMING, 9),
+    ],
+    output: productIngredient(Product.KHAJIIT_CARPET_SUN),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13660&ItemNamePattern=Pattern%3A+Khajiit+Carpet%2C+Sun&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "pattern: khajiit carpet, sun",
+  },
+  "pattern: khajiit rug, moons": {
+    name: "Pattern: Khajiit Rug, Moons",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 12),
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 8),
+      resourceIngredient(Resource.MOONSTONE, 15),
+      resourceIngredient(Resource.ELEGANT_LINING, 3),
+    ],
+    output: productIngredient(Product.KHAJIIT_RUG_MOONS),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13881&ItemNamePattern=Pattern%3A+Khajiit+Rug%2C+Moons&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "pattern: khajiit rug, moons",
+  },
+  "pattern: khajiit rug, sun": {
+    name: "Pattern: Khajiit Rug, Sun",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 12),
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 8),
+      resourceIngredient(Resource.MOONSTONE, 15),
+      resourceIngredient(Resource.ELEGANT_LINING, 3),
+    ],
+    output: productIngredient(Product.KHAJIIT_RUG_SUN),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13314&ItemNamePattern=Pattern%3A+Khajiit+Rug%2C+Sun&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "pattern: khajiit rug, sun",
   },
   "pattern: orcish banner, worn": {
     name: "Pattern: Orcish Banner, Worn",
