@@ -16,6 +16,7 @@ const Resource = {
   CULANDA_LACQUER: "culanda lacquer",
   DECORATIVE_WAX: "decorative wax",
   DENATA: "denata",
+  DREUGH_WAX: "dreugh wax",
   DWARVEN_OIL: "dwarven oil",
   DWEMER_FRAME: "dwemer frame",
   ELEGANT_LINING: "elegant lining",
@@ -23,6 +24,7 @@ const Resource = {
   FLINT: "flint",
   FLOUR: "flour",
   FROST_MIRRIAM: "frost mirriam",
+  GRAIN_SOLVENT: "grain solvent",
   HEARTWOOD: "heartwood",
   HEMMING: "hemming",
   HONING_STONE: "honing stone",
@@ -43,6 +45,7 @@ const Resource = {
   RAKEIPA: "rakeipa",
   REGULUS: "regulus",
   RICE: "rice",
+  ROSIN: "rosin",
   RUBY: "ruby",
   SALTRICE: "saltrice",
   SAPPHIRE: "sapphire",
@@ -50,6 +53,7 @@ const Resource = {
   SHIMMERING_SAND: "shimmering sand",
   SMALL_GAME: "small game",
   STARMETAL: "starmetal",
+  TEMPERING_ALLOY: "tempering alloy",
   TURPEN: "turpen",
 };
 
@@ -81,7 +85,9 @@ Resource.properties = {
   },
   "bervez juice": {
     name: "Bervez Juice",
+    qualityKey: Quality.EPIC,
     resourceTypeKey: ResourceType.PROVISION,
+    url: "http://teso-guides.com/the-elder-scrolls-online-bervez-juice",
     key: "bervez juice",
   },
   bone: {
@@ -125,6 +131,12 @@ Resource.properties = {
     resourceTypeKey: ResourceType.RUNESTONE,
     key: "denata",
   },
+  "dreugh wax": {
+    name: "Dreugh Wax",
+    qualityKey: Quality.LEGENDARY,
+    resourceTypeKey: ResourceType.TANNIN,
+    key: "dreugh wax",
+  },
   "dwarven oil": {
     name: "Dwarven Oil",
     qualityKey: Quality.SUPERIOR,
@@ -160,8 +172,16 @@ Resource.properties = {
   },
   "frost mirriam": {
     name: "Frost Mirriam",
+    qualityKey: Quality.EPIC,
     resourceTypeKey: ResourceType.PROVISION,
+    url: "http://teso-guides.com/the-elder-scrolls-online-frost-mirriam",
     key: "frost mirriam",
+  },
+  "grain solvent": {
+    name: "Grain Solvent",
+    qualityKey: Quality.EPIC,
+    resourceTypeKey: ResourceType.TEMPER,
+    key: "grain solvent",
   },
   heartwood: {
     name: "Heartwood",
@@ -183,6 +203,7 @@ Resource.properties = {
   "jazbay grapes": {
     name: "Jazbay Grapes",
     resourceTypeKey: ResourceType.PROVISION,
+    url: "http://teso-guides.com/the-elder-scrolls-online-jazbay-grapes",
     key: "jazbay grapes",
   },
   jejota: {
@@ -268,6 +289,12 @@ Resource.properties = {
     resourceTypeKey: ResourceType.PROVISION,
     key: "rice",
   },
+  rosin: {
+    name: "Rosin",
+    qualityKey: Quality.LEGENDARY,
+    resourceTypeKey: ResourceType.RESIN,
+    key: "rosin",
+  },
   ruby: {
     name: "Ruby",
     resourceTypeKey: ResourceType.GEM,
@@ -302,6 +329,12 @@ Resource.properties = {
     name: "Small Game",
     resourceTypeKey: ResourceType.PROVISION,
     key: "small game",
+  },
+  "tempering alloy": {
+    name: "Tempering Alloy",
+    qualityKey: Quality.LEGENDARY,
+    resourceTypeKey: ResourceType.TEMPER,
+    key: "tempering alloy",
   },
   turpen: {
     name: "Turpen",

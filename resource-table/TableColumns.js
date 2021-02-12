@@ -1,7 +1,8 @@
-import Resolver from "../artifact/Resolver.js";
-
 const createColorCell = (color, name) =>
   ReactDOMFactories.div({ style: { backgroundColor: color } }, name);
+
+const createLink = (href, name) =>
+  ReactDOMFactories.a({ key: name, href, target: "_blank" }, name);
 
 const formatNumber = (value) => {
   if (![undefined, null].includes(value)) {
@@ -21,30 +22,31 @@ const TableColumns = [
     label: "Resource",
     type: "string",
     className: "tl",
+    cellFunction: (row) =>
+      row.url ? createLink(row.url, row.name) : undefined,
   },
   {
-    key: "qualityKey",
+    key: "quality",
     label: "Quality",
     type: "string",
     className: "tl",
-    cellFunction: (row) => {
-      const quality = Resolver.quality(row.qualityKey);
-      return quality ? createColorCell(quality.color, quality.name) : undefined;
-    },
-    valueFunction: (row) => {
-      const quality = Resolver.quality(row.qualityKey);
-      return quality ? quality.name : undefined;
-    },
+    cellFunction: (row) =>
+      row.quality
+        ? createColorCell(row.quality.color, row.quality.name)
+        : undefined,
+    valueFunction: (row) => (row.quality ? row.quality.name : undefined),
   },
   {
-    key: "resourceTypeKey",
+    key: "resourceType",
     label: "Type",
     type: "string",
     className: "tl",
-    valueFunction: (row) => {
-      const resourceType = Resolver.resourceType(row.resourceTypeKey);
-      return resourceType ? resourceType.name : undefined;
-    },
+    cellFunction: (row) =>
+      row.resourceType && row.resourceType.url
+        ? createLink(row.resourceType.url, row.resourceType.name)
+        : undefined,
+    valueFunction: (row) =>
+      row.resourceType ? row.resourceType.name : undefined,
   },
   {
     key: "value",
@@ -52,8 +54,13 @@ const TableColumns = [
     type: "number",
     className: "tr",
     convertFunction: (row) => round0(row.value),
-    cellFunction: (data) => formatNumber(data.value),
+    cellFunction: (row) => formatNumber(row.value),
     valueFunction: (row) => parseFloat(row.value),
+  },
+  {
+    key: "url",
+    label: "URL",
+    isShown: false,
   },
 ];
 

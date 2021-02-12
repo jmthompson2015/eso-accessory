@@ -1,21 +1,18 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 
 import Resource from "../artifact/Resource.js";
+import Resolver from "../artifact/Resolver.js";
 
 import ResourceUtils from "../model/ResourceUtilities.js";
 
 import TableColumns from "./TableColumns.js";
 
 const mapFunction = (resource) => {
-  const { name, qualityKey, resourceTypeKey } = resource;
   const value = ResourceUtils.value(resource.key);
+  const quality = Resolver.quality(resource.qualityKey);
+  const resourceType = Resolver.resourceType(resource.resourceTypeKey);
 
-  return {
-    name,
-    qualityKey,
-    resourceTypeKey,
-    value,
-  };
+  return R.mergeRight(resource, { quality, resourceType, value });
 };
 const tableRows = R.map(mapFunction, Resource.values());
 

@@ -8,6 +8,7 @@ QUnit.test("ResourceType properties Runestone", (assert) => {
   const typeKey = ResourceType.RUNESTONE;
   const properties = ResourceType.properties[typeKey];
   assert.equal(properties.name, "Runestone");
+  assert.equal(properties.url, "https://en.uesp.net/wiki/Online:Runestones");
   assert.equal(properties.key, typeKey);
 });
 
