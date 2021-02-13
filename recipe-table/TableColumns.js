@@ -1,5 +1,3 @@
-import Resolver from "../artifact/Resolver.js";
-
 const createColorCell = (color, name) =>
   ReactDOMFactories.div({ style: { backgroundColor: color } }, name);
 
@@ -31,6 +29,117 @@ const TableColumns = [
       row.url ? createLink(row.url, row.name) : undefined,
   },
   {
+    key: "quality",
+    label: "Quality",
+    type: "string",
+    className: "tl",
+    cellFunction: (row) =>
+      row.quality
+        ? createColorCell(row.quality.color, row.quality.name)
+        : undefined,
+    valueFunction: (row) => (row.quality ? row.quality.name : undefined),
+  },
+  {
+    key: "averagePrice",
+    label: "Avg. Price",
+    type: "number",
+    className: "tr",
+    convertFunction: (row) => round0(row.averagePrice),
+    cellFunction: (row) => formatNumber(row.averagePrice),
+    valueFunction: (row) => parseFloat(row.averagePrice),
+  },
+  {
+    key: "owner",
+    label: "Owner",
+    type: "string",
+    className: "tl",
+    cellFunction: (row) => {
+      let answer;
+      if (row.owner) {
+        answer = row.owner.name;
+      } else {
+        answer = row.ttcUrl ? createLink(row.ttcUrl, "WANT") : undefined;
+      }
+      return answer;
+    },
+    valueFunction: (row) => {
+      let answer;
+      if (row.owner) {
+        answer = row.owner.name;
+      } else {
+        answer = row.ttcUrl ? "WANT" : undefined;
+      }
+      return answer;
+    },
+  },
+  {
+    key: "craft",
+    label: "Craft",
+    type: "string",
+    className: "tl",
+    valueFunction: (row) => (row.craft ? row.craft.name : undefined),
+  },
+  {
+    key: "category",
+    label: "Category",
+    type: "string",
+    className: "tl",
+    valueFunction: (row) => (row.category ? row.category.name : undefined),
+  },
+  {
+    key: "product",
+    label: "Product",
+    type: "string",
+    className: "tl",
+    cellFunction: (row) =>
+      row.product && row.product.url
+        ? createLink(row.product.url, row.product.name)
+        : undefined,
+    valueFunction: (row) => (row.product ? row.product.name : undefined),
+  },
+  {
+    key: "inputValue",
+    label: "Craft Cost",
+    type: "number",
+    className: "tr",
+    convertFunction: (row) => round0(row.inputValue),
+    cellFunction: (row) => formatNumber(row.inputValue),
+    valueFunction: (row) => parseFloat(row.inputValue),
+  },
+  {
+    key: "outputValue",
+    label: "Avg. Price",
+    type: "number",
+    className: "tr",
+    convertFunction: (row) => round0(row.outputValue),
+    cellFunction: (row) => formatNumber(row.outputValue),
+    valueFunction: (row) => parseFloat(row.outputValue),
+  },
+  {
+    key: "outputInputRatio",
+    label: "Price / Cost",
+    type: "number",
+    className: "tr",
+    convertFunction: (row) => round2(row.outputInputRatio),
+  },
+  {
+    key: "profit",
+    label: "Profit",
+    type: "number",
+    className: "tr",
+    convertFunction: (row) => round0(row.profit),
+    cellFunction: (row) => formatNumber(row.profit),
+    valueFunction: (row) => parseFloat(row.profit),
+  },
+  {
+    key: "breakEven",
+    label: "Break Even",
+    type: "number",
+    className: "tr",
+    cellFunction: (row) => formatNumber(row.breakEven),
+    valueFunction: (row) => parseInt(row.breakEven, 10),
+  },
+  {
     key: "url",
     label: "URL",
     isShown: false,
@@ -39,116 +148,6 @@ const TableColumns = [
     key: "ttcUrl",
     label: "TTC",
     isShown: false,
-  },
-  {
-    key: "qualityKey",
-    label: "Quality",
-    type: "string",
-    className: "tl",
-    cellFunction: (row) => {
-      const quality = Resolver.quality(row.qualityKey);
-      return quality ? createColorCell(quality.color, quality.name) : undefined;
-    },
-    valueFunction: (row) => {
-      const quality = Resolver.quality(row.qualityKey);
-      return quality ? quality.name : undefined;
-    },
-  },
-  {
-    key: "averagePrice",
-    label: "Avg. Price",
-    type: "number",
-    className: "tr",
-    convertFunction: (data) => round0(data.averagePrice),
-    cellFunction: (data) => formatNumber(data.averagePrice),
-    valueFunction: (row) => parseFloat(row.averagePrice),
-  },
-  {
-    key: "ownerKey",
-    label: "Owner",
-    type: "string",
-    className: "tl",
-    cellFunction: (row) => {
-      const character = Resolver.character(row.ownerKey);
-      let answer;
-      if (character) {
-        answer = character.name;
-      } else {
-        answer = row.ttcUrl ? createLink(row.ttcUrl, "WANT") : undefined;
-      }
-      return answer;
-    },
-    valueFunction: (row) => {
-      const character = Resolver.character(row.ownerKey);
-      let answer;
-      if (character) {
-        answer = character.name;
-      } else {
-        answer = row.ttcUrl ? "WANT" : undefined;
-      }
-      return answer;
-    },
-  },
-  {
-    key: "craftKey",
-    label: "Craft",
-    type: "string",
-    className: "tl",
-    valueFunction: (row) => {
-      const craft = Resolver.craft(row.craftKey);
-      return craft ? craft.name : undefined;
-    },
-  },
-  {
-    key: "categoryKey",
-    label: "Category",
-    type: "string",
-    className: "tl",
-    valueFunction: (row) => {
-      const category = Resolver.category(row.categoryKey);
-      return category ? category.name : undefined;
-    },
-  },
-  {
-    key: "productKey",
-    label: "Product",
-    type: "string",
-    className: "tl",
-    cellFunction: (row) => {
-      const product = Resolver.product(row.productKey);
-      return product && product.url
-        ? createLink(product.url, product.name)
-        : undefined;
-    },
-    valueFunction: (row) => {
-      const product = Resolver.product(row.productKey);
-      return product ? product.name : undefined;
-    },
-  },
-  {
-    key: "inputValue",
-    label: "Craft Cost",
-    type: "number",
-    className: "tr",
-    convertFunction: (data) => round0(data.inputValue),
-    cellFunction: (data) => formatNumber(data.inputValue),
-    valueFunction: (row) => parseFloat(row.inputValue),
-  },
-  {
-    key: "outputValue",
-    label: "Avg. Price",
-    type: "number",
-    className: "tr",
-    convertFunction: (data) => round0(data.outputValue),
-    cellFunction: (data) => formatNumber(data.outputValue),
-    valueFunction: (row) => parseFloat(row.outputValue),
-  },
-  {
-    key: "outputInputRatio",
-    label: "Price / Cost",
-    type: "number",
-    className: "tr",
-    convertFunction: (data) => round2(data.outputInputRatio),
   },
 ];
 
