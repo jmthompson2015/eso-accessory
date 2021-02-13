@@ -716,8 +716,7 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.REDGUARD_TABLE_FORMAL),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14212&ItemNamePattern=Blueprint%3A+Redguard+Table%2C+Formal&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard table, formal",
   },
   "blueprint: redguard table, game": {
@@ -1708,8 +1707,7 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.KHAJIIT_RUG_MOONS),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13881&ItemNamePattern=Pattern%3A+Khajiit+Rug%2C+Moons&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "pattern: khajiit rug, moons",
   },
   "pattern: khajiit rug, sun": {
