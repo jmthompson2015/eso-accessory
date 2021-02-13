@@ -701,8 +701,7 @@ Recipe.properties = {
       resourceIngredient(Resource.TURPEN, 6),
     ],
     output: productIngredient(Product.REDGUARD_END_TABLE_INLAID),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14503&ItemNamePattern=Blueprint%3A+Redguard+End+Table%2C+Inlaid&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard end table, inlaid",
   },
   "blueprint: redguard table, formal": {
@@ -749,8 +748,7 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.REDGUARD_TABLE_GRAND_INLAID),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14202&ItemNamePattern=Blueprint%3A+Redguard+Table%2C+Grand+Inlaid&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard table, grand inlaid",
   },
   "blueprint: redguard wagon, merchant": {
@@ -1695,8 +1693,7 @@ Recipe.properties = {
       resourceIngredient(Resource.HEMMING, 9),
     ],
     output: productIngredient(Product.KHAJIIT_CARPET_SUN),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13660&ItemNamePattern=Pattern%3A+Khajiit+Carpet%2C+Sun&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "pattern: khajiit carpet, sun",
   },
   "pattern: khajiit rug, moons": {
@@ -1906,8 +1903,7 @@ Recipe.properties = {
       resourceIngredient(Resource.HEMMING, 9),
     ],
     output: productIngredient(Product.REDGUARD_CURTAIN_DESERT_ROSE),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12644&ItemNamePattern=Pattern%3A+Redguard+Curtain%2C+Desert+Rose&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "pattern: redguard curtain, desert rose",
   },
   "pattern: redguard curtain, smoky": {

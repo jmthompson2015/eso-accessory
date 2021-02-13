@@ -93,7 +93,11 @@ QUnit.test("inputValue()", (assert) => {
   const result = RecipeUtilities.inputValue(recipe);
 
   // Verify.
-  assert.equal(result >= 369.4 && result <= 375.78, true, `result = ${result}`);
+  assert.equal(
+    result >= 366.94 && result <= 375.78,
+    true,
+    `result = ${result}`
+  );
 });
 
 QUnit.test("outputInputRatio()", (assert) => {
