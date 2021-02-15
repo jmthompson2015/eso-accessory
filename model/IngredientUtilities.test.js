@@ -63,7 +63,7 @@ QUnit.test("value() Alchemical Resin", (assert) => {
   const result = IngredientUtilities.value(ingredient);
 
   // Verify.
-  assert.equal(result >= 44 && result <= 46, true, `result = ${result}`);
+  assert.equal(result >= 44 && result <= 77.1, true, `result = ${result}`);
 });
 
 const IngredientUtilitiesTest = {};

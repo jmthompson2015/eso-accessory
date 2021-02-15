@@ -31,7 +31,7 @@ QUnit.test("averagePrice() Alchemical Resin", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result >= 8.86 && result <= 9.03, true, `result = ${result}`);
+  assert.equal(result >= 8.86 && result <= 15.42, true, `result = ${result}`);
 });
 
 QUnit.test("entryCount() Alchemical Resin", (assert) => {

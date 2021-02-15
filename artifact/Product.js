@@ -26,6 +26,7 @@ const Product = {
   BRETON_VASE_CERAMIC: "breton vase, ceramic",
   COMMON_BASKET_TALL: "common basket, tall",
   COMMON_BOWL_OF_SOUP_DISPLAY: "common bowl of soup, display",
+  COMMON_BOWL_OF_STEW_DISPLAY: "common bowl of stew, display",
   COMMON_BUCKET_ROPE: "common bucket, rope",
   COMMON_CANDLE_LASTING: "common candle, lasting",
   COMMON_CANDLE_SET: "common candle, set",
@@ -275,6 +276,11 @@ Product.properties = {
     name: "Common Bowl of Soup, Display",
     qualityKey: Quality.FINE,
     key: "common bowl of soup, display",
+  },
+  "common bowl of stew, display": {
+    name: "Common Bowl of Stew, Display",
+    qualityKey: Quality.FINE,
+    key: "common bowl of stew, display",
   },
   "common bucket, rope": {
     name: "Common Bucket, Rope",

@@ -70,6 +70,7 @@ const Recipe = {
   DESIGN_ASHLANDER_PLATTER_CERAMIC: "design: ashlander platter, ceramic",
   DESIGN_BRETON_VASE_CERAMIC: "design: breton vase, ceramic",
   DESIGN_COMMON_BOWL_OF_SOUP_DISPLAY: "design: common bowl of soup, display",
+  DESIGN_COMMON_BOWL_OF_STEW_DISPLAY: "design: common bowl of stew, display",
   DESIGN_COMMON_CANDLE_LASTING: "design: common candle, lasting",
   DESIGN_COMMON_CANDLE_SET: "design: common candle, set",
   DESIGN_DRES_BOWL_DINNER: "design: dres bowl, dinner",
@@ -939,6 +940,20 @@ Recipe.properties = {
     output: productIngredient(Product.COMMON_BOWL_OF_SOUP_DISPLAY),
     ownerKey: Character.FRAK_LOCK,
     key: "design: common bowl of soup, display",
+  },
+  "design: common bowl of stew, display": {
+    name: "Design: Common Bowl of Stew, Display",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 3),
+      resourceIngredient(Resource.NICKEL, 5),
+      resourceIngredient(Resource.POTATO, 2),
+      resourceIngredient(Resource.FLOUR, 20),
+    ],
+    output: productIngredient(Product.COMMON_BOWL_OF_STEW_DISPLAY),
+    ownerKey: Character.FRAK_LOCK,
+    key: "design: common bowl of stew, display",
   },
   "design: common candle, lasting": {
     name: "Design: Common Candle, Lasting",
