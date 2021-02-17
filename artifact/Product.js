@@ -3,6 +3,7 @@ import Quality from "./Quality.js";
 
 const Product = {
   ALINOR_AMPHORA_DELICATE: "alinor amphora, delicate",
+  ALINOR_AMPHORA_SLENDER: "alinor amphora, slender",
   ARGONIAN_BASKETS_DOUBLE: "argonian baskets, double",
   ARGONIAN_COUNTER_LONG: "argonian counter, long",
   ARGONIAN_MAT_REED: "argonian mat, reed",
@@ -49,6 +50,7 @@ const Product = {
   DRES_CUP_EMPTY_MAZTE: "dres cup, empty mazte",
   DRES_LANTERN_STATIONARY: "dres lantern, stationary",
   DRES_POT_SAUCE: "dres pot, sauce",
+  DWARVEN_AMPHORA_ORNATE_POLISHED: "dwarven amphora, ornate polished",
   DWARVEN_CANNISTER_SEALED: "dwarven cannister, sealed",
   ELSWEYR_CARPET_GOLD_EMERALD: "elsweyr carpet, gold-emerald",
   ELSWEYR_CARPET_GOLD_RUBY: "elsweyr carpet, gold-ruby",
@@ -60,6 +62,7 @@ const Product = {
   HIGH_ELF_BED_SINGLE: "high elf bed, single",
   HIGH_ELF_CANDLEHOLDER_STURDY: "high elf candleholder, sturdy",
   HIGH_ELF_PLATE_DINNER: "high elf plate, dinner",
+  HLAALU_AMPHORA_SEALED_ORICHALCUM: "hlaalu amphora, sealed orichalcum",
   HLAALU_BED_SINGLE: "hlaalu bed, single",
   HLAALU_HANGER_MOUNTED: "hlaalu hanger, mounted",
   HLAALU_RACK_BARREL: "hlaalu rack, barrel",
@@ -128,6 +131,7 @@ const Product = {
   REDGUARD_TAPESTRY_LATTICE: "redguard tapestry, lattice",
   REDGUARD_WAGON_MERCHANT: "redguard wagon, merchant",
   REDORAN_CARPET_VOLCANIC_SANDS: "redoran carpet, volcanic sands",
+  REDORAN_AMPHORA_SEALED_MARBLE: "redoran amphora, sealed marble",
   REDORAN_SPOON_WOODEN: "redoran spoon, wooden",
   ROUGH_BAG_BURLAP: "rough bag, burlap",
   ROUGH_BEDROLL_BASIC: "rough bedroll, basic",
@@ -166,6 +170,11 @@ Product.properties = {
     productTypeKey: ProductType.FURNISHING,
     qualityKey: Quality.FINE,
     key: "alinor amphora, delicate",
+  },
+  "alinor amphora, slender": {
+    name: "Alinor Amphora, Slender",
+    qualityKey: Quality.EPIC,
+    key: "alinor amphora, slender",
   },
   "argonian baskets, double": {
     name: "Argonian Baskets, Double",
@@ -397,6 +406,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "dres pot, sauce",
   },
+  "dwarven amphora, ornate polished": {
+    name: "Dwarven Amphora, Ornate Polished",
+    qualityKey: Quality.EPIC,
+    key: "dwarven amphora, ornate polished",
+  },
   "dwarven cannister, sealed": {
     name: "Dwarven Cannister, Sealed",
     qualityKey: Quality.FINE,
@@ -451,6 +465,11 @@ Product.properties = {
     name: "High Elf Plate, Dinner",
     qualityKey: Quality.FINE,
     key: "high elf plate, dinner",
+  },
+  "hlaalu amphora, sealed orichalcum": {
+    name: "Hlaalu Amphora, Sealed Orichalcum",
+    qualityKey: Quality.EPIC,
+    key: "hlaalu amphora, sealed orichalcum",
   },
   "hlaalu bed, single": {
     name: "Hlaalu Bed, Single",
@@ -753,11 +772,6 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "redguard pot, sealed",
   },
-  // "redguard round table": {
-  //   name: "Redguard Round Table",
-  //   qualityKey: Quality.LEGENDARY,
-  //   key: "redguard round table",
-  // },
   "redguard runner, sun": {
     name: "Redguard Runner, Sun",
     qualityKey: Quality.SUPERIOR,
@@ -792,6 +806,11 @@ Product.properties = {
     name: "Redguard Wagon, Merchant",
     qualityKey: Quality.FINE,
     key: "redguard wagon, merchant",
+  },
+  "redoran amphora, sealed marble": {
+    name: "Redoran Amphora, Sealed Marble",
+    qualityKey: Quality.EPIC,
+    key: "redoran amphora, sealed marble",
   },
   "redoran carpet, volcanic sands": {
     name: "Redoran Carpet, Volcanic Sands",
@@ -899,15 +918,15 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "wood elf bone chimes",
   },
-  "wood elf cup, ceramic": {
-    name: "Wood Elf Cup, Ceramic",
-    qualityKey: Quality.FINE,
-    key: "wood elf cup, ceramic",
-  },
   "wood elf counter, long leather": {
     name: "Wood Elf Counter, Long Leather",
     qualityKey: Quality.FINE,
     key: "wood elf counter, long leather",
+  },
+  "wood elf cup, ceramic": {
+    name: "Wood Elf Cup, Ceramic",
+    qualityKey: Quality.FINE,
+    key: "wood elf cup, ceramic",
   },
   "wood elf divider, narrow": {
     name: "Wood Elf Divider, Narrow",

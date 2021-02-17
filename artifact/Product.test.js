@@ -58,10 +58,32 @@ QUnit.test("keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 155;
+  const length = 159;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Product.ALINOR_AMPHORA_DELICATE);
   assert.equal(R.last(result), Product.WOOD_ELF_TABLE_LEATHER);
+});
+
+QUnit.test("keys() alphabetized", (assert) => {
+  // Run.
+  const result = Product.keys();
+
+  // Verify.
+  const forEachFunction = (key, i) => {
+    const key2 = i + 1 < result.length ? result[i + 1] : undefined;
+    console.log(`key = ${key} key2 = ${key2}`);
+
+    if (key2) {
+      assert.equal(
+        key < key2,
+        true,
+        `Keys not alphabetized: key = ${key} key2 = ${key2}`
+      );
+    }
+  };
+
+  const forEachIndexed = R.addIndex(R.forEach);
+  forEachIndexed(forEachFunction, result);
 });
 
 const ProductTest = {};

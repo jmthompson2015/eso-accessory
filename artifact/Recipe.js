@@ -183,6 +183,13 @@ const Recipe = {
   RECIPE_WITCHMOTHERS_POTENT_BREW: "recipe: witchmother's potent brew",
 
   // ///////////////////////////////////////////////////////////////////////////
+  DESIGN_ALINOR_AMPHORA_SLENDER: "design: alinor amphora, slender",
+  DIAGRAM_DWARVEN_AMPHORA_ORNATE_POLISHED:
+    "diagram: dwarven amphora, ornate polished",
+  PRAXIS_HLAALU_AMPHORA_SEALED_ORICHALCUM:
+    "praxis: hlaalu amphora, sealed orichalcum",
+  PRAXIS_REDORAN_AMPHORA_SEALED_MARBLE:
+    "praxis: redoran amphora, sealed marble",
 };
 
 Recipe.properties = {
@@ -918,6 +925,22 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "design: alinor amphora, delicate",
   },
+  "design: alinor amphora, slender": {
+    name: "Design: Alinor Amphora, Slender",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 10),
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.OCHRE, 7),
+      resourceIngredient(Resource.CULANDA_LACQUER, 2),
+      resourceIngredient(Resource.FROST_MIRRIAM, 3),
+    ],
+    output: productIngredient(Product.ALINOR_AMPHORA_SLENDER),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=17533&ItemNamePattern=Design%3A+Alinor+Amphora%2C+Slender&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: alinor amphora, slender",
+  },
   "design: argonian totem of skulls": {
     name: "Design: Argonian Totem of Skulls",
     categoryKey: Category.UNDERCROFT,
@@ -1326,6 +1349,22 @@ Recipe.properties = {
     output: productIngredient(Product.DRES_POT_SAUCE),
     ownerKey: Character.FRAK_LOCK,
     key: "diagram: dres pot, sauce",
+  },
+  "diagram: dwarven amphora, ornate polished": {
+    name: "Diagram: Dwarven Amphora, Ornate Polished",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 10),
+      resourceIngredient(Resource.OCHRE, 8),
+      resourceIngredient(Resource.MUNDANE_RUNE, 7),
+      resourceIngredient(Resource.ARKTHZAND_SPROCKET, 2),
+      resourceIngredient(Resource.GRAIN_SOLVENT, 3),
+    ],
+    output: productIngredient(Product.DWARVEN_AMPHORA_ORNATE_POLISHED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=22841&ItemNamePattern=Diagram%3A+Dwarven+Amphora%2C+Ornate+Polished&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "diagram: dwarven amphora, ornate polished",
   },
   "diagram: dwarven cannister, sealed": {
     name: "Diagram: Dwarven Cannister, Sealed",
@@ -2281,6 +2320,22 @@ Recipe.properties = {
     ownerKey: Character.KALED_LOCK,
     key: "praxis: hagraven cauldron, ritual",
   },
+  "praxis: hlaalu amphora, sealed orichalcum": {
+    name: "Praxis: Hlaalu Amphora, Sealed Orichalcum",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.ENCHANTING,
+    inputs: [
+      resourceIngredient(Resource.MUNDANE_RUNE, 12),
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.HEARTWOOD, 8),
+      resourceIngredient(Resource.OBSIDIAN, 16),
+      resourceIngredient(Resource.REKUTA, 3),
+    ],
+    output: productIngredient(Product.HLAALU_AMPHORA_SEALED_ORICHALCUM),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=16356&ItemNamePattern=Praxis%3A+Hlaalu+Amphora%2C+Sealed+Orichalcum&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "praxis: hlaalu amphora, sealed orichalcum",
+  },
   "praxis: orcish bedding, stone": {
     name: "Praxis: Orcish Bedding, Stone",
     categoryKey: Category.SUITE,
@@ -2309,6 +2364,22 @@ Recipe.properties = {
     output: productIngredient(Product.ORCISH_BRAZIER_SMOLDERING),
     ownerKey: Character.FRAK_LOCK,
     key: "praxis: orcish brazier, smoldering",
+  },
+  "praxis: redoran amphora, sealed marble": {
+    name: "Praxis: Redoran Amphora, Sealed Marble",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.ENCHANTING,
+    inputs: [
+      resourceIngredient(Resource.MUNDANE_RUNE, 12),
+      resourceIngredient(Resource.REGULUS, 9),
+      resourceIngredient(Resource.DECORATIVE_WAX, 7),
+      resourceIngredient(Resource.OBSIDIAN, 16),
+      resourceIngredient(Resource.REKUTA, 3),
+    ],
+    output: productIngredient(Product.REDORAN_AMPHORA_SEALED_MARBLE),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=16341&ItemNamePattern=Praxis%3A+Redoran+Amphora%2C+Sealed+Marble&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "praxis: redoran amphora, sealed marble",
   },
   "praxis: wood elf grinding stone": {
     name: "Praxis: Wood Elf Grinding Stone",

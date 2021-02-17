@@ -4,6 +4,7 @@ import ResourceType from "./ResourceType.js";
 const Resource = {
   ADAMANTITE: "adamantite",
   ALCHEMICAL_RESIN: "alchemical resin",
+  ARKTHZAND_SPROCKET: "arkthzand sprocket",
   ASH_CANVAS: "ash canvas",
   BARLEY: "barley",
   BAST: "bast",
@@ -44,6 +45,7 @@ const Resource = {
   PUMPKIN: "pumpkin",
   RAKEIPA: "rakeipa",
   REGULUS: "regulus",
+  REKUTA: "rekuta",
   RICE: "rice",
   ROSIN: "rosin",
   RUBY: "ruby",
@@ -67,6 +69,11 @@ Resource.properties = {
     name: "Alchemical Resin",
     resourceTypeKey: ResourceType.FURNISHING,
     key: "alchemical resin",
+  },
+  "arkthzand sprocket": {
+    name: "Arkthzand Sprocket",
+    resourceTypeKey: ResourceType.STYLE,
+    key: "arkthzand sprocket",
   },
   "ash canvas": {
     name: "Ash Canvas",
@@ -284,6 +291,11 @@ Resource.properties = {
     resourceTypeKey: ResourceType.FURNISHING,
     key: "regulus",
   },
+  rekuta: {
+    name: "Rekuta",
+    resourceTypeKey: ResourceType.RUNESTONE,
+    key: "rekuta",
+  },
   rice: {
     name: "Rice",
     resourceTypeKey: ResourceType.PROVISION,
@@ -310,11 +322,6 @@ Resource.properties = {
     resourceTypeKey: ResourceType.GEM,
     key: "sapphire",
   },
-  starmetal: {
-    name: "Starmetal",
-    resourceTypeKey: ResourceType.STYLE,
-    key: "starmetal",
-  },
   "scrib jelly": {
     name: "Scrib Jelly",
     resourceTypeKey: ResourceType.REAGENT,
@@ -329,6 +336,11 @@ Resource.properties = {
     name: "Small Game",
     resourceTypeKey: ResourceType.PROVISION,
     key: "small game",
+  },
+  starmetal: {
+    name: "Starmetal",
+    resourceTypeKey: ResourceType.STYLE,
+    key: "starmetal",
   },
   "tempering alloy": {
     name: "Tempering Alloy",

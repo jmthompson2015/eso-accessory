@@ -42,10 +42,32 @@ QUnit.test("keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 53;
+  const length = 55;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Resource.ADAMANTITE);
   assert.equal(R.last(result), Resource.TURPEN);
+});
+
+QUnit.test("keys() alphabetized", (assert) => {
+  // Run.
+  const result = Resource.keys();
+
+  // Verify.
+  const forEachFunction = (key, i) => {
+    const key2 = i + 1 < result.length ? result[i + 1] : undefined;
+    console.log(`key = ${key} key2 = ${key2}`);
+
+    if (key2) {
+      assert.equal(
+        key < key2,
+        true,
+        `Keys not alphabetized: key = ${key} key2 = ${key2}`
+      );
+    }
+  };
+
+  const forEachIndexed = R.addIndex(R.forEach);
+  forEachIndexed(forEachFunction, result);
 });
 
 const ResourceTest = {};
