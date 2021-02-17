@@ -68,6 +68,9 @@ const Recipe = {
   BLUEPRINT_WOOD_ELF_BAR_SHORT: "blueprint: wood elf bar, short",
 
   DESIGN_ALINOR_AMPHORA_DELICATE: "design: alinor amphora, delicate",
+  DESIGN_ALINOR_AMPHORA_EMBOSSED: "design: alinor amphora, embossed",
+  DESIGN_ALINOR_AMPHORA_PORTRAIT: "design: alinor amphora, portrait",
+  DESIGN_ALINOR_AMPHORA_SLENDER: "design: alinor amphora, slender",
   DESIGN_ARGONIAN_TOTEM_OF_SKULLS: "design: argonian totem of skulls",
   DESIGN_ASHLANDER_PLATTER_CERAMIC: "design: ashlander platter, ceramic",
   DESIGN_BRETON_VASE_CERAMIC: "design: breton vase, ceramic",
@@ -81,8 +84,10 @@ const Recipe = {
   DESIGN_DRES_CUP_EMPTY_MAZTE: "design: dres cup, empty mazte",
   DESIGN_GRAPES_WAX: "design: grapes, wax",
   DESIGN_KHAJIIT_FLASK_AMBER: "design: khajiit flask, amber",
+  DESIGN_NORD_AMPHORA_GLAZED: "design: nord amphora, glazed",
   DESIGN_NORD_POT_STEW: "design: nord pot, stew",
   DESIGN_ORCHISH_VESSEL_SEALED_CERAMIC: "design: orcish vessel, sealed ceramic",
+  DESIGN_REDGUARD_AMPHORA_POLISHED: "design: redguard amphora, polished",
   DESIGN_REDGUARD_POT_CAPPED: "design: redguard pot, capped",
   DESIGN_REDGUARD_POT_SEALED: "design: redguard pot, sealed",
   DESIGN_ROUGH_BAG_BURLAP: "design: rough bag, burlap",
@@ -98,6 +103,8 @@ const Recipe = {
   DIAGRAM_DARK_ELF_CANDLE_CLAW_BASE: "diagram: dark elf candle, claw base",
   DIAGRAM_DARK_ELF_CAULDRON_BANDED: "diagram: dark elf cauldron, banded",
   DIAGRAM_DRES_POT_SAUCE: "diagram: dres pot, sauce",
+  DIAGRAM_DWARVEN_AMPHORA_ORNATE_POLISHED:
+    "diagram: dwarven amphora, ornate polished",
   DIAGRAM_DWARVEN_CANNISTER_SEALED: "diagram: dwarven cannister, sealed",
   DIAGRAM_HIGH_ELF_CANDLEHOLDER_STURDY:
     "diagram: high elf candleholder, sturdy",
@@ -173,23 +180,20 @@ const Recipe = {
   PATTERN_WOOD_ELF_TABLE_LEATHER: "pattern: wood elf table, leather",
 
   PRAXIS_BRETON_AMPHORA_CERAMIC: "praxis: breton amphora, ceramic",
+  PRAXIS_DWARVEN_AMPHORA_SEALED: "praxis: dwarven amphora, sealed",
   PRAXIS_ELSWEYR_POT_WAVES: "praxis: elsweyr pot, waves",
   PRAXIS_HAGRAVEN_CAULDRON_RITUAL: "praxis: hagraven cauldron, ritual",
+  PRAXIS_HLAALU_AMPHORA_SEALED_ORICHALCUM:
+    "praxis: hlaalu amphora, sealed orichalcum",
   PRAXIS_ORCISH_BEDDING_STONE: "praxis: orcish bedding, stone",
   PRAXIS_ORCISH_BRAZIER_SMOLDERING: "praxis: orcish brazier, smoldering",
+  PRAXIS_REDORAN_AMPHORA_SEALED_MARBLE:
+    "praxis: redoran amphora, sealed marble",
   PRAXIS_WOOD_ELF_GRINDING_STONE: "praxis: wood elf grinding stone",
 
   RECIPE_LAVA_FOOT_SOUP_AND_SALTRICE: "recipe: lava foot soup-and-saltrice",
   RECIPE_WITCHMOTHERS_POTENT_BREW: "recipe: witchmother's potent brew",
-
   // ///////////////////////////////////////////////////////////////////////////
-  DESIGN_ALINOR_AMPHORA_SLENDER: "design: alinor amphora, slender",
-  DIAGRAM_DWARVEN_AMPHORA_ORNATE_POLISHED:
-    "diagram: dwarven amphora, ornate polished",
-  PRAXIS_HLAALU_AMPHORA_SEALED_ORICHALCUM:
-    "praxis: hlaalu amphora, sealed orichalcum",
-  PRAXIS_REDORAN_AMPHORA_SEALED_MARBLE:
-    "praxis: redoran amphora, sealed marble",
 };
 
 Recipe.properties = {
@@ -925,6 +929,37 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "design: alinor amphora, delicate",
   },
+  "design: alinor amphora, embossed": {
+    name: "Design: Alinor Amphora, Embossed",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 7),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.CULANDA_LACQUER, 1),
+      resourceIngredient(Resource.BERVEZ_JUICE, 6),
+    ],
+    output: productIngredient(Product.ALINOR_AMPHORA_EMBOSSED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=17952&ItemNamePattern=Design%3A+Alinor+Amphora%2C+Embossed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: alinor amphora, embossed",
+  },
+  "design: alinor amphora, portrait": {
+    name: "Design: Alinor Amphora, Portrait",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 9),
+      resourceIngredient(Resource.MUNDANE_RUNE, 5),
+      resourceIngredient(Resource.OCHRE, 6),
+      resourceIngredient(Resource.CULANDA_LACQUER, 1),
+      resourceIngredient(Resource.BERVEZ_JUICE, 6),
+    ],
+    output: productIngredient(Product.ALINOR_AMPHORA_PORTRAIT),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Alinor+Amphora%2C+Portrait&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: alinor amphora, portrait",
+  },
   "design: alinor amphora, slender": {
     name: "Design: Alinor Amphora, Slender",
     categoryKey: Category.HEARTH,
@@ -1123,6 +1158,22 @@ Recipe.properties = {
     ownerKey: Character.KALED_LOCK,
     key: "design: khajiit flask, amber",
   },
+  "design: nord amphora, glazed": {
+    name: "Design: Nord Amphora, Glazed",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 7),
+      resourceIngredient(Resource.MUNDANE_RUNE, 5),
+      resourceIngredient(Resource.HEARTWOOD, 5),
+      resourceIngredient(Resource.CORUNDUM, 10),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.NORD_AMPHORA_GLAZED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13353&ItemNamePattern=Design%3A+Nord+Amphora%2C+Glazed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: nord amphora, glazed",
+  },
   "design: nord pot, stew": {
     name: "Design: Nord Pot, Stew",
     categoryKey: Category.HEARTH,
@@ -1149,6 +1200,22 @@ Recipe.properties = {
     output: productIngredient(Product.ORCISH_VESSEL_SEALED_CERAMIC),
     ownerKey: Character.FRAK_LOCK,
     key: "design: orcish vessel, sealed ceramic",
+  },
+  "design: redguard amphora, polished": {
+    name: "Design: Redguard Amphora, Polished",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 7),
+      resourceIngredient(Resource.REGULUS, 5),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 5),
+      resourceIngredient(Resource.STARMETAL, 10),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_AMPHORA_POLISHED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13346&ItemNamePattern=Design%3A+Redguard+Amphora%2C+Polished&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: redguard amphora, polished",
   },
   "design: redguard pot, capped": {
     name: "Design: Redguard Pot, Capped",
@@ -2291,6 +2358,22 @@ Recipe.properties = {
     output: productIngredient(Product.BRETON_AMPHORA_CERAMIC),
     ownerKey: Character.KALED_LOCK,
     key: "praxis: breton amphora, ceramic",
+  },
+  "praxis: dwarven amphora, sealed": {
+    name: "Praxis: Dwarven Amphora, Sealed",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.ENCHANTING,
+    inputs: [
+      resourceIngredient(Resource.MUNDANE_RUNE, 9),
+      resourceIngredient(Resource.REGULUS, 5),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 5),
+      resourceIngredient(Resource.DWEMER_FRAME, 12),
+      resourceIngredient(Resource.DENATA, 6),
+    ],
+    output: productIngredient(Product.DWARVEN_AMPHORA_SEALED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=15715&ItemNamePattern=Praxis%3A+Dwarven+Amphora%2C+Sealed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "praxis: dwarven amphora, sealed",
   },
   "praxis: elsweyr pot, waves": {
     name: "Praxis: Elsweyr Pot, Waves",

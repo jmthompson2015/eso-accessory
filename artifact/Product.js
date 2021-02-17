@@ -3,6 +3,8 @@ import Quality from "./Quality.js";
 
 const Product = {
   ALINOR_AMPHORA_DELICATE: "alinor amphora, delicate",
+  ALINOR_AMPHORA_EMBOSSED: "alinor amphora, embossed",
+  ALINOR_AMPHORA_PORTRAIT: "alinor amphora, portrait",
   ALINOR_AMPHORA_SLENDER: "alinor amphora, slender",
   ARGONIAN_BASKETS_DOUBLE: "argonian baskets, double",
   ARGONIAN_COUNTER_LONG: "argonian counter, long",
@@ -51,6 +53,7 @@ const Product = {
   DRES_LANTERN_STATIONARY: "dres lantern, stationary",
   DRES_POT_SAUCE: "dres pot, sauce",
   DWARVEN_AMPHORA_ORNATE_POLISHED: "dwarven amphora, ornate polished",
+  DWARVEN_AMPHORA_SEALED: "dwarven amphora, sealed",
   DWARVEN_CANNISTER_SEALED: "dwarven cannister, sealed",
   ELSWEYR_CARPET_GOLD_EMERALD: "elsweyr carpet, gold-emerald",
   ELSWEYR_CARPET_GOLD_RUBY: "elsweyr carpet, gold-ruby",
@@ -80,6 +83,7 @@ const Product = {
   KHAJIIT_RUG_MOONS: "khajiit rug, moons",
   KHAJIIT_RUG_SUN: "khajiit rug, sun",
   LAVA_FOOT_SOUP_AND_SALTRICE: "lava foot soup-and-saltrice",
+  NORD_AMPHORA_GLAZED: "nord amphora, glazed",
   NORD_CANDLEHOLDER_CUP: "nord candleholder, cup",
   NORD_DRESSER_ROUGH: "nord dresser, rough",
   NORD_LANTERN_CAGE: "nord lantern, cage",
@@ -99,6 +103,7 @@ const Product = {
   ORCISH_TABLE_BLOCK: "orcish table, block",
   ORCISH_TRUNK_BRACED: "orcish trunk, braced",
   ORCISH_VESSEL_SEALED_CERAMIC: "orcish vessel, sealed ceramic",
+  REDGUARD_AMPHORA_POLISHED: "redguard amphora, polished",
   REDGUARD_ARMCHAIR_CUSHIONED: "redguard armchair, cushioned",
   REDGUARD_ARMCHAIR_STARRY: "redguard armchair, starry",
   REDGUARD_BAR_LONG_CABINET: "redguard bar, long cabinet",
@@ -170,6 +175,16 @@ Product.properties = {
     productTypeKey: ProductType.FURNISHING,
     qualityKey: Quality.FINE,
     key: "alinor amphora, delicate",
+  },
+  "alinor amphora, embossed": {
+    name: "Alinor Amphora, Embossed",
+    qualityKey: Quality.SUPERIOR,
+    key: "alinor amphora, embossed",
+  },
+  "alinor amphora, portrait": {
+    name: "Alinor Amphora, Portrait",
+    qualityKey: Quality.SUPERIOR,
+    key: "alinor amphora, portrait",
   },
   "alinor amphora, slender": {
     name: "Alinor Amphora, Slender",
@@ -411,6 +426,11 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "dwarven amphora, ornate polished",
   },
+  "dwarven amphora, sealed": {
+    name: "Dwarven Amphora, Sealed",
+    qualityKey: Quality.SUPERIOR,
+    key: "dwarven amphora, sealed",
+  },
   "dwarven cannister, sealed": {
     name: "Dwarven Cannister, Sealed",
     qualityKey: Quality.FINE,
@@ -557,6 +577,11 @@ Product.properties = {
     qualityKey: Quality.SUPERIOR,
     key: "lava foot soup-and-saltrice",
   },
+  "nord amphora, glazed": {
+    name: "Nord Amphora, Glazed",
+    qualityKey: Quality.SUPERIOR,
+    key: "nord amphora, glazed",
+  },
   "nord candleholder, cup": {
     name: "Nord Candleholder, Cup",
     qualityKey: Quality.FINE,
@@ -651,6 +676,11 @@ Product.properties = {
     name: "Orcish Vessel, Sealed Ceramic",
     qualityKey: Quality.SUPERIOR,
     key: "orcish vessel, sealed ceramic",
+  },
+  "redguard amphora, polished": {
+    name: "Redguard Amphora, Polished",
+    qualityKey: Quality.SUPERIOR,
+    key: "redguard amphora, polished",
   },
   "redguard armchair, cushioned": {
     name: "Redguard Armchair, Cushioned",
