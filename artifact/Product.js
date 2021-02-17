@@ -14,6 +14,7 @@ const Product = {
   ARGONIAN_TOTEM_OF_SKULLS: "argonian totem of skulls",
   ASHLANDER_PLATTER_CERAMIC: "ashlander platter, ceramic",
   BRETON_AMPHORA_CERAMIC: "breton amphora, ceramic",
+  BRETON_AMPHORA_GLAZED: "breton amphora, glazed",
   BRETON_BED_BUNK: "breton bed, bunk",
   BRETON_CARPET_GREEN: "breton carpet, green",
   BRETON_CHAIR_SLATTED: "breton chair, slatted",
@@ -27,6 +28,7 @@ const Product = {
   BRETON_TABLE_DINING: "breton table, dining",
   BRETON_TABLE_KITCHEN: "breton table, kitchen",
   BRETON_VASE_CERAMIC: "breton vase, ceramic",
+  BRETON_VASE_DELICATE: "breton vase, delicate",
   COMMON_BARREL_SEALED: "common barrel, sealed",
   COMMON_BASKET_OPEN: "common basket, open",
   COMMON_BASKET_TALL: "common basket, tall",
@@ -65,11 +67,13 @@ const Product = {
   HIGH_ELF_BED_SINGLE: "high elf bed, single",
   HIGH_ELF_CANDLEHOLDER_STURDY: "high elf candleholder, sturdy",
   HIGH_ELF_PLATE_DINNER: "high elf plate, dinner",
+  HIGH_ELF_VASE_WINGED: "high elf vase, winged",
   HLAALU_AMPHORA_SEALED_ORICHALCUM: "hlaalu amphora, sealed orichalcum",
   HLAALU_BED_SINGLE: "hlaalu bed, single",
   HLAALU_HANGER_MOUNTED: "hlaalu hanger, mounted",
   HLAALU_RACK_BARREL: "hlaalu rack, barrel",
   HLAALU_STOOL_POLISHED: "hlaalu stool, polished",
+  HLAALU_VASE_GILDED: "hlaalu vase, gilded",
   INDORIL_SHELF_BLOCK: "indoril shelf, block",
   INDORIL_STREETLIGHT_FULL_STONE: "indoril streetlight, full stone",
   INDORIL_STREETLIGHT_STONE: "indoril streetlight, stone",
@@ -231,6 +235,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "breton amphora, ceramic",
   },
+  "breton amphora, glazed": {
+    name: "Breton Amphora, Glazed",
+    qualityKey: Quality.SUPERIOR,
+    key: "breton amphora, glazed",
+  },
   "breton bed, bunk": {
     name: "Breton Bed, Bunk",
     qualityKey: Quality.FINE,
@@ -295,6 +304,11 @@ Product.properties = {
     name: "Breton Vase, Ceramic",
     qualityKey: Quality.FINE,
     key: "breton vase, ceramic",
+  },
+  "breton vase, delicate": {
+    name: "Breton Vase, Delicate",
+    qualityKey: Quality.EPIC,
+    key: "breton vase, delicate",
   },
   "common barrel, sealed": {
     name: "Common Barrel, Sealed",
@@ -486,6 +500,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "high elf plate, dinner",
   },
+  "high elf vase, winged": {
+    name: "High Elf Vase, Winged",
+    qualityKey: Quality.EPIC,
+    key: "high elf vase, winged",
+  },
   "hlaalu amphora, sealed orichalcum": {
     name: "Hlaalu Amphora, Sealed Orichalcum",
     qualityKey: Quality.EPIC,
@@ -510,6 +529,11 @@ Product.properties = {
     name: "Hlaalu Stool, Polished",
     qualityKey: Quality.FINE,
     key: "hlaalu stool, polished",
+  },
+  "hlaalu vase, gilded": {
+    name: "Hlaalu Vase, Gilded",
+    qualityKey: Quality.EPIC,
+    key: "hlaalu vase, gilded",
   },
   "indoril shelf, block": {
     name: "Indoril Shelf, Block",

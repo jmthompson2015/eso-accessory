@@ -73,6 +73,7 @@ const Recipe = {
   DESIGN_ALINOR_AMPHORA_SLENDER: "design: alinor amphora, slender",
   DESIGN_ARGONIAN_TOTEM_OF_SKULLS: "design: argonian totem of skulls",
   DESIGN_ASHLANDER_PLATTER_CERAMIC: "design: ashlander platter, ceramic",
+  DESIGN_BRETON_AMPHORA_GLAZED: "design: breton amphora, glazed",
   DESIGN_BRETON_VASE_CERAMIC: "design: breton vase, ceramic",
   DESIGN_COMMON_BOWL_OF_SOUP_DISPLAY: "design: common bowl of soup, display",
   DESIGN_COMMON_BOWL_OF_STEW_DISPLAY: "design: common bowl of stew, display",
@@ -122,6 +123,7 @@ const Recipe = {
 
   FORMULA_DARK_ELF_LANTERN_OIL: "formula: dark elf lantern, oil",
   FORMULA_DRES_LANTERN_STATIONARY: "formula: dres lantern, stationary",
+  FORMULA_HIGH_ELF_VASE_WINGED: "formula: high elf vase, winged",
   FORMULA_INDORIL_SHELF_BLOCK: "formula: indoril shelf, block",
   FORMULA_INDORIL_STREETLIGHT_FULL_STONE:
     "formula: indoril streetlight, full stone",
@@ -180,11 +182,13 @@ const Recipe = {
   PATTERN_WOOD_ELF_TABLE_LEATHER: "pattern: wood elf table, leather",
 
   PRAXIS_BRETON_AMPHORA_CERAMIC: "praxis: breton amphora, ceramic",
+  PRAXIS_BRETON_VASE_DELICATE: "praxis: breton vase, delicate",
   PRAXIS_DWARVEN_AMPHORA_SEALED: "praxis: dwarven amphora, sealed",
   PRAXIS_ELSWEYR_POT_WAVES: "praxis: elsweyr pot, waves",
   PRAXIS_HAGRAVEN_CAULDRON_RITUAL: "praxis: hagraven cauldron, ritual",
   PRAXIS_HLAALU_AMPHORA_SEALED_ORICHALCUM:
     "praxis: hlaalu amphora, sealed orichalcum",
+  PRAXIS_HLAALU_VASE_GILDED: "praxis: hlaalu vase, gilded",
   PRAXIS_ORCISH_BEDDING_STONE: "praxis: orcish bedding, stone",
   PRAXIS_ORCISH_BRAZIER_SMOLDERING: "praxis: orcish brazier, smoldering",
   PRAXIS_REDORAN_AMPHORA_SEALED_MARBLE:
@@ -1006,6 +1010,22 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "design: ashlander platter, ceramic",
   },
+  "design: breton amphora, glazed": {
+    name: "Design: Breton Amphora, Glazed",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 7),
+      resourceIngredient(Resource.REGULUS, 5),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 5),
+      resourceIngredient(Resource.MOLYBDENUM, 10),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.BRETON_AMPHORA_GLAZED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12779&ItemNamePattern=Design%3A+Breton+Amphora%2C+Glazed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: breton amphora, glazed",
+  },
   "design: breton vase, ceramic": {
     name: "Design: Breton Vase, Ceramic",
     categoryKey: Category.PARLOR,
@@ -1633,6 +1653,21 @@ Recipe.properties = {
     output: productIngredient(Product.DRES_LANTERN_STATIONARY),
     ownerKey: Character.FRAK_LOCK,
     key: "formula: dres lantern, stationary",
+  },
+  "formula: high elf vase, winged": {
+    name: "Formula: High Elf Vase, Winged",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 11),
+      resourceIngredient(Resource.REGULUS, 7),
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.ADAMANTITE, 15),
+    ],
+    output: productIngredient(Product.HIGH_ELF_VASE_WINGED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14254&ItemNamePattern=Formula%3A+High+Elf+Vase%2C+Winged&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "formula: high elf vase, winged",
   },
   "formula: indoril shelf, block": {
     name: "Formula: Indoril Shelf, Block",
@@ -2359,6 +2394,22 @@ Recipe.properties = {
     ownerKey: Character.KALED_LOCK,
     key: "praxis: breton amphora, ceramic",
   },
+  "praxis: breton vase, delicate": {
+    name: "Praxis: Breton Vase, Delicate",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.ENCHANTING,
+    inputs: [
+      resourceIngredient(Resource.MUNDANE_RUNE, 12),
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 8),
+      resourceIngredient(Resource.MOLYBDENUM, 15),
+      resourceIngredient(Resource.REKUTA, 3),
+    ],
+    output: productIngredient(Product.BRETON_VASE_DELICATE),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14261&ItemNamePattern=Praxis%3A+Breton+Vase%2C+Delicate&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "praxis: breton vase, delicate",
+  },
   "praxis: dwarven amphora, sealed": {
     name: "Praxis: Dwarven Amphora, Sealed",
     categoryKey: Category.HEARTH,
@@ -2418,6 +2469,22 @@ Recipe.properties = {
     ttcUrl:
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=16356&ItemNamePattern=Praxis%3A+Hlaalu+Amphora%2C+Sealed+Orichalcum&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "praxis: hlaalu amphora, sealed orichalcum",
+  },
+  "praxis: hlaalu vase, gilded": {
+    name: "Praxis: Hlaalu Vase, Gilded",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.ENCHANTING,
+    inputs: [
+      resourceIngredient(Resource.MUNDANE_RUNE, 11),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 7),
+      resourceIngredient(Resource.DECORATIVE_WAX, 8),
+      resourceIngredient(Resource.OBSIDIAN, 14),
+      resourceIngredient(Resource.REKUTA, 3),
+    ],
+    output: productIngredient(Product.HLAALU_VASE_GILDED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=15643&ItemNamePattern=Praxis%3A+Hlaalu+Vase%2C+Gilded&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "praxis: hlaalu vase, gilded",
   },
   "praxis: orcish bedding, stone": {
     name: "Praxis: Orcish Bedding, Stone",
