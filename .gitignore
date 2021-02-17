@@ -1,5 +1,8 @@
 node_modules/
 api/ItemLookUpTable.json
 api/PriceTable.json
+api/product-input.txt
+api/Product.js
+api/Recipe.js
 artifact/ItemLookUpTable.js
 artifact/PriceTable.js
