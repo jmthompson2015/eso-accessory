@@ -21,6 +21,7 @@ const Recipe = {
   BLUEPRINT_BRETON_STREET_POST_STONE: "blueprint: breton street post, stone",
   BLUEPRINT_BRETON_TABLE_DINING: "blueprint: breton table, dining",
   BLUEPRINT_BRETON_TABLE_KITCHEN: "blueprint: breton table, kitchen",
+  BLUEPRINT_COMMON_BARREL_SEALED: "blueprint: common barrel, sealed",
   BLUEPRINT_COMMON_BUCKET_ROPE: "blueprint: common bucket, rope",
   BLUEPRINT_COMMON_CARGO_COVERED: "blueprint: common cargo, covered",
   BLUEPRINT_COMMON_CARGO_SEALED: "blueprint: common cargo, sealed",
@@ -35,6 +36,7 @@ const Recipe = {
   BLUEPRINT_HLAALU_STOOL_POLISHED: "blueprint: hlaalu stool, polished",
   BLUEPRINT_KHAJIIT_END_TABLE_FADED: "blueprint: khajiit end table, faded",
   BLUEPRINT_KHAJIIT_FRAME_ARCHED: "blueprint: khajiit frame, arched",
+  BLUEPRINT_NORD_DRESSER_ROUGH: "blueprint: nord dresser, rough",
   BLUEPRINT_ORCISH_COUNTER_BLOCK: "blueprint: orcish counter, block",
   BLUEPRINT_ORCISH_COUNTER_ISLAND_STALL:
     "blueprint: orcish counter, island stall",
@@ -97,8 +99,11 @@ const Recipe = {
   DIAGRAM_DARK_ELF_CAULDRON_BANDED: "diagram: dark elf cauldron, banded",
   DIAGRAM_DRES_POT_SAUCE: "diagram: dres pot, sauce",
   DIAGRAM_DWARVEN_CANNISTER_SEALED: "diagram: dwarven cannister, sealed",
+  DIAGRAM_HIGH_ELF_CANDLEHOLDER_STURDY:
+    "diagram: high elf candleholder, sturdy",
   DIAGRAM_HIGH_ELF_PLATE_DINNER: "diagram: high elf plate, dinner",
   DIAGRAM_NORD_CANDLEHOLDER_CUP: "diagram: nord candleholder, cup",
+  DIAGRAM_NORD_LANTERN_CAGE: "diagram: nord lantern, cage",
   DIAGRAM_ORCISH_CHANDELIER_PRACTICAL: "diagram: orcish chandelier, practical",
   DIAGRAM_ORCISH_LANTERN_HOODED: "diagram: orcish lantern, hooded",
   DIAGRAM_ORCISH_MUG_RUGGED: "diagram: orcish mug, rugged",
@@ -120,6 +125,7 @@ const Recipe = {
   PATTERN_ARGONIAN_TARP_WOVEN: "pattern: argonian tarp, woven",
   PATTERN_BRETON_BED_BUNK: "pattern: breton bed, bunk",
   PATTERN_BRETON_CARPET_GREEN: "pattern: breton carpet, green",
+  PATTERN_COMMON_BASKET_OPEN: "pattern: common basket, open",
   PATTERN_COMMON_BASKET_TALL: "pattern: common basket, tall",
   PATTERN_DARK_ELF_CARPET_PATTERNED: "pattern: dark elf carpet, patterned",
   PATTERN_DRES_CARPET_CHAINS: "pattern: dres carpet, chains",
@@ -175,6 +181,8 @@ const Recipe = {
 
   RECIPE_LAVA_FOOT_SOUP_AND_SALTRICE: "recipe: lava foot soup-and-saltrice",
   RECIPE_WITCHMOTHERS_POTENT_BREW: "recipe: witchmother's potent brew",
+
+  // ///////////////////////////////////////////////////////////////////////////
 };
 
 Recipe.properties = {
@@ -315,6 +323,19 @@ Recipe.properties = {
     output: productIngredient(Product.BRETON_TABLE_KITCHEN),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: breton table, kitchen",
+  },
+  "blueprint: common barrel, sealed": {
+    name: "Blueprint: Common Barrel, Sealed",
+    categoryKey: Category.WORKSHOP,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 5),
+      resourceIngredient(Resource.NICKEL, 5),
+      resourceIngredient(Resource.PITCH, 9),
+    ],
+    output: productIngredient(Product.COMMON_BARREL_SEALED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: common barrel, sealed",
   },
   "blueprint: common bucket, rope": {
     name: "Blueprint: Common Bucket, Rope",
@@ -500,6 +521,20 @@ Recipe.properties = {
     output: productIngredient(Product.KHAJIIT_FRAME_ARCHED),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: khajiit frame, arched",
+  },
+  "blueprint: nord dresser, rough": {
+    name: "Blueprint: Nord Dresser, Rough",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 6),
+      resourceIngredient(Resource.REGULUS, 3),
+      resourceIngredient(Resource.CORUNDUM, 5),
+      resourceIngredient(Resource.PITCH, 9),
+    ],
+    output: productIngredient(Product.NORD_DRESSER_ROUGH),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: nord dresser, rough",
   },
   "blueprint: orcish counter, block": {
     name: "Blueprint: Orcish Counter, Block",
@@ -1305,6 +1340,19 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "diagram: dwarven cannister, sealed",
   },
+  "diagram: high elf candleholder, sturdy": {
+    name: "Diagram: High Elf Candleholder, Sturdy",
+    categoryKey: Category.LIGHTING,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 4),
+      resourceIngredient(Resource.ADAMANTITE, 5),
+      resourceIngredient(Resource.HONING_STONE, 9),
+    ],
+    output: productIngredient(Product.HIGH_ELF_CANDLEHOLDER_STURDY),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: high elf candleholder, sturdy",
+  },
   "diagram: high elf plate, dinner": {
     name: "Diagram: High Elf Plate, Dinner",
     categoryKey: Category.HEARTH,
@@ -1332,6 +1380,20 @@ Recipe.properties = {
     output: productIngredient(Product.NORD_CANDLEHOLDER_CUP),
     ownerKey: Character.FRAK_LOCK,
     key: "diagram: nord candleholder, cup",
+  },
+  "diagram: nord lantern, cage": {
+    name: "Diagram: Nord Lantern, Cage",
+    categoryKey: Category.LIGHTING,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.DECORATIVE_WAX, 3),
+      resourceIngredient(Resource.CORUNDUM, 5),
+      resourceIngredient(Resource.HONING_STONE, 9),
+    ],
+    output: productIngredient(Product.NORD_LANTERN_CAGE),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: nord lantern, cage",
   },
   "diagram: orcish chandelier, practical": {
     name: "Diagram: Orcish Chandelier, Practical",
@@ -1572,6 +1634,19 @@ Recipe.properties = {
     output: productIngredient(Product.BRETON_CARPET_GREEN),
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: breton carpet, green",
+  },
+  "pattern: common basket, open": {
+    name: "Pattern: Common Basket, Open",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 3),
+      resourceIngredient(Resource.NICKEL, 5),
+      resourceIngredient(Resource.HEMMING, 9),
+    ],
+    output: productIngredient(Product.COMMON_BASKET_OPEN),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: common basket, open",
   },
   "pattern: common basket, tall": {
     name: "Pattern: Common Basket, Tall",
@@ -2279,6 +2354,7 @@ Recipe.properties = {
       "http://teso-guides.com/the-elder-scrolls-online-special-recipes-witchmothers-potent-brew",
     key: "recipe: witchmother's potent brew",
   },
+  // ///////////////////////////////////////////////////////////////////////////
 };
 
 Recipe.keys = () => Object.keys(Recipe.properties);

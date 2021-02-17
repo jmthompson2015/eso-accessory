@@ -24,6 +24,8 @@ const Product = {
   BRETON_TABLE_DINING: "breton table, dining",
   BRETON_TABLE_KITCHEN: "breton table, kitchen",
   BRETON_VASE_CERAMIC: "breton vase, ceramic",
+  COMMON_BARREL_SEALED: "common barrel, sealed",
+  COMMON_BASKET_OPEN: "common basket, open",
   COMMON_BASKET_TALL: "common basket, tall",
   COMMON_BOWL_OF_SOUP_DISPLAY: "common bowl of soup, display",
   COMMON_BOWL_OF_STEW_DISPLAY: "common bowl of stew, display",
@@ -56,6 +58,7 @@ const Product = {
   HAGRAVEN_CAULDRON_RITUAL: "hagraven cauldron, ritual",
   HIGH_ELF_BED_BUNK: "high elf bed, bunk",
   HIGH_ELF_BED_SINGLE: "high elf bed, single",
+  HIGH_ELF_CANDLEHOLDER_STURDY: "high elf candleholder, sturdy",
   HIGH_ELF_PLATE_DINNER: "high elf plate, dinner",
   HLAALU_BED_SINGLE: "hlaalu bed, single",
   HLAALU_HANGER_MOUNTED: "hlaalu hanger, mounted",
@@ -75,6 +78,8 @@ const Product = {
   KHAJIIT_RUG_SUN: "khajiit rug, sun",
   LAVA_FOOT_SOUP_AND_SALTRICE: "lava foot soup-and-saltrice",
   NORD_CANDLEHOLDER_CUP: "nord candleholder, cup",
+  NORD_DRESSER_ROUGH: "nord dresser, rough",
+  NORD_LANTERN_CAGE: "nord lantern, cage",
   NORD_POT_STEW: "nord pot, stew",
   ORCISH_BANNER_WORN: "orcish banner, worn",
   ORCISH_BEDDING_FUR: "orcish bedding, fur",
@@ -115,7 +120,6 @@ const Product = {
   REDGUARD_MAT_SUNSET: "redguard mat, sunset",
   REDGUARD_POT_CAPPED: "redguard pot, capped",
   REDGUARD_POT_SEALED: "redguard pot, sealed",
-  // REDGUARD_ROUND_TABLE: "redguard round table",
   REDGUARD_RUNNER_SUN: "redguard runner, sun",
   REDGUARD_STREETLAMP_SINGLE: "redguard streetlamp, single",
   REDGUARD_TABLE_FORMAL: "redguard table, formal",
@@ -153,6 +157,7 @@ const Product = {
   WOOD_ELF_PITCHER_PAINTED: "wood elf pitcher, painted",
   WOOD_ELF_STOOL_LEATHER: "wood elf stool, leather",
   WOOD_ELF_TABLE_LEATHER: "wood elf table, leather",
+  // ///////////////////////////////////////////////////////////////////////////
 };
 
 Product.properties = {
@@ -266,6 +271,16 @@ Product.properties = {
     name: "Breton Vase, Ceramic",
     qualityKey: Quality.FINE,
     key: "breton vase, ceramic",
+  },
+  "common barrel, sealed": {
+    name: "Common Barrel, Sealed",
+    qualityKey: Quality.FINE,
+    key: "common barrel, sealed",
+  },
+  "common basket, open": {
+    name: "Common Basket, Open",
+    qualityKey: Quality.FINE,
+    key: "common basket, open",
   },
   "common basket, tall": {
     name: "Common Basket, Tall",
@@ -427,6 +442,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "high elf bed, single",
   },
+  "high elf candleholder, sturdy": {
+    name: "High Elf Candleholder, Sturdy",
+    qualityKey: Quality.FINE,
+    key: "high elf candleholder, sturdy",
+  },
   "high elf plate, dinner": {
     name: "High Elf Plate, Dinner",
     qualityKey: Quality.FINE,
@@ -522,6 +542,16 @@ Product.properties = {
     name: "Nord Candleholder, Cup",
     qualityKey: Quality.FINE,
     key: "nord candleholder, cup",
+  },
+  "nord dresser, rough": {
+    name: "Nord Dresser, Rough",
+    qualityKey: Quality.FINE,
+    key: "nord dresser, rough",
+  },
+  "nord lantern, cage": {
+    name: "Nord Lantern, Cage",
+    qualityKey: Quality.FINE,
+    key: "nord lantern, cage",
   },
   "nord pot, stew": {
     name: "Nord Pot, Stew",
@@ -914,6 +944,7 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "wood elf table, leather",
   },
+  // ///////////////////////////////////////////////////////////////////////////
 };
 
 Product.keys = () => Object.keys(Product.properties);
@@ -924,6 +955,7 @@ Product.values = () => Object.values(Product.properties);
 // Add URLs.
 const PRODUCT_TYPE_KEY = ProductType.FURNISHING;
 const URL_PREFIX = "https://eso.mmo-fashion.com/";
+// const URL_PREFIX = "https://eso-housing.com/furniture/";
 const forEachFunction = (product) => {
   const { name, productTypeKey, url } = product;
 

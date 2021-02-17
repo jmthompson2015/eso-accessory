@@ -33,7 +33,7 @@ const createRecipeString = (recipeKey, recipeName, productEnum) => {
   let answer = `"${recipeKey}": {\n`;
   answer += `name: "${recipeName}",\n`;
   answer += `inputs: [],\n`;
-  answer += `output: Product.${productEnum},\n`;
+  answer += `output: productIngredient(Product.${productEnum}),\n`;
   answer += `key: "${recipeKey}",\n`;
   answer += `},\n`;
 
