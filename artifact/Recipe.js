@@ -198,6 +198,11 @@ const Recipe = {
   RECIPE_LAVA_FOOT_SOUP_AND_SALTRICE: "recipe: lava foot soup-and-saltrice",
   RECIPE_WITCHMOTHERS_POTENT_BREW: "recipe: witchmother's potent brew",
   // ///////////////////////////////////////////////////////////////////////////
+  DESIGN_SOLITUDE_VASE_LARGE_SEALED: "design: solitude vase, large sealed",
+  DESIGN_WOOD_ELF_VASE_CHIPPED: "design: wood elf vase, chipped",
+  DESIGN_WOOD_ELF_VASE_PAINTED: "design: wood elf vase, painted",
+  DIAGRAM_DWARVEN_VASE_FORGED: "diagram: dwarven vase, forged",
+  PRAXIS_REDGUARD_VASE_BAROQUE: "praxis: redguard vase, baroque",
 };
 
 Recipe.properties = {
@@ -1278,6 +1283,22 @@ Recipe.properties = {
     ownerKey: Character.KALED_LOCK,
     key: "design: rough bag, burlap",
   },
+  "design: solitude vase, large sealed": {
+    name: "Design: Solitude Vase, Large Sealed",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 7),
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.CORUNDUM, 10),
+      resourceIngredient(Resource.FLOUR, 20),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.SOLITUDE_VASE_LARGE_SEALED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=21615&ItemNamePattern=Design%3A+Solitude+Vase%2C+Large+Sealed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: solitude vase, large sealed",
+  },
   "design: sugar pumpkin, wax": {
     name: "Design: Sugar Pumpkin, Wax",
     categoryKey: Category.HEARTH,
@@ -1350,6 +1371,38 @@ Recipe.properties = {
     output: productIngredient(Product.WOOD_ELF_PITCHER_PAINTED),
     ownerKey: Character.FRAK_LOCK,
     key: "design: wood elf pitcher, painted",
+  },
+  "design: wood elf vase, chipped": {
+    name: "Design: Wood Elf Vase, Chipped",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 9),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.BONE, 10),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.WOOD_ELF_VASE_CHIPPED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12251&ItemNamePattern=Design%3A+Wood+Elf+Vase%2C+Chipped&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: wood elf vase, chipped",
+  },
+  "design: wood elf vase, painted": {
+    name: "Design: Wood Elf Vase, Painted",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 9),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.BONE, 10),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.WOOD_ELF_VASE_PAINTED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Wood+Elf+Vase%2C+Painted&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: wood elf vase, painted",
   },
   // ///////////////////////////////////////////////////////////////////////////
   // Diagram
@@ -1465,6 +1518,21 @@ Recipe.properties = {
     output: productIngredient(Product.DWARVEN_CANNISTER_SEALED),
     ownerKey: Character.FRAK_LOCK,
     key: "diagram: dwarven cannister, sealed",
+  },
+  "diagram: dwarven vase, forged": {
+    name: "Diagram: Dwarven Vase, Forged",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.DECORATIVE_WAX, 5),
+      resourceIngredient(Resource.DWEMER_FRAME, 10),
+      resourceIngredient(Resource.DWARVEN_OIL, 6),
+    ],
+    output: productIngredient(Product.DWARVEN_VASE_FORGED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Diagram%3A+Dwarven+Vase%2C+Forged&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "diagram: dwarven vase, forged",
   },
   "diagram: high elf candleholder, sturdy": {
     name: "Diagram: High Elf Candleholder, Sturdy",
@@ -2514,6 +2582,22 @@ Recipe.properties = {
     output: productIngredient(Product.ORCISH_BRAZIER_SMOLDERING),
     ownerKey: Character.FRAK_LOCK,
     key: "praxis: orcish brazier, smoldering",
+  },
+  "praxis: redguard vase, baroque": {
+    name: "Praxis: Redguard Vase, Baroque",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.ENCHANTING,
+    inputs: [
+      resourceIngredient(Resource.MUNDANE_RUNE, 13),
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 9),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.REKUTA, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_VASE_BAROQUE),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Praxis%3A+Redguard+Vase%2C+Baroque&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "praxis: redguard vase, baroque",
   },
   "praxis: redoran amphora, sealed marble": {
     name: "Praxis: Redoran Amphora, Sealed Marble",

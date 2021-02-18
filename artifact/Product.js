@@ -57,6 +57,7 @@ const Product = {
   DWARVEN_AMPHORA_ORNATE_POLISHED: "dwarven amphora, ornate polished",
   DWARVEN_AMPHORA_SEALED: "dwarven amphora, sealed",
   DWARVEN_CANNISTER_SEALED: "dwarven cannister, sealed",
+  DWARVEN_VASE_FORGED: "dwarven vase, forged",
   ELSWEYR_CARPET_GOLD_EMERALD: "elsweyr carpet, gold-emerald",
   ELSWEYR_CARPET_GOLD_RUBY: "elsweyr carpet, gold-ruby",
   ELSWEYR_POT_WAVES: "elsweyr pot, waves",
@@ -138,6 +139,7 @@ const Product = {
   REDGUARD_TABLE_GAME: "redguard table, game",
   REDGUARD_TABLE_GRAND_INLAID: "redguard table, grand inlaid",
   REDGUARD_TAPESTRY_LATTICE: "redguard tapestry, lattice",
+  REDGUARD_VASE_BAROQUE: "redguard vase, baroque",
   REDGUARD_WAGON_MERCHANT: "redguard wagon, merchant",
   REDORAN_CARPET_VOLCANIC_SANDS: "redoran carpet, volcanic sands",
   REDORAN_AMPHORA_SEALED_MARBLE: "redoran amphora, sealed marble",
@@ -155,6 +157,7 @@ const Product = {
   ROUGH_PLATFORM_STAGE: "rough platform, stage",
   ROUGH_STRETCHER_MILITARY: "rough stretcher, military",
   SIMPLE_BLUE_BANNER: "simple blue banner",
+  SOLITUDE_VASE_LARGE_SEALED: "solitude vase, large sealed",
   STOOL_CARVED: "stool, carved",
   SUGAR_PUMPKIN_WAX: "sugar pumpkin, wax",
   WINTER_SQUASH_DISPLAY: "winter squash, display",
@@ -170,6 +173,8 @@ const Product = {
   WOOD_ELF_PITCHER_PAINTED: "wood elf pitcher, painted",
   WOOD_ELF_STOOL_LEATHER: "wood elf stool, leather",
   WOOD_ELF_TABLE_LEATHER: "wood elf table, leather",
+  WOOD_ELF_VASE_CHIPPED: "wood elf vase, chipped",
+  WOOD_ELF_VASE_PAINTED: "wood elf vase, painted",
   // ///////////////////////////////////////////////////////////////////////////
 };
 
@@ -449,6 +454,11 @@ Product.properties = {
     name: "Dwarven Cannister, Sealed",
     qualityKey: Quality.FINE,
     key: "dwarven cannister, sealed",
+  },
+  "dwarven vase, forged": {
+    name: "Dwarven Vase, Forged",
+    qualityKey: Quality.SUPERIOR,
+    key: "dwarven vase, forged",
   },
   "elsweyr carpet, gold-emerald": {
     name: "Elsweyr Carpet, Gold-Emerald",
@@ -856,6 +866,11 @@ Product.properties = {
     qualityKey: Quality.SUPERIOR,
     key: "redguard tapestry, lattice",
   },
+  "redguard vase, baroque": {
+    name: "Redguard Vase, Baroque",
+    qualityKey: Quality.EPIC,
+    key: "redguard vase, baroque",
+  },
   "redguard wagon, merchant": {
     name: "Redguard Wagon, Merchant",
     qualityKey: Quality.FINE,
@@ -941,6 +956,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "simple blue banner",
   },
+  "solitude vase, large sealed": {
+    name: "Solitude Vase, Large Sealed",
+    qualityKey: Quality.SUPERIOR,
+    key: "solitude vase, large sealed",
+  },
   "stool, carved": {
     name: "Stool, Carved",
     qualityKey: Quality.FINE,
@@ -1016,6 +1036,16 @@ Product.properties = {
     name: "Wood Elf Table, Leather",
     qualityKey: Quality.FINE,
     key: "wood elf table, leather",
+  },
+  "wood elf vase, chipped": {
+    name: "Wood Elf Vase, Chipped",
+    qualityKey: Quality.SUPERIOR,
+    key: "wood elf vase, chipped",
+  },
+  "wood elf vase, painted": {
+    name: "Wood Elf Vase, Painted",
+    qualityKey: Quality.SUPERIOR,
+    key: "wood elf vase, painted",
   },
   // ///////////////////////////////////////////////////////////////////////////
 };
