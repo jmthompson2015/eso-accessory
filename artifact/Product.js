@@ -29,6 +29,7 @@ const Product = {
   BRETON_TABLE_KITCHEN: "breton table, kitchen",
   BRETON_VASE_CERAMIC: "breton vase, ceramic",
   BRETON_VASE_DELICATE: "breton vase, delicate",
+  BRETON_VASE_GLAZED: "breton vase, glazed",
   COMMON_BARREL_SEALED: "common barrel, sealed",
   COMMON_BASKET_OPEN: "common basket, open",
   COMMON_BASKET_TALL: "common basket, tall",
@@ -58,9 +59,11 @@ const Product = {
   DWARVEN_AMPHORA_SEALED: "dwarven amphora, sealed",
   DWARVEN_CANNISTER_SEALED: "dwarven cannister, sealed",
   DWARVEN_VASE_FORGED: "dwarven vase, forged",
+  DWARVEN_VESSEL_SEALED: "dwarven vessel, sealed",
   ELSWEYR_CARPET_GOLD_EMERALD: "elsweyr carpet, gold-emerald",
   ELSWEYR_CARPET_GOLD_RUBY: "elsweyr carpet, gold-ruby",
   ELSWEYR_POT_WAVES: "elsweyr pot, waves",
+  ELSWEYR_VESSEL_UMBER_EMBELLISHED: "elsweyr vessel, umber embellished",
   FOOTSTOOL_BLOCK: "footstool, block",
   GRAPES_WAX: "grapes, wax",
   HAGRAVEN_CAULDRON_RITUAL: "hagraven cauldron, ritual",
@@ -68,6 +71,7 @@ const Product = {
   HIGH_ELF_BED_SINGLE: "high elf bed, single",
   HIGH_ELF_CANDLEHOLDER_STURDY: "high elf candleholder, sturdy",
   HIGH_ELF_PLATE_DINNER: "high elf plate, dinner",
+  HIGH_ELF_VASE_GILDED: "high elf vase, gilded",
   HIGH_ELF_VASE_WINGED: "high elf vase, winged",
   HLAALU_AMPHORA_SEALED_ORICHALCUM: "hlaalu amphora, sealed orichalcum",
   HLAALU_BED_SINGLE: "hlaalu bed, single",
@@ -315,6 +319,11 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "breton vase, delicate",
   },
+  "breton vase, glazed": {
+    name: "Breton Vase, Glazed",
+    qualityKey: Quality.SUPERIOR,
+    key: "breton vase, glazed",
+  },
   "common barrel, sealed": {
     name: "Common Barrel, Sealed",
     qualityKey: Quality.FINE,
@@ -460,6 +469,11 @@ Product.properties = {
     qualityKey: Quality.SUPERIOR,
     key: "dwarven vase, forged",
   },
+  "dwarven vessel, sealed": {
+    name: "Dwarven Vessel, Sealed",
+    qualityKey: Quality.SUPERIOR,
+    key: "dwarven vessel, sealed",
+  },
   "elsweyr carpet, gold-emerald": {
     name: "Elsweyr Carpet, Gold-Emerald",
     qualityKey: Quality.FINE,
@@ -474,6 +488,11 @@ Product.properties = {
     name: "Elsweyr Pot, Waves",
     qualityKey: Quality.FINE,
     key: "elsweyr pot, waves",
+  },
+  "elsweyr vessel, umber embellished": {
+    name: "Elsweyr Vessel, Umber Embellished",
+    qualityKey: Quality.SUPERIOR,
+    key: "elsweyr vessel, umber embellished",
   },
   "footstool, block": {
     name: "Footstool, Block",
@@ -509,6 +528,11 @@ Product.properties = {
     name: "High Elf Plate, Dinner",
     qualityKey: Quality.FINE,
     key: "high elf plate, dinner",
+  },
+  "high elf vase, gilded": {
+    name: "High Elf Vase, Gilded",
+    qualityKey: Quality.SUPERIOR,
+    key: "high elf vase, gilded",
   },
   "high elf vase, winged": {
     name: "High Elf Vase, Winged",

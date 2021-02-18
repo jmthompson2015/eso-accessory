@@ -1,6 +1,7 @@
 const ResourceType = {
   FURNISHING: "furnishing",
   GEM: "gem",
+  PLATING: "plating",
   PROVISION: "provision",
   REAGENT: "reagent",
   RESIN: "resin",
@@ -21,6 +22,11 @@ ResourceType.properties = {
     name: "Gem",
     url: "https://en.uesp.net/wiki/Online:Blacksmithing_Materials#Gems",
     key: "gem",
+  },
+  plating: {
+    name: "Plating",
+    url: "https://en.uesp.net/wiki/Online:Jewelry_Crafting#Platings",
+    key: "plating",
   },
   provision: {
     name: "Provision",

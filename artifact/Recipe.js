@@ -75,6 +75,7 @@ const Recipe = {
   DESIGN_ASHLANDER_PLATTER_CERAMIC: "design: ashlander platter, ceramic",
   DESIGN_BRETON_AMPHORA_GLAZED: "design: breton amphora, glazed",
   DESIGN_BRETON_VASE_CERAMIC: "design: breton vase, ceramic",
+  DESIGN_BRETON_VASE_GLAZED: "design: breton vase, glazed",
   DESIGN_COMMON_BOWL_OF_SOUP_DISPLAY: "design: common bowl of soup, display",
   DESIGN_COMMON_BOWL_OF_STEW_DISPLAY: "design: common bowl of stew, display",
   DESIGN_COMMON_CANDLE_LASTING: "design: common candle, lasting",
@@ -92,11 +93,14 @@ const Recipe = {
   DESIGN_REDGUARD_POT_CAPPED: "design: redguard pot, capped",
   DESIGN_REDGUARD_POT_SEALED: "design: redguard pot, sealed",
   DESIGN_ROUGH_BAG_BURLAP: "design: rough bag, burlap",
+  DESIGN_SOLITUDE_VASE_LARGE_SEALED: "design: solitude vase, large sealed",
   DESIGN_SUGAR_PUMPKIN_WAX: "design: sugar pumpkin, wax",
   DESIGN_WINTER_SQUASH_DISPLAY: "design: winter squash, display",
   DESIGN_WOOD_ELF_BONE_CHIMES: "design: wood elf bone chimes",
   DESIGN_WOOD_ELF_CUP_CERAMIC: "design: wood elf cup, ceramic",
   DESIGN_WOOD_ELF_PITCHER_PAINTED: "design: wood elf pitcher, painted",
+  DESIGN_WOOD_ELF_VASE_CHIPPED: "design: wood elf vase, chipped",
+  DESIGN_WOOD_ELF_VASE_PAINTED: "design: wood elf vase, painted",
 
   DIAGRAM_BRETON_SCONCE_TORCH: "diagram: breton sconce, torch",
   DIAGRAM_BRETON_STREETLIGHT_PAIRED: "diagram: breton streetlight, paired",
@@ -107,9 +111,12 @@ const Recipe = {
   DIAGRAM_DWARVEN_AMPHORA_ORNATE_POLISHED:
     "diagram: dwarven amphora, ornate polished",
   DIAGRAM_DWARVEN_CANNISTER_SEALED: "diagram: dwarven cannister, sealed",
+  DIAGRAM_DWARVEN_VASE_FORGED: "diagram: dwarven vase, forged",
+  DIAGRAM_DWARVEN_VESSEL_SEALED: "diagram: dwarven vessel, sealed",
   DIAGRAM_HIGH_ELF_CANDLEHOLDER_STURDY:
     "diagram: high elf candleholder, sturdy",
   DIAGRAM_HIGH_ELF_PLATE_DINNER: "diagram: high elf plate, dinner",
+  DIAGRAM_HIGH_ELF_VASE_GILDED: "diagram: high elf vase, gilded",
   DIAGRAM_NORD_CANDLEHOLDER_CUP: "diagram: nord candleholder, cup",
   DIAGRAM_NORD_LANTERN_CAGE: "diagram: nord lantern, cage",
   DIAGRAM_ORCISH_CHANDELIER_PRACTICAL: "diagram: orcish chandelier, practical",
@@ -191,18 +198,17 @@ const Recipe = {
   PRAXIS_HLAALU_VASE_GILDED: "praxis: hlaalu vase, gilded",
   PRAXIS_ORCISH_BEDDING_STONE: "praxis: orcish bedding, stone",
   PRAXIS_ORCISH_BRAZIER_SMOLDERING: "praxis: orcish brazier, smoldering",
+  PRAXIS_REDGUARD_VASE_BAROQUE: "praxis: redguard vase, baroque",
   PRAXIS_REDORAN_AMPHORA_SEALED_MARBLE:
     "praxis: redoran amphora, sealed marble",
   PRAXIS_WOOD_ELF_GRINDING_STONE: "praxis: wood elf grinding stone",
 
   RECIPE_LAVA_FOOT_SOUP_AND_SALTRICE: "recipe: lava foot soup-and-saltrice",
   RECIPE_WITCHMOTHERS_POTENT_BREW: "recipe: witchmother's potent brew",
+
+  SKETCH_ELSWEYR_VESSEL_UMBER_EMBELLISHED:
+    "sketch: elsweyr vessel, umber embellished",
   // ///////////////////////////////////////////////////////////////////////////
-  DESIGN_SOLITUDE_VASE_LARGE_SEALED: "design: solitude vase, large sealed",
-  DESIGN_WOOD_ELF_VASE_CHIPPED: "design: wood elf vase, chipped",
-  DESIGN_WOOD_ELF_VASE_PAINTED: "design: wood elf vase, painted",
-  DIAGRAM_DWARVEN_VASE_FORGED: "diagram: dwarven vase, forged",
-  PRAXIS_REDGUARD_VASE_BAROQUE: "praxis: redguard vase, baroque",
 };
 
 Recipe.properties = {
@@ -1045,6 +1051,22 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "design: breton vase, ceramic",
   },
+  "design: breton vase, glazed": {
+    name: "Design: Breton Vase, Glazed",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 7),
+      resourceIngredient(Resource.REGULUS, 5),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 5),
+      resourceIngredient(Resource.MOLYBDENUM, 10),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.BRETON_VASE_GLAZED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Breton+Vase%2C+Glazed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: breton vase, glazed",
+  },
   "design: common bowl of soup, display": {
     name: "Design: Common Bowl of Soup, Display",
     categoryKey: Category.HEARTH,
@@ -1534,6 +1556,21 @@ Recipe.properties = {
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Diagram%3A+Dwarven+Vase%2C+Forged&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "diagram: dwarven vase, forged",
   },
+  "diagram: dwarven vessel, sealed": {
+    name: "Diagram: Dwarven Vessel, Sealed",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 9),
+      resourceIngredient(Resource.DECORATIVE_WAX, 7),
+      resourceIngredient(Resource.DWEMER_FRAME, 12),
+      resourceIngredient(Resource.DWARVEN_OIL, 6),
+    ],
+    output: productIngredient(Product.DWARVEN_VESSEL_SEALED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Diagram%3A+Dwarven+Vessel%2C+Sealed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "diagram: dwarven vessel, sealed",
+  },
   "diagram: high elf candleholder, sturdy": {
     name: "Diagram: High Elf Candleholder, Sturdy",
     categoryKey: Category.LIGHTING,
@@ -1559,6 +1596,22 @@ Recipe.properties = {
     output: productIngredient(Product.HIGH_ELF_PLATE_DINNER),
     ownerKey: Character.FRAK_LOCK,
     key: "diagram: high elf plate, dinner",
+  },
+  "diagram: high elf vase, gilded": {
+    name: "Diagram: High Elf Vase, Gilded",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.MUNDANE_RUNE, 5),
+      resourceIngredient(Resource.DECORATIVE_WAX, 5),
+      resourceIngredient(Resource.ADAMANTITE, 10),
+      resourceIngredient(Resource.DWARVEN_OIL, 6),
+    ],
+    output: productIngredient(Product.HIGH_ELF_VASE_GILDED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Diagram%3A+High+Elf+Vase%2C+Gilded&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "diagram: high elf vase, gilded",
   },
   "diagram: nord candleholder, cup": {
     name: "Diagram: Nord Candleholder, Cup",
@@ -2658,6 +2711,23 @@ Recipe.properties = {
     url:
       "http://teso-guides.com/the-elder-scrolls-online-special-recipes-witchmothers-potent-brew",
     key: "recipe: witchmother's potent brew",
+  },
+  // ///////////////////////////////////////////////////////////////////////////
+  // Sketch
+  "sketch: elsweyr vessel, umber embellished": {
+    name: "Sketch: Elsweyr Vessel, Umber Embellished",
+    categoryKey: Category.GALLERY,
+    craftKey: Craft.JEWELRY,
+    inputs: [
+      resourceIngredient(Resource.OCHRE, 6),
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.SHIMMERING_SAND, 1),
+      resourceIngredient(Resource.IRIDIUM_PLATING, 2),
+    ],
+    output: productIngredient(Product.ELSWEYR_VESSEL_UMBER_EMBELLISHED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=20031&ItemNamePattern=Sketch%3A+Elsweyr+Vessel%2C+Umber+Embellished&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "sketch: elsweyr vessel, umber embellished",
   },
   // ///////////////////////////////////////////////////////////////////////////
 };

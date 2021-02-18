@@ -97,10 +97,10 @@ QUnit.test("keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 173;
+  const length = 177;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Recipe.BLUEPRINT_ARGONIAN_COUNTER_LONG);
-  assert.equal(R.last(result), Recipe.RECIPE_WITCHMOTHERS_POTENT_BREW);
+  assert.equal(R.last(result), Recipe.SKETCH_ELSWEYR_VESSEL_UMBER_EMBELLISHED);
 });
 
 QUnit.test("keys() alphabetized", (assert) => {

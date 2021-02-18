@@ -11,6 +11,7 @@ const Resource = {
   BERVEZ_JUICE: "bervez juice",
   BONE: "bone",
   BRONZE: "bronze",
+  CHROMIUM_PLATING: "chromium plating",
   CITRINE: "citrine",
   CLEAN_PELT: "clean pelt",
   CORUNDUM: "corundum",
@@ -29,6 +30,7 @@ const Resource = {
   HEARTWOOD: "heartwood",
   HEMMING: "hemming",
   HONING_STONE: "honing stone",
+  IRIDIUM_PLATING: "iridium plating",
   JAZBAY_GRAPES: "jazbay grapes",
   JEJOTA: "jejota",
   MANGANESE: "manganese",
@@ -56,7 +58,9 @@ const Resource = {
   SMALL_GAME: "small game",
   STARMETAL: "starmetal",
   TEMPERING_ALLOY: "tempering alloy",
+  TERNE_PLATING: "terne plating",
   TURPEN: "turpen",
+  ZIRCON_PLATING: "zircon plating",
 };
 
 Resource.properties = {
@@ -106,6 +110,12 @@ Resource.properties = {
     name: "Bronze",
     resourceTypeKey: ResourceType.STYLE,
     key: "bronze",
+  },
+  "chromium plating": {
+    name: "Chromium Plating",
+    qualityKey: Quality.LEGENDARY,
+    resourceTypeKey: ResourceType.PLATING,
+    key: "chromium plating",
   },
   citrine: {
     name: "Citrine",
@@ -206,6 +216,12 @@ Resource.properties = {
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.TEMPER,
     key: "honing stone",
+  },
+  "iridium plating": {
+    name: "Iridium Plating",
+    qualityKey: Quality.SUPERIOR,
+    resourceTypeKey: ResourceType.PLATING,
+    key: "iridium plating",
   },
   "jazbay grapes": {
     name: "Jazbay Grapes",
@@ -348,11 +364,23 @@ Resource.properties = {
     resourceTypeKey: ResourceType.TEMPER,
     key: "tempering alloy",
   },
+  "terne plating": {
+    name: "Terne Plating",
+    qualityKey: Quality.FINE,
+    resourceTypeKey: ResourceType.PLATING,
+    key: "terne plating",
+  },
   turpen: {
     name: "Turpen",
     qualityKey: Quality.SUPERIOR,
     resourceTypeKey: ResourceType.RESIN,
     key: "turpen",
+  },
+  "zircon plating": {
+    name: "Zircon Plating",
+    qualityKey: Quality.EPIC,
+    resourceTypeKey: ResourceType.PLATING,
+    key: "zircon plating",
   },
 };
 
