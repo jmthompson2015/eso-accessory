@@ -86,12 +86,15 @@ const Recipe = {
   DESIGN_DRES_CUP_EMPTY_MAZTE: "design: dres cup, empty mazte",
   DESIGN_GRAPES_WAX: "design: grapes, wax",
   DESIGN_KHAJIIT_FLASK_AMBER: "design: khajiit flask, amber",
+  DESIGN_KHAJIIT_VESSEL_AMBER: "design: khajiit vessel, amber",
   DESIGN_NORD_AMPHORA_GLAZED: "design: nord amphora, glazed",
   DESIGN_NORD_POT_STEW: "design: nord pot, stew",
+  DESIGN_NORD_VASE_BENT: "design: nord vase, bent",
   DESIGN_ORCHISH_VESSEL_SEALED_CERAMIC: "design: orcish vessel, sealed ceramic",
   DESIGN_REDGUARD_AMPHORA_POLISHED: "design: redguard amphora, polished",
   DESIGN_REDGUARD_POT_CAPPED: "design: redguard pot, capped",
   DESIGN_REDGUARD_POT_SEALED: "design: redguard pot, sealed",
+  DESIGN_REDGUARD_VASE_LACQUERED: "design: redguard vase, lacquered",
   DESIGN_ROUGH_BAG_BURLAP: "design: rough bag, burlap",
   DESIGN_SOLITUDE_VASE_LARGE_SEALED: "design: solitude vase, large sealed",
   DESIGN_SUGAR_PUMPKIN_WAX: "design: sugar pumpkin, wax",
@@ -122,6 +125,7 @@ const Recipe = {
   DIAGRAM_ORCISH_CHANDELIER_PRACTICAL: "diagram: orcish chandelier, practical",
   DIAGRAM_ORCISH_LANTERN_HOODED: "diagram: orcish lantern, hooded",
   DIAGRAM_ORCISH_MUG_RUGGED: "diagram: orcish mug, rugged",
+  DIAGRAM_ORCISH_VESSEL_SEALED: "diagram: orcish vessel, sealed",
   DIAGRAM_REDGUARD_STREETLAMP_SINGLE: "diagram: redguard streetlamp, single",
   DIAGRAM_ROUGH_BOWL_COMMON: "diagram: rough bowl, common",
   DIAGRAM_ROUGH_CUP_EMPTY: "diagram: rough cup, empty",
@@ -1205,6 +1209,22 @@ Recipe.properties = {
     ownerKey: Character.KALED_LOCK,
     key: "design: khajiit flask, amber",
   },
+  "design: khajiit vessel, amber": {
+    name: "Design: Khajiit Vessel, Amber",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 8),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.MOONSTONE, 15),
+      resourceIngredient(Resource.FROST_MIRRIAM, 3),
+    ],
+    output: productIngredient(Product.KHAJIIT_VESSEL_AMBER),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14012&ItemNamePattern=Design%3A+Khajiit+Vessel%2C+Amber&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: khajiit vessel, amber",
+  },
   "design: nord amphora, glazed": {
     name: "Design: Nord Amphora, Glazed",
     categoryKey: Category.HEARTH,
@@ -1234,6 +1254,21 @@ Recipe.properties = {
     output: productIngredient(Product.NORD_POT_STEW),
     ownerKey: Character.FRAK_LOCK,
     key: "design: nord pot, stew",
+  },
+  "design: nord vase, bent": {
+    name: "Design: Nord Vase, Bent",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 7),
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.CORUNDUM, 10),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.NORD_VASE_BENT),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Nord+Vase%2C+Bent&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: nord vase, bent",
   },
   "design: orcish vessel, sealed ceramic": {
     name: "Design: Orcish Vessel, Sealed Ceramic",
@@ -1291,6 +1326,21 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_POT_SEALED),
     ownerKey: Character.FRAK_LOCK,
     key: "design: redguard pot, sealed",
+  },
+  "design: redguard vase, lacquered": {
+    name: "Design: Redguard Vase, Lacquered",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 6),
+      resourceIngredient(Resource.REGULUS, 4),
+      resourceIngredient(Resource.STARMETAL, 10),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_VASE_LACQUERED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Redguard+Vase%2C+Lacquered&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: redguard vase, lacquered",
   },
   "design: rough bag, burlap": {
     name: "Design: Rough Bag, Burlap",
@@ -1683,6 +1733,22 @@ Recipe.properties = {
     output: productIngredient(Product.ORCISH_MUG_RUGGED),
     ownerKey: Character.FRAK_LOCK,
     key: "diagram: orcish mug, rugged",
+  },
+  "diagram: orcish vessel, sealed": {
+    name: "Diagram: Orcish Vessel, Sealed",
+    categoryKey: Category.UNDERCROFT,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 10),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 6),
+      resourceIngredient(Resource.DECORATIVE_WAX, 6),
+      resourceIngredient(Resource.MANGANESE, 15),
+      resourceIngredient(Resource.GRAIN_SOLVENT, 3),
+    ],
+    output: productIngredient(Product.ORCISH_VESSEL_SEALED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Diagram%3A+Orcish+Vessel%2C+Sealed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "diagram: orcish vessel, sealed",
   },
   "diagram: redguard streetlamp, single": {
     name: "Diagram: Redguard Streetlamp, Single",

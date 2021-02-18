@@ -91,12 +91,14 @@ const Product = {
   KHAJIIT_FRAME_ARCHED: "khajiit frame, arched",
   KHAJIIT_RUG_MOONS: "khajiit rug, moons",
   KHAJIIT_RUG_SUN: "khajiit rug, sun",
+  KHAJIIT_VESSEL_AMBER: "khajiit vessel, amber",
   LAVA_FOOT_SOUP_AND_SALTRICE: "lava foot soup-and-saltrice",
   NORD_AMPHORA_GLAZED: "nord amphora, glazed",
   NORD_CANDLEHOLDER_CUP: "nord candleholder, cup",
   NORD_DRESSER_ROUGH: "nord dresser, rough",
   NORD_LANTERN_CAGE: "nord lantern, cage",
   NORD_POT_STEW: "nord pot, stew",
+  NORD_VASE_BENT: "nord vase, bent",
   ORCISH_BANNER_WORN: "orcish banner, worn",
   ORCISH_BEDDING_FUR: "orcish bedding, fur",
   ORCISH_BEDDING_STONE: "orcish bedding, stone",
@@ -111,6 +113,7 @@ const Product = {
   ORCISH_SHELF_LONG: "orcish shelf, long",
   ORCISH_TABLE_BLOCK: "orcish table, block",
   ORCISH_TRUNK_BRACED: "orcish trunk, braced",
+  ORCISH_VESSEL_SEALED: "orcish vessel, sealed",
   ORCISH_VESSEL_SEALED_CERAMIC: "orcish vessel, sealed ceramic",
   REDGUARD_AMPHORA_POLISHED: "redguard amphora, polished",
   REDGUARD_ARMCHAIR_CUSHIONED: "redguard armchair, cushioned",
@@ -144,6 +147,7 @@ const Product = {
   REDGUARD_TABLE_GRAND_INLAID: "redguard table, grand inlaid",
   REDGUARD_TAPESTRY_LATTICE: "redguard tapestry, lattice",
   REDGUARD_VASE_BAROQUE: "redguard vase, baroque",
+  REDGUARD_VASE_LACQUERED: "redguard vase, lacquered",
   REDGUARD_WAGON_MERCHANT: "redguard wagon, merchant",
   REDORAN_CARPET_VOLCANIC_SANDS: "redoran carpet, volcanic sands",
   REDORAN_AMPHORA_SEALED_MARBLE: "redoran amphora, sealed marble",
@@ -629,6 +633,11 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "khajiit rug, sun",
   },
+  "khajiit vessel, amber": {
+    name: "Khajiit Vessel, Amber",
+    qualityKey: Quality.EPIC,
+    key: "khajiit vessel, amber",
+  },
   "lava foot soup-and-saltrice": {
     name: "Lava Foot Soup-and-Saltrice",
     productTypeKey: ProductType.PROVISION,
@@ -659,6 +668,11 @@ Product.properties = {
     name: "Nord Pot, Stew",
     qualityKey: Quality.FINE,
     key: "nord pot, stew",
+  },
+  "nord vase, bent": {
+    name: "Nord Vase, Bent",
+    qualityKey: Quality.SUPERIOR,
+    key: "nord vase, bent",
   },
   "orcish banner, worn": {
     name: "Orcish Banner, Worn",
@@ -729,6 +743,11 @@ Product.properties = {
     name: "Orcish Trunk, Braced",
     qualityKey: Quality.FINE,
     key: "orcish trunk, braced",
+  },
+  "orcish vessel, sealed": {
+    name: "Orcish Vessel, Sealed",
+    qualityKey: Quality.EPIC,
+    key: "orcish vessel, sealed",
   },
   "orcish vessel, sealed ceramic": {
     name: "Orcish Vessel, Sealed Ceramic",
@@ -894,6 +913,11 @@ Product.properties = {
     name: "Redguard Vase, Baroque",
     qualityKey: Quality.EPIC,
     key: "redguard vase, baroque",
+  },
+  "redguard vase, lacquered": {
+    name: "Redguard Vase, Lacquered",
+    qualityKey: Quality.SUPERIOR,
+    key: "redguard vase, lacquered",
   },
   "redguard wagon, merchant": {
     name: "Redguard Wagon, Merchant",
