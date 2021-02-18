@@ -104,6 +104,10 @@ const Recipe = {
   DESIGN_WOOD_ELF_PITCHER_PAINTED: "design: wood elf pitcher, painted",
   DESIGN_WOOD_ELF_VASE_CHIPPED: "design: wood elf vase, chipped",
   DESIGN_WOOD_ELF_VASE_PAINTED: "design: wood elf vase, painted",
+  DESIGN_WOOD_ELF_VESSEL_TIERED_CERAMIC:
+    "design: wood elf vessel, tiered ceramic",
+  DESIGN_WOOD_ELF_VESSEL_TIERED_PAINTED:
+    "design: wood elf vessel, tiered painted",
 
   DIAGRAM_BRETON_SCONCE_TORCH: "diagram: breton sconce, torch",
   DIAGRAM_BRETON_STREETLIGHT_PAIRED: "diagram: breton streetlight, paired",
@@ -212,6 +216,7 @@ const Recipe = {
 
   SKETCH_ELSWEYR_VESSEL_UMBER_EMBELLISHED:
     "sketch: elsweyr vessel, umber embellished",
+  SKETCH_SCRIMSHAW_ANCIENT_VESSEL: "sketch: scrimshaw, ancient vessel",
   // ///////////////////////////////////////////////////////////////////////////
 };
 
@@ -1475,6 +1480,38 @@ Recipe.properties = {
     ttcUrl:
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Wood+Elf+Vase%2C+Painted&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: wood elf vase, painted",
+  },
+  "design: wood elf vessel, tiered ceramic": {
+    name: "Design: Wood Elf Vessel, Tiered Ceramic",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 9),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.BONE, 10),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.WOOD_ELF_VESSEL_TIERED_CERAMIC),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Wood+Elf+Vessel%2C+Tiered+Ceramic&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: wood elf vessel, tiered ceramic",
+  },
+  "design: wood elf vessel, tiered painted": {
+    name: "Design: Wood Elf Vessel, Tiered Painted",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 9),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.BONE, 10),
+      resourceIngredient(Resource.BERVEZ_JUICE, 3),
+    ],
+    output: productIngredient(Product.WOOD_ELF_VESSEL_TIERED_PAINTED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Wood+Elf+Vessel%2C+Tiered+Painted&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "design: wood elf vessel, tiered painted",
   },
   // ///////////////////////////////////////////////////////////////////////////
   // Diagram
@@ -2794,6 +2831,23 @@ Recipe.properties = {
     ttcUrl:
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=20031&ItemNamePattern=Sketch%3A+Elsweyr+Vessel%2C+Umber+Embellished&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "sketch: elsweyr vessel, umber embellished",
+  },
+  "sketch: scrimshaw, ancient vessel": {
+    name: "Sketch: Scrimshaw, Ancient Vessel",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.OCHRE, 9),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.DECORATIVE_WAX, 8),
+      resourceIngredient(Resource.IVORY_POLISHED, 1),
+      resourceIngredient(Resource.ZIRCON_PLATING, 1),
+    ],
+    output: productIngredient(Product.SCRIMSHAW_ANCIENT_VESSEL),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=17970&ItemNamePattern=Sketch%3A+Scrimshaw%2C+Ancient+Vessel&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    key: "sketch: scrimshaw, ancient vessel",
   },
   // ///////////////////////////////////////////////////////////////////////////
 };

@@ -31,6 +31,7 @@ const Resource = {
   HEMMING: "hemming",
   HONING_STONE: "honing stone",
   IRIDIUM_PLATING: "iridium plating",
+  IVORY_POLISHED: "ivory, polished",
   JAZBAY_GRAPES: "jazbay grapes",
   JEJOTA: "jejota",
   MANGANESE: "manganese",
@@ -222,6 +223,12 @@ Resource.properties = {
     qualityKey: Quality.SUPERIOR,
     resourceTypeKey: ResourceType.PLATING,
     key: "iridium plating",
+  },
+  "ivory, polished": {
+    name: "Ivory, Polished",
+    qualityKey: Quality.FINE,
+    resourceTypeKey: ResourceType.FURNISHING,
+    key: "ivory, polished",
   },
   "jazbay grapes": {
     name: "Jazbay Grapes",

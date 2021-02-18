@@ -164,6 +164,7 @@ const Product = {
   ROUGH_KNIFE_BUTCHER: "rough knife, butcher",
   ROUGH_PLATFORM_STAGE: "rough platform, stage",
   ROUGH_STRETCHER_MILITARY: "rough stretcher, military",
+  SCRIMSHAW_ANCIENT_VESSEL: "scrimshaw, ancient vessel",
   SIMPLE_BLUE_BANNER: "simple blue banner",
   SOLITUDE_VASE_LARGE_SEALED: "solitude vase, large sealed",
   STOOL_CARVED: "stool, carved",
@@ -183,6 +184,8 @@ const Product = {
   WOOD_ELF_TABLE_LEATHER: "wood elf table, leather",
   WOOD_ELF_VASE_CHIPPED: "wood elf vase, chipped",
   WOOD_ELF_VASE_PAINTED: "wood elf vase, painted",
+  WOOD_ELF_VESSEL_TIERED_CERAMIC: "wood elf vessel, tiered ceramic",
+  WOOD_ELF_VESSEL_TIERED_PAINTED: "wood elf vessel, tiered painted",
   // ///////////////////////////////////////////////////////////////////////////
 };
 
@@ -999,6 +1002,11 @@ Product.properties = {
     qualityKey: Quality.NORMAL,
     key: "rough stretcher, military",
   },
+  "scrimshaw, ancient vessel": {
+    name: "Scrimshaw, Ancient Vessel",
+    qualityKey: Quality.EPIC,
+    key: "scrimshaw, ancient vessel",
+  },
   "simple blue banner": {
     name: "Simple Blue Banner",
     qualityKey: Quality.FINE,
@@ -1094,6 +1102,16 @@ Product.properties = {
     name: "Wood Elf Vase, Painted",
     qualityKey: Quality.SUPERIOR,
     key: "wood elf vase, painted",
+  },
+  "wood elf vessel, tiered ceramic": {
+    name: "Wood Elf Vessel, Tiered Ceramic",
+    qualityKey: Quality.SUPERIOR,
+    key: "wood elf vessel, tiered ceramic",
+  },
+  "wood elf vessel, tiered painted": {
+    name: "Wood Elf Vessel, Tiered Painted",
+    qualityKey: Quality.SUPERIOR,
+    key: "wood elf vessel, tiered painted",
   },
   // ///////////////////////////////////////////////////////////////////////////
 };
