@@ -48,6 +48,7 @@ const Product = {
   DARK_ELF_CART_MERCHANT: "dark elf cart, merchant",
   DARK_ELF_CAULDRON_BANDED: "dark elf cauldron, banded",
   DARK_ELF_LANTERN_OIL: "dark elf lantern, oil",
+  DARK_ELF_RUG_STRIATED: "dark elf rug, striated",
   DRES_BOWL_DINNER: "dres bowl, dinner",
   DRES_BOWL_EMPTY: "dres bowl, empty",
   DRES_CANDLES_MEDITATION: "dres candles, meditation",
@@ -420,6 +421,11 @@ Product.properties = {
     name: "Dark Elf Lantern, Oil",
     qualityKey: Quality.FINE,
     key: "dark elf lantern, oil",
+  },
+  "dark elf rug, striated": {
+    name: "Dark Elf Rug, Striated",
+    qualityKey: Quality.EPIC,
+    key: "dark elf rug, striated",
   },
   "dres bowl, dinner": {
     name: "Dres Bowl, Dinner",

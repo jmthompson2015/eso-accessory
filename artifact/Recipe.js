@@ -198,6 +198,7 @@ const Recipe = {
 
   PRAXIS_BRETON_AMPHORA_CERAMIC: "praxis: breton amphora, ceramic",
   PRAXIS_BRETON_VASE_DELICATE: "praxis: breton vase, delicate",
+  PRAXIS_DARK_ELF_RUG_STRIATED: "praxis: dark elf rug, striated",
   PRAXIS_DWARVEN_AMPHORA_SEALED: "praxis: dwarven amphora, sealed",
   PRAXIS_ELSWEYR_POT_WAVES: "praxis: elsweyr pot, waves",
   PRAXIS_HAGRAVEN_CAULDRON_RITUAL: "praxis: hagraven cauldron, ritual",
@@ -289,8 +290,7 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.BRETON_DESK_SCHOLARS),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14617&ItemNamePattern=Blueprint%3A+Breton+Desk%2C+Scholar%27s&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "blueprint: breton desk, scholar's",
   },
   "blueprint: breton nightstand, open": {
@@ -802,8 +802,7 @@ Recipe.properties = {
       resourceIngredient(Resource.ALCHEMICAL_RESIN, 7),
     ],
     output: productIngredient(Product.REDGUARD_TABLE_GAME),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14437&ItemNamePattern=Blueprint%3A+Redguard+Table%2C+Game&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard table, game",
   },
   "blueprint: redguard table, grand inlaid": {
@@ -2634,6 +2633,22 @@ Recipe.properties = {
       "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14261&ItemNamePattern=Praxis%3A+Breton+Vase%2C+Delicate&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "praxis: breton vase, delicate",
   },
+  "praxis: dark elf rug, striated": {
+    name: "Praxis: Dark Elf Rug, Striated",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 13),
+      resourceIngredient(Resource.MUNDANE_RUNE, 9),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 8),
+      resourceIngredient(Resource.OBSIDIAN, 15),
+      resourceIngredient(Resource.ELEGANT_LINING, 3),
+    ],
+    output: productIngredient(Product.DARK_ELF_RUG_STRIATED),
+    ttcUrl:
+      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Praxis%3A+Dark+Elf+Rug%2C+Striated&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=",
+    key: "praxis: dark elf rug, striated",
+  },
   "praxis: dwarven amphora, sealed": {
     name: "Praxis: Dwarven Amphora, Sealed",
     categoryKey: Category.HEARTH,
@@ -2690,8 +2705,7 @@ Recipe.properties = {
       resourceIngredient(Resource.REKUTA, 3),
     ],
     output: productIngredient(Product.HLAALU_AMPHORA_SEALED_ORICHALCUM),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=16356&ItemNamePattern=Praxis%3A+Hlaalu+Amphora%2C+Sealed+Orichalcum&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
+    ownerKey: Character.FRAK_LOCK,
     key: "praxis: hlaalu amphora, sealed orichalcum",
   },
   "praxis: hlaalu vase, gilded": {
