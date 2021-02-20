@@ -16,7 +16,7 @@ QUnit.test("amountCount() Alchemical Resin", (assert) => {
   // Verify.
   assert.ok(result);
   assert.equal(
-    result >= 144327 && result <= 155056,
+    result >= 142995 && result <= 155056,
     true,
     `result = ${result}`
   );
