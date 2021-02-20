@@ -28,7 +28,7 @@ IngredientUtilities.toString = (ingredient) => {
 };
 
 IngredientUtilities.value = (ingredient) => {
-  const baseValue = ItemUtils.averagePrice(
+  const baseValue = ItemUtils.suggestedPrice(
     ingredient.productKey || ingredient.resourceKey
   );
   const { amount } = ingredient;
