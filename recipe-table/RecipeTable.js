@@ -1,10 +1,10 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 
+import ItemUtils from "../artifact/ItemUtilities.js";
 import Recipe from "../artifact/Recipe.js";
 import Resolver from "../artifact/Resolver.js";
 
 import IngredientUtils from "../model/IngredientUtilities.js";
-import ItemUtils from "../model/ItemUtilities.js";
 import RecipeUtils from "../model/RecipeUtilities.js";
 
 import TableColumns from "./TableColumns.js";

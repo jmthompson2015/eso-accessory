@@ -1,9 +1,8 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 
+import ItemUtils from "../artifact/ItemUtilities.js";
 import Resource from "../artifact/Resource.js";
 import Resolver from "../artifact/Resolver.js";
-
-import ItemUtils from "../model/ItemUtilities.js";
 
 import TableColumns from "./TableColumns.js";
 

@@ -1,8 +1,8 @@
 /* eslint no-console: ["error", { allow: ["error"] }] */
 /* eslint prefer-destructuring: ["error", {"array": false}] */
 
-import ItemLookUpTable from "../artifact/ItemLookUpTable.js";
-import PriceTable from "../artifact/PriceTable.js";
+import ItemLookUpTable from "./ItemLookUpTable.js";
+import PriceTable from "./PriceTable.js";
 
 const ItemUtilities = {};
 

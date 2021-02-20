@@ -1,8 +1,7 @@
 /* eslint no-console: ["error", { allow: ["log", "warn"] }] */
 
-import Resource from "../artifact/Resource.js";
-
 import ItemUtilities from "./ItemUtilities.js";
+import Resource from "./Resource.js";
 
 QUnit.module("ItemUtilities");
 

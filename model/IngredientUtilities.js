@@ -1,6 +1,5 @@
+import ItemUtils from "../artifact/ItemUtilities.js";
 import Resolver from "../artifact/Resolver.js";
-
-import ItemUtils from "./ItemUtilities.js";
 
 const IngredientUtilities = {};
 
