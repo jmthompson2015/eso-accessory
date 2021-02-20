@@ -33,7 +33,7 @@ ItemUtilities.item = (itemKey) => {
 ItemUtilities.amountCount = (itemKey) => {
   const item = ItemUtilities.item(itemKey);
 
-  return item.AmountCount;
+  return item ? item.AmountCount : undefined;
 };
 
 ItemUtilities.averagePrice = (itemKey) => {
@@ -60,11 +60,24 @@ ItemUtilities.minimumPrice = (itemKey) => {
   return item ? item.Min : undefined;
 };
 
-ItemUtilities.suggestedPrice = (itemKey) => {
+ItemUtilities.suggestedPrice1 = (itemKey) => {
   const item = ItemUtilities.item(itemKey);
 
   return item ? item.SuggestedPrice : undefined;
 };
+
+ItemUtilities.suggestedPrice2 = (itemKey) => {
+  const minimumPrice = ItemUtilities.minimumPrice(itemKey);
+  const averagePrice = ItemUtilities.averagePrice(itemKey);
+
+  return minimumPrice > 0 && averagePrice > 0
+    ? minimumPrice + (averagePrice - minimumPrice) / 2
+    : undefined;
+};
+
+ItemUtilities.suggestedPrice = (itemKey) =>
+  ItemUtilities.suggestedPrice1(itemKey) ||
+  ItemUtilities.suggestedPrice2(itemKey);
 
 Object.freeze(ItemUtilities);
 

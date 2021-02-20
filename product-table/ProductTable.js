@@ -8,11 +8,21 @@ import ItemUtils from "../model/ItemUtilities.js";
 import TableColumns from "./TableColumns.js";
 
 const mapFunction = (product) => {
-  const value = ItemUtils.averagePrice(product.key);
   const quality = Resolver.quality(product.qualityKey);
   const productType = Resolver.productType(product.productTypeKey);
+  const minimumPrice = ItemUtils.minimumPrice(product.key);
+  const suggestedPrice = ItemUtils.suggestedPrice(product.key);
+  const averagePrice = ItemUtils.averagePrice(product.key);
+  const entryCount = ItemUtils.entryCount(product.key);
 
-  return R.mergeRight(product, { quality, productType, value });
+  return R.mergeRight(product, {
+    quality,
+    productType,
+    minimumPrice,
+    suggestedPrice,
+    averagePrice,
+    entryCount,
+  });
 };
 const tableRows = R.map(mapFunction, Product.values());
 

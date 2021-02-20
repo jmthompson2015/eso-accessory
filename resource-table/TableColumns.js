@@ -16,6 +16,9 @@ const formatNumber = (value) => {
 const round0 = (value) =>
   ![undefined, null].includes(value) ? value.toFixed(0) : undefined;
 
+const round2 = (value) =>
+  ![undefined, null].includes(value) ? value.toFixed(2) : undefined;
+
 const TableColumns = [
   {
     key: "name",
@@ -49,13 +52,40 @@ const TableColumns = [
       row.resourceType ? row.resourceType.name : undefined,
   },
   {
-    key: "value",
+    key: "minimumPrice",
+    label: "Min. Price",
+    type: "number",
+    className: "tr",
+    convertFunction: (row) => round2(row.minimumPrice),
+    cellFunction: (row) => formatNumber(row.minimumPrice),
+    valueFunction: (row) => parseFloat(row.minimumPrice),
+  },
+  {
+    key: "suggestedPrice",
+    label: "Sug. Price",
+    type: "number",
+    className: "tr",
+    convertFunction: (row) => round2(row.suggestedPrice),
+    cellFunction: (row) => formatNumber(row.suggestedPrice),
+    valueFunction: (row) => parseFloat(row.suggestedPrice),
+  },
+  {
+    key: "averagePrice",
     label: "Avg. Price",
     type: "number",
     className: "tr",
-    convertFunction: (row) => round0(row.value),
-    cellFunction: (row) => formatNumber(row.value),
-    valueFunction: (row) => parseFloat(row.value),
+    convertFunction: (row) => round2(row.averagePrice),
+    cellFunction: (row) => formatNumber(row.averagePrice),
+    valueFunction: (row) => parseFloat(row.averagePrice),
+  },
+  {
+    key: "entryCount",
+    label: "Entry Count",
+    type: "number",
+    className: "tr",
+    convertFunction: (row) => round0(row.entryCount),
+    cellFunction: (row) => formatNumber(row.entryCount),
+    valueFunction: (row) => parseFloat(row.entryCount),
   },
   {
     key: "url",
