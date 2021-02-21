@@ -89,6 +89,7 @@ const Resource = {
   POWDERED_MOTHER_OF_PEARL: "powdered mother of pearl",
   PUMPKIN: "pumpkin",
   QUARTZ: "quartz",
+  RADISH: "radish",
   RAKEIPA: "rakeipa",
   REGULUS: "regulus",
   REKUTA: "rekuta",
@@ -570,6 +571,11 @@ Resource.properties = {
     name: "Quartz",
     resourceTypeKey: ResourceType.GEM,
     key: "quartz",
+  },
+  radish: {
+    name: "Radish",
+    resourceTypeKey: ResourceType.PROVISION,
+    key: "radish",
   },
   rakeipa: {
     name: "Rakeipa",

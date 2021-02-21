@@ -7,10 +7,13 @@ const Product = {
   ALINOR_AMPHORA_EMBOSSED: "alinor amphora, embossed",
   ALINOR_AMPHORA_PORTRAIT: "alinor amphora, portrait",
   ALINOR_AMPHORA_SLENDER: "alinor amphora, slender",
+  ALINOR_BOWL_MILLET: "alinor bowl, millet",
+  ALINOR_MEAL_INDIVIDUAL: "alinor meal, individual",
   ARGONIAN_BASKETS_DOUBLE: "argonian baskets, double",
   ARGONIAN_COUNTER_LONG: "argonian counter, long",
   ARGONIAN_MAT_REED: "argonian mat, reed",
   ARGONIAN_MUG_TOOTH: "argonian mug, tooth",
+  ARGONIAN_PAN_FRYING: "argonian pan, frying",
   ARGONIAN_TARP_WOVEN: "argonian tarp, woven",
   ARGONIAN_TOTEM_OF_SKULLS: "argonian totem of skulls",
   ASHLANDER_PLATTER_CERAMIC: "ashlander platter, ceramic",
@@ -23,6 +26,7 @@ const Product = {
   BRETON_DESK_SCHOLARS: "breton desk, scholar's",
   BRETON_NIGHTSTAND_OPEN: "breton nightstand, open",
   BRETON_SCONCE_TORCH: "breton sconce, torch",
+  BRETON_SHELF_LONG: "breton shelf, long",
   BRETON_SHELVES_DOUBLE: "breton shelves, double",
   BRETON_STREET_POST_STONE: "breton street post, stone",
   BRETON_STREETLIGHT_PAIRED: "breton streetlight, paired",
@@ -55,6 +59,7 @@ const Product = {
   DRES_CANDLES_MEDITATION: "dres candles, meditation",
   DRES_CARPET_CHAINS: "dres carpet, chains",
   DRES_CUP_EMPTY_MAZTE: "dres cup, empty mazte",
+  DRES_CUP_GREEF: "dres cup, greef",
   DRES_LANTERN_STATIONARY: "dres lantern, stationary",
   DRES_POT_SAUCE: "dres pot, sauce",
   DWARVEN_AMPHORA_ORNATE_POLISHED: "dwarven amphora, ornate polished",
@@ -100,6 +105,7 @@ const Product = {
   NORD_DRESSER_ROUGH: "nord dresser, rough",
   NORD_LANTERN_CAGE: "nord lantern, cage",
   NORD_POT_STEW: "nord pot, stew",
+  NORD_SHELF_WALL: "nord shelf, wall",
   NORD_VASE_BENT: "nord vase, bent",
   ORCISH_BANNER_WORN: "orcish banner, worn",
   ORCISH_BEDDING_FUR: "orcish bedding, fur",
@@ -117,6 +123,7 @@ const Product = {
   ORCISH_TRUNK_BRACED: "orcish trunk, braced",
   ORCISH_VESSEL_SEALED: "orcish vessel, sealed",
   ORCISH_VESSEL_SEALED_CERAMIC: "orcish vessel, sealed ceramic",
+  RADISH_WAX: "radish, wax",
   REDGUARD_AMPHORA_POLISHED: "redguard amphora, polished",
   REDGUARD_ARMCHAIR_CUSHIONED: "redguard armchair, cushioned",
   REDGUARD_ARMCHAIR_STARRY: "redguard armchair, starry",
@@ -213,6 +220,16 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "alinor amphora, slender",
   },
+  "alinor bowl, millet": {
+    name: "Alinor Bowl, Millet",
+    qualityKey: Quality.FINE,
+    key: "alinor bowl, millet",
+  },
+  "alinor meal, individual": {
+    name: "Alinor Meal, Individual",
+    qualityKey: Quality.FINE,
+    key: "alinor meal, individual",
+  },
   "argonian baskets, double": {
     name: "Argonian Baskets, Double",
     qualityKey: Quality.FINE,
@@ -232,6 +249,11 @@ Product.properties = {
     name: "Argonian Mug, Tooth",
     qualityKey: Quality.FINE,
     key: "argonian mug, tooth",
+  },
+  "argonian pan, frying": {
+    name: "Argonian Pan, Frying",
+    qualityKey: Quality.FINE,
+    key: "argonian pan, frying",
   },
   "argonian tarp, woven": {
     name: "Argonian Tarp, Woven",
@@ -292,6 +314,11 @@ Product.properties = {
     name: "Breton Sconce, Torch",
     qualityKey: Quality.FINE,
     key: "breton sconce, torch",
+  },
+  "breton shelf, long": {
+    name: "Breton Shelf, Long",
+    qualityKey: Quality.FINE,
+    key: "breton shelf, long",
   },
   "breton shelves, double": {
     name: "Breton Shelves, Double",
@@ -452,6 +479,11 @@ Product.properties = {
     name: "Dres Cup, Empty Mazte",
     qualityKey: Quality.FINE,
     key: "dres cup, empty mazte",
+  },
+  "dres cup, greef": {
+    name: "Dres Cup, Greef",
+    qualityKey: Quality.SUPERIOR,
+    key: "dres cup, greef",
   },
   "dres lantern, stationary": {
     name: "Dres Lantern, Stationary",
@@ -679,6 +711,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "nord pot, stew",
   },
+  "nord shelf, wall": {
+    name: "Nord Shelf, Wall",
+    qualityKey: Quality.FINE,
+    key: "nord shelf, wall",
+  },
   "nord vase, bent": {
     name: "Nord Vase, Bent",
     qualityKey: Quality.SUPERIOR,
@@ -763,6 +800,11 @@ Product.properties = {
     name: "Orcish Vessel, Sealed Ceramic",
     qualityKey: Quality.SUPERIOR,
     key: "orcish vessel, sealed ceramic",
+  },
+  "radish, wax": {
+    name: "Radish, Wax",
+    qualityKey: Quality.FINE,
+    key: "radish, wax",
   },
   "redguard amphora, polished": {
     name: "Redguard Amphora, Polished",
