@@ -6,27 +6,32 @@ import PriceTable from "./PriceTable.js";
 
 const ItemUtilities = {};
 
-ItemUtilities.item = (itemKey) => {
-  const item1 = ItemLookUpTable[itemKey];
+ItemUtilities.itemId = (itemKey) => {
+  const item = ItemLookUpTable[itemKey];
 
-  if (item1) {
-    const itemId = Object.values(item1)[0];
-    let item2 = PriceTable.Data[itemId];
-
-    if (item2) {
-      while (item2 && Object.values(item2).length === 1) {
-        item2 = Object.values(item2)[0];
-      }
-
-      return item2;
-    }
-
-    console.error(
-      `No price data found for itemId: ${itemId} for itemKey: ${itemKey}`
-    );
+  if (item) {
+    return Object.values(item)[0];
   }
 
   console.error(`No item found for itemKey: ${itemKey}`);
+  return null;
+};
+
+ItemUtilities.item = (itemKey) => {
+  const itemId = ItemUtilities.itemId(itemKey);
+  let item = PriceTable.Data[itemId];
+
+  if (item) {
+    while (item && Object.values(item).length === 1) {
+      item = Object.values(item)[0];
+    }
+
+    return item;
+  }
+
+  console.error(
+    `No price data found for itemId: ${itemId} for itemKey: ${itemKey}`
+  );
   return null;
 };
 

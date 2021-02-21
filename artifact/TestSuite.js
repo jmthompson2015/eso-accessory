@@ -10,5 +10,6 @@ import RecipeTest from "./Recipe.test.js";
 import ResourceTest from "./Resource.test.js";
 import ResourceTypeTest from "./ResourceType.test.js";
 import ResolverTest from "./Resolver.test.js";
+import URLGeneratorTest from "./URLGenerator.test.js";
 
 QUnit.start();

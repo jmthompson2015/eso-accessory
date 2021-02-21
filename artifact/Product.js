@@ -1,5 +1,6 @@
 import ProductType from "./ProductType.js";
 import Quality from "./Quality.js";
+import URLGenerator from "./URLGenerator.js";
 
 const Product = {
   ALINOR_AMPHORA_DELICATE: "alinor amphora, delicate",
@@ -1126,25 +1127,19 @@ Product.keys = () => Object.keys(Product.properties);
 
 Product.values = () => Object.values(Product.properties);
 
-// Add ProductType.
-// Add URLs.
+// Add ProductType and URLs.
 const PRODUCT_TYPE_KEY = ProductType.FURNISHING;
-const URL_PREFIX = "https://eso.mmo-fashion.com/";
-// const URL_PREFIX = "https://eso-housing.com/furniture/";
 const forEachFunction = (product) => {
-  const { name, productTypeKey, url } = product;
+  const { name, productTypeKey, ttcUrl, url } = product;
 
   const newProductTypeKey = productTypeKey || PRODUCT_TYPE_KEY;
-  let newUrl = url;
-
-  if (R.isNil(url)) {
-    const suffix = name.replace(/[,']/g, "").replace(/ /g, "-");
-    newUrl = URL_PREFIX + suffix;
-  }
+  const newUrl = url || URLGenerator.fashion(name);
+  const newTtcUrl = ttcUrl || URLGenerator.tamrielTradeCentre(name);
 
   Product.properties[product.key] = R.mergeRight(product, {
     productTypeKey: newProductTypeKey,
     url: newUrl,
+    ttcUrl: newTtcUrl,
   });
 };
 R.forEach(forEachFunction, Product.values());

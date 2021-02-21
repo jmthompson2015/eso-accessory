@@ -4,6 +4,7 @@ import Craft from "./Craft.js";
 import Ingredient from "./Ingredient.js";
 import Product from "./Product.js";
 import Resource from "./Resource.js";
+import URLGenerator from "./URLGenerator.js";
 
 const productIngredient = (productKey, amount) =>
   Ingredient.create({ productKey, amount });
@@ -2871,17 +2872,17 @@ Recipe.keys = () => Object.keys(Recipe.properties);
 Recipe.values = () => Object.values(Recipe.properties);
 
 // Add URLs.
-const URL_PREFIX = "https://eso-housing.com/furniture/";
 const forEachFunction = (recipe) => {
-  let { url } = recipe;
+  const { name, ttcUrl, url } = recipe;
+  const product = Product.properties[recipe.output.productKey];
+  const { name: productName } = product;
+  const newUrl = url || URLGenerator.housing(productName);
+  const newTtcUrl = ttcUrl || URLGenerator.tamrielTradeCentre(name);
 
-  if (R.isNil(url)) {
-    const product = Product.properties[recipe.output.productKey];
-    const { name } = product;
-    const suffix = name.replace(/[,']/g, "").replace(/ /g, "-");
-    url = URL_PREFIX + suffix;
-    Recipe.properties[recipe.key] = R.assoc("url", url, recipe);
-  }
+  Recipe.properties[recipe.key] = R.mergeRight(recipe, {
+    url: newUrl,
+    ttcUrl: newTtcUrl,
+  });
 };
 R.forEach(forEachFunction, Recipe.values());
 

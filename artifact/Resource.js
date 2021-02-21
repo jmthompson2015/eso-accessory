@@ -1,5 +1,6 @@
 import Quality from "./Quality.js";
 import ResourceType from "./ResourceType.js";
+import URLGenerator from "./URLGenerator.js";
 
 const Resource = {
   ADAMANTITE: "adamantite",
@@ -586,6 +587,16 @@ Resource.properties = {
 Resource.keys = () => Object.keys(Resource.properties);
 
 Resource.values = () => Object.values(Resource.properties);
+
+// Add ttcURL.
+const forEachFunction = (resource) => {
+  const { name, ttcUrl } = resource;
+
+  const newUrl = ttcUrl || URLGenerator.tamrielTradeCentre(name);
+
+  Resource.properties[resource.key] = R.assoc("ttcUrl", newUrl, resource);
+};
+R.forEach(forEachFunction, Resource.values());
 
 Object.freeze(Resource);
 

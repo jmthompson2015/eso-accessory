@@ -60,6 +60,17 @@ QUnit.test("item() Alchemical Resin", (assert) => {
   assert.ok(result.SuggestedPrice);
 });
 
+QUnit.test("itemId() Alchemical Resin", (assert) => {
+  // Setup.
+  const resourceKey = Resource.ALCHEMICAL_RESIN;
+
+  // Run.
+  const result = ItemUtilities.itemId(resourceKey);
+
+  // Verify.
+  assert.equal(result, 11967);
+});
+
 QUnit.test("maximumPrice() Alchemical Resin", (assert) => {
   // Setup.
   const resourceKey = Resource.ALCHEMICAL_RESIN;

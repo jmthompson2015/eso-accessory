@@ -72,7 +72,10 @@ const TableColumns = [
     type: "number",
     className: "tr",
     convertFunction: (row) => round0(row.recipeEntryCount),
-    cellFunction: (row) => formatNumber(row.recipeEntryCount),
+    cellFunction: (row) =>
+      row.ttcUrl
+        ? createLink(row.ttcUrl, formatNumber(row.recipeEntryCount))
+        : undefined,
     valueFunction: (row) => parseFloat(row.recipeEntryCount),
   },
   {
@@ -80,24 +83,8 @@ const TableColumns = [
     label: "Owner",
     type: "string",
     className: "tl",
-    cellFunction: (row) => {
-      let answer;
-      if (row.owner) {
-        answer = row.owner.name;
-      } else {
-        answer = row.ttcUrl ? createLink(row.ttcUrl, "WANT") : undefined;
-      }
-      return answer;
-    },
-    valueFunction: (row) => {
-      let answer;
-      if (row.owner) {
-        answer = row.owner.name;
-      } else {
-        answer = row.ttcUrl ? "WANT" : undefined;
-      }
-      return answer;
-    },
+    cellFunction: (row) => (row.owner ? row.owner.name : "WANT"),
+    valueFunction: (row) => (row.owner ? row.owner.name : "WANT"),
   },
   {
     key: "craft",
@@ -166,7 +153,10 @@ const TableColumns = [
     type: "number",
     className: "tr",
     convertFunction: (row) => round0(row.productEntryCount),
-    cellFunction: (row) => formatNumber(row.productEntryCount),
+    cellFunction: (row) =>
+      row.productTtcUrl
+        ? createLink(row.productTtcUrl, formatNumber(row.productEntryCount))
+        : undefined,
     valueFunction: (row) => parseFloat(row.productEntryCount),
   },
   {
@@ -194,6 +184,11 @@ const TableColumns = [
   {
     key: "ttcUrl",
     label: "TTC URL",
+    isShown: false,
+  },
+  {
+    key: "productTtcUrl",
+    label: "Product TTC URL",
     isShown: false,
   },
 ];

@@ -84,12 +84,20 @@ const TableColumns = [
     type: "number",
     className: "tr",
     convertFunction: (row) => round0(row.entryCount),
-    cellFunction: (row) => formatNumber(row.entryCount),
+    cellFunction: (row) =>
+      row.ttcUrl
+        ? createLink(row.ttcUrl, formatNumber(row.entryCount))
+        : undefined,
     valueFunction: (row) => parseFloat(row.entryCount),
   },
   {
     key: "url",
     label: "URL",
+    isShown: false,
+  },
+  {
+    key: "ttcUrl",
+    label: "TTC URL",
     isShown: false,
   },
 ];
