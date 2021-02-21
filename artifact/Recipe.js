@@ -683,8 +683,6 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.REDGUARD_BED_FULL_LATTICE),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14595&ItemNamePattern=Blueprint%3A+Redguard+Bed%2C+Full+Lattice&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "blueprint: redguard bed, full lattice",
   },
   "blueprint: redguard bench, slatted": {
@@ -727,8 +725,6 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.REDGUARD_BOOKCASE_PILED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13664&ItemNamePattern=Blueprint%3A+Redguard+Bookcase%2C+Piled&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "blueprint: redguard bookcase, piled",
   },
   "blueprint: redguard candlestick, practical": {
@@ -756,8 +752,6 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.REDGUARD_DESK_BOLTED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13599&ItemNamePattern=Blueprint%3A+Redguard+Desk%2C+Bolted&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "blueprint: redguard desk, bolted",
   },
   "blueprint: redguard end table, inlaid": {
@@ -964,8 +958,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 6),
     ],
     output: productIngredient(Product.ALINOR_AMPHORA_EMBOSSED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=17952&ItemNamePattern=Design%3A+Alinor+Amphora%2C+Embossed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: alinor amphora, embossed",
   },
   "design: alinor amphora, portrait": {
@@ -980,8 +972,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 6),
     ],
     output: productIngredient(Product.ALINOR_AMPHORA_PORTRAIT),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Alinor+Amphora%2C+Portrait&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: alinor amphora, portrait",
   },
   "design: alinor amphora, slender": {
@@ -996,8 +986,6 @@ Recipe.properties = {
       resourceIngredient(Resource.FROST_MIRRIAM, 3),
     ],
     output: productIngredient(Product.ALINOR_AMPHORA_SLENDER),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=17533&ItemNamePattern=Design%3A+Alinor+Amphora%2C+Slender&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: alinor amphora, slender",
   },
   "design: argonian totem of skulls": {
@@ -1042,8 +1030,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.BRETON_AMPHORA_GLAZED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12779&ItemNamePattern=Design%3A+Breton+Amphora%2C+Glazed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: breton amphora, glazed",
   },
   "design: breton vase, ceramic": {
@@ -1072,8 +1058,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.BRETON_VASE_GLAZED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Breton+Vase%2C+Glazed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: breton vase, glazed",
   },
   "design: common bowl of soup, display": {
@@ -1226,8 +1210,6 @@ Recipe.properties = {
       resourceIngredient(Resource.FROST_MIRRIAM, 3),
     ],
     output: productIngredient(Product.KHAJIIT_VESSEL_AMBER),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14012&ItemNamePattern=Design%3A+Khajiit+Vessel%2C+Amber&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: khajiit vessel, amber",
   },
   "design: nord amphora, glazed": {
@@ -1242,8 +1224,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.NORD_AMPHORA_GLAZED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13353&ItemNamePattern=Design%3A+Nord+Amphora%2C+Glazed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: nord amphora, glazed",
   },
   "design: nord pot, stew": {
@@ -1271,8 +1251,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.NORD_VASE_BENT),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Nord+Vase%2C+Bent&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: nord vase, bent",
   },
   "design: orcish vessel, sealed ceramic": {
@@ -1300,8 +1278,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.REDGUARD_AMPHORA_POLISHED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13346&ItemNamePattern=Design%3A+Redguard+Amphora%2C+Polished&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: redguard amphora, polished",
   },
   "design: redguard pot, capped": {
@@ -1343,8 +1319,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.REDGUARD_VASE_LACQUERED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Redguard+Vase%2C+Lacquered&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: redguard vase, lacquered",
   },
   "design: rough bag, burlap": {
@@ -1372,8 +1346,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.SOLITUDE_VASE_LARGE_SEALED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=21615&ItemNamePattern=Design%3A+Solitude+Vase%2C+Large+Sealed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: solitude vase, large sealed",
   },
   "design: sugar pumpkin, wax": {
@@ -1461,8 +1433,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.WOOD_ELF_VASE_CHIPPED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12251&ItemNamePattern=Design%3A+Wood+Elf+Vase%2C+Chipped&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: wood elf vase, chipped",
   },
   "design: wood elf vase, painted": {
@@ -1477,8 +1447,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.WOOD_ELF_VASE_PAINTED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Wood+Elf+Vase%2C+Painted&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: wood elf vase, painted",
   },
   "design: wood elf vessel, tiered ceramic": {
@@ -1493,8 +1461,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.WOOD_ELF_VESSEL_TIERED_CERAMIC),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Wood+Elf+Vessel%2C+Tiered+Ceramic&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: wood elf vessel, tiered ceramic",
   },
   "design: wood elf vessel, tiered painted": {
@@ -1509,8 +1475,6 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.WOOD_ELF_VESSEL_TIERED_PAINTED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Design%3A+Wood+Elf+Vessel%2C+Tiered+Painted&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "design: wood elf vessel, tiered painted",
   },
   // ///////////////////////////////////////////////////////////////////////////
@@ -1611,8 +1575,6 @@ Recipe.properties = {
       resourceIngredient(Resource.GRAIN_SOLVENT, 3),
     ],
     output: productIngredient(Product.DWARVEN_AMPHORA_ORNATE_POLISHED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=22841&ItemNamePattern=Diagram%3A+Dwarven+Amphora%2C+Ornate+Polished&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "diagram: dwarven amphora, ornate polished",
   },
   "diagram: dwarven cannister, sealed": {
@@ -1639,8 +1601,6 @@ Recipe.properties = {
       resourceIngredient(Resource.DWARVEN_OIL, 6),
     ],
     output: productIngredient(Product.DWARVEN_VASE_FORGED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Diagram%3A+Dwarven+Vase%2C+Forged&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "diagram: dwarven vase, forged",
   },
   "diagram: dwarven vessel, sealed": {
@@ -1654,8 +1614,6 @@ Recipe.properties = {
       resourceIngredient(Resource.DWARVEN_OIL, 6),
     ],
     output: productIngredient(Product.DWARVEN_VESSEL_SEALED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Diagram%3A+Dwarven+Vessel%2C+Sealed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "diagram: dwarven vessel, sealed",
   },
   "diagram: high elf candleholder, sturdy": {
@@ -1696,8 +1654,6 @@ Recipe.properties = {
       resourceIngredient(Resource.DWARVEN_OIL, 6),
     ],
     output: productIngredient(Product.HIGH_ELF_VASE_GILDED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Diagram%3A+High+Elf+Vase%2C+Gilded&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "diagram: high elf vase, gilded",
   },
   "diagram: nord candleholder, cup": {
@@ -1783,8 +1739,6 @@ Recipe.properties = {
       resourceIngredient(Resource.GRAIN_SOLVENT, 3),
     ],
     output: productIngredient(Product.ORCISH_VESSEL_SEALED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Diagram%3A+Orcish+Vessel%2C+Sealed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "diagram: orcish vessel, sealed",
   },
   "diagram: redguard streetlamp, single": {
@@ -1889,8 +1843,6 @@ Recipe.properties = {
       resourceIngredient(Resource.ADAMANTITE, 15),
     ],
     output: productIngredient(Product.HIGH_ELF_VASE_WINGED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14254&ItemNamePattern=Formula%3A+High+Elf+Vase%2C+Winged&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "formula: high elf vase, winged",
   },
   "formula: indoril shelf, block": {
@@ -2177,8 +2129,6 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.KHAJIIT_RUG_SUN),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13314&ItemNamePattern=Pattern%3A+Khajiit+Rug%2C+Sun&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "pattern: khajiit rug, sun",
   },
   "pattern: orcish banner, worn": {
@@ -2248,8 +2198,6 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.REDGUARD_ARMCHAIR_STARRY),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14040&ItemNamePattern=Pattern%3A+Redguard+Armchair%2C+Starry&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "pattern: redguard armchair, starry",
   },
   "pattern: redguard bed, full arched": {
@@ -2263,8 +2211,6 @@ Recipe.properties = {
       resourceIngredient(Resource.EMBROIDERY, 6),
     ],
     output: productIngredient(Product.REDGUARD_BED_FULL_ARCHED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14029&ItemNamePattern=Pattern%3A+Redguard+Bed%2C+Full+Arched&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "pattern: redguard bed, full arched",
   },
   "pattern: redguard bed, wide grand": {
@@ -2294,8 +2240,6 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.REDGUARD_BENCH_PADDED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13900&ItemNamePattern=Pattern%3A+Redguard+Bench%2C+Padded&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "pattern: redguard bench, padded",
   },
   "pattern: redguard carpet, dunes": {
@@ -2310,8 +2254,6 @@ Recipe.properties = {
       resourceIngredient(Resource.EMBROIDERY, 6),
     ],
     output: productIngredient(Product.REDGUARD_CARPET_DUNES),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14301&ItemNamePattern=Pattern%3A+Redguard+Carpet%2C+Dunes&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "pattern: redguard carpet, dunes",
   },
   "pattern: redguard couch, padded": {
@@ -2325,8 +2267,6 @@ Recipe.properties = {
       resourceIngredient(Resource.EMBROIDERY, 6),
     ],
     output: productIngredient(Product.REDGUARD_COUCH_PADDED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13911&ItemNamePattern=Pattern%3A+Redguard+Couch%2C+Padded&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "pattern: redguard couch, padded",
   },
   "pattern: redguard couch, slatted": {
@@ -2386,8 +2326,6 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.REDGUARD_MAT_DESERT_SUN),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12882&ItemNamePattern=Pattern%3A+Redguard+Mat%2C+Desert+Sun&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=",
     key: "pattern: redguard mat, desert sun",
   },
   "pattern: redguard mat, meditation": {
@@ -2403,8 +2341,6 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.REDGUARD_MAT_MEDITATION),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=13290&ItemNamePattern=Pattern%3A+Redguard+Mat%2C+Meditation&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=",
     key: "pattern: redguard mat, meditation",
   },
   "pattern: redguard mat, sunrise": {
@@ -2420,8 +2356,6 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.REDGUARD_MAT_SUNRISE),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12479&ItemNamePattern=Pattern%3A+Redguard+Mat%2C+Sunrise&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "pattern: redguard mat, sunrise",
   },
   "pattern: redguard mat, sunset": {
@@ -2466,8 +2400,6 @@ Recipe.properties = {
       resourceIngredient(Resource.EMBROIDERY, 6),
     ],
     output: productIngredient(Product.REDGUARD_TAPESTRY_LATTICE),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=12152&ItemNamePattern=Pattern%3A+Redguard+Tapestry%2C+Lattice&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "pattern: redguard tapestry, lattice",
   },
   "pattern: redoran carpet, volcanic sands": {
@@ -2630,8 +2562,6 @@ Recipe.properties = {
       resourceIngredient(Resource.REKUTA, 3),
     ],
     output: productIngredient(Product.BRETON_VASE_DELICATE),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=14261&ItemNamePattern=Praxis%3A+Breton+Vase%2C+Delicate&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "praxis: breton vase, delicate",
   },
   "praxis: dark elf rug, striated": {
@@ -2646,8 +2576,6 @@ Recipe.properties = {
       resourceIngredient(Resource.ELEGANT_LINING, 3),
     ],
     output: productIngredient(Product.DARK_ELF_RUG_STRIATED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Praxis%3A+Dark+Elf+Rug%2C+Striated&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=",
     key: "praxis: dark elf rug, striated",
   },
   "praxis: dwarven amphora, sealed": {
@@ -2662,8 +2590,6 @@ Recipe.properties = {
       resourceIngredient(Resource.DENATA, 6),
     ],
     output: productIngredient(Product.DWARVEN_AMPHORA_SEALED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=15715&ItemNamePattern=Praxis%3A+Dwarven+Amphora%2C+Sealed&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "praxis: dwarven amphora, sealed",
   },
   "praxis: elsweyr pot, waves": {
@@ -2721,8 +2647,6 @@ Recipe.properties = {
       resourceIngredient(Resource.REKUTA, 3),
     ],
     output: productIngredient(Product.HLAALU_VASE_GILDED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=15643&ItemNamePattern=Praxis%3A+Hlaalu+Vase%2C+Gilded&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "praxis: hlaalu vase, gilded",
   },
   "praxis: orcish bedding, stone": {
@@ -2766,8 +2690,6 @@ Recipe.properties = {
       resourceIngredient(Resource.REKUTA, 3),
     ],
     output: productIngredient(Product.REDGUARD_VASE_BAROQUE),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Praxis%3A+Redguard+Vase%2C+Baroque&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "praxis: redguard vase, baroque",
   },
   "praxis: redoran amphora, sealed marble": {
@@ -2782,8 +2704,6 @@ Recipe.properties = {
       resourceIngredient(Resource.REKUTA, 3),
     ],
     output: productIngredient(Product.REDORAN_AMPHORA_SEALED_MARBLE),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=16341&ItemNamePattern=Praxis%3A+Redoran+Amphora%2C+Sealed+Marble&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "praxis: redoran amphora, sealed marble",
   },
   "praxis: wood elf grinding stone": {
@@ -2843,8 +2763,6 @@ Recipe.properties = {
       resourceIngredient(Resource.IRIDIUM_PLATING, 2),
     ],
     output: productIngredient(Product.ELSWEYR_VESSEL_UMBER_EMBELLISHED),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=20031&ItemNamePattern=Sketch%3A+Elsweyr+Vessel%2C+Umber+Embellished&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "sketch: elsweyr vessel, umber embellished",
   },
   "sketch: scrimshaw, ancient vessel": {
@@ -2860,8 +2778,6 @@ Recipe.properties = {
       resourceIngredient(Resource.ZIRCON_PLATING, 1),
     ],
     output: productIngredient(Product.SCRIMSHAW_ANCIENT_VESSEL),
-    ttcUrl:
-      "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=17970&ItemNamePattern=Sketch%3A+Scrimshaw%2C+Ancient+Vessel&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=&SortBy=Price&Order=asc",
     key: "sketch: scrimshaw, ancient vessel",
   },
   // ///////////////////////////////////////////////////////////////////////////
