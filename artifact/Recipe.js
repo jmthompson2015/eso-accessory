@@ -56,6 +56,7 @@ const Recipe = {
     "blueprint: redguard candlestick, practical",
   BLUEPRINT_REDGUARD_DESK_BOLTED: "blueprint: redguard desk, bolted",
   BLUEPRINT_REDGUARD_END_TABLE_INLAID: "blueprint: redguard end table, inlaid",
+  BLUEPRINT_REDGUARD_SHELF_BOLTED: "blueprint: redguard shelf, bolted",
   BLUEPRINT_REDGUARD_TABLE_FORMAL: "blueprint: redguard table, formal",
   BLUEPRINT_REDGUARD_TABLE_GAME: "blueprint: redguard table, game",
   BLUEPRINT_REDGUARD_TABLE_GRAND_INLAID:
@@ -116,6 +117,7 @@ const Recipe = {
   DESIGN_WOOD_ELF_VESSEL_TIERED_PAINTED:
     "design: wood elf vessel, tiered painted",
 
+  DIAGRAM_ALINOR_SCONCE_CRENELLATED: "diagram: alinor sconce, crenellated",
   DIAGRAM_BRETON_SCONCE_TORCH: "diagram: breton sconce, torch",
   DIAGRAM_BRETON_STREETLIGHT_PAIRED: "diagram: breton streetlight, paired",
   DIAGRAM_COMMON_PLATTER_SERVING: "diagram: common platter, serving",
@@ -203,6 +205,7 @@ const Recipe = {
   PATTERN_WOOD_ELF_STOOL_LEATHER: "pattern: wood elf stool, leather",
   PATTERN_WOOD_ELF_TABLE_LEATHER: "pattern: wood elf table, leather",
 
+  PRAXIS_ALINOR_POT_LIMESTONE: "praxis: alinor pot, limestone",
   PRAXIS_ARGONIAN_PAN_FRYING: "praxis: argonian pan, frying",
   PRAXIS_BRETON_AMPHORA_CERAMIC: "praxis: breton amphora, ceramic",
   PRAXIS_BRETON_VASE_DELICATE: "praxis: breton vase, delicate",
@@ -785,6 +788,7 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.REDGUARD_DESK_BOLTED),
+    ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard desk, bolted",
   },
   "blueprint: redguard end table, inlaid": {
@@ -802,6 +806,21 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_END_TABLE_INLAID),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard end table, inlaid",
+  },
+  "blueprint: redguard shelf, bolted": {
+    name: "Blueprint: Redguard Shelf, Bolted",
+    categoryKey: Category.LIBRARY,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 9),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.BAST, 6),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.MASTIC, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_SHELF_BOLTED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: redguard shelf, bolted",
   },
   "blueprint: redguard table, formal": {
     name: "Blueprint: Redguard Table, Formal",
@@ -1121,6 +1140,7 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.BRETON_VASE_GLAZED),
+    ownerKey: Character.FRAK_LOCK,
     key: "design: breton vase, glazed",
   },
   "design: common bowl of soup, display": {
@@ -1570,6 +1590,20 @@ Recipe.properties = {
   },
   // ///////////////////////////////////////////////////////////////////////////
   // Diagram
+  "diagram: alinor sconce, crenellated": {
+    name: "Diagram: Alinor Sconce, Crenellated",
+    categoryKey: Category.LIGHTING,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 5),
+      resourceIngredient(Resource.CULANDA_LACQUER, 1),
+      resourceIngredient(Resource.DWARVEN_OIL, 6),
+    ],
+    output: productIngredient(Product.ALINOR_SCONCE_CRENELLATED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: alinor sconce, crenellated",
+  },
   "diagram: breton sconce, torch": {
     name: "Diagram: Breton Sconce, Torch",
     categoryKey: Category.LIGHTING,
@@ -2627,6 +2661,19 @@ Recipe.properties = {
   },
   // ///////////////////////////////////////////////////////////////////////////
   // Praxis
+  "praxis: alinor pot, limestone": {
+    name: "Praxis: Alinor Pot, Limestone",
+    categoryKey: Category.COURTYARD,
+    craftKey: Craft.ENCHANTING,
+    inputs: [
+      resourceIngredient(Resource.MUNDANE_RUNE, 7),
+      resourceIngredient(Resource.CULANDA_LACQUER, 1),
+      resourceIngredient(Resource.JEJOTA, 9),
+    ],
+    output: productIngredient(Product.ALINOR_POT_LIMESTONE),
+    ownerKey: Character.FRAK_LOCK,
+    key: "praxis: alinor pot, limestone",
+  },
   "praxis: argonian pan, frying": {
     name: "Praxis: Argonian Pan, Frying",
     categoryKey: Category.HEARTH,
