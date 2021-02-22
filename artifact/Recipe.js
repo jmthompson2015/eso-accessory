@@ -2827,6 +2827,7 @@ Recipe.properties = {
   // Recipe
   "recipe: lava foot soup-and-saltrice": {
     name: "Recipe: Lava Foot Soup-and-Saltrice",
+    categoryKey: Category.CONSUMABLE,
     craftKey: Craft.PROVISIONING,
     inputs: [
       resourceIngredient(Resource.SALTRICE),
@@ -2841,6 +2842,7 @@ Recipe.properties = {
   },
   "recipe: witchmother's potent brew": {
     name: "Recipe: Witchmother's Potent Brew",
+    categoryKey: Category.CONSUMABLE,
     craftKey: Craft.PROVISIONING,
     inputs: [
       resourceIngredient(Resource.NIGHTSHADE),

@@ -1,4 +1,5 @@
 const Category = {
+  CONSUMABLE: "consumable",
   COURTYARD: "courtyard",
   DINING: "dining",
   GALLERY: "gallery",
@@ -14,6 +15,10 @@ const Category = {
 };
 
 Category.properties = {
+  consumable: {
+    name: "Consumable",
+    key: "consumable",
+  },
   courtyard: {
     name: "Courtyard",
     key: "courtyard",
