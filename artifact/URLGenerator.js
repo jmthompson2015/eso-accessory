@@ -12,7 +12,10 @@ const TTC_SUFFIX = "&SortBy=Price&Order=asc";
 
 URLGenerator.fashion = (productName) => {
   if (productName) {
-    const suffix = productName.replace(/[,']/g, "").replace(/ /g, "-");
+    const suffix = productName
+      .replace("Alinor", "High Elf")
+      .replace(/[,']/g, "")
+      .replace(/ /g, "-");
 
     return FASHION_PREFIX + suffix;
   }

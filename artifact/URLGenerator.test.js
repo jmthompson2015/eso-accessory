@@ -5,6 +5,18 @@ import URLGenerator from "./URLGenerator.js";
 
 QUnit.module("URLGenerator");
 
+QUnit.test("fashion() Alinor Amphora, Delicate", (assert) => {
+  // Setup.
+  const product = Product.properties[Product.ALINOR_AMPHORA_DELICATE];
+
+  // Run.
+  const result = URLGenerator.fashion(product.name);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result, "https://eso.mmo-fashion.com/High-Elf-Amphora-Delicate");
+});
+
 QUnit.test("fashion() Dres Lantern, Stationary", (assert) => {
   // Setup.
   const product = Product.properties[Product.DRES_LANTERN_STATIONARY];
