@@ -26,7 +26,7 @@ const mapFunction = (recipe) => {
   const productEntryCount = ItemUtils.entryCount(product.key);
   const productTtcUrl = product.ttcUrl;
   const profit =
-    productSuggestedPrice > craftCost
+    productSuggestedPrice > 0 && craftCost > 0
       ? productSuggestedPrice - craftCost
       : undefined;
   const breakEven =

@@ -4,6 +4,9 @@ const createColorCell = (color, name) =>
 const createLink = (href, name) =>
   ReactDOMFactories.a({ key: name, href, target: "_blank" }, name);
 
+const createSpan = (label, fontColor = "red") =>
+  ReactDOMFactories.span({ key: label, style: { color: fontColor } }, label);
+
 const formatNumber = (value) => {
   if (![undefined, null].includes(value)) {
     const usFormatter = new Intl.NumberFormat("en-US");
@@ -165,7 +168,10 @@ const TableColumns = [
     type: "number",
     className: "tr",
     convertFunction: (row) => round0(row.profit),
-    cellFunction: (row) => formatNumber(row.profit),
+    cellFunction: (row) => {
+      const profit = formatNumber(row.profit);
+      return row.profit < 0 ? createSpan(profit) : profit;
+    },
     valueFunction: (row) => parseFloat(row.profit),
   },
   {
