@@ -25,7 +25,7 @@ const Resource = {
   CHROMIUM_PLATING: "chromium plating",
   CHYSOLITE: "chysolite",
   CLAM_GALL: "clam gall",
-  COLUMNBINE: "columbine",
+  COLUMBINE: "columbine",
   CORN_FLOWER: "corn flower",
   CITRINE: "citrine",
   CLEAN_PELT: "clean pelt",

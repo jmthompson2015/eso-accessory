@@ -41,7 +41,7 @@ QUnit.test("keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 2;
+  const length = 3;
   assert.equal(result.length, length);
   assert.equal(R.head(result), ProductType.FURNISHING);
   assert.equal(R.last(result), ProductType.PROVISION);

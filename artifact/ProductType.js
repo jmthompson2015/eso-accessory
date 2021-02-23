@@ -1,5 +1,6 @@
 const ProductType = {
   FURNISHING: "furnishing",
+  POTION: "potion",
   PROVISION: "provision",
 };
 
@@ -8,6 +9,11 @@ ProductType.properties = {
     name: "Furnishing",
     url: "https://en.uesp.net/wiki/Online:Furnishings",
     key: "furnishing",
+  },
+  potion: {
+    name: "Potion",
+    url: "https://en.uesp.net/wiki/Online:Potions",
+    key: "potion",
   },
   provision: {
     name: "Provision",

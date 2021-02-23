@@ -12,6 +12,17 @@ const resourceIngredient = (resourceKey, amount) =>
   Ingredient.create({ resourceKey, amount });
 
 const Recipe = {
+  ALCHEMY_ESSENCE_OF_HEALTH_1: "alchemy: essence of health 1",
+  ALCHEMY_ESSENCE_OF_HEALTH_2: "alchemy: essence of health 2",
+  ALCHEMY_ESSENCE_OF_SPELL_CRITICAL_1: "alchemy: essence of spell critical 1",
+  ALCHEMY_ESSENCE_OF_SPELL_CRITICAL_2: "alchemy: essence of spell critical 2",
+  ALCHEMY_ESSENCE_OF_SPELL_POWER_1: "alchemy: essence of spell power 1",
+  ALCHEMY_ESSENCE_OF_SPELL_POWER_2: "alchemy: essence of spell power 2",
+  ALCHEMY_ESSENCE_OF_WEAPON_CRIT_1: "alchemy: essence of weapon crit 1",
+  ALCHEMY_ESSENCE_OF_WEAPON_CRIT_2: "alchemy: essence of weapon crit 2",
+  ALCHEMY_ESSENCE_OF_WEAPON_POWER_1: "alchemy: essence of weapon power 1",
+  ALCHEMY_ESSENCE_OF_WEAPON_POWER_2: "alchemy: essence of weapon power 2",
+
   BLUEPRINT_ARGONIAN_COUNTER_LONG: "blueprint: argonian counter, long",
   BLUEPRINT_ARGONIAN_MUG_TOOTH: "blueprint: argonian mug, tooth",
   BLUEPRINT_BRETON_CHAIR_SLATTED: "blueprint: breton chair, slatted",
@@ -233,6 +244,138 @@ const Recipe = {
 };
 
 Recipe.properties = {
+  // ///////////////////////////////////////////////////////////////////////////
+  // Alchemy
+  "alchemy: essence of health 1": {
+    name: "Alchemy: Essence of Health 1",
+    categoryKey: Category.CONSUMABLE,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.BUGLOSS),
+      resourceIngredient(Resource.COLUMBINE),
+      resourceIngredient(Resource.MOUNTAIN_FLOWER),
+    ],
+    output: productIngredient(Product.ESSENCE_OF_HEALTH),
+    ownerKey: Character.FRAK_LOCK,
+    key: "alchemy: essence of health 1",
+  },
+  "alchemy: essence of health 2": {
+    name: "Alchemy: Essence of Health 2",
+    categoryKey: Category.CONSUMABLE,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.BUGLOSS),
+      resourceIngredient(Resource.COLUMBINE),
+      resourceIngredient(Resource.LADYS_SMOCK),
+    ],
+    output: productIngredient(Product.ESSENCE_OF_HEALTH),
+    ownerKey: Character.FRAK_LOCK,
+    key: "alchemy: essence of health 2",
+  },
+  "alchemy: essence of spell critical 1": {
+    name: "Alchemy: Essence of Spell Critical 1",
+    categoryKey: Category.CONSUMABLE,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.LADYS_SMOCK),
+      resourceIngredient(Resource.WATER_HYACINTH),
+      resourceIngredient(Resource.COLUMBINE),
+    ],
+    output: productIngredient(Product.ESSENCE_OF_SPELL_CRITICAL),
+    ownerKey: Character.FRAK_LOCK,
+    key: "alchemy: essence of spell critical 1",
+  },
+  "alchemy: essence of spell critical 2": {
+    name: "Alchemy: Essence of Spell Critical 2",
+    categoryKey: Category.CONSUMABLE,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.LADYS_SMOCK),
+      resourceIngredient(Resource.WATER_HYACINTH),
+      resourceIngredient(Resource.BUGLOSS),
+    ],
+    output: productIngredient(Product.ESSENCE_OF_SPELL_CRITICAL),
+    ownerKey: Character.FRAK_LOCK,
+    key: "alchemy: essence of spell critical 2",
+  },
+  "alchemy: essence of spell power 1": {
+    name: "Alchemy: Essence of Spell Power 1",
+    categoryKey: Category.CONSUMABLE,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.LADYS_SMOCK),
+      resourceIngredient(Resource.CORN_FLOWER),
+      resourceIngredient(Resource.WATER_HYACINTH),
+    ],
+    output: productIngredient(Product.ESSENCE_OF_SPELL_POWER),
+    ownerKey: Character.FRAK_LOCK,
+    key: "alchemy: essence of spell power 1",
+  },
+  "alchemy: essence of spell power 2": {
+    name: "Alchemy: Essence of Spell Power 2",
+    categoryKey: Category.CONSUMABLE,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.LADYS_SMOCK),
+      resourceIngredient(Resource.CORN_FLOWER),
+      resourceIngredient(Resource.NAMIRAS_ROT),
+    ],
+    output: productIngredient(Product.ESSENCE_OF_SPELL_POWER),
+    ownerKey: Character.FRAK_LOCK,
+    key: "alchemy: essence of spell power 2",
+  },
+  "alchemy: essence of weapon crit 1": {
+    name: "Alchemy: Essence of Weapon Crit 1",
+    categoryKey: Category.CONSUMABLE,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.DRAGONTHORN),
+      resourceIngredient(Resource.WATER_HYACINTH),
+      resourceIngredient(Resource.MOUNTAIN_FLOWER),
+    ],
+    output: productIngredient(Product.ESSENCE_OF_WEAPON_CRIT),
+    ownerKey: Character.FRAK_LOCK,
+    key: "alchemy: essence of weapon crit 1",
+  },
+  "alchemy: essence of weapon crit 2": {
+    name: "Alchemy: Essence of Weapon Crit 2",
+    categoryKey: Category.CONSUMABLE,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.DRAGONTHORN),
+      resourceIngredient(Resource.WATER_HYACINTH),
+      resourceIngredient(Resource.COLUMBINE),
+    ],
+    output: productIngredient(Product.ESSENCE_OF_WEAPON_CRIT),
+    ownerKey: Character.FRAK_LOCK,
+    key: "alchemy: essence of weapon crit 2",
+  },
+  "alchemy: essence of weapon power 1": {
+    name: "Alchemy: Essence of Weapon Power 1",
+    categoryKey: Category.CONSUMABLE,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.BLESSED_THISTLE),
+      resourceIngredient(Resource.DRAGONTHORN),
+      resourceIngredient(Resource.WORMWOOD),
+    ],
+    output: productIngredient(Product.ESSENCE_OF_WEAPON_POWER),
+    ownerKey: Character.FRAK_LOCK,
+    key: "alchemy: essence of weapon power 1",
+  },
+  "alchemy: essence of weapon power 2": {
+    name: "Alchemy: Essence of Weapon Power 2",
+    categoryKey: Category.CONSUMABLE,
+    craftKey: Craft.ALCHEMY,
+    inputs: [
+      resourceIngredient(Resource.BLESSED_THISTLE),
+      resourceIngredient(Resource.DRAGONTHORN),
+      resourceIngredient(Resource.WATER_HYACINTH),
+    ],
+    output: productIngredient(Product.ESSENCE_OF_WEAPON_POWER),
+    ownerKey: Character.FRAK_LOCK,
+    key: "alchemy: essence of weapon power 2",
+  },
   // ///////////////////////////////////////////////////////////////////////////
   // Blueprint
   "blueprint: argonian counter, long": {

@@ -73,6 +73,11 @@ const Product = {
   ELSWEYR_CARPET_GOLD_RUBY: "elsweyr carpet, gold-ruby",
   ELSWEYR_POT_WAVES: "elsweyr pot, waves",
   ELSWEYR_VESSEL_UMBER_EMBELLISHED: "elsweyr vessel, umber embellished",
+  ESSENCE_OF_HEALTH: "essence of health",
+  ESSENCE_OF_SPELL_CRITICAL: "essence of spell critical",
+  ESSENCE_OF_SPELL_POWER: "essence of spell power",
+  ESSENCE_OF_WEAPON_CRIT: "essence of weapon crit",
+  ESSENCE_OF_WEAPON_POWER: "essence of weapon power",
   FOOTSTOOL_BLOCK: "footstool, block",
   GRAPES_WAX: "grapes, wax",
   HAGRAVEN_CAULDRON_RITUAL: "hagraven cauldron, ritual",
@@ -552,6 +557,46 @@ Product.properties = {
     name: "Elsweyr Vessel, Umber Embellished",
     qualityKey: Quality.SUPERIOR,
     key: "elsweyr vessel, umber embellished",
+  },
+  "essence of health": {
+    name: "Essence of Health",
+    productTypeKey: ProductType.POTION,
+    qualityKey: Quality.EPIC,
+    url:
+      "http://benevolentbowd.ca/games/esotu/alchemy-writs-101-essence-of-health/",
+    key: "essence of health",
+  },
+  "essence of spell critical": {
+    name: "Essence of Spell Critical",
+    productTypeKey: ProductType.POTION,
+    qualityKey: Quality.EPIC,
+    url:
+      "http://benevolentbowd.ca/games/esotu/esotu-alchemy-potions-with-three-ingredients/#spell-critical",
+    key: "essence of spell critical",
+  },
+  "essence of spell power": {
+    name: "Essence of Spell Power",
+    productTypeKey: ProductType.POTION,
+    qualityKey: Quality.EPIC,
+    url:
+      "http://benevolentbowd.ca/games/esotu/esotu-alchemy-potions-with-three-ingredients/#spell-power",
+    key: "essence of spell power",
+  },
+  "essence of weapon crit": {
+    name: "Essence of Weapon Crit",
+    productTypeKey: ProductType.POTION,
+    qualityKey: Quality.EPIC,
+    url:
+      "http://benevolentbowd.ca/games/esotu/esotu-alchemy-potions-with-three-ingredients/#weapon-crit",
+    key: "essence of weapon crit",
+  },
+  "essence of weapon power": {
+    name: "Essence of Weapon Power",
+    productTypeKey: ProductType.POTION,
+    qualityKey: Quality.EPIC,
+    url:
+      "http://benevolentbowd.ca/games/esotu/esotu-alchemy-potions-with-three-ingredients/#weapon-power",
+    key: "essence of weapon power",
   },
   "footstool, block": {
     name: "Footstool, Block",

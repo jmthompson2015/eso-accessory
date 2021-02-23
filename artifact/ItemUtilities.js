@@ -4,6 +4,19 @@
 import ItemLookUpTable from "./ItemLookUpTable.js";
 import PriceTable from "./PriceTable.js";
 
+const objectFilter = (node) => typeof node === "object";
+
+const childObjects = (parent) => {
+  let answer;
+
+  if (parent) {
+    const children = Object.values(parent);
+    answer = R.filter(objectFilter, children);
+  }
+
+  return answer;
+};
+
 const ItemUtilities = {};
 
 ItemUtilities.itemId = (itemKey) => {
@@ -19,11 +32,25 @@ ItemUtilities.itemId = (itemKey) => {
 
 ItemUtilities.item = (itemKey) => {
   const itemId = ItemUtilities.itemId(itemKey);
-  let item = PriceTable.Data[itemId];
+  const root = PriceTable.Data[itemId];
+  let item = root;
 
   if (item) {
-    while (item && Object.values(item).length === 1) {
-      item = Object.values(item)[0];
+    let children = childObjects(item);
+
+    while (children) {
+      if (children.length === 1) {
+        item = children[0];
+        children = childObjects(item);
+      } else if (children.length > 1) {
+        // Find the child with the largest EntryCount.
+        const reduceFunction = (accum, node) =>
+          R.isNil(accum) || accum.EntryCount < node.EntryCount ? node : accum;
+        item = R.reduce(reduceFunction, null, children);
+        children = childObjects(item);
+      } else {
+        children = null;
+      }
     }
 
     return item;
