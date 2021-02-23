@@ -48,6 +48,7 @@ const Product = {
   COMMON_CARGO_COVERED: "common cargo, covered",
   COMMON_CARGO_SEALED: "common cargo, sealed",
   COMMON_PLATTER_SERVING: "common platter, serving",
+  COMMON_POT_COOKING: "common pot, cooking",
   COMMON_TABLE_SLANTED: "common table, slanted",
   COMMON_WASHTUB_EMPTY: "common washtub, empty",
   DARK_ELF_CANDLE_CLAW_BASE: "dark elf candle, claw base",
@@ -56,6 +57,7 @@ const Product = {
   DARK_ELF_CAULDRON_BANDED: "dark elf cauldron, banded",
   DARK_ELF_LANTERN_OIL: "dark elf lantern, oil",
   DARK_ELF_RUG_STRIATED: "dark elf rug, striated",
+  DARK_ELF_TABLE_FORMAL: "dark elf table, formal",
   DRES_BOWL_DINNER: "dres bowl, dinner",
   DRES_BOWL_EMPTY: "dres bowl, empty",
   DRES_CANDLES_MEDITATION: "dres candles, meditation",
@@ -71,6 +73,8 @@ const Product = {
   DWARVEN_VESSEL_SEALED: "dwarven vessel, sealed",
   ELSWEYR_CARPET_GOLD_EMERALD: "elsweyr carpet, gold-emerald",
   ELSWEYR_CARPET_GOLD_RUBY: "elsweyr carpet, gold-ruby",
+  ELSWEYR_CUP_OF_RICE_GILDED: "elsweyr cup of rice, gilded",
+  ELSWEYR_POT_ORNATE: "elsweyr pot, ornate",
   ELSWEYR_POT_WAVES: "elsweyr pot, waves",
   ELSWEYR_VESSEL_UMBER_EMBELLISHED: "elsweyr vessel, umber embellished",
   ESSENCE_OF_HEALTH: "essence of health",
@@ -125,6 +129,7 @@ const Product = {
   ORCISH_LANTERN_HOODED: "orcish lantern, hooded",
   ORCISH_MUG_RUGGED: "orcish mug, rugged",
   ORCISH_PLATFORM_BLOCK: "orcish platform, block",
+  ORCISH_SACK_FLOUR: "orcish sack, flour",
   ORCISH_SHELF_LONG: "orcish shelf, long",
   ORCISH_TABLE_BLOCK: "orcish table, block",
   ORCISH_TRUNK_BRACED: "orcish trunk, braced",
@@ -433,6 +438,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "common platter, serving",
   },
+  "common pot, cooking": {
+    name: "Common Pot, Cooking",
+    qualityKey: Quality.FINE,
+    key: "common pot, cooking",
+  },
   "common table, slanted": {
     name: "Common Table, Slanted",
     qualityKey: Quality.FINE,
@@ -472,6 +482,11 @@ Product.properties = {
     name: "Dark Elf Rug, Striated",
     qualityKey: Quality.EPIC,
     key: "dark elf rug, striated",
+  },
+  "dark elf table, formal": {
+    name: "Dark Elf Table, Formal",
+    qualityKey: Quality.FINE,
+    key: "dark elf table, formal",
   },
   "dres bowl, dinner": {
     name: "Dres Bowl, Dinner",
@@ -547,6 +562,16 @@ Product.properties = {
     name: "Elsweyr Carpet, Gold-Ruby",
     qualityKey: Quality.FINE,
     key: "elsweyr carpet, gold-ruby",
+  },
+  "elsweyr cup of rice, gilded": {
+    name: "Elsweyr Cup of Rice, Gilded",
+    qualityKey: Quality.SUPERIOR,
+    key: "elsweyr cup of rice, gilded",
+  },
+  "elsweyr pot, ornate": {
+    name: "Elsweyr Pot, Ornate",
+    qualityKey: Quality.FINE,
+    key: "elsweyr pot, ornate",
   },
   "elsweyr pot, waves": {
     name: "Elsweyr Pot, Waves",
@@ -833,6 +858,11 @@ Product.properties = {
     name: "Orcish Platform, Block",
     qualityKey: Quality.FINE,
     key: "orcish platform, block",
+  },
+  "orcish sack, flour": {
+    name: "Orcish Sack, Flour",
+    qualityKey: Quality.SUPERIOR,
+    key: "orcish sack, flour",
   },
   "orcish shelf, long": {
     name: "Orcish Shelf, Long",

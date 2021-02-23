@@ -41,6 +41,7 @@ const Recipe = {
   BLUEPRINT_COMMON_TABLE_SLANTED: "blueprint: common table, slanted",
   BLUEPRINT_COMMON_WASHTUB_EMPTY: "blueprint: common washtub, empty",
   BLUEPRINT_DARK_ELF_CART_MERCHANT: "blueprint: dark elf cart, merchant",
+  BLUEPRINT_DARK_ELF_TABLE_FORMAL: "blueprint: dark elf table, formal",
   BLUEPRINT_FOOTSTOOL_BLOCK: "blueprint: footstool, block",
   BLUEPRINT_HIGH_ELF_BED_BUNK: "blueprint: high elf bed, bunk",
   BLUEPRINT_HIGH_ELF_BED_SINGLE: "blueprint: high elf bed, single",
@@ -132,6 +133,7 @@ const Recipe = {
   DIAGRAM_BRETON_SCONCE_TORCH: "diagram: breton sconce, torch",
   DIAGRAM_BRETON_STREETLIGHT_PAIRED: "diagram: breton streetlight, paired",
   DIAGRAM_COMMON_PLATTER_SERVING: "diagram: common platter, serving",
+  DIAGRAM_COMMON_POT_COOKING: "diagram: common pot, cooking",
   DIAGRAM_DARK_ELF_CANDLE_CLAW_BASE: "diagram: dark elf candle, claw base",
   DIAGRAM_DARK_ELF_CAULDRON_BANDED: "diagram: dark elf cauldron, banded",
   DIAGRAM_DRES_POT_SAUCE: "diagram: dres pot, sauce",
@@ -186,6 +188,7 @@ const Recipe = {
   PATTERN_ORCISH_BANNER_WORN: "pattern: orcish banner, worn",
   PATTERN_ORCISH_BEDDING_FUR: "pattern: orcish bedding, fur",
   PATTERN_ORCISH_CARPET_FRINGED: "pattern: orcish carpet, fringed",
+  PATTERN_ORCISH_SACK_FLOUR: "pattern: orcish sack, flour",
   PATTERN_REDGUARD_ARMCHAIR_CUSHIONED: "pattern: redguard armchair, cushioned",
   PATTERN_REDGUARD_ARMCHAIR_STARRY: "pattern: redguard armchair, starry",
   PATTERN_REDGUARD_BED_FULL_ARCHED: "pattern: redguard bed, full arched",
@@ -222,6 +225,7 @@ const Recipe = {
   PRAXIS_BRETON_VASE_DELICATE: "praxis: breton vase, delicate",
   PRAXIS_DARK_ELF_RUG_STRIATED: "praxis: dark elf rug, striated",
   PRAXIS_DWARVEN_AMPHORA_SEALED: "praxis: dwarven amphora, sealed",
+  PRAXIS_ELSWEYR_POT_ORNATE: "praxis: elsweyr pot, ornate",
   PRAXIS_ELSWEYR_POT_WAVES: "praxis: elsweyr pot, waves",
   PRAXIS_HAGRAVEN_CAULDRON_RITUAL: "praxis: hagraven cauldron, ritual",
   PRAXIS_HLAALU_AMPHORA_SEALED_ORICHALCUM:
@@ -237,6 +241,7 @@ const Recipe = {
   RECIPE_LAVA_FOOT_SOUP_AND_SALTRICE: "recipe: lava foot soup-and-saltrice",
   RECIPE_WITCHMOTHERS_POTENT_BREW: "recipe: witchmother's potent brew",
 
+  SKETCH_ELSWEYR_CUP_OF_RICE_GILDED: "sketch: elsweyr cup of rice, gilded",
   SKETCH_ELSWEYR_VESSEL_UMBER_EMBELLISHED:
     "sketch: elsweyr vessel, umber embellished",
   SKETCH_SCRIMSHAW_ANCIENT_VESSEL: "sketch: scrimshaw, ancient vessel",
@@ -617,6 +622,19 @@ Recipe.properties = {
     output: productIngredient(Product.DARK_ELF_CART_MERCHANT),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: dark elf cart, merchant",
+  },
+  "blueprint: dark elf table, formal": {
+    name: "Blueprint: Dark Elf Table, Formal",
+    categoryKey: Category.DINING,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 6),
+      resourceIngredient(Resource.OBSIDIAN, 5),
+      resourceIngredient(Resource.PITCH, 9),
+    ],
+    output: productIngredient(Product.DARK_ELF_TABLE_FORMAL),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: dark elf table, formal",
   },
   "blueprint: footstool, block": {
     name: "Blueprint: Footstool, Block",
@@ -1789,6 +1807,20 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "diagram: common platter, serving",
   },
+  "diagram: common pot, cooking": {
+    name: "Diagram: Common Pot, Cooking",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 3),
+      resourceIngredient(Resource.DECORATIVE_WAX, 3),
+      resourceIngredient(Resource.NICKEL, 5),
+      resourceIngredient(Resource.HONING_STONE, 9),
+    ],
+    output: productIngredient(Product.COMMON_POT_COOKING),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: common pot, cooking",
+  },
   "diagram: dark elf candle, claw base": {
     name: "Diagram: Dark Elf Candle, Claw Base",
     categoryKey: Category.LIGHTING,
@@ -2440,6 +2472,20 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: orcish carpet, fringed",
   },
+  "pattern: orcish sack, flour": {
+    name: "Pattern: Orcish Sack, Flour",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.CLEAN_PELT, 9),
+      resourceIngredient(Resource.DECORATIVE_WAX, 6),
+      resourceIngredient(Resource.MANGANESE, 10),
+      resourceIngredient(Resource.EMBROIDERY, 6),
+    ],
+    output: productIngredient(Product.ORCISH_SACK_FLOUR),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: orcish sack, flour",
+  },
   "pattern: redguard armchair, cushioned": {
     name: "Pattern: Redguard Armchair, Cushioned",
     categoryKey: Category.DINING,
@@ -2886,6 +2932,19 @@ Recipe.properties = {
     output: productIngredient(Product.DWARVEN_AMPHORA_SEALED),
     key: "praxis: dwarven amphora, sealed",
   },
+  "praxis: elsweyr pot, ornate": {
+    name: "Praxis: Elsweyr Pot, Ornate",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.ENCHANTING,
+    inputs: [
+      resourceIngredient(Resource.MUNDANE_RUNE, 5),
+      resourceIngredient(Resource.SHIMMERING_SAND, 1),
+      resourceIngredient(Resource.JEJOTA, 9),
+    ],
+    output: productIngredient(Product.ELSWEYR_POT_ORNATE),
+    ownerKey: Character.FRAK_LOCK,
+    key: "praxis: elsweyr pot, ornate",
+  },
   "praxis: elsweyr pot, waves": {
     name: "Praxis: Elsweyr Pot, Waves",
     categoryKey: Category.HEARTH,
@@ -3048,6 +3107,20 @@ Recipe.properties = {
   },
   // ///////////////////////////////////////////////////////////////////////////
   // Sketch
+  "sketch: elsweyr cup of rice, gilded": {
+    name: "Sketch: Elsweyr Cup of Rice, Gilded",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.JEWELRY,
+    inputs: [
+      resourceIngredient(Resource.OCHRE, 6),
+      resourceIngredient(Resource.DECORATIVE_WAX, 5),
+      resourceIngredient(Resource.SHIMMERING_SAND, 1),
+      resourceIngredient(Resource.IRIDIUM_PLATING, 2),
+    ],
+    output: productIngredient(Product.ELSWEYR_CUP_OF_RICE_GILDED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "sketch: elsweyr cup of rice, gilded",
+  },
   "sketch: elsweyr vessel, umber embellished": {
     name: "Sketch: Elsweyr Vessel, Umber Embellished",
     categoryKey: Category.GALLERY,
