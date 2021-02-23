@@ -84,7 +84,7 @@ body {
 }
 
 .frt-table tbody tr:nth-child(2n) td {
-  background: #f0fff0;
+  background: #fff0f0;
 }
 
 .frt-table tbody tr:nth-child(2n + 1) td {
