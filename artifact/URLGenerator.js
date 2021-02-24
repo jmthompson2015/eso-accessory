@@ -6,6 +6,9 @@ const URLGenerator = {};
 
 const FASHION_PREFIX = "https://eso.mmo-fashion.com/";
 const HOUSING_PREFIX = "https://eso-housing.com/furniture/";
+const RESOURCE_ICON_PREFIX =
+  "https://elderscrollsonline.wiki.fextralife.com/file/Elder-Scrolls-Online/";
+const RESOURCE_ICON_SUFFIX = ".png";
 const TTC_PREFIX =
   "https://us.tamrieltradecentre.com/pc/Trade/SearchResult?SearchType=Sell&ItemID=";
 const TTC_SUFFIX = "&SortBy=Price&Order=asc";
@@ -32,6 +35,16 @@ URLGenerator.housing = (productName) => {
   }
 
   console.error(`Missing productName: ${productName}`);
+  return null;
+};
+
+URLGenerator.resourceIcon = (resourceName) => {
+  if (resourceName) {
+    const midfix = resourceName.replace(/ /g, "%20");
+    return RESOURCE_ICON_PREFIX + midfix + RESOURCE_ICON_SUFFIX;
+  }
+
+  console.error(`Missing resourceName: ${resourceName}`);
   return null;
 };
 

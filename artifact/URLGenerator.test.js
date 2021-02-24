@@ -1,6 +1,7 @@
 /* eslint no-console: ["error", { allow: ["log", "warn"] }] */
 
 import Product from "./Product.js";
+import Resource from "./Resource.js";
 import URLGenerator from "./URLGenerator.js";
 
 QUnit.module("URLGenerator");
@@ -55,6 +56,29 @@ QUnit.test("housing() Dres Lantern, Stationary", (assert) => {
 QUnit.test("housing() null", (assert) => {
   // Run.
   const result = URLGenerator.housing(null);
+
+  // Verify.
+  assert.equal(result, null);
+});
+
+QUnit.test("resourceIcon() White Cap", (assert) => {
+  // Setup.
+  const product = Resource.properties[Resource.WHITE_CAP];
+
+  // Run.
+  const result = URLGenerator.resourceIcon(product.name);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(
+    result,
+    "https://elderscrollsonline.wiki.fextralife.com/file/Elder-Scrolls-Online/White%20Cap.png"
+  );
+});
+
+QUnit.test("resourceIcon() null", (assert) => {
+  // Run.
+  const result = URLGenerator.resourceIcon(null);
 
   // Verify.
   assert.equal(result, null);

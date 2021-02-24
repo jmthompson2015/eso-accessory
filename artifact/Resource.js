@@ -128,6 +128,8 @@ Resource.properties = {
   },
   "alchemical resin": {
     name: "Alchemical Resin",
+    iconUrl:
+      "https://images.uesp.net/9/9b/ON-icon-reagent-Alchemical_Resin.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.FURNISHING,
     key: "alchemical resin",
@@ -146,12 +148,16 @@ Resource.properties = {
   },
   "arkthzand sprocket": {
     name: "Arkthzand Sprocket",
+    iconUrl:
+      "https://images.uesp.net/7/78/ON-icon-style_material-Arkthzand_Sprocket.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.STYLE,
     key: "arkthzand sprocket",
   },
   "ash canvas": {
     name: "Ash Canvas",
+    iconUrl:
+      "https://images.uesp.net/7/75/ON-icon-style_material-Ash_Canvas.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.STYLE,
     key: "ash canvas",
@@ -164,18 +170,21 @@ Resource.properties = {
   },
   bast: {
     name: "Bast",
+    iconUrl: "https://images.uesp.net/a/ad/ON-icon-raw_material-Bast.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.FURNISHING,
     key: "bast",
   },
   "beetle scuttle": {
     name: "Beetle Scuttle",
+    iconUrl: "https://images.uesp.net/e/ed/ON-icon-reagent-Beetle_Scuttle.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "beetle scuttle",
   },
   "bervez juice": {
     name: "Bervez Juice",
+    iconUrl: "https://images.uesp.net/c/c8/ON-icon-food-Bervez_Juice.png",
     qualityKey: Quality.EPIC,
     resourceTypeKey: ResourceType.PROVISION,
     url: "http://teso-guides.com/the-elder-scrolls-online-bervez-juice",
@@ -201,24 +210,28 @@ Resource.properties = {
   },
   bone: {
     name: "Bone",
+    iconUrl: "https://images.uesp.net/4/4f/ON-icon-style_material-Bone.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.STYLE,
     key: "bone",
   },
   bronze: {
     name: "Bronze",
+    iconUrl: "https://images.uesp.net/c/c4/ON-icon-style_material-Bronze.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.STYLE,
     key: "bronze",
   },
   bugloss: {
     name: "Bugloss",
+    iconUrl: "https://images.uesp.net/1/1b/ON-icon-reagent-Bugloss.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "bugloss",
   },
   "butterfly wing": {
     name: "Butterfly Wing",
+    iconUrl: "https://images.uesp.net/5/50/ON-icon-reagent-Butterfly_Wing.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "butterfly wing",
@@ -231,11 +244,13 @@ Resource.properties = {
   },
   "chaurus egg": {
     name: "Chaurus Egg",
+    iconUrl: "https://images.uesp.net/6/69/ON-icon-reagent-Chaurus_Egg.png",
     resourceTypeKey: ResourceType.REAGENT,
     key: "chaurus egg",
   },
   "chromium plating": {
     name: "Chromium Plating",
+    iconUrl: "https://images.uesp.net/5/55/ON-icon-plating-Chromium.png",
     qualityKey: Quality.LEGENDARY,
     resourceTypeKey: ResourceType.PLATING,
     key: "chromium plating",
@@ -254,24 +269,28 @@ Resource.properties = {
   },
   "clam gall": {
     name: "Clam Gall",
+    iconUrl: "https://images.uesp.net/e/e4/ON-icon-reagent-Clam_Gall.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "clam gall",
   },
   "clean pelt": {
     name: "Clean Pelt",
+    iconUrl: "https://images.uesp.net/0/0a/ON-icon-raw_material-Clean_Pelt.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.FURNISHING,
     key: "clean pelt",
   },
   columbine: {
     name: "Columbine",
+    iconUrl: "https://images.uesp.net/3/34/ON-icon-reagent-Columbine.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "columbine",
   },
   "corn flower": {
     name: "Corn Flower",
+    iconUrl: "https://images.uesp.net/c/c8/ON-icon-reagent-Corn_Flower.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "corn flower",
@@ -284,17 +303,22 @@ Resource.properties = {
   },
   "crimson nirnroot": {
     name: "Crimson Nirnroot",
+    iconUrl:
+      "https://images.uesp.net/6/6b/ON-icon-reagent-Crimson_Nirnroot.png",
     resourceTypeKey: ResourceType.REAGENT,
     key: "crimson nirnroot",
   },
   "culanda lacquer": {
     name: "Culanda Lacquer",
+    iconUrl:
+      "https://images.uesp.net/f/f1/ON-icon-style_material-Culanda_Lacquer.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.STYLE,
     key: "culanda lacquer",
   },
   "decorative wax": {
     name: "Decorative Wax",
+    iconUrl: "https://images.uesp.net/b/ba/ON-icon-food-Decorative_Wax.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.FURNISHING,
     key: "decorative wax",
@@ -319,22 +343,27 @@ Resource.properties = {
   },
   "dragon rheum": {
     name: "Dragon Rheum",
+    iconUrl: "https://images.uesp.net/7/71/ON-icon-reagent-Dragon_Rheum.png",
     resourceTypeKey: ResourceType.REAGENT,
     key: "dragon rheum",
   },
   "dragon's bile": {
     name: "Dragon's Bile",
+    iconUrl: "https://images.uesp.net/d/df/ON-icon-reagent-Dragon%27s_Bile.png",
     resourceTypeKey: ResourceType.REAGENT,
     key: "dragon's bile",
   },
   "dragon's blood": {
     name: "Dragon's Blood",
+    iconUrl:
+      "https://images.uesp.net/5/54/ON-icon-reagent-Dragon%27s_Blood.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "dragon's blood",
   },
   dragonthorn: {
     name: "Dragonthorn",
+    iconUrl: "https://images.uesp.net/2/21/ON-icon-reagent-Dragonthorn.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "dragonthorn",
@@ -353,12 +382,15 @@ Resource.properties = {
   },
   "dwemer frame": {
     name: "Dwemer frame",
+    iconUrl:
+      "https://images.uesp.net/8/86/ON-icon-style_material-Dwemer_Scrap.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.STYLE,
     key: "dwemer frame",
   },
   "elegant lining": {
     name: "Elegant Lining",
+    iconUrl: "https://images.uesp.net/1/10/ON-icon-tannin-Elegant_Lining.png",
     qualityKey: Quality.EPIC,
     resourceTypeKey: ResourceType.TANNIN,
     key: "elegant lining",
@@ -389,12 +421,14 @@ Resource.properties = {
   },
   "fleshfly larva": {
     name: "Fleshfly Larva",
+    iconUrl: "https://images.uesp.net/f/f0/ON-icon-reagent-Fleshfly_Larva.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "fleshfly larva",
   },
   flint: {
     name: "Flint",
+    iconUrl: "https://images.uesp.net/9/9d/ON-icon-style_material-Flint.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.STYLE,
     key: "flint",
@@ -407,12 +441,15 @@ Resource.properties = {
   },
   "fortified nirncrux": {
     name: "Fortified Nirncrux",
+    iconUrl:
+      "https://images.uesp.net/9/99/ON-icon-trait_material-Fortified_Nirncrux.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.GEM,
     key: "fortified nirncrux",
   },
   "frost mirriam": {
     name: "Frost Mirriam",
+    iconUrl: "https://images.uesp.net/4/43/ON-icon-food-Frost_Mirriam.png",
     qualityKey: Quality.EPIC,
     resourceTypeKey: ResourceType.PROVISION,
     url: "http://teso-guides.com/the-elder-scrolls-online-frost-mirriam",
@@ -432,6 +469,7 @@ Resource.properties = {
   },
   heartwood: {
     name: "Heartwood",
+    iconUrl: "https://images.uesp.net/1/15/ON-icon-wood-Heartwood.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.FURNISHING,
     key: "heartwood",
@@ -456,12 +494,15 @@ Resource.properties = {
   },
   "iridium plating": {
     name: "Iridium Plating",
+    iconUrl: "https://images.uesp.net/c/c0/ON-icon-plating-Iridium.png",
     qualityKey: Quality.SUPERIOR,
     resourceTypeKey: ResourceType.PLATING,
     key: "iridium plating",
   },
   "ivory, polished": {
     name: "Ivory, Polished",
+    iconUrl:
+      "https://images.uesp.net/e/e9/ON-item-furnishing-Ivory%2C_Polished.jpg",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.FURNISHING,
     key: "ivory, polished",
@@ -474,6 +515,7 @@ Resource.properties = {
   },
   "jazbay grapes": {
     name: "Jazbay Grapes",
+    iconUrl: "https://images.uesp.net/5/5e/ON-icon-food-Jazbay_Grapes.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.PROVISION,
     url: "http://teso-guides.com/the-elder-scrolls-online-jazbay-grapes",
@@ -541,12 +583,14 @@ Resource.properties = {
   },
   "mudcrab chitin": {
     name: "Mudcrab Chitin",
+    iconUrl: "https://images.uesp.net/0/02/ON-icon-reagent-Mudcrab_Chitin.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "mudcrab chitin",
   },
   "mundane rune": {
     name: "Mundane Rune",
+    iconUrl: "https://images.uesp.net/4/40/ON-icon-runestone-Mundane.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.FURNISHING,
     key: "mundane rune",
@@ -565,12 +609,14 @@ Resource.properties = {
   },
   nightshade: {
     name: "Nightshade",
+    iconUrl: "https://images.uesp.net/c/cf/ON-icon-reagent-Nightshade.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "nightshade",
   },
   nirnroot: {
     name: "Nirnroot",
+    iconUrl: "https://images.uesp.net/4/46/ON-icon-reagent-Nirnroot.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "nirnroot",
@@ -583,6 +629,7 @@ Resource.properties = {
   },
   ochre: {
     name: "Ochre",
+    iconUrl: "https://images.uesp.net/3/35/ON-icon-ounce-Ochre.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.FURNISHING,
     key: "ochre",
@@ -595,6 +642,7 @@ Resource.properties = {
   },
   "perfect roe": {
     name: "Perfect Roe",
+    iconUrl: "https://images.uesp.net/1/15/ON-icon-food-Perfect_Roe.png",
     qualityKey: Quality.LEGENDARY,
     resourceTypeKey: ResourceType.PROVISION,
     key: "perfect roe",
@@ -613,12 +661,16 @@ Resource.properties = {
   },
   "potent nirncrux": {
     name: "Potent Nirncrux",
+    iconUrl:
+      "https://images.uesp.net/b/bb/ON-icon-trait_material-Potent_Nirncrux.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.GEM,
     key: "potent nirncrux",
   },
   "powdered mother of pearl": {
     name: "Powdered Mother of Pearl",
+    iconUrl:
+      "https://images.uesp.net/b/b3/ON-icon-reagent-Powdered_Mother_of_Pearl.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "powdered mother of pearl",
@@ -649,6 +701,7 @@ Resource.properties = {
   },
   regulus: {
     name: "Regulus",
+    iconUrl: "https://images.uesp.net/f/f0/ON-icon-ore-Regulus.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.FURNISHING,
     key: "regulus",
@@ -697,24 +750,29 @@ Resource.properties = {
   },
   "scrib jelly": {
     name: "Scrib Jelly",
+    iconUrl: "https://images.uesp.net/5/57/ON-icon-reagent-Scrib_Jelly.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "scrib jelly",
   },
   "shimmering sand": {
     name: "Shimmering Sand",
+    iconUrl:
+      "https://images.uesp.net/2/2a/ON-icon-style_material-Shimmering_Sand.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.STYLE,
     key: "shimmering sand",
   },
   "small game": {
     name: "Small Game",
+    iconUrl: "https://images.uesp.net/b/be/ON-icon-food-Small_Game.png",
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.PROVISION,
     key: "small game",
   },
   "spider egg": {
     name: "Spider Egg",
+    iconUrl: "https://images.uesp.net/9/98/ON-icon-reagent-Spider_Egg.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "spider egg",
@@ -727,6 +785,7 @@ Resource.properties = {
   },
   stinkhorn: {
     name: "Stinkhorn",
+    iconUrl: "https://images.uesp.net/e/ec/ON-icon-reagent-Stinkhorn.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "stinkhorn",
@@ -739,18 +798,21 @@ Resource.properties = {
   },
   "tempering alloy": {
     name: "Tempering Alloy",
+    iconUrl: "https://images.uesp.net/1/13/ON-icon-temper-Tempering_Alloy.png",
     qualityKey: Quality.LEGENDARY,
     resourceTypeKey: ResourceType.TEMPER,
     key: "tempering alloy",
   },
   "terne plating": {
     name: "Terne Plating",
+    iconUrl: "https://images.uesp.net/0/0d/ON-icon-plating-Terne.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.PLATING,
     key: "terne plating",
   },
   "torchbug thorax": {
     name: "Torchbug Thorax",
+    iconUrl: "https://images.uesp.net/7/74/ON-icon-reagent-Torchbug_Thorax.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "torchbug thorax",
@@ -769,6 +831,7 @@ Resource.properties = {
   },
   "vile coagulant": {
     name: "Vile Coagulant",
+    iconUrl: "https://images.uesp.net/2/2c/ON-icon-reagent-Vile_Coagulant.png",
     resourceTypeKey: ResourceType.REAGENT,
     key: "vile coagulant",
   },
@@ -792,12 +855,14 @@ Resource.properties = {
   },
   wormwood: {
     name: "Wormwood",
+    iconUrl: "https://images.uesp.net/7/71/ON-icon-reagent-Wormwood.png",
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "wormwood",
   },
   "zircon plating": {
     name: "Zircon Plating",
+    iconUrl: "https://images.uesp.net/6/6f/ON-icon-plating-Zircon.png",
     qualityKey: Quality.EPIC,
     resourceTypeKey: ResourceType.PLATING,
     key: "zircon plating",
@@ -810,11 +875,16 @@ Resource.values = () => Object.values(Resource.properties);
 
 // Add ttcURL.
 const forEachFunction = (resource) => {
-  const { name, ttcUrl } = resource;
+  const { name, iconUrl, ttcUrl } = resource;
 
-  const newUrl = ttcUrl || URLGenerator.tamrielTradeCentre(name);
+  const newIconUrl = iconUrl || URLGenerator.resourceIcon(name);
+  const newTtcUrl = ttcUrl || URLGenerator.tamrielTradeCentre(name);
 
-  Resource.properties[resource.key] = R.assoc("ttcUrl", newUrl, resource);
+  // Resource.properties[resource.key] = R.assoc("ttcUrl", newTtcUrl, resource);
+  Resource.properties[resource.key] = R.mergeRight(resource, {
+    iconUrl: newIconUrl,
+    ttcUrl: newTtcUrl,
+  });
 };
 R.forEach(forEachFunction, Resource.values());
 
