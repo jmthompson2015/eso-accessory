@@ -24,7 +24,6 @@ const mapFunction = (recipe) => {
   const productSuggestedPrice = ItemUtils.suggestedPrice(product.key);
   const productAveragePrice = ItemUtils.averagePrice(product.key);
   const productEntryCount = ItemUtils.entryCount(product.key);
-  const productTtcUrl = product.ttcUrl;
   const profit =
     productSuggestedPrice > 0 && craftCost > 0
       ? productSuggestedPrice - craftCost
@@ -49,7 +48,6 @@ const mapFunction = (recipe) => {
     productSuggestedPrice,
     productAveragePrice,
     productEntryCount,
-    productTtcUrl,
     profit,
     breakEven,
   });

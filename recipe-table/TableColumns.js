@@ -157,8 +157,8 @@ const TableColumns = [
     className: "tr",
     convertFunction: (row) => round0(row.productEntryCount),
     cellFunction: (row) =>
-      row.productTtcUrl
-        ? createLink(row.productTtcUrl, formatNumber(row.productEntryCount))
+      row.product && row.product.ttcUrl
+        ? createLink(row.product.ttcUrl, formatNumber(row.productEntryCount))
         : undefined,
     valueFunction: (row) => parseFloat(row.productEntryCount),
   },
@@ -190,11 +190,6 @@ const TableColumns = [
   {
     key: "ttcUrl",
     label: "TTC URL",
-    isShown: false,
-  },
-  {
-    key: "productTtcUrl",
-    label: "Product TTC URL",
     isShown: false,
   },
 ];
