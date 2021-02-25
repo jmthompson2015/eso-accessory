@@ -75,6 +75,7 @@ const Recipe = {
     "blueprint: redguard table, grand inlaid",
   BLUEPRINT_REDGUARD_WAGON_MERCHANT: "blueprint: redguard wagon, merchant",
   BLUEPRINT_REDORAN_SPOON_WOODEN: "blueprint: redoran spoon, wooden",
+  BLUEPRINT_REDORAN_STOOL_SANDED: "blueprint: redoran stool, sanded",
   BLUEPRINT_ROUGH_BOX_BOARDED: "blueprint: rough box, boarded",
   BLUEPRINT_ROUGH_CONTAINER_CARGO: "blueprint: rough container, cargo",
   BLUEPRINT_ROUGH_CRATE_BOLTED: "blueprint: rough crate, bolted",
@@ -108,6 +109,7 @@ const Recipe = {
   DESIGN_KHAJIIT_VESSEL_AMBER: "design: khajiit vessel, amber",
   DESIGN_NORD_AMPHORA_GLAZED: "design: nord amphora, glazed",
   DESIGN_NORD_POT_STEW: "design: nord pot, stew",
+  DESIGN_NORD_URN_CERAMIC: "design: nord urn, ceramic",
   DESIGN_NORD_VASE_BENT: "design: nord vase, bent",
   DESIGN_ORCHISH_VESSEL_SEALED_CERAMIC: "design: orcish vessel, sealed ceramic",
   DESIGN_RADISH_WAX: "design: radish, wax",
@@ -220,6 +222,7 @@ const Recipe = {
   PATTERN_WOOD_ELF_TABLE_LEATHER: "pattern: wood elf table, leather",
 
   PRAXIS_ALINOR_POT_LIMESTONE: "praxis: alinor pot, limestone",
+  PRAXIS_ALINOR_WALL_STONE: "praxis: alinor wall, stone",
   PRAXIS_ARGONIAN_PAN_FRYING: "praxis: argonian pan, frying",
   PRAXIS_BRETON_AMPHORA_CERAMIC: "praxis: breton amphora, ceramic",
   PRAXIS_BRETON_VASE_DELICATE: "praxis: breton vase, delicate",
@@ -1056,6 +1059,19 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redoran spoon, wooden",
   },
+  "blueprint: redoran stool, sanded": {
+    name: "Blueprint: Redoran Stool, Sanded",
+    categoryKey: Category.WORKSHOP,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 6),
+      resourceIngredient(Resource.OBSIDIAN, 8),
+      resourceIngredient(Resource.PITCH, 9),
+    ],
+    output: productIngredient(Product.REDORAN_STOOL_SANDED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: redoran stool, sanded",
+  },
   "blueprint: rough box, boarded": {
     name: "Blueprint: Rough Box, Boarded",
     categoryKey: Category.WORKSHOP,
@@ -1497,6 +1513,19 @@ Recipe.properties = {
     output: productIngredient(Product.NORD_POT_STEW),
     ownerKey: Character.FRAK_LOCK,
     key: "design: nord pot, stew",
+  },
+  "design: nord urn, ceramic": {
+    name: "Design: Nord Urn, Ceramic",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 4),
+      resourceIngredient(Resource.CORUNDUM, 5),
+      resourceIngredient(Resource.FLOUR, 20),
+    ],
+    output: productIngredient(Product.NORD_URN_CERAMIC),
+    ownerKey: Character.FRAK_LOCK,
+    key: "design: nord urn, ceramic",
   },
   "design: nord vase, bent": {
     name: "Design: Nord Vase, Bent",
@@ -2862,6 +2891,19 @@ Recipe.properties = {
     output: productIngredient(Product.ALINOR_POT_LIMESTONE),
     ownerKey: Character.FRAK_LOCK,
     key: "praxis: alinor pot, limestone",
+  },
+  "praxis: alinor wall, stone": {
+    name: "Praxis: Alinor Wall, Stone",
+    categoryKey: Category.STRUCTURES,
+    craftKey: Craft.ENCHANTING,
+    inputs: [
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.CULANDA_LACQUER, 1),
+      resourceIngredient(Resource.JEJOTA, 9),
+    ],
+    output: productIngredient(Product.ALINOR_WALL_STONE),
+    ownerKey: Character.FRAK_LOCK,
+    key: "praxis: alinor wall, stone",
   },
   "praxis: argonian pan, frying": {
     name: "Praxis: Argonian Pan, Frying",

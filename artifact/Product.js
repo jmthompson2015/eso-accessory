@@ -11,6 +11,7 @@ const Product = {
   ALINOR_MEAL_INDIVIDUAL: "alinor meal, individual",
   ALINOR_POT_LIMESTONE: "alinor pot, limestone",
   ALINOR_SCONCE_CRENELLATED: "alinor sconce, crenellated",
+  ALINOR_WALL_STONE: "alinor wall, stone",
   ARGONIAN_BASKETS_DOUBLE: "argonian baskets, double",
   ARGONIAN_COUNTER_LONG: "argonian counter, long",
   ARGONIAN_MAT_REED: "argonian mat, reed",
@@ -117,6 +118,7 @@ const Product = {
   NORD_LANTERN_CAGE: "nord lantern, cage",
   NORD_POT_STEW: "nord pot, stew",
   NORD_SHELF_WALL: "nord shelf, wall",
+  NORD_URN_CERAMIC: "nord urn, ceramic",
   NORD_VASE_BENT: "nord vase, bent",
   ORCISH_BANNER_WORN: "orcish banner, worn",
   ORCISH_BEDDING_FUR: "orcish bedding, fur",
@@ -174,6 +176,7 @@ const Product = {
   REDORAN_CARPET_VOLCANIC_SANDS: "redoran carpet, volcanic sands",
   REDORAN_AMPHORA_SEALED_MARBLE: "redoran amphora, sealed marble",
   REDORAN_SPOON_WOODEN: "redoran spoon, wooden",
+  REDORAN_STOOL_SANDED: "redoran stool, sanded",
   ROUGH_BAG_BURLAP: "rough bag, burlap",
   ROUGH_BEDROLL_BASIC: "rough bedroll, basic",
   ROUGH_BOWL_COMMON: "rough bowl, common",
@@ -252,6 +255,11 @@ Product.properties = {
     name: "Alinor Sconce, Crenellated",
     qualityKey: Quality.SUPERIOR,
     key: "alinor sconce, crenellated",
+  },
+  "alinor wall, stone": {
+    name: "Alinor Wall, Stone",
+    qualityKey: Quality.FINE,
+    key: "alinor wall, stone",
   },
   "argonian baskets, double": {
     name: "Argonian Baskets, Double",
@@ -837,6 +845,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "nord shelf, wall",
   },
+  "nord urn, ceramic": {
+    name: "Nord Urn, Ceramic",
+    qualityKey: Quality.FINE,
+    key: "nord urn, ceramic",
+  },
   "nord vase, bent": {
     name: "Nord Vase, Bent",
     qualityKey: Quality.SUPERIOR,
@@ -1125,6 +1138,11 @@ Product.properties = {
       "https://images.uesp.net/c/cc/ON-item-furnishing-Redoran_Spoon%2C_Wooden.jpg",
     qualityKey: Quality.SUPERIOR,
     key: "redoran spoon, wooden",
+  },
+  "redoran stool, sanded": {
+    name: "Redoran Stool, Sanded",
+    qualityKey: Quality.FINE,
+    key: "redoran stool, sanded",
   },
   "rough bag, burlap": {
     name: "Rough Bag, Burlap",
