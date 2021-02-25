@@ -6,6 +6,9 @@ const URLGenerator = {};
 
 const FASHION_PREFIX = "https://eso.mmo-fashion.com/";
 const HOUSING_PREFIX = "https://eso-housing.com/furniture/";
+const PRODUCT_ICON_PREFIX =
+  "https://elderscrollsonline.wiki.fextralife.com/file/Elder-Scrolls-Online/";
+const PRODUCT_ICON_SUFFIX = ".jpg";
 const RESOURCE_ICON_PREFIX =
   "https://elderscrollsonline.wiki.fextralife.com/file/Elder-Scrolls-Online/";
 const RESOURCE_ICON_SUFFIX = ".png";
@@ -38,9 +41,24 @@ URLGenerator.housing = (productName) => {
   return null;
 };
 
+URLGenerator.productIcon = (productName) => {
+  if (productName) {
+    const midfix = productName
+      .replace(/,/g, "")
+      .replace(/ /g, "_")
+      .toLowerCase();
+
+    return PRODUCT_ICON_PREFIX + midfix + PRODUCT_ICON_SUFFIX;
+  }
+
+  console.error(`Missing productName: ${productName}`);
+  return null;
+};
+
 URLGenerator.resourceIcon = (resourceName) => {
   if (resourceName) {
     const midfix = resourceName.replace(/ /g, "%20");
+
     return RESOURCE_ICON_PREFIX + midfix + RESOURCE_ICON_SUFFIX;
   }
 

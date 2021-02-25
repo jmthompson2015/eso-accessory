@@ -61,6 +61,44 @@ QUnit.test("housing() null", (assert) => {
   assert.equal(result, null);
 });
 
+QUnit.test("productIcon() Alinor Amphora, Delicate", (assert) => {
+  // Setup.
+  const product = Product.properties[Product.ALINOR_AMPHORA_DELICATE];
+
+  // Run.
+  const result = URLGenerator.productIcon(product.name);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(
+    result,
+    "https://elderscrollsonline.wiki.fextralife.com/file/Elder-Scrolls-Online/alinor_amphora_delicate.jpg"
+  );
+});
+
+QUnit.test("productIcon() Alinor Amphora, Embossed", (assert) => {
+  // Setup.
+  const product = Product.properties[Product.ALINOR_AMPHORA_EMBOSSED];
+
+  // Run.
+  const result = URLGenerator.productIcon(product.name);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(
+    result,
+    "https://elderscrollsonline.wiki.fextralife.com/file/Elder-Scrolls-Online/alinor_amphora_embossed.jpg"
+  );
+});
+
+QUnit.test("productIcon() null", (assert) => {
+  // Run.
+  const result = URLGenerator.productIcon(null);
+
+  // Verify.
+  assert.equal(result, null);
+});
+
 QUnit.test("resourceIcon() White Cap", (assert) => {
   // Setup.
   const product = Resource.properties[Resource.WHITE_CAP];

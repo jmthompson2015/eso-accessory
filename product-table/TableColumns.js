@@ -1,6 +1,14 @@
 const createColorCell = (color, name) =>
   ReactDOMFactories.div({ style: { backgroundColor: color } }, name);
 
+const createIcon = (iconUrl, name) =>
+  ReactDOMFactories.img({
+    key: iconUrl,
+    src: iconUrl,
+    style: { width: 48 },
+    title: name,
+  });
+
 const createLink = (href, name) =>
   ReactDOMFactories.a({ key: name, href, target: "_blank" }, name);
 
@@ -20,6 +28,15 @@ const round2 = (value) =>
   ![undefined, null].includes(value) ? value.toFixed(2) : undefined;
 
 const TableColumns = [
+  {
+    key: "iconUrl",
+    label: "Icon",
+    type: "string",
+    className: "tc",
+    cellFunction: (row) =>
+      row.iconUrl ? createIcon(row.iconUrl, row.name) : undefined,
+    valueFunction: (row) => row.name,
+  },
   {
     key: "name",
     label: "Product",

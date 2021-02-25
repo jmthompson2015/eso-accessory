@@ -310,6 +310,8 @@ Product.properties = {
   },
   "breton carpet, green": {
     name: "Breton Carpet, Green",
+    iconUrl:
+      "https://images.uesp.net/b/b8/ON-item-furnishing-Breton_Carpet%2C_Green.jpg",
     qualityKey: Quality.FINE,
     key: "breton carpet, green",
   },
@@ -325,6 +327,8 @@ Product.properties = {
   },
   "breton desk, scholar's": {
     name: "Breton Desk, Scholar's",
+    iconUrl:
+      "https://images.uesp.net/c/c3/ON-item-furnishing-Breton_Desk%2C_Scholar%27s.jpg",
     qualityKey: Quality.EPIC,
     key: "breton desk, scholar's",
   },
@@ -400,6 +404,8 @@ Product.properties = {
   },
   "common bowl of soup, display": {
     name: "Common Bowl of Soup, Display",
+    iconUrl:
+      "https://images.uesp.net/a/ab/ON-item-furnishing-Common_Bowl_of_Soup%2C_Display.jpg",
     qualityKey: Quality.FINE,
     key: "common bowl of soup, display",
   },
@@ -510,11 +516,15 @@ Product.properties = {
   },
   "dres cup, empty mazte": {
     name: "Dres Cup, Empty Mazte",
+    iconUrl:
+      "https://images.uesp.net/e/ed/ON-item-furnishing-Dres_Cup%2C_Empty_Mazte.jpg",
     qualityKey: Quality.FINE,
     key: "dres cup, empty mazte",
   },
   "dres cup, greef": {
     name: "Dres Cup, Greef",
+    iconUrl:
+      "https://images.uesp.net/6/60/ON-item-furnishing-Dres_Cup%2C_Greef.jpg",
     qualityKey: Quality.SUPERIOR,
     key: "dres cup, greef",
   },
@@ -530,6 +540,8 @@ Product.properties = {
   },
   "dwarven amphora, ornate polished": {
     name: "Dwarven Amphora, Ornate Polished",
+    iconUrl:
+      "https://i2.wp.com/eso.mmo-fashion.com/wp-content/uploads/sites/2/2020/10/Dwarven-Amphora-Ornate-Polished-1.jpg",
     qualityKey: Quality.EPIC,
     key: "dwarven amphora, ornate polished",
   },
@@ -555,36 +567,50 @@ Product.properties = {
   },
   "elsweyr carpet, gold-emerald": {
     name: "Elsweyr Carpet, Gold-Emerald",
+    iconUrl:
+      "https://images.uesp.net/9/97/ON-item-furnishing-Elsweyr_Carpet%2C_Gold-Emerald.jpg",
     qualityKey: Quality.FINE,
     key: "elsweyr carpet, gold-emerald",
   },
   "elsweyr carpet, gold-ruby": {
     name: "Elsweyr Carpet, Gold-Ruby",
+    iconUrl:
+      "https://images.uesp.net/4/4b/ON-item-furnishing-Elsweyr_Carpet%2C_Gold-Ruby.jpg",
     qualityKey: Quality.FINE,
     key: "elsweyr carpet, gold-ruby",
   },
   "elsweyr cup of rice, gilded": {
     name: "Elsweyr Cup of Rice, Gilded",
+    iconUrl:
+      "https://images.uesp.net/4/4c/ON-item-furnishing-Elsweyr_Cup_of_Rice%2C_Gilded.jpg",
     qualityKey: Quality.SUPERIOR,
     key: "elsweyr cup of rice, gilded",
   },
   "elsweyr pot, ornate": {
     name: "Elsweyr Pot, Ornate",
+    iconUrl:
+      "https://images.uesp.net/c/cb/ON-item-furnishing-Elsweyr_Pot%2C_Ornate.jpg",
     qualityKey: Quality.FINE,
     key: "elsweyr pot, ornate",
   },
   "elsweyr pot, waves": {
     name: "Elsweyr Pot, Waves",
+    iconUrl:
+      "https://images.uesp.net/d/de/ON-item-furnishing-Elsweyr_Pot%2C_Waves.jpg",
     qualityKey: Quality.FINE,
     key: "elsweyr pot, waves",
   },
   "elsweyr vessel, umber embellished": {
     name: "Elsweyr Vessel, Umber Embellished",
+    iconUrl:
+      "https://images.uesp.net/f/f2/ON-item-furnishing-Elsweyr_Vessel%2C_Umber_Embellished.jpg",
     qualityKey: Quality.SUPERIOR,
     key: "elsweyr vessel, umber embellished",
   },
   "essence of health": {
     name: "Essence of Health",
+    iconUrl:
+      "https://images.uesp.net/5/5f/ON-icon-potion-Restore_Health_05.png",
     productTypeKey: ProductType.POTION,
     qualityKey: Quality.EPIC,
     url:
@@ -593,6 +619,7 @@ Product.properties = {
   },
   "essence of spell critical": {
     name: "Essence of Spell Critical",
+    iconUrl: "https://images.uesp.net/e/ee/ON-icon-potion-Spell_Crit_05.png",
     productTypeKey: ProductType.POTION,
     qualityKey: Quality.EPIC,
     url:
@@ -601,6 +628,7 @@ Product.properties = {
   },
   "essence of spell power": {
     name: "Essence of Spell Power",
+    iconUrl: "https://images.uesp.net/9/9a/ON-icon-potion-Spell_Power_05.png",
     productTypeKey: ProductType.POTION,
     qualityKey: Quality.EPIC,
     url:
@@ -609,6 +637,7 @@ Product.properties = {
   },
   "essence of weapon crit": {
     name: "Essence of Weapon Crit",
+    iconUrl: "https://images.uesp.net/0/03/ON-icon-potion-Weapon_Crit_05.png",
     productTypeKey: ProductType.POTION,
     qualityKey: Quality.EPIC,
     url:
@@ -617,6 +646,7 @@ Product.properties = {
   },
   "essence of weapon power": {
     name: "Essence of Weapon Power",
+    iconUrl: "https://images.uesp.net/4/44/ON-icon-potion-Weapon_Power_05.png",
     productTypeKey: ProductType.POTION,
     qualityKey: Quality.EPIC,
     url:
@@ -630,11 +660,15 @@ Product.properties = {
   },
   "grapes, wax": {
     name: "Grapes, Wax",
+    iconUrl:
+      "https://images.uesp.net/4/4a/ON-item-furnishing-Grapes%2C_Wax.jpg",
     qualityKey: Quality.FINE,
     key: "grapes, wax",
   },
   "hagraven cauldron, ritual": {
     name: "Hagraven Cauldron, Ritual",
+    iconUrl:
+      "https://images.uesp.net/1/14/ON-item-furnishing-Hagraven_Cauldron%2C_Ritual.jpg",
     qualityKey: Quality.SUPERIOR,
     key: "hagraven cauldron, ritual",
   },
@@ -650,6 +684,8 @@ Product.properties = {
   },
   "high elf candleholder, sturdy": {
     name: "High Elf Candleholder, Sturdy",
+    iconUrl:
+      "https://images.uesp.net/9/9f/ON-item-furnishing-High_Elf_Candleholder%2C_Sturdy.jpg",
     qualityKey: Quality.FINE,
     key: "high elf candleholder, sturdy",
   },
@@ -765,6 +801,8 @@ Product.properties = {
   },
   "lava foot soup-and-saltrice": {
     name: "Lava Foot Soup-and-Saltrice",
+    iconUrl:
+      "https://images.uesp.net/7/7b/ON-icon-food-Lava_Foot_Soup-And-Saltrice.png",
     productTypeKey: ProductType.PROVISION,
     qualityKey: Quality.SUPERIOR,
     key: "lava foot soup-and-saltrice",
@@ -891,6 +929,8 @@ Product.properties = {
   },
   "radish, wax": {
     name: "Radish, Wax",
+    iconUrl:
+      "https://images.uesp.net/d/d9/ON-item-furnishing-Radish%2C_Wax.jpg",
     qualityKey: Quality.FINE,
     key: "radish, wax",
   },
@@ -1081,6 +1121,8 @@ Product.properties = {
   },
   "redoran spoon, wooden": {
     name: "Redoran Spoon, Wooden",
+    iconUrl:
+      "https://images.uesp.net/c/cc/ON-item-furnishing-Redoran_Spoon%2C_Wooden.jpg",
     qualityKey: Quality.SUPERIOR,
     key: "redoran spoon, wooden",
   },
@@ -1156,6 +1198,8 @@ Product.properties = {
   },
   "solitude vase, large sealed": {
     name: "Solitude Vase, Large Sealed",
+    iconUrl:
+      "https://images.uesp.net/5/58/ON-item-furnishing-Solitude_Vase%2C_Large_Sealed.jpg",
     qualityKey: Quality.SUPERIOR,
     key: "solitude vase, large sealed",
   },
@@ -1176,6 +1220,8 @@ Product.properties = {
   },
   "witchmother's potent brew": {
     name: "Witchmother's Potent Brew",
+    iconUrl:
+      "https://images.uesp.net/1/1d/ON-icon-food-Witchmother%27s_Potent_Brew.png",
     productTypeKey: ProductType.PROVISION,
     qualityKey: Quality.EPIC,
     key: "witchmother's potent brew",
@@ -1197,6 +1243,8 @@ Product.properties = {
   },
   "wood elf cup, ceramic": {
     name: "Wood Elf Cup, Ceramic",
+    iconUrl:
+      "https://images.uesp.net/f/f2/ON-item-furnishing-Wood_Elf_Cup%2C_Ceramic.jpg",
     qualityKey: Quality.FINE,
     key: "wood elf cup, ceramic",
   },
@@ -1265,13 +1313,15 @@ Product.values = () => Object.values(Product.properties);
 // Add ProductType and URLs.
 const PRODUCT_TYPE_KEY = ProductType.FURNISHING;
 const forEachFunction = (product) => {
-  const { name, productTypeKey, ttcUrl, url } = product;
+  const { name, iconUrl, productTypeKey, ttcUrl, url } = product;
 
+  const newIconUrl = iconUrl || URLGenerator.productIcon(name);
   const newProductTypeKey = productTypeKey || PRODUCT_TYPE_KEY;
   const newUrl = url || URLGenerator.fashion(name);
   const newTtcUrl = ttcUrl || URLGenerator.tamrielTradeCentre(name);
 
   Product.properties[product.key] = R.mergeRight(product, {
+    iconUrl: newIconUrl,
     productTypeKey: newProductTypeKey,
     url: newUrl,
     ttcUrl: newTtcUrl,

@@ -94,7 +94,7 @@ QUnit.test("inputValue()", (assert) => {
 
   // Verify.
   assert.equal(
-    result >= 322.62 && result <= 500.19,
+    result >= 320.15 && result <= 500.19,
     true,
     `result = ${result}`
   );
