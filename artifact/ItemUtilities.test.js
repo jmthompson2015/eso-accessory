@@ -22,6 +22,18 @@ QUnit.test("amountCount() Alchemical Resin", (assert) => {
   );
 });
 
+QUnit.test("averagePrice() Alchemical Resin", (assert) => {
+  // Setup.
+  const resourceKey = Resource.ALCHEMICAL_RESIN;
+
+  // Run.
+  const result = ItemUtilities.averagePrice(resourceKey);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result >= 8.86 && result <= 26.04, true, `result = ${result}`);
+});
+
 QUnit.test("averagePrice() Essence of Spell Power", (assert) => {
   // Setup.
   const resourceKey = Product.ESSENCE_OF_SPELL_POWER;
@@ -36,18 +48,6 @@ QUnit.test("averagePrice() Essence of Spell Power", (assert) => {
     true,
     `result = ${result}`
   );
-});
-
-QUnit.test("averagePrice() Alchemical Resin", (assert) => {
-  // Setup.
-  const resourceKey = Resource.ALCHEMICAL_RESIN;
-
-  // Run.
-  const result = ItemUtilities.averagePrice(resourceKey);
-
-  // Verify.
-  assert.ok(result);
-  assert.equal(result >= 8.86 && result <= 15.42, true, `result = ${result}`);
 });
 
 QUnit.test("entryCount() Alchemical Resin", (assert) => {
@@ -124,7 +124,7 @@ QUnit.test("maximumPrice() Alchemical Resin", (assert) => {
   // Verify.
   assert.ok(result);
   assert.equal(
-    result >= 695.6087 && result <= 10000,
+    result >= 695.6087 && result <= 13402.51,
     true,
     `result = ${result}`
   );
