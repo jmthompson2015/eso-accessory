@@ -9,7 +9,7 @@ body {
 }
 
 .frt-filter {
-  background: Green;
+  background: DarkCyan;
   font-size: small;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .frt-show-columns {
-  background: Green;
+  background: DarkCyan;
   font-size: small;
   padding: 5px;
 }
@@ -74,17 +74,17 @@ body {
 }
 
 .frt-table td {
-  border: 1px solid Green;
+  border: 1px solid DarkCyan;
 }
 
 .frt-table th {
-  background: Green;
+  background: DarkCyan;
   border: 1px solid White;
   color: White;
 }
 
 .frt-table tbody tr:nth-child(2n) td {
-  background: #f0fff0;
+  background: #f0ffff;
 }
 
 .frt-table tbody tr:nth-child(2n + 1) td {
