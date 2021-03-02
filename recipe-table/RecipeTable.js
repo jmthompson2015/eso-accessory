@@ -1,0 +1,60 @@
+/* eslint no-console: ["error", { allow: ["log"] }] */
+
+import ItemUtils from "../artifact/ItemUtilities.js";
+import Recipe from "../artifact/Recipe.js";
+import Resolver from "../artifact/Resolver.js";
+
+import IngredientUtils from "../model/IngredientUtilities.js";
+
+import TableColumns from "./TableColumns.js";
+
+const mapFunction = (recipe) => {
+  const product = IngredientUtils.thing(recipe.output);
+  const iconUrl = product ? product.iconUrl : undefined;
+  const quality = Resolver.quality(product.qualityKey);
+  const owner = Resolver.character(recipe.ownerKey);
+  const craft = Resolver.craft(recipe.craftKey);
+  const category = Resolver.category(recipe.categoryKey);
+  const minimumPrice = ItemUtils.minimumPrice(recipe.key);
+  const suggestedPrice = ItemUtils.suggestedPrice(recipe.key);
+  const averagePrice = ItemUtils.averagePrice(recipe.key);
+  const entryCount = ItemUtils.entryCount(recipe.key);
+
+  return R.mergeRight(recipe, {
+    iconUrl,
+    quality,
+    owner,
+    craft,
+    category,
+    minimumPrice,
+    suggestedPrice,
+    averagePrice,
+    entryCount,
+  });
+};
+const tableRows = R.map(mapFunction, Recipe.values());
+
+const appName = "Recipe Table";
+const onFilterChange = (filteredTableRows) => {
+  console.log(
+    `onFilterChange() filteredTableRows.length = ${filteredTableRows.length}`
+  );
+};
+const onShowColumnChange = (columnToChecked) => {
+  console.log(
+    `onShowColumnChange() columnToChecked = ${JSON.stringify(columnToChecked)}`
+  );
+};
+const isVerbose = true;
+const frt = new FilteredReactTable(
+  TableColumns,
+  tableRows,
+  appName,
+  onFilterChange,
+  onShowColumnChange,
+  isVerbose
+);
+
+ReactDOM.render(frt.filterPanel(), document.getElementById("filter"));
+ReactDOM.render(frt.showColumnsPanel(), document.getElementById("showColumns"));
+ReactDOM.render(frt.tableElement(), document.getElementById("table"));
