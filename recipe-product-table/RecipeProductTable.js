@@ -12,41 +12,36 @@ import TableColumns from "./TableColumns.js";
 const mapFunction = (recipe) => {
   const product = IngredientUtils.thing(recipe.output);
   const quality = Resolver.quality(product.qualityKey);
-  const recipeMinimumPrice = ItemUtils.minimumPrice(recipe.key);
-  const recipeSuggestedPrice = ItemUtils.suggestedPrice(recipe.key);
-  const recipeAveragePrice = ItemUtils.averagePrice(recipe.key);
+  const recipeEstimatedPrice = ItemUtils.estimatedPrice(recipe.key);
   const recipeEntryCount = ItemUtils.entryCount(recipe.key);
   const owner = Resolver.character(recipe.ownerKey);
   const craft = Resolver.craft(recipe.craftKey);
   const category = Resolver.category(recipe.categoryKey);
   const craftCost = RecipeUtils.inputValue(recipe);
-  const productMinimumPrice = ItemUtils.minimumPrice(product.key);
-  const productSuggestedPrice = ItemUtils.suggestedPrice(product.key);
-  const productAveragePrice = ItemUtils.averagePrice(product.key);
+  const productEstimatedPrice = ItemUtils.estimatedPrice(
+    product.key,
+    craftCost
+  );
   const productEntryCount = ItemUtils.entryCount(product.key);
   const profit =
-    productSuggestedPrice > 0 && craftCost > 0
-      ? productSuggestedPrice - craftCost
+    productEstimatedPrice > 0 && craftCost > 0
+      ? productEstimatedPrice - craftCost
       : undefined;
   const breakEven =
-    recipeAveragePrice > 0 && profit > 0
-      ? Math.ceil(recipeAveragePrice / profit)
+    recipeEstimatedPrice > 0 && profit > 0
+      ? Math.ceil(recipeEstimatedPrice / profit)
       : undefined;
 
   return R.mergeRight(recipe, {
     quality,
-    recipeMinimumPrice,
-    recipeSuggestedPrice,
-    recipeAveragePrice,
+    recipeEstimatedPrice,
     recipeEntryCount,
     owner,
     craft,
     category,
     product,
     craftCost,
-    productMinimumPrice,
-    productSuggestedPrice,
-    productAveragePrice,
+    productEstimatedPrice,
     productEntryCount,
     profit,
     breakEven,

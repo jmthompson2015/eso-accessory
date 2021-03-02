@@ -74,16 +74,32 @@ ItemUtilities.averagePrice = (itemKey) => {
   return item ? item.Avg : undefined;
 };
 
+ItemUtilities.costMultiplePrice = (cost) => (cost ? 1.5 * cost : undefined);
+
 ItemUtilities.entryCount = (itemKey) => {
   const item = ItemUtilities.item(itemKey);
 
   return item ? item.EntryCount : undefined;
 };
 
+ItemUtilities.estimatedPrice = (itemKey, cost) =>
+  ItemUtilities.suggestedPrice(itemKey) ||
+  ItemUtilities.midRangePrice(itemKey) ||
+  ItemUtilities.costMultiplePrice(cost);
+
 ItemUtilities.maximumPrice = (itemKey) => {
   const item = ItemUtilities.item(itemKey);
 
   return item ? item.Max : undefined;
+};
+
+ItemUtilities.midRangePrice = (itemKey) => {
+  const minimumPrice = ItemUtilities.minimumPrice(itemKey);
+  const averagePrice = ItemUtilities.averagePrice(itemKey);
+
+  return minimumPrice > 0 && averagePrice > 0
+    ? minimumPrice + 0.5 * (averagePrice - minimumPrice)
+    : undefined;
 };
 
 ItemUtilities.minimumPrice = (itemKey) => {
@@ -92,24 +108,11 @@ ItemUtilities.minimumPrice = (itemKey) => {
   return item ? item.Min : undefined;
 };
 
-ItemUtilities.suggestedPrice1 = (itemKey) => {
+ItemUtilities.suggestedPrice = (itemKey) => {
   const item = ItemUtilities.item(itemKey);
 
   return item ? item.SuggestedPrice : undefined;
 };
-
-ItemUtilities.suggestedPrice2 = (itemKey) => {
-  const minimumPrice = ItemUtilities.minimumPrice(itemKey);
-  const averagePrice = ItemUtilities.averagePrice(itemKey);
-
-  return minimumPrice > 0 && averagePrice > 0
-    ? minimumPrice + (averagePrice - minimumPrice) / 2
-    : undefined;
-};
-
-ItemUtilities.suggestedPrice = (itemKey) =>
-  ItemUtilities.suggestedPrice1(itemKey) ||
-  ItemUtilities.suggestedPrice2(itemKey);
 
 Object.freeze(ItemUtilities);
 

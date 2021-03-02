@@ -50,6 +50,18 @@ QUnit.test("averagePrice() Essence of Spell Power", (assert) => {
   );
 });
 
+QUnit.test("costMultiplePrice()", (assert) => {
+  // Setup.
+  const cost = 8.0;
+
+  // Run.
+  const result = ItemUtilities.costMultiplePrice(cost);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result, 12.0, `result = ${result}`);
+});
+
 QUnit.test("entryCount() Alchemical Resin", (assert) => {
   // Setup.
   const resourceKey = Resource.ALCHEMICAL_RESIN;
@@ -60,6 +72,19 @@ QUnit.test("entryCount() Alchemical Resin", (assert) => {
   // Verify.
   assert.ok(result);
   assert.equal(result >= 1279 && result <= 1385, true, `result = ${result}`);
+});
+
+QUnit.test("estimatedPrice() Alchemical Resin", (assert) => {
+  // Setup.
+  const resourceKey = Resource.ALCHEMICAL_RESIN;
+  const cost = 8.0;
+
+  // Run.
+  const result = ItemUtilities.estimatedPrice(resourceKey, cost);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result >= 8.08 && result <= 8.08, true, `result = ${result}`);
 });
 
 QUnit.test("item() Alchemical Resin", (assert) => {
@@ -130,6 +155,18 @@ QUnit.test("maximumPrice() Alchemical Resin", (assert) => {
   );
 });
 
+QUnit.test("midRangePrice() Alchemical Resin", (assert) => {
+  // Setup.
+  const resourceKey = Resource.ALCHEMICAL_RESIN;
+
+  // Run.
+  const result = ItemUtilities.midRangePrice(resourceKey);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result >= 14.02 && result <= 14.02, true, `result = ${result}`);
+});
+
 QUnit.test("minimumPrice() Alchemical Resin", (assert) => {
   // Setup.
   const resourceKey = Resource.ALCHEMICAL_RESIN;
@@ -151,7 +188,7 @@ QUnit.test("suggestedPrice() Alchemical Resin", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result >= 7.97 && result <= 8.37, true, `result = ${result}`);
+  assert.equal(result >= 8.08 && result <= 8.08, true, `result = ${result}`);
 });
 
 const ItemUtilitiesTest = {};

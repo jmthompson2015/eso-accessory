@@ -12,20 +12,18 @@ const createIcon = (iconUrl, name) =>
 const createLink = (href, name) =>
   ReactDOMFactories.a({ key: name, href, target: "_blank" }, name);
 
-const formatNumber = (value) => {
-  if (![undefined, null].includes(value)) {
-    const usFormatter = new Intl.NumberFormat("en-US");
-    return usFormatter.format(value);
-  }
+const usFormatter0 = new Intl.NumberFormat("en-US", {
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+});
 
-  return undefined;
-};
+const usFormatter2 = new Intl.NumberFormat("en-US", {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+});
 
-const round0 = (value) =>
-  ![undefined, null].includes(value) ? value.toFixed(0) : undefined;
-
-const round2 = (value) =>
-  ![undefined, null].includes(value) ? value.toFixed(2) : undefined;
+const formatNumber = (value, formatter = usFormatter0) =>
+  ![undefined, null].includes(value) ? formatter.format(value) : undefined;
 
 const TableColumns = [
   {
@@ -69,38 +67,34 @@ const TableColumns = [
       row.resourceType ? row.resourceType.name : undefined,
   },
   {
-    key: "minimumPrice",
-    label: "Min. Price",
-    type: "number",
-    className: "tr",
-    convertFunction: (row) => round2(row.minimumPrice),
-    cellFunction: (row) => formatNumber(row.minimumPrice),
-    valueFunction: (row) => parseFloat(row.minimumPrice),
-  },
-  {
     key: "suggestedPrice",
     label: "Sug. Price",
     type: "number",
     className: "tr",
-    convertFunction: (row) => round2(row.suggestedPrice),
-    cellFunction: (row) => formatNumber(row.suggestedPrice),
+    cellFunction: (row) => formatNumber(row.suggestedPrice, usFormatter2),
     valueFunction: (row) => parseFloat(row.suggestedPrice),
   },
   {
-    key: "averagePrice",
-    label: "Avg. Price",
+    key: "midRangePrice",
+    label: "Mid Range Price",
     type: "number",
     className: "tr",
-    convertFunction: (row) => round2(row.averagePrice),
-    cellFunction: (row) => formatNumber(row.averagePrice),
-    valueFunction: (row) => parseFloat(row.averagePrice),
+    cellFunction: (row) => formatNumber(row.midRangePrice),
+    valueFunction: (row) => parseFloat(row.midRangePrice),
+  },
+  {
+    key: "estimatedPrice",
+    label: "Est. Price",
+    type: "number",
+    className: "tr",
+    cellFunction: (row) => formatNumber(row.estimatedPrice),
+    valueFunction: (row) => parseFloat(row.estimatedPrice),
   },
   {
     key: "entryCount",
     label: "Entry Count",
     type: "number",
     className: "tr",
-    convertFunction: (row) => round0(row.entryCount),
     cellFunction: (row) =>
       row.ttcUrl
         ? createLink(row.ttcUrl, formatNumber(row.entryCount))

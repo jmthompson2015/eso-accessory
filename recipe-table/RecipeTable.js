@@ -5,6 +5,7 @@ import Recipe from "../artifact/Recipe.js";
 import Resolver from "../artifact/Resolver.js";
 
 import IngredientUtils from "../model/IngredientUtilities.js";
+import RecipeUtils from "../model/RecipeUtilities.js";
 
 import TableColumns from "./TableColumns.js";
 
@@ -15,9 +16,11 @@ const mapFunction = (recipe) => {
   const owner = Resolver.character(recipe.ownerKey);
   const craft = Resolver.craft(recipe.craftKey);
   const category = Resolver.category(recipe.categoryKey);
-  const minimumPrice = ItemUtils.minimumPrice(recipe.key);
   const suggestedPrice = ItemUtils.suggestedPrice(recipe.key);
-  const averagePrice = ItemUtils.averagePrice(recipe.key);
+  const midRangePrice = ItemUtils.midRangePrice(recipe.key);
+  const craftCost = RecipeUtils.inputValue(recipe);
+  const costMultiplePrice = ItemUtils.costMultiplePrice(craftCost);
+  const estimatedPrice = ItemUtils.estimatedPrice(recipe.key, craftCost);
   const entryCount = ItemUtils.entryCount(recipe.key);
 
   return R.mergeRight(recipe, {
@@ -26,9 +29,10 @@ const mapFunction = (recipe) => {
     owner,
     craft,
     category,
-    minimumPrice,
     suggestedPrice,
-    averagePrice,
+    midRangePrice,
+    costMultiplePrice,
+    estimatedPrice,
     entryCount,
   });
 };

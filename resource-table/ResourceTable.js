@@ -9,17 +9,17 @@ import TableColumns from "./TableColumns.js";
 const mapFunction = (resource) => {
   const quality = Resolver.quality(resource.qualityKey);
   const resourceType = Resolver.resourceType(resource.resourceTypeKey);
-  const minimumPrice = ItemUtils.minimumPrice(resource.key);
   const suggestedPrice = ItemUtils.suggestedPrice(resource.key);
-  const averagePrice = ItemUtils.averagePrice(resource.key);
+  const midRangePrice = ItemUtils.midRangePrice(resource.key);
+  const estimatedPrice = ItemUtils.estimatedPrice(resource.key);
   const entryCount = ItemUtils.entryCount(resource.key);
 
   return R.mergeRight(resource, {
     quality,
     resourceType,
-    minimumPrice,
     suggestedPrice,
-    averagePrice,
+    midRangePrice,
+    estimatedPrice,
     entryCount,
   });
 };

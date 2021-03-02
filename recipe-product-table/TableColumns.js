@@ -15,22 +15,26 @@ const createLink = (href, name) =>
 const createSpan = (label, fontColor = "red") =>
   ReactDOMFactories.span({ key: label, style: { color: fontColor } }, label);
 
-const formatNumber = (value) => {
-  if (![undefined, null].includes(value)) {
-    const usFormatter = new Intl.NumberFormat("en-US");
-    return usFormatter.format(value);
-  }
+const usFormatter0 = new Intl.NumberFormat("en-US", {
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+});
 
-  return undefined;
-};
-
-const round0 = (value) =>
-  ![undefined, null].includes(value) ? value.toFixed(0) : undefined;
-
-const round2 = (value) =>
-  ![undefined, null].includes(value) ? value.toFixed(2) : undefined;
+const formatNumber = (value, formatter = usFormatter0) =>
+  ![undefined, null].includes(value) ? formatter.format(value) : undefined;
 
 const TableColumns = [
+  {
+    key: "iconUrl",
+    label: "Icon",
+    type: "string",
+    className: "tc",
+    cellFunction: (row) =>
+      row.product && row.product.iconUrl
+        ? createIcon(row.product.iconUrl, row.product.name)
+        : undefined,
+    valueFunction: (row) => row.product.name,
+  },
   {
     key: "name",
     label: "Recipe",
@@ -51,38 +55,18 @@ const TableColumns = [
     valueFunction: (row) => (row.quality ? row.quality.name : undefined),
   },
   {
-    key: "recipeMinimumPrice",
-    label: "Min. Price",
+    key: "recipeEstimatedPrice",
+    label: "Recipe Est. Price",
     type: "number",
     className: "tr",
-    convertFunction: (row) => round2(row.recipeMinimumPrice),
-    cellFunction: (row) => formatNumber(row.recipeMinimumPrice),
-    valueFunction: (row) => parseFloat(row.recipeMinimumPrice),
-  },
-  {
-    key: "recipeSuggestedPrice",
-    label: "Sug. Price",
-    type: "number",
-    className: "tr",
-    convertFunction: (row) => round0(row.recipeSuggestedPrice),
-    cellFunction: (row) => formatNumber(row.recipeSuggestedPrice),
-    valueFunction: (row) => parseFloat(row.recipeSuggestedPrice),
-  },
-  {
-    key: "recipeAveragePrice",
-    label: "Avg. Price",
-    type: "number",
-    className: "tr",
-    convertFunction: (row) => round0(row.recipeAveragePrice),
-    cellFunction: (row) => formatNumber(row.recipeAveragePrice),
-    valueFunction: (row) => parseFloat(row.recipeAveragePrice),
+    cellFunction: (row) => formatNumber(row.recipeEstimatedPrice),
+    valueFunction: (row) => parseFloat(row.recipeEstimatedPrice),
   },
   {
     key: "recipeEntryCount",
-    label: "Entry Count",
+    label: "Recipe Entry Count",
     type: "number",
     className: "tr",
-    convertFunction: (row) => round0(row.recipeEntryCount),
     cellFunction: (row) =>
       row.ttcUrl
         ? createLink(row.ttcUrl, formatNumber(row.recipeEntryCount))
@@ -91,7 +75,7 @@ const TableColumns = [
   },
   {
     key: "owner",
-    label: "Owner",
+    label: "Recipe Owner",
     type: "string",
     className: "tl",
     cellFunction: (row) => (row.owner ? row.owner.name : "WANT"),
@@ -99,28 +83,17 @@ const TableColumns = [
   },
   {
     key: "craft",
-    label: "Craft",
+    label: "Recipe Craft",
     type: "string",
     className: "tl",
     valueFunction: (row) => (row.craft ? row.craft.name : undefined),
   },
   {
     key: "category",
-    label: "Category",
+    label: "Recipe Category",
     type: "string",
     className: "tl",
     valueFunction: (row) => (row.category ? row.category.name : undefined),
-  },
-  {
-    key: "iconUrl",
-    label: "Icon",
-    type: "string",
-    className: "tc",
-    cellFunction: (row) =>
-      row.product && row.product.iconUrl
-        ? createIcon(row.product.iconUrl, row.product.name)
-        : undefined,
-    valueFunction: (row) => row.product.name,
   },
   {
     key: "product",
@@ -138,43 +111,22 @@ const TableColumns = [
     label: "Craft Cost",
     type: "number",
     className: "tr",
-    convertFunction: (row) => round0(row.craftCost),
     cellFunction: (row) => formatNumber(row.craftCost),
     valueFunction: (row) => parseFloat(row.craftCost),
   },
   {
-    key: "productMinimumPrice",
-    label: "Product Min. Price",
+    key: "productEstimatedPrice",
+    label: "Product Est. Price",
     type: "number",
     className: "tr",
-    convertFunction: (row) => round2(row.productMinimumPrice),
-    cellFunction: (row) => formatNumber(row.productMinimumPrice),
-    valueFunction: (row) => parseFloat(row.productMinimumPrice),
-  },
-  {
-    key: "productSuggestedPrice",
-    label: "Product Sug. Price",
-    type: "number",
-    className: "tr",
-    convertFunction: (row) => round0(row.productSuggestedPrice),
-    cellFunction: (row) => formatNumber(row.productSuggestedPrice),
-    valueFunction: (row) => parseFloat(row.productSuggestedPrice),
-  },
-  {
-    key: "productAveragePrice",
-    label: "Product Avg. Price",
-    type: "number",
-    className: "tr",
-    convertFunction: (row) => round0(row.productAveragePrice),
-    cellFunction: (row) => formatNumber(row.productAveragePrice),
-    valueFunction: (row) => parseFloat(row.productAveragePrice),
+    cellFunction: (row) => formatNumber(row.productEstimatedPrice),
+    valueFunction: (row) => parseFloat(row.productEstimatedPrice),
   },
   {
     key: "productEntryCount",
     label: "Product Entry Count",
     type: "number",
     className: "tr",
-    convertFunction: (row) => round0(row.productEntryCount),
     cellFunction: (row) =>
       row.product && row.product.ttcUrl
         ? createLink(row.product.ttcUrl, formatNumber(row.productEntryCount))
@@ -186,7 +138,6 @@ const TableColumns = [
     label: "Profit",
     type: "number",
     className: "tr",
-    convertFunction: (row) => round0(row.profit),
     cellFunction: (row) => {
       const profit = formatNumber(row.profit);
       return row.profit < 0 ? createSpan(profit) : profit;
