@@ -54,7 +54,7 @@ const mapFunction = (recipe) => {
 };
 const tableRows = R.map(mapFunction, Recipe.values());
 
-const appName = "Recipe Table";
+const appName = "Recipe Product Table";
 const onFilterChange = (filteredTableRows) => {
   console.log(
     `onFilterChange() filteredTableRows.length = ${filteredTableRows.length}`
