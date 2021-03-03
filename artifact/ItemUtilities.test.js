@@ -16,7 +16,7 @@ QUnit.test("amountCount() Alchemical Resin", (assert) => {
   // Verify.
   assert.ok(result);
   assert.equal(
-    result >= 140297 && result <= 155056,
+    result >= 140297 && result <= 158398,
     true,
     `result = ${result}`
   );
@@ -84,7 +84,7 @@ QUnit.test("estimatedPrice() Alchemical Resin", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result >= 8.0 && result <= 8.08, true, `result = ${result}`);
+  assert.equal(result >= 8.0 && result <= 8.11, true, `result = ${result}`);
 });
 
 QUnit.test("item() Alchemical Resin", (assert) => {
@@ -188,7 +188,7 @@ QUnit.test("suggestedPrice() Alchemical Resin", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result >= 8.0 && result <= 8.08, true, `result = ${result}`);
+  assert.equal(result >= 8.0 && result <= 8.11, true, `result = ${result}`);
 });
 
 const ItemUtilitiesTest = {};
