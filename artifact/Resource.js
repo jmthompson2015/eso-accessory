@@ -12,6 +12,7 @@ const Resource = {
   BARLEY: "barley",
   BAST: "bast",
   BEETLE_SCUTTLE: "beetle scuttle",
+  BEETS: "beets",
   BERVEZ_JUICE: "bervez juice",
   BLESSED_THISTLE: "blessed thistle",
   BLOODSTONE: "bloodstone",
@@ -181,6 +182,12 @@ Resource.properties = {
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.REAGENT,
     key: "beetle scuttle",
+  },
+  beets: {
+    name: "Beets",
+    qualityKey: Quality.NORMAL,
+    resourceTypeKey: ResourceType.PROVISION,
+    key: "beets",
   },
   "bervez juice": {
     name: "Bervez Juice",

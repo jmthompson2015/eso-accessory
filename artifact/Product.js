@@ -8,6 +8,7 @@ const Product = {
   ALINOR_AMPHORA_PORTRAIT: "alinor amphora, portrait",
   ALINOR_AMPHORA_SLENDER: "alinor amphora, slender",
   ALINOR_BOWL_MILLET: "alinor bowl, millet",
+  ALINOR_CANDLES_STAND: "alinor candles, stand",
   ALINOR_MEAL_INDIVIDUAL: "alinor meal, individual",
   ALINOR_POT_LIMESTONE: "alinor pot, limestone",
   ALINOR_SCONCE_CRENELLATED: "alinor sconce, crenellated",
@@ -17,9 +18,11 @@ const Product = {
   ARGONIAN_MAT_REED: "argonian mat, reed",
   ARGONIAN_MUG_TOOTH: "argonian mug, tooth",
   ARGONIAN_PAN_FRYING: "argonian pan, frying",
+  ARGONIAN_POST_ROUGH: "argonian post, rough",
   ARGONIAN_TARP_WOVEN: "argonian tarp, woven",
   ARGONIAN_TOTEM_OF_SKULLS: "argonian totem of skulls",
   ASHLANDER_PLATTER_CERAMIC: "ashlander platter, ceramic",
+  BEETS_DISPLAY: "beets, display",
   BRETON_AMPHORA_CERAMIC: "breton amphora, ceramic",
   BRETON_AMPHORA_GLAZED: "breton amphora, glazed",
   BRETON_BED_BUNK: "breton bed, bunk",
@@ -48,11 +51,13 @@ const Product = {
   COMMON_CANDLE_SET: "common candle, set",
   COMMON_CARGO_COVERED: "common cargo, covered",
   COMMON_CARGO_SEALED: "common cargo, sealed",
+  COMMON_PACK_SATCHEL: "common pack, satchel",
   COMMON_PLATTER_SERVING: "common platter, serving",
   COMMON_POT_COOKING: "common pot, cooking",
   COMMON_TABLE_SLANTED: "common table, slanted",
   COMMON_WASHTUB_EMPTY: "common washtub, empty",
   DARK_ELF_CANDLE_CLAW_BASE: "dark elf candle, claw base",
+  DARK_ELF_CARPET_MOTTLED: "dark elf carpet, mottled",
   DARK_ELF_CARPET_PATTERNED: "dark elf carpet, patterned",
   DARK_ELF_CART_MERCHANT: "dark elf cart, merchant",
   DARK_ELF_CAULDRON_BANDED: "dark elf cauldron, banded",
@@ -105,6 +110,7 @@ const Product = {
   KHAJIIT_BEDDING_PADDED: "khajiit bedding, padded",
   KHAJIIT_CARPET_CRESCENT_MOONS: "khajiit carpet, crescent moons",
   KHAJIIT_CARPET_SUN: "khajiit carpet, sun",
+  KHAJIIT_DRESSER_FADED: "khajiit dresser, faded",
   KHAJIIT_END_TABLE_FADED: "khajiit end table, faded",
   KHAJIIT_FLASK_AMBER: "khajiit flask, amber",
   KHAJIIT_FRAME_ARCHED: "khajiit frame, arched",
@@ -133,6 +139,7 @@ const Product = {
   ORCISH_PLATFORM_BLOCK: "orcish platform, block",
   ORCISH_SACK_FLOUR: "orcish sack, flour",
   ORCISH_SHELF_LONG: "orcish shelf, long",
+  ORCISH_SHELF_SHORT: "orcish shelf, short",
   ORCISH_TABLE_BLOCK: "orcish table, block",
   ORCISH_TRUNK_BRACED: "orcish trunk, braced",
   ORCISH_VESSEL_SEALED: "orcish vessel, sealed",
@@ -161,6 +168,7 @@ const Product = {
   REDGUARD_MAT_MEDITATION: "redguard mat, meditation",
   REDGUARD_MAT_SUNRISE: "redguard mat, sunrise",
   REDGUARD_MAT_SUNSET: "redguard mat, sunset",
+  REDGUARD_NIGHTSTAND_STURDY: "redguard nightstand, sturdy",
   REDGUARD_POT_CAPPED: "redguard pot, capped",
   REDGUARD_POT_SEALED: "redguard pot, sealed",
   REDGUARD_RUNNER_SUN: "redguard runner, sun",
@@ -241,6 +249,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "alinor bowl, millet",
   },
+  "alinor candles, stand": {
+    name: "Alinor Candles, Stand",
+    qualityKey: Quality.SUPERIOR,
+    key: "alinor candles, stand",
+  },
   "alinor meal, individual": {
     name: "Alinor Meal, Individual",
     qualityKey: Quality.FINE,
@@ -286,6 +299,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "argonian pan, frying",
   },
+  "argonian post, rough": {
+    name: "Argonian Post, Rough",
+    qualityKey: Quality.FINE,
+    key: "argonian post, rough",
+  },
   "argonian tarp, woven": {
     name: "Argonian Tarp, Woven",
     qualityKey: Quality.FINE,
@@ -300,6 +318,11 @@ Product.properties = {
     name: "Ashlander Platter, Ceramic",
     qualityKey: Quality.SUPERIOR,
     key: "ashlander platter, ceramic",
+  },
+  "beets, display": {
+    name: "Beets, Display",
+    qualityKey: Quality.FINE,
+    key: "beets, display",
   },
   "breton amphora, ceramic": {
     name: "Breton Amphora, Ceramic",
@@ -447,6 +470,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "common cargo, sealed",
   },
+  "common pack, satchel": {
+    name: "Common Pack, Satchel",
+    qualityKey: Quality.FINE,
+    key: "common pack, satchel",
+  },
   "common platter, serving": {
     name: "Common Platter, Serving",
     qualityKey: Quality.FINE,
@@ -471,6 +499,11 @@ Product.properties = {
     name: "Dark Elf Candle, Claw Base",
     qualityKey: Quality.FINE,
     key: "dark elf candle, claw base",
+  },
+  "dark elf carpet, mottled": {
+    name: "Dark Elf Carpet, Mottled",
+    qualityKey: Quality.FINE,
+    key: "dark elf carpet, mottled",
   },
   "dark elf carpet, patterned": {
     name: "Dark Elf Carpet, Patterned",
@@ -777,6 +810,11 @@ Product.properties = {
     qualityKey: Quality.SUPERIOR,
     key: "khajiit carpet, sun",
   },
+  "khajiit dresser, faded": {
+    name: "Khajiit Dresser, Faded",
+    qualityKey: Quality.FINE,
+    key: "khajiit dresser, faded",
+  },
   "khajiit end table, faded": {
     name: "Khajiit End Table, Faded",
     qualityKey: Quality.FINE,
@@ -920,6 +958,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "orcish shelf, long",
   },
+  "orcish shelf, short": {
+    name: "Orcish Shelf, Short",
+    qualityKey: Quality.FINE,
+    key: "orcish shelf, short",
+  },
   "orcish table, block": {
     name: "Orcish Table, Block",
     qualityKey: Quality.FINE,
@@ -1061,6 +1104,11 @@ Product.properties = {
     name: "Redguard Mat, Sunset",
     qualityKey: Quality.SUPERIOR,
     key: "redguard mat, sunset",
+  },
+  "redguard nightstand, sturdy": {
+    name: "Redguard Nightstand, Sturdy",
+    qualityKey: Quality.FINE,
+    key: "redguard nightstand, sturdy",
   },
   "redguard pot, capped": {
     name: "Redguard Pot, Capped",

@@ -23,8 +23,10 @@ const Recipe = {
   ALCHEMY_ESSENCE_OF_WEAPON_POWER_1: "alchemy: essence of weapon power 1",
   ALCHEMY_ESSENCE_OF_WEAPON_POWER_2: "alchemy: essence of weapon power 2",
 
+  BLUEPRINT_ALINOR_CANDLES_STAND: "blueprint: alinor candles, stand",
   BLUEPRINT_ARGONIAN_COUNTER_LONG: "blueprint: argonian counter, long",
   BLUEPRINT_ARGONIAN_MUG_TOOTH: "blueprint: argonian mug, tooth",
+  BLUEPRINT_ARGONIAN_POST_ROUGH: "blueprint: argonian post, rough",
   BLUEPRINT_BRETON_CHAIR_SLATTED: "blueprint: breton chair, slatted",
   BLUEPRINT_BRETON_DESK: "blueprint: breton desk",
   BLUEPRINT_BRETON_DESK_SCHOLARS: "blueprint: breton desk, scholar's",
@@ -48,6 +50,7 @@ const Recipe = {
   BLUEPRINT_HLAALU_HANGER_MOUNTED: "blueprint: hlaalu hanger, mounted",
   BLUEPRINT_HLAALU_RACK_BARREL: "blueprint: hlaalu rack, barrel",
   BLUEPRINT_HLAALU_STOOL_POLISHED: "blueprint: hlaalu stool, polished",
+  BLUEPRINT_KHAJIIT_DRESSER_FADED: "blueprint: khajiit dresser, faded",
   BLUEPRINT_KHAJIIT_END_TABLE_FADED: "blueprint: khajiit end table, faded",
   BLUEPRINT_KHAJIIT_FRAME_ARCHED: "blueprint: khajiit frame, arched",
   BLUEPRINT_NORD_DRESSER_ROUGH: "blueprint: nord dresser, rough",
@@ -57,6 +60,7 @@ const Recipe = {
     "blueprint: orcish counter, island stall",
   BLUEPRINT_ORCISH_PLATFORM_BLOCK: "blueprint: orcish platform, block",
   BLUEPRINT_ORCISH_SHELF_LONG: "blueprint: orcish shelf, long",
+  BLUEPRINT_ORCISH_SHELF_SHORT: "blueprint: orcish shelf, short",
   BLUEPRINT_ORCISH_TABLE_BLOCK: "blueprint: orcish table, block",
   BLUEPRINT_ORCISH_TRUNK_BRACED: "blueprint: orcish trunk, braced",
   BLUEPRINT_REDGUARD_BAR_LONG_CABINET: "blueprint: redguard bar, long cabinet",
@@ -68,6 +72,8 @@ const Recipe = {
     "blueprint: redguard candlestick, practical",
   BLUEPRINT_REDGUARD_DESK_BOLTED: "blueprint: redguard desk, bolted",
   BLUEPRINT_REDGUARD_END_TABLE_INLAID: "blueprint: redguard end table, inlaid",
+  BLUEPRINT_REDGUARD_NIGHTSTAND_STURDY:
+    "blueprint: redguard nightstand, sturdy",
   BLUEPRINT_REDGUARD_SHELF_BOLTED: "blueprint: redguard shelf, bolted",
   BLUEPRINT_REDGUARD_TABLE_FORMAL: "blueprint: redguard table, formal",
   BLUEPRINT_REDGUARD_TABLE_GAME: "blueprint: redguard table, game",
@@ -92,6 +98,7 @@ const Recipe = {
   DESIGN_ALINOR_MEAL_INDIVIDUAL: "design: alinor meal, individual",
   DESIGN_ARGONIAN_TOTEM_OF_SKULLS: "design: argonian totem of skulls",
   DESIGN_ASHLANDER_PLATTER_CERAMIC: "design: ashlander platter, ceramic",
+  DESIGN_BEETS_DISPLAY: "design: beets, display",
   DESIGN_BRETON_AMPHORA_GLAZED: "design: breton amphora, glazed",
   DESIGN_BRETON_VASE_CERAMIC: "design: breton vase, ceramic",
   DESIGN_BRETON_VASE_GLAZED: "design: breton vase, glazed",
@@ -175,6 +182,8 @@ const Recipe = {
   PATTERN_BRETON_CARPET_GREEN: "pattern: breton carpet, green",
   PATTERN_COMMON_BASKET_OPEN: "pattern: common basket, open",
   PATTERN_COMMON_BASKET_TALL: "pattern: common basket, tall",
+  PATTERN_COMMON_PACK_SATCHEL: "pattern: common pack, satchel",
+  PATTERN_DARK_ELF_CARPET_MOTTLED: "pattern: dark elf carpet, mottled",
   PATTERN_DARK_ELF_CARPET_PATTERNED: "pattern: dark elf carpet, patterned",
   PATTERN_DRES_CARPET_CHAINS: "pattern: dres carpet, chains",
   PATTERN_ELSWEYR_CARPET_GOLD_EMERALD: "pattern: elsweyr carpet, gold-emerald",
@@ -386,6 +395,20 @@ Recipe.properties = {
   },
   // ///////////////////////////////////////////////////////////////////////////
   // Blueprint
+  "blueprint: alinor candles, stand": {
+    name: "Blueprint: Alinor Candles, Stand",
+    categoryKey: Category.LIGHTING,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 9),
+      resourceIngredient(Resource.DECORATIVE_WAX, 6),
+      resourceIngredient(Resource.CULANDA_LACQUER, 1),
+      resourceIngredient(Resource.TURPEN, 6),
+    ],
+    output: productIngredient(Product.ALINOR_CANDLES_STAND),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: alinor candles, stand",
+  },
   "blueprint: argonian counter, long": {
     name: "Blueprint: Argonian Counter, Long",
     categoryKey: Category.DINING,
@@ -413,6 +436,19 @@ Recipe.properties = {
     output: productIngredient(Product.ARGONIAN_MUG_TOOTH),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: argonian mug, tooth",
+  },
+  "blueprint: argonian post, rough": {
+    name: "Blueprint: Argonian Post, Rough",
+    categoryKey: Category.COURTYARD,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 6),
+      resourceIngredient(Resource.FLINT, 5),
+      resourceIngredient(Resource.PITCH, 9),
+    ],
+    output: productIngredient(Product.ARGONIAN_POST_ROUGH),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: argonian post, rough",
   },
   "blueprint: breton chair, slatted": {
     name: "Blueprint: Breton Chair, Slatted",
@@ -719,6 +755,19 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: hlaalu stool, polished",
   },
+  "blueprint: khajiit dresser, faded": {
+    name: "Blueprint: Khajiit Dresser, Faded",
+    categoryKey: Category.LIBRARY,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 7),
+      resourceIngredient(Resource.MOONSTONE, 5),
+      resourceIngredient(Resource.PITCH, 9),
+    ],
+    output: productIngredient(Product.KHAJIIT_DRESSER_FADED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: khajiit dresser, faded",
+  },
   "blueprint: khajiit end table, faded": {
     name: "Blueprint: Khajiit End Table, Faded",
     categoryKey: Category.PARLOR,
@@ -829,6 +878,20 @@ Recipe.properties = {
     output: productIngredient(Product.ORCISH_SHELF_LONG),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: orcish shelf, long",
+  },
+  "blueprint: orcish shelf, short": {
+    name: "Blueprint: Orcish Shelf, Short",
+    categoryKey: Category.LIBRARY,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 6),
+      resourceIngredient(Resource.REGULUS, 4),
+      resourceIngredient(Resource.MANGANESE, 5),
+      resourceIngredient(Resource.PITCH, 9),
+    ],
+    output: productIngredient(Product.ORCISH_SHELF_SHORT),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: orcish shelf, short",
   },
   "blueprint: orcish table, block": {
     name: "Blueprint: Orcish Table, Block",
@@ -970,6 +1033,19 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_END_TABLE_INLAID),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard end table, inlaid",
+  },
+  "blueprint: redguard nightstand, sturdy": {
+    name: "Blueprint: Redguard Nightstand, Sturdy",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 5),
+      resourceIngredient(Resource.STARMETAL, 5),
+      resourceIngredient(Resource.PITCH, 9),
+    ],
+    output: productIngredient(Product.REDGUARD_NIGHTSTAND_STURDY),
+    ownerKey: Character.FRAK_LOCK,
+    key: "blueprint: redguard nightstand, sturdy",
   },
   "blueprint: redguard shelf, bolted": {
     name: "Blueprint: Redguard Shelf, Bolted",
@@ -1277,6 +1353,20 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "design: ashlander platter, ceramic",
   },
+  "design: beets, display": {
+    name: "Design: Beets, Display",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.PROVISIONING,
+    inputs: [
+      resourceIngredient(Resource.DECORATIVE_WAX, 3),
+      resourceIngredient(Resource.NICKEL, 5),
+      resourceIngredient(Resource.BEETS, 2),
+      resourceIngredient(Resource.FLOUR, 20),
+    ],
+    output: productIngredient(Product.BEETS_DISPLAY),
+    ownerKey: Character.FRAK_LOCK,
+    key: "design: beets, display",
+  },
   "design: breton amphora, glazed": {
     name: "Design: Breton Amphora, Glazed",
     categoryKey: Category.HEARTH,
@@ -1484,6 +1574,7 @@ Recipe.properties = {
       resourceIngredient(Resource.FROST_MIRRIAM, 3),
     ],
     output: productIngredient(Product.KHAJIIT_VESSEL_AMBER),
+    ownerKey: Character.FRAK_LOCK,
     key: "design: khajiit vessel, amber",
   },
   "design: nord amphora, glazed": {
@@ -1498,6 +1589,7 @@ Recipe.properties = {
       resourceIngredient(Resource.BERVEZ_JUICE, 3),
     ],
     output: productIngredient(Product.NORD_AMPHORA_GLAZED),
+    ownerKey: Character.FRAK_LOCK,
     key: "design: nord amphora, glazed",
   },
   "design: nord pot, stew": {
@@ -1930,6 +2022,7 @@ Recipe.properties = {
       resourceIngredient(Resource.DWARVEN_OIL, 6),
     ],
     output: productIngredient(Product.DWARVEN_VASE_FORGED),
+    ownerKey: Character.FRAK_LOCK,
     key: "diagram: dwarven vase, forged",
   },
   "diagram: dwarven vessel, sealed": {
@@ -2306,6 +2399,33 @@ Recipe.properties = {
     output: productIngredient(Product.COMMON_BASKET_TALL),
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: common basket, tall",
+  },
+  "pattern: common pack, satchel": {
+    name: "Pattern: Common Pack, Satchel",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 3),
+      resourceIngredient(Resource.NICKEL, 5),
+      resourceIngredient(Resource.HEMMING, 9),
+    ],
+    output: productIngredient(Product.COMMON_PACK_SATCHEL),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: common pack, satchel",
+  },
+  "pattern: dark elf carpet, mottled": {
+    name: "Pattern: Dark Elf Carpet, Mottled",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 6),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 4),
+      resourceIngredient(Resource.OBSIDIAN, 5),
+      resourceIngredient(Resource.HEMMING, 9),
+    ],
+    output: productIngredient(Product.DARK_ELF_CARPET_MOTTLED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: dark elf carpet, mottled",
   },
   "pattern: dark elf carpet, patterned": {
     name: "Pattern: Dark Elf Carpet, Patterned",
