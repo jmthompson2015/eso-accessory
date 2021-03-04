@@ -70,8 +70,14 @@ const Recipe = {
   BLUEPRINT_REDGUARD_BOOKCASE_PILED: "blueprint: redguard bookcase, piled",
   BLUEPRINT_REDGUARD_CANDLESTICK_PRACTICAL:
     "blueprint: redguard candlestick, practical",
+  BLUEPRINT_REDGUARD_CUPBOARD_LATTICE: "blueprint: redguard cupboard, lattice",
   BLUEPRINT_REDGUARD_DESK_BOLTED: "blueprint: redguard desk, bolted",
+  BLUEPRINT_REDGUARD_DIVIDER_FLORID: "blueprint: redguard divider, florid",
+  BLUEPRINT_REDGUARD_DIVIDER_GILDED: "blueprint: redguard divider, gilded",
+  BLUEPRINT_REDGUARD_DIVIDER_LATTICE: "blueprint: redguard divider, lattice",
   BLUEPRINT_REDGUARD_END_TABLE_INLAID: "blueprint: redguard end table, inlaid",
+  BLUEPRINT_REDGUARD_NIGHTSTAND_BOLTED:
+    "blueprint: redguard nightstand, bolted",
   BLUEPRINT_REDGUARD_NIGHTSTAND_STURDY:
     "blueprint: redguard nightstand, sturdy",
   BLUEPRINT_REDGUARD_SHELF_BOLTED: "blueprint: redguard shelf, bolted",
@@ -79,6 +85,7 @@ const Recipe = {
   BLUEPRINT_REDGUARD_TABLE_GAME: "blueprint: redguard table, game",
   BLUEPRINT_REDGUARD_TABLE_GRAND_INLAID:
     "blueprint: redguard table, grand inlaid",
+  BLUEPRINT_REDGUARD_TRUNK_BOLTED: "blueprint: redguard trunk, bolted",
   BLUEPRINT_REDGUARD_WAGON_MERCHANT: "blueprint: redguard wagon, merchant",
   BLUEPRINT_REDORAN_SPOON_WOODEN: "blueprint: redoran spoon, wooden",
   BLUEPRINT_REDORAN_STOOL_SANDED: "blueprint: redoran stool, sanded",
@@ -217,6 +224,7 @@ const Recipe = {
   PATTERN_REDGUARD_MAT_SUNSET: "pattern: redguard mat, sunset",
   PATTERN_REDGUARD_RUNNER_SUN: "pattern: redguard runner, sun",
   PATTERN_REDGUARD_TAPESTRY_LATTICE: "pattern: redguard tapestry, lattice",
+  PATTERN_REDGUARD_TAPESTRY_OASIS: "pattern: redguard tapestry, oasis",
   PATTERN_REDORAN_CARPET_VOLCANIC_SANDS:
     "pattern: redoran carpet, volcanic sands",
   PATTERN_ROUGH_BEDROLL_BASIC: "pattern: rough bedroll, basic",
@@ -1003,6 +1011,19 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard candlestick, practical",
   },
+  "blueprint: redguard cupboard, lattice": {
+    name: "Blueprint: Redguard Cupboard, Lattice",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 5),
+      resourceIngredient(Resource.REGULUS, 5),
+      resourceIngredient(Resource.HEARTWOOD, 8),
+      resourceIngredient(Resource.STARMETAL, 10),
+    ],
+    output: productIngredient(Product.REDGUARD_CUPBOARD_LATTICE),
+    key: "blueprint: redguard cupboard, lattice",
+  },
   "blueprint: redguard desk, bolted": {
     name: "Blueprint: Redguard Desk, Bolted",
     categoryKey: Category.LIBRARY,
@@ -1017,6 +1038,47 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_DESK_BOLTED),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard desk, bolted",
+  },
+  "blueprint: redguard divider, florid": {
+    name: "Blueprint: Redguard Divider, Florid",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 10),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.STARMETAL, 10),
+      resourceIngredient(Resource.TURPEN, 6),
+    ],
+    output: productIngredient(Product.REDGUARD_DIVIDER_FLORID),
+    key: "blueprint: redguard divider, florid",
+  },
+  "blueprint: redguard divider, gilded": {
+    name: "Blueprint: Redguard Divider, Gilded",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 12),
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.MASTIC, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_DIVIDER_GILDED),
+    key: "blueprint: redguard divider, gilded",
+  },
+  "blueprint: redguard divider, lattice": {
+    name: "Blueprint: Redguard Divider, Lattice",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 12),
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.MASTIC, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_DIVIDER_LATTICE),
+    key: "blueprint: redguard divider, lattice",
   },
   "blueprint: redguard end table, inlaid": {
     name: "Blueprint: Redguard End Table, Inlaid",
@@ -1033,6 +1095,20 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_END_TABLE_INLAID),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard end table, inlaid",
+  },
+  "blueprint: redguard nightstand, bolted": {
+    name: "Blueprint: Redguard Nightstand, Bolted",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 12),
+      resourceIngredient(Resource.REGULUS, 8),
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.MASTIC, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_NIGHTSTAND_BOLTED),
+    key: "blueprint: redguard nightstand, bolted",
   },
   "blueprint: redguard nightstand, sturdy": {
     name: "Blueprint: Redguard Nightstand, Sturdy",
@@ -1106,6 +1182,19 @@ Recipe.properties = {
     output: productIngredient(Product.REDGUARD_TABLE_GRAND_INLAID),
     ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard table, grand inlaid",
+  },
+  "blueprint: redguard trunk, bolted": {
+    name: "Blueprint: Redguard Trunk, Bolted",
+    categoryKey: Category.SUITE,
+    craftKey: Craft.WOODWORKING,
+    inputs: [
+      resourceIngredient(Resource.HEARTWOOD, 9),
+      resourceIngredient(Resource.REGULUS, 6),
+      resourceIngredient(Resource.STARMETAL, 10),
+      resourceIngredient(Resource.TURPEN, 6),
+    ],
+    output: productIngredient(Product.REDGUARD_TRUNK_BOLTED),
+    key: "blueprint: redguard trunk, bolted",
   },
   "blueprint: redguard wagon, merchant": {
     name: "Blueprint: Redguard Wagon, Merchant",
@@ -2864,6 +2953,20 @@ Recipe.properties = {
     ],
     output: productIngredient(Product.REDGUARD_TAPESTRY_LATTICE),
     key: "pattern: redguard tapestry, lattice",
+  },
+  "pattern: redguard tapestry, oasis": {
+    name: "Pattern: Redguard Tapestry, Oasis",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 12),
+      resourceIngredient(Resource.REGULUS, 7),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 9),
+      resourceIngredient(Resource.STARMETAL, 15),
+      resourceIngredient(Resource.ELEGANT_LINING, 3),
+    ],
+    output: productIngredient(Product.REDGUARD_TAPESTRY_OASIS),
+    key: "pattern: redguard tapestry, oasis",
   },
   "pattern: redoran carpet, volcanic sands": {
     name: "Pattern: Redoran Carpet, Volcanic Sands",
