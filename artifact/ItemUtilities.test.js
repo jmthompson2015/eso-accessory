@@ -44,7 +44,7 @@ QUnit.test("averagePrice() Essence of Spell Power", (assert) => {
   // Verify.
   assert.ok(result);
   assert.equal(
-    result >= 332.25 && result <= 337.06,
+    result >= 331.84 && result <= 337.06,
     true,
     `result = ${result}`
   );
