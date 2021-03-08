@@ -14,6 +14,8 @@ const Product = {
   ALINOR_SCONCE_CRENELLATED: "alinor sconce, crenellated",
   ALINOR_WALL_STONE: "alinor wall, stone",
   ARGONIAN_BASKETS_DOUBLE: "argonian baskets, double",
+  ARGONIAN_BED_WOVEN: "argonian bed, woven",
+  ARGONIAN_CHAIR_ROUGH: "argonian chair, rough",
   ARGONIAN_COUNTER_LONG: "argonian counter, long",
   ARGONIAN_MAT_REED: "argonian mat, reed",
   ARGONIAN_MUG_TOOTH: "argonian mug, tooth",
@@ -34,6 +36,7 @@ const Product = {
   BRETON_SCONCE_TORCH: "breton sconce, torch",
   BRETON_SHELF_LONG: "breton shelf, long",
   BRETON_SHELVES_DOUBLE: "breton shelves, double",
+  BRETON_STREET_POST_PLAIN: "breton street post, plain",
   BRETON_STREET_POST_STONE: "breton street post, stone",
   BRETON_STREETLIGHT_PAIRED: "breton streetlight, paired",
   BRETON_TABLE_DINING: "breton table, dining",
@@ -51,6 +54,7 @@ const Product = {
   COMMON_CANDLE_SET: "common candle, set",
   COMMON_CARGO_COVERED: "common cargo, covered",
   COMMON_CARGO_SEALED: "common cargo, sealed",
+  COMMON_COUNTER_ISLAND_STALL: "common counter, island stall",
   COMMON_PACK_SATCHEL: "common pack, satchel",
   COMMON_PLATTER_SERVING: "common platter, serving",
   COMMON_POT_COOKING: "common pot, cooking",
@@ -63,6 +67,7 @@ const Product = {
   DARK_ELF_CAULDRON_BANDED: "dark elf cauldron, banded",
   DARK_ELF_LANTERN_OIL: "dark elf lantern, oil",
   DARK_ELF_RUG_STRIATED: "dark elf rug, striated",
+  DARK_ELF_SHELF_WALL: "dark elf shelf, wall",
   DARK_ELF_TABLE_FORMAL: "dark elf table, formal",
   DRES_BOWL_DINNER: "dres bowl, dinner",
   DRES_BOWL_EMPTY: "dres bowl, empty",
@@ -94,6 +99,7 @@ const Product = {
   HIGH_ELF_BED_BUNK: "high elf bed, bunk",
   HIGH_ELF_BED_SINGLE: "high elf bed, single",
   HIGH_ELF_CANDLEHOLDER_STURDY: "high elf candleholder, sturdy",
+  HIGH_ELF_CARPET_RUSTIC: "high elf carpet, rustic",
   HIGH_ELF_PLATE_DINNER: "high elf plate, dinner",
   HIGH_ELF_VASE_GILDED: "high elf vase, gilded",
   HIGH_ELF_VASE_WINGED: "high elf vase, winged",
@@ -211,8 +217,10 @@ const Product = {
   SUGAR_PUMPKIN_WAX: "sugar pumpkin, wax",
   WINTER_SQUASH_DISPLAY: "winter squash, display",
   WITCHMOTHERS_POTENT_BREW: "witchmother's potent brew",
+  WOOD_ELF_AWNING_LEATHER: "wood elf awning, leather",
   WOOD_ELF_BAR_SHORT: "wood elf bar, short",
   WOOD_ELF_BONE_CHIMES: "wood elf bone chimes",
+  WOOD_ELF_CANOPY_LEATHER: "wood elf canopy, leather",
   WOOD_ELF_COUNTER_LONG_LEATHER: "wood elf counter, long leather",
   WOOD_ELF_CUP_CERAMIC: "wood elf cup, ceramic",
   WOOD_ELF_DIVIDER_NARROW: "wood elf divider, narrow",
@@ -285,6 +293,16 @@ Product.properties = {
     name: "Argonian Baskets, Double",
     qualityKey: Quality.FINE,
     key: "argonian baskets, double",
+  },
+  "argonian bed, woven": {
+    name: "Argonian Bed, Woven",
+    qualityKey: Quality.SUPERIOR,
+    key: "argonian bed, woven",
+  },
+  "argonian chair, rough": {
+    name: "Argonian Chair, Rough",
+    qualityKey: Quality.FINE,
+    key: "argonian chair, rough",
   },
   "argonian counter, long": {
     name: "Argonian Counter, Long",
@@ -390,6 +408,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "breton shelves, double",
   },
+  "breton street post, plain": {
+    name: "Breton Street Post, Plain",
+    qualityKey: Quality.FINE,
+    key: "breton street post, plain",
+  },
   "breton street post, stone": {
     name: "Breton Street Post, Stone",
     qualityKey: Quality.FINE,
@@ -477,6 +500,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "common cargo, sealed",
   },
+  "common counter, island stall": {
+    name: "Common Counter, Island Stall",
+    qualityKey: Quality.FINE,
+    key: "common counter, island stall",
+  },
   "common pack, satchel": {
     name: "Common Pack, Satchel",
     qualityKey: Quality.FINE,
@@ -536,6 +564,11 @@ Product.properties = {
     name: "Dark Elf Rug, Striated",
     qualityKey: Quality.EPIC,
     key: "dark elf rug, striated",
+  },
+  "dark elf shelf, wall": {
+    name: "Dark Elf Shelf, Wall",
+    qualityKey: Quality.FINE,
+    key: "dark elf shelf, wall",
   },
   "dark elf table, formal": {
     name: "Dark Elf Table, Formal",
@@ -736,6 +769,11 @@ Product.properties = {
       "https://images.uesp.net/9/9f/ON-item-furnishing-High_Elf_Candleholder%2C_Sturdy.jpg",
     qualityKey: Quality.FINE,
     key: "high elf candleholder, sturdy",
+  },
+  "high elf carpet, rustic": {
+    name: "High Elf Carpet, Rustic",
+    qualityKey: Quality.FINE,
+    key: "high elf carpet, rustic",
   },
   "high elf plate, dinner": {
     name: "High Elf Plate, Dinner",
@@ -1334,6 +1372,11 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "witchmother's potent brew",
   },
+  "wood elf awning, leather": {
+    name: "Wood Elf Awning, Leather",
+    qualityKey: Quality.FINE,
+    key: "wood elf awning, leather",
+  },
   "wood elf bar, short": {
     name: "Wood Elf Bar, Short",
     qualityKey: Quality.FINE,
@@ -1343,6 +1386,11 @@ Product.properties = {
     name: "Wood Elf Bone Chimes",
     qualityKey: Quality.EPIC,
     key: "wood elf bone chimes",
+  },
+  "wood elf canopy, leather": {
+    name: "Wood Elf Canopy, Leather",
+    qualityKey: Quality.FINE,
+    key: "wood elf canopy, leather",
   },
   "wood elf counter, long leather": {
     name: "Wood Elf Counter, Long Leather",
