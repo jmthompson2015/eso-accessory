@@ -1075,6 +1075,7 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.REDGUARD_BOOKCASE_PILED),
+    ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard bookcase, piled",
   },
   "blueprint: redguard candlestick, practical": {
@@ -1129,6 +1130,7 @@ Recipe.properties = {
       resourceIngredient(Resource.TURPEN, 6),
     ],
     output: productIngredient(Product.REDGUARD_DIVIDER_FLORID),
+    ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard divider, florid",
   },
   "blueprint: redguard divider, gilded": {
@@ -1157,6 +1159,7 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.REDGUARD_DIVIDER_LATTICE),
+    ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard divider, lattice",
   },
   "blueprint: redguard end table, inlaid": {
@@ -1187,6 +1190,7 @@ Recipe.properties = {
       resourceIngredient(Resource.MASTIC, 3),
     ],
     output: productIngredient(Product.REDGUARD_NIGHTSTAND_BOLTED),
+    ownerKey: Character.FRAK_LOCK,
     key: "blueprint: redguard nightstand, bolted",
   },
   "blueprint: redguard nightstand, sturdy": {
