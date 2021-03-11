@@ -164,7 +164,7 @@ QUnit.test("midRangePrice() Alchemical Resin", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result >= 8.344 && result <= 15.49, true, `result = ${result}`);
+  assert.equal(result >= 8.3149 && result <= 15.49, true, `result = ${result}`);
 });
 
 QUnit.test("minimumPrice() Alchemical Resin", (assert) => {

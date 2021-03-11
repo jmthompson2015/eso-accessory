@@ -21,6 +21,7 @@ const Product = {
   ARGONIAN_MUG_TOOTH: "argonian mug, tooth",
   ARGONIAN_PAN_FRYING: "argonian pan, frying",
   ARGONIAN_POST_ROUGH: "argonian post, rough",
+  ARGONIAN_TABLE_ROUGH: "argonian table, rough",
   ARGONIAN_TARP_WOVEN: "argonian tarp, woven",
   ARGONIAN_TOTEM_OF_SKULLS: "argonian totem of skulls",
   ASHLANDER_PLATTER_CERAMIC: "ashlander platter, ceramic",
@@ -30,6 +31,7 @@ const Product = {
   BRETON_BED_BUNK: "breton bed, bunk",
   BRETON_CARPET_GREEN: "breton carpet, green",
   BRETON_CHAIR_SLATTED: "breton chair, slatted",
+  BRETON_CHAMBERSTICK_SHORT: "breton chamberstick, short",
   BRETON_DESK: "breton desk",
   BRETON_DESK_SCHOLARS: "breton desk, scholar's",
   BRETON_NIGHTSTAND_OPEN: "breton nightstand, open",
@@ -56,6 +58,7 @@ const Product = {
   COMMON_CARGO_SEALED: "common cargo, sealed",
   COMMON_COUNTER_ISLAND_STALL: "common counter, island stall",
   COMMON_PACK_SATCHEL: "common pack, satchel",
+  COMMON_PLATE_SETTING: "common plate, setting",
   COMMON_PLATTER_SERVING: "common platter, serving",
   COMMON_POT_COOKING: "common pot, cooking",
   COMMON_TABLE_SLANTED: "common table, slanted",
@@ -100,6 +103,7 @@ const Product = {
   HIGH_ELF_BED_SINGLE: "high elf bed, single",
   HIGH_ELF_CANDLEHOLDER_STURDY: "high elf candleholder, sturdy",
   HIGH_ELF_CARPET_RUSTIC: "high elf carpet, rustic",
+  HIGH_ELF_CUP_GILDED: "high elf cup, gilded",
   HIGH_ELF_PLATE_DINNER: "high elf plate, dinner",
   HIGH_ELF_VASE_GILDED: "high elf vase, gilded",
   HIGH_ELF_VASE_WINGED: "high elf vase, winged",
@@ -116,6 +120,7 @@ const Product = {
   KHAJIIT_BEDDING_PADDED: "khajiit bedding, padded",
   KHAJIIT_CARPET_CRESCENT_MOONS: "khajiit carpet, crescent moons",
   KHAJIIT_CARPET_SUN: "khajiit carpet, sun",
+  KHAJIIT_DESK_FADED: "khajiit desk, faded",
   KHAJIIT_DRESSER_FADED: "khajiit dresser, faded",
   KHAJIIT_END_TABLE_FADED: "khajiit end table, faded",
   KHAJIIT_FLASK_AMBER: "khajiit flask, amber",
@@ -124,10 +129,13 @@ const Product = {
   KHAJIIT_RUG_SUN: "khajiit rug, sun",
   KHAJIIT_VESSEL_AMBER: "khajiit vessel, amber",
   LAVA_FOOT_SOUP_AND_SALTRICE: "lava foot soup-and-saltrice",
+  LETTUCE_DISPLAY: "lettuce, display",
   NORD_AMPHORA_GLAZED: "nord amphora, glazed",
   NORD_CANDLEHOLDER_CUP: "nord candleholder, cup",
+  NORD_CROCKPOT_COVERED: "nord crockpot, covered",
   NORD_DRESSER_ROUGH: "nord dresser, rough",
   NORD_LANTERN_CAGE: "nord lantern, cage",
+  NORD_POT_CERAMIC: "nord pot, ceramic",
   NORD_POT_STEW: "nord pot, stew",
   NORD_SHELF_WALL: "nord shelf, wall",
   NORD_URN_CERAMIC: "nord urn, ceramic",
@@ -160,6 +168,7 @@ const Product = {
   REDGUARD_BED_WIDE_GRAND: "redguard bed, wide grand",
   REDGUARD_BENCH_PADDED: "redguard bench, padded",
   REDGUARD_BENCH_SLATTED: "redguard bench, slatted",
+  REDGUARD_BIN_ROPED: "redguard bin, roped",
   REDGUARD_BOOKCASE_FULL: "redguard bookcase, full",
   REDGUARD_BOOKCASE_PILED: "redguard bookcase, piled",
   REDGUARD_CANDLESTICK_PRACTICAL: "redguard candlestick, practical",
@@ -329,6 +338,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "argonian post, rough",
   },
+  "argonian table, rough": {
+    name: "Argonian Table, Rough",
+    qualityKey: Quality.FINE,
+    key: "argonian table, rough",
+  },
   "argonian tarp, woven": {
     name: "Argonian Tarp, Woven",
     qualityKey: Quality.FINE,
@@ -375,6 +389,13 @@ Product.properties = {
     name: "Breton Chair, Slatted",
     qualityKey: Quality.FINE,
     key: "breton chair, slatted",
+  },
+  "breton chamberstick, short": {
+    name: "Breton Chamberstick, Short",
+    qualityKey: Quality.SUPERIOR,
+    iconUrl:
+      "https://images.uesp.net/1/15/ON-item-furnishing-Breton_Chamberstick%2C_Short.jpg",
+    key: "breton chamberstick, short",
   },
   "breton desk": {
     name: "Breton Desk",
@@ -509,6 +530,11 @@ Product.properties = {
     name: "Common Pack, Satchel",
     qualityKey: Quality.FINE,
     key: "common pack, satchel",
+  },
+  "common plate, setting": {
+    name: "Common Plate, Setting",
+    qualityKey: Quality.FINE,
+    key: "common plate, setting",
   },
   "common platter, serving": {
     name: "Common Platter, Serving",
@@ -775,6 +801,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "high elf carpet, rustic",
   },
+  "high elf cup, gilded": {
+    name: "High Elf Cup, Gilded",
+    qualityKey: Quality.FINE,
+    key: "high elf cup, gilded",
+  },
   "high elf plate, dinner": {
     name: "High Elf Plate, Dinner",
     qualityKey: Quality.FINE,
@@ -855,6 +886,11 @@ Product.properties = {
     qualityKey: Quality.SUPERIOR,
     key: "khajiit carpet, sun",
   },
+  "khajiit desk, faded": {
+    name: "Khajiit Desk, Faded",
+    qualityKey: Quality.FINE,
+    key: "khajiit desk, faded",
+  },
   "khajiit dresser, faded": {
     name: "Khajiit Dresser, Faded",
     qualityKey: Quality.FINE,
@@ -898,6 +934,11 @@ Product.properties = {
     qualityKey: Quality.SUPERIOR,
     key: "lava foot soup-and-saltrice",
   },
+  "lettuce, display": {
+    name: "Lettuce, Display",
+    qualityKey: Quality.FINE,
+    key: "lettuce, display",
+  },
   "nord amphora, glazed": {
     name: "Nord Amphora, Glazed",
     qualityKey: Quality.SUPERIOR,
@@ -908,6 +949,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "nord candleholder, cup",
   },
+  "nord crockpot, covered": {
+    name: "Nord Crockpot, Covered",
+    qualityKey: Quality.SUPERIOR,
+    key: "nord crockpot, covered",
+  },
   "nord dresser, rough": {
     name: "Nord Dresser, Rough",
     qualityKey: Quality.FINE,
@@ -917,6 +963,11 @@ Product.properties = {
     name: "Nord Lantern, Cage",
     qualityKey: Quality.FINE,
     key: "nord lantern, cage",
+  },
+  "nord pot, ceramic": {
+    name: "Nord Pot, Ceramic",
+    qualityKey: Quality.FINE,
+    key: "nord pot, ceramic",
   },
   "nord pot, stew": {
     name: "Nord Pot, Stew",
@@ -1079,6 +1130,11 @@ Product.properties = {
     name: "Redguard Bench, Slatted",
     qualityKey: Quality.FINE,
     key: "redguard bench, slatted",
+  },
+  "redguard bin, roped": {
+    name: "Redguard Bin, Roped",
+    qualityKey: Quality.FINE,
+    key: "redguard bin, roped",
   },
   "redguard bookcase, full": {
     name: "Redguard Bookcase, Full",

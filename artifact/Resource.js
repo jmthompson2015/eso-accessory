@@ -56,6 +56,7 @@ const Resource = {
   FROST_MIRRIAM: "frost mirriam",
   GARNET: "garnet",
   GRAIN_SOLVENT: "grain solvent",
+  GREENS: "greens",
   HEARTWOOD: "heartwood",
   HEMMING: "hemming",
   HONING_STONE: "honing stone",
@@ -473,6 +474,12 @@ Resource.properties = {
     qualityKey: Quality.EPIC,
     resourceTypeKey: ResourceType.TEMPER,
     key: "grain solvent",
+  },
+  greens: {
+    name: "Greens",
+    qualityKey: Quality.FINE,
+    resourceTypeKey: ResourceType.PROVISION,
+    key: "greens",
   },
   heartwood: {
     name: "Heartwood",
