@@ -152,16 +152,6 @@ const TableColumns = [
     cellFunction: (row) => formatNumber(row.breakEven),
     valueFunction: (row) => parseInt(row.breakEven, 10),
   },
-  {
-    key: "url",
-    label: "URL",
-    isShown: false,
-  },
-  {
-    key: "ttcUrl",
-    label: "TTC URL",
-    isShown: false,
-  },
 ];
 
 export default TableColumns;

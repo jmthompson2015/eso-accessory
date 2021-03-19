@@ -101,16 +101,6 @@ const TableColumns = [
         : undefined,
     valueFunction: (row) => parseFloat(row.entryCount),
   },
-  {
-    key: "url",
-    label: "URL",
-    isShown: false,
-  },
-  {
-    key: "ttcUrl",
-    label: "TTC URL",
-    isShown: false,
-  },
 ];
 
 export default TableColumns;
