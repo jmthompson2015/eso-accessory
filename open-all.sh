@@ -2,10 +2,10 @@
 
 export BASE=/Volumes/StorageDrive/jmthompson/git/eso-accessory
 
-open ${BASE}/resource-table/ResourceTable.dev.html
+open ${BASE}/resource-table/ResourceTable.html
 
-open ${BASE}/product-table/ProductTable.dev.html
+open ${BASE}/product-table/ProductTable.html
 
-open ${BASE}/recipe-table/RecipeTable.dev.html
+open ${BASE}/recipe-table/RecipeTable.html
 
-open ${BASE}/recipe-product-table/RecipeProductTable.dev.html
+open ${BASE}/recipe-product-table/RecipeProductTable.html
