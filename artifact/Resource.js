@@ -27,12 +27,14 @@ const Resource = {
   CHYSOLITE: "chysolite",
   CLAM_GALL: "clam gall",
   COLUMBINE: "columbine",
+  CORN: "corn",
   CORN_FLOWER: "corn flower",
   CITRINE: "citrine",
   CLEAN_PELT: "clean pelt",
   CORUNDUM: "corundum",
   CRIMSON_NIRNROOT: "crimson nirnroot",
   CULANDA_LACQUER: "culanda lacquer",
+  DAEDRA_HEART: "daedra heart",
   DECORATIVE_WAX: "decorative wax",
   DENATA: "denata",
   DENI: "deni",
@@ -296,6 +298,12 @@ Resource.properties = {
     resourceTypeKey: ResourceType.REAGENT,
     key: "columbine",
   },
+  corn: {
+    name: "Corn",
+    qualityKey: Quality.NORMAL,
+    resourceTypeKey: ResourceType.PROVISION,
+    key: "corn",
+  },
   "corn flower": {
     name: "Corn Flower",
     iconUrl: "https://images.uesp.net/c/c8/ON-icon-reagent-Corn_Flower.png",
@@ -323,6 +331,14 @@ Resource.properties = {
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.STYLE,
     key: "culanda lacquer",
+  },
+  "daedra heart": {
+    name: "Daedra Heart",
+    iconUrl:
+      "https://images.uesp.net/a/a5/ON-icon-style_material-Daedra_Heart.png",
+    qualityKey: Quality.NORMAL,
+    resourceTypeKey: ResourceType.STYLE,
+    key: "daedra heart",
   },
   "decorative wax": {
     name: "Decorative Wax",

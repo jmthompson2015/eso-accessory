@@ -74,7 +74,7 @@ QUnit.test("findByOutput() Dres Lantern, Stationary", (assert) => {
   const recipe0 = result[0];
   assert.ok(recipe0);
   const ratio = round4(RecipeUtilities.outputInputRatio(recipe0));
-  assert.equal(ratio >= 1.8419 && ratio <= 2.481, true, `ratio = ${ratio}`);
+  assert.equal(ratio >= 1.8419 && ratio <= 2.6379, true, `ratio = ${ratio}`);
   assert.ok(recipe0.output);
   assert.equal(recipe0.output.productKey, outputKey);
   assert.ok(recipe0.inputs);
@@ -94,7 +94,7 @@ QUnit.test("inputValue()", (assert) => {
 
   // Verify.
   assert.equal(
-    result >= 304.27 && result <= 500.19,
+    result >= 295.71 && result <= 500.19,
     true,
     `result = ${result}`
   );
@@ -109,7 +109,11 @@ QUnit.test("outputInputRatio()", (assert) => {
   const result = round4(RecipeUtilities.outputInputRatio(recipe));
 
   // Verify.
-  assert.equal(result >= 1.8419 && result <= 2.481, true, `result = ${result}`);
+  assert.equal(
+    result >= 1.8419 && result <= 2.6379,
+    true,
+    `result = ${result}`
+  );
 });
 
 QUnit.test("outputValue() 0", (assert) => {
