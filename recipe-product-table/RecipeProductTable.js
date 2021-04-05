@@ -35,14 +35,14 @@ const mapFunction = (recipe) => {
   return R.mergeRight(recipe, {
     quality,
     recipeEstimatedPrice,
-    recipeEntryCount,
-    owner,
+    recipeEntryCount: recipeEntryCount || 0,
+    owner: owner || "WANT",
     craft,
     category,
     product,
     craftCost,
     productEstimatedPrice,
-    productEntryCount,
+    productEntryCount: productEntryCount || 0,
     profit,
     breakEven,
   });

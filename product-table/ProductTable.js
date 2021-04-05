@@ -20,7 +20,7 @@ const mapFunction = (product) => {
     suggestedPrice,
     midRangePrice,
     estimatedPrice,
-    entryCount,
+    entryCount: entryCount || 0,
   });
 };
 const tableRows = R.map(mapFunction, Product.values());

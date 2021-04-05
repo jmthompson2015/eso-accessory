@@ -26,14 +26,14 @@ const mapFunction = (recipe) => {
   return R.mergeRight(recipe, {
     iconUrl,
     quality,
-    owner,
+    owner: owner || "WANT",
     craft,
     category,
     suggestedPrice,
     midRangePrice,
     costMultiplePrice,
     estimatedPrice,
-    entryCount,
+    entryCount: entryCount || 0,
   });
 };
 const tableRows = R.map(mapFunction, Recipe.values());

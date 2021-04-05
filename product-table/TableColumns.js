@@ -1,29 +1,4 @@
-const createColorCell = (color, name) =>
-  ReactDOMFactories.div({ style: { backgroundColor: color } }, name);
-
-const createIcon = (iconUrl, name) =>
-  ReactDOMFactories.img({
-    key: iconUrl,
-    src: iconUrl,
-    style: { width: 48 },
-    title: name,
-  });
-
-const createLink = (href, name) =>
-  ReactDOMFactories.a({ key: name, href, target: "_blank" }, name);
-
-const usFormatter0 = new Intl.NumberFormat("en-US", {
-  minimumFractionDigits: 0,
-  maximumFractionDigits: 0,
-});
-
-const usFormatter2 = new Intl.NumberFormat("en-US", {
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2,
-});
-
-const formatNumber = (value, formatter = usFormatter0) =>
-  ![undefined, null].includes(value) ? formatter.format(value) : undefined;
+const { ColumnUtilities: CU } = FilteredReactTable;
 
 const TableColumns = [
   {
@@ -31,9 +6,9 @@ const TableColumns = [
     label: "Icon",
     type: "string",
     className: "tc",
-    cellFunction: (row) =>
-      row.iconUrl ? createIcon(row.iconUrl, row.name) : undefined,
     valueFunction: (row) => row.name,
+    cellFunction: (row) =>
+      row.iconUrl ? CU.createIcon(row.iconUrl, row.name, 48) : undefined,
   },
   {
     key: "name",
@@ -41,65 +16,70 @@ const TableColumns = [
     type: "string",
     className: "tl",
     cellFunction: (row) =>
-      row.url ? createLink(row.url, row.name) : undefined,
+      row.url ? CU.createLink(row.url, row.name) : row.name,
   },
   {
     key: "quality",
     label: "Quality",
     type: "string",
     className: "tl",
+    valueFunction: (row) => (row.quality ? row.quality.name : undefined),
     cellFunction: (row) =>
       row.quality
-        ? createColorCell(row.quality.color, row.quality.name)
+        ? CU.createColorCell(row.quality.color, row.quality.name)
         : undefined,
-    valueFunction: (row) => (row.quality ? row.quality.name : undefined),
   },
   {
     key: "productType",
     label: "Type",
     type: "string",
     className: "tl",
-    cellFunction: (row) =>
-      row.productType && row.productType.url
-        ? createLink(row.productType.url, row.productType.name)
-        : undefined,
     valueFunction: (row) =>
       row.productType ? row.productType.name : undefined,
+    cellFunction: (row) => {
+      if (row.productType) {
+        return row.productType.url
+          ? CU.createLink(row.productType.url, row.productType.name)
+          : row.productType.name;
+      }
+      return undefined;
+    },
   },
   {
     key: "suggestedPrice",
     label: "Sug. Price",
     type: "number",
     className: "tr",
-    cellFunction: (row) => formatNumber(row.suggestedPrice, usFormatter2),
-    valueFunction: (row) => parseFloat(row.suggestedPrice),
+    convertFunction: (row) => CU.parseFloat(row.suggestedPrice),
+    cellFunction: (row) =>
+      CU.formatNumber(row.suggestedPrice, CU.US_FORMATTER2),
   },
   {
     key: "midRangePrice",
     label: "Mid Range Price",
     type: "number",
     className: "tr",
-    cellFunction: (row) => formatNumber(row.midRangePrice),
-    valueFunction: (row) => parseFloat(row.midRangePrice),
+    convertFunction: (row) => CU.parseFloat(row.midRangePrice),
+    cellFunction: (row) => CU.formatNumber(row.midRangePrice),
   },
   {
     key: "estimatedPrice",
     label: "Est. Price",
     type: "number",
     className: "tr",
-    cellFunction: (row) => formatNumber(row.estimatedPrice),
-    valueFunction: (row) => parseFloat(row.estimatedPrice),
+    convertFunction: (row) => CU.parseFloat(row.estimatedPrice),
+    cellFunction: (row) => CU.formatNumber(row.estimatedPrice),
   },
   {
     key: "entryCount",
     label: "Entry Count",
     type: "number",
     className: "tr",
+    convertFunction: (row) => CU.parseInt(row.entryCount),
     cellFunction: (row) =>
       row.ttcUrl
-        ? createLink(row.ttcUrl, formatNumber(row.entryCount))
-        : undefined,
-    valueFunction: (row) => parseFloat(row.entryCount),
+        ? CU.createLink(row.ttcUrl, CU.formatNumber(row.entryCount))
+        : CU.formatNumber(row.entryCount),
   },
 ];
 

@@ -1,27 +1,4 @@
-const createColorCell = (color, name) =>
-  ReactDOMFactories.div({ style: { backgroundColor: color } }, name);
-
-const createIcon = (iconUrl, name) =>
-  ReactDOMFactories.img({
-    key: iconUrl,
-    src: iconUrl,
-    style: { minWidth: 48, width: 48 },
-    title: name,
-  });
-
-const createLink = (href, name) =>
-  ReactDOMFactories.a({ key: name, href, target: "_blank" }, name);
-
-const createSpan = (label, fontColor = "red") =>
-  ReactDOMFactories.span({ key: label, style: { color: fontColor } }, label);
-
-const usFormatter0 = new Intl.NumberFormat("en-US", {
-  minimumFractionDigits: 0,
-  maximumFractionDigits: 0,
-});
-
-const formatNumber = (value, formatter = usFormatter0) =>
-  ![undefined, null].includes(value) ? formatter.format(value) : undefined;
+const { ColumnUtilities: CU } = FilteredReactTable;
 
 const TableColumns = [
   {
@@ -29,11 +6,11 @@ const TableColumns = [
     label: "Icon",
     type: "string",
     className: "tc",
+    valueFunction: (row) => row.product.name,
     cellFunction: (row) =>
       row.product && row.product.iconUrl
-        ? createIcon(row.product.iconUrl, row.product.name)
+        ? CU.createIcon(row.product.iconUrl, row.product.name, 48)
         : undefined,
-    valueFunction: (row) => row.product.name,
   },
   {
     key: "name",
@@ -41,45 +18,44 @@ const TableColumns = [
     type: "string",
     className: "tl",
     cellFunction: (row) =>
-      row.url ? createLink(row.url, row.name) : undefined,
+      row.url ? CU.createLink(row.url, row.name) : row.name,
   },
   {
     key: "quality",
     label: "Quality",
     type: "string",
     className: "tl",
+    valueFunction: (row) => (row.quality ? row.quality.name : undefined),
     cellFunction: (row) =>
       row.quality
-        ? createColorCell(row.quality.color, row.quality.name)
+        ? CU.createColorCell(row.quality.color, row.quality.name)
         : undefined,
-    valueFunction: (row) => (row.quality ? row.quality.name : undefined),
   },
   {
     key: "recipeEstimatedPrice",
     label: "Recipe Est. Price",
     type: "number",
     className: "tr",
-    cellFunction: (row) => formatNumber(row.recipeEstimatedPrice),
-    valueFunction: (row) => parseFloat(row.recipeEstimatedPrice),
+    convertFunction: (row) => CU.parseFloat(row.recipeEstimatedPrice),
+    cellFunction: (row) => CU.formatNumber(row.recipeEstimatedPrice),
   },
   {
     key: "recipeEntryCount",
     label: "Recipe Entry Count",
     type: "number",
     className: "tr",
+    convertFunction: (row) => CU.parseInt(row.recipeEntryCount),
     cellFunction: (row) =>
       row.ttcUrl
-        ? createLink(row.ttcUrl, formatNumber(row.recipeEntryCount))
-        : undefined,
-    valueFunction: (row) => parseFloat(row.recipeEntryCount),
+        ? CU.createLink(row.ttcUrl, CU.formatNumber(row.recipeEntryCount))
+        : CU.formatNumber(row.recipeEntryCount),
   },
   {
     key: "owner",
     label: "Recipe Owner",
     type: "string",
     className: "tl",
-    cellFunction: (row) => (row.owner ? row.owner.name : "WANT"),
-    valueFunction: (row) => (row.owner ? row.owner.name : "WANT"),
+    valueFunction: (row) => row.owner.name || row.owner,
   },
   {
     key: "craft",
@@ -100,57 +76,64 @@ const TableColumns = [
     label: "Product",
     type: "string",
     className: "tl",
-    cellFunction: (row) =>
-      row.product && row.product.url
-        ? createLink(row.product.url, row.product.name)
-        : undefined,
     valueFunction: (row) => (row.product ? row.product.name : undefined),
+    cellFunction: (row) => {
+      if (row.product) {
+        return row.product.url
+          ? CU.createLink(row.product.url, row.product.name)
+          : row.product.name;
+      }
+      return undefined;
+    },
   },
   {
     key: "craftCost",
     label: "Craft Cost",
     type: "number",
     className: "tr",
-    cellFunction: (row) => formatNumber(row.craftCost),
-    valueFunction: (row) => parseFloat(row.craftCost),
+    convertFunction: (row) => CU.parseFloat(row.craftCost),
+    cellFunction: (row) => CU.formatNumber(row.craftCost),
   },
   {
     key: "productEstimatedPrice",
     label: "Product Est. Price",
     type: "number",
     className: "tr",
-    cellFunction: (row) => formatNumber(row.productEstimatedPrice),
-    valueFunction: (row) => parseFloat(row.productEstimatedPrice),
+    convertFunction: (row) => CU.parseFloat(row.productEstimatedPrice),
+    cellFunction: (row) => CU.formatNumber(row.productEstimatedPrice),
   },
   {
     key: "productEntryCount",
     label: "Product Entry Count",
     type: "number",
     className: "tr",
+    convertFunction: (row) => CU.parseInt(row.productEntryCount),
     cellFunction: (row) =>
       row.product && row.product.ttcUrl
-        ? createLink(row.product.ttcUrl, formatNumber(row.productEntryCount))
-        : undefined,
-    valueFunction: (row) => parseFloat(row.productEntryCount),
+        ? CU.createLink(
+            row.product.ttcUrl,
+            CU.formatNumber(row.productEntryCount)
+          )
+        : CU.formatNumber(row.productEntryCount),
   },
   {
     key: "profit",
     label: "Profit",
     type: "number",
     className: "tr",
+    convertFunction: (row) => CU.parseFloat(row.profit),
     cellFunction: (row) => {
-      const profit = formatNumber(row.profit);
-      return row.profit < 0 ? createSpan(profit) : profit;
+      const profit = CU.formatNumber(row.profit);
+      return row.profit < 0 ? CU.createSpan(profit) : profit;
     },
-    valueFunction: (row) => parseFloat(row.profit),
   },
   {
     key: "breakEven",
     label: "Break Even",
     type: "number",
     className: "tr",
-    cellFunction: (row) => formatNumber(row.breakEven),
-    valueFunction: (row) => parseInt(row.breakEven, 10),
+    convertFunction: (row) => CU.parseInt(row.breakEven),
+    cellFunction: (row) => CU.formatNumber(row.breakEven),
   },
 ];
 
