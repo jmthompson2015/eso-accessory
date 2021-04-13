@@ -36,7 +36,7 @@ const onShowColumnChange = (columnToChecked) => {
     `onShowColumnChange() columnToChecked = ${JSON.stringify(columnToChecked)}`
   );
 };
-const isVerbose = true;
+const isVerbose = false;
 const frt = new FilteredReactTable(
   TableColumns,
   tableRows,
@@ -46,6 +46,20 @@ const frt = new FilteredReactTable(
   isVerbose
 );
 
-ReactDOM.render(frt.filterPanel(), document.getElementById("filter"));
-ReactDOM.render(frt.showColumnsPanel(), document.getElementById("showColumns"));
-ReactDOM.render(frt.tableElement(), document.getElementById("table"));
+const collapsiblePaneProps = {
+  className: "bg-eso-dark ma1",
+  titleClass: "b f5 ph1 pt1 tl white",
+};
+const dataTableProps = { rowClass: "striped--eso-light" };
+ReactDOM.render(
+  frt.filterPanel(collapsiblePaneProps),
+  document.getElementById("filter")
+);
+ReactDOM.render(
+  frt.showColumnsPanel(collapsiblePaneProps),
+  document.getElementById("showColumns")
+);
+ReactDOM.render(
+  frt.tableElement(dataTableProps),
+  document.getElementById("table")
+);

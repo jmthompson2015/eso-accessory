@@ -8,7 +8,7 @@ const TableColumns = [
     className: "tc",
     valueFunction: (row) => row.name,
     cellFunction: (row) =>
-      row.iconUrl ? CU.createIcon(row.iconUrl, row.name) : undefined,
+      row.iconUrl ? CU.createIcon(row.iconUrl, row.name, 32) : undefined,
   },
   {
     key: "name",
