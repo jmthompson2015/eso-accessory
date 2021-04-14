@@ -233,6 +233,7 @@ const Recipe = {
   DIAGRAM_DWARVEN_VASE_FORGED: "diagram: dwarven vase, forged",
   DIAGRAM_DWARVEN_VESSEL_SEALED: "diagram: dwarven vessel, sealed",
   DIAGRAM_HIGH_ELF_BASIN_GILDED: "diagram: high elf basin, gilded",
+  DIAGRAM_HIGH_ELF_BASIN_WINGED: "diagram: high elf basin, winged",
   DIAGRAM_HIGH_ELF_CANDLEHOLDER_STURDY:
     "diagram: high elf candleholder, sturdy",
   DIAGRAM_HIGH_ELF_CUP_GILDED: "diagram: high elf cup, gilded",
@@ -247,6 +248,7 @@ const Recipe = {
   DIAGRAM_ORCISH_LANTERN_HOODED: "diagram: orcish lantern, hooded",
   DIAGRAM_ORCISH_MUG_RUGGED: "diagram: orcish mug, rugged",
   DIAGRAM_ORCISH_VESSEL_SEALED: "diagram: orcish vessel, sealed",
+  DIAGRAM_REDGUARD_CUP_EMPTY: "diagram: redguard cup, empty",
   DIAGRAM_REDGUARD_STREETLAMP_SINGLE: "diagram: redguard streetlamp, single",
   DIAGRAM_ROUGH_BOWL_COMMON: "diagram: rough bowl, common",
   DIAGRAM_ROUGH_CUP_EMPTY: "diagram: rough cup, empty",
@@ -262,6 +264,7 @@ const Recipe = {
     "formula: indoril streetlight, full stone",
   FORMULA_INDORIL_STREETLIGHT_STONE: "formula: indoril streetlight, stone",
 
+  PATTERN_ALINOR_RUG_ALINOR_SEAL: "pattern: alinor rug, alinor seal",
   PATTERN_ARGONIAN_BANNER_HANGING: "pattern: argonian banner, hanging",
   PATTERN_ARGONIAN_MAT_TIDY_REED: "pattern: argonian mat, tidy reed",
   PATTERN_ARGONIAN_TARP_STURDY: "pattern: argonian tarp, sturdy",
@@ -274,6 +277,7 @@ const Recipe = {
   PATTERN_COMMON_BASKET_OPEN: "pattern: common basket, open",
   PATTERN_COMMON_BASKET_TALL: "pattern: common basket, tall",
   PATTERN_COMMON_PACK_SATCHEL: "pattern: common pack, satchel",
+  PATTERN_DARK_ELF_CARPET_MOSSY: "pattern: dark elf carpet, mossy",
   PATTERN_DARK_ELF_CARPET_MOTTLED: "pattern: dark elf carpet, mottled",
   PATTERN_DARK_ELF_CARPET_PATTERNED: "pattern: dark elf carpet, patterned",
   PATTERN_DRES_CARPET_CHAINS: "pattern: dres carpet, chains",
@@ -281,7 +285,9 @@ const Recipe = {
   PATTERN_ELSWEYR_CARPET_GOLD_RUBY: "pattern: elsweyr carpet, gold-ruby",
   PATTERN_HIGH_ELF_CARPET_RUSTIC: "pattern: high elf carpet, rustic",
   PATTERN_HLAALU_BED_SINGLE: "pattern: hlaalu bed, single",
+  PATTERN_HLAALU_MAT_WELCOMING: "pattern: hlaalu mat, welcoming",
   PATTERN_KHAJIIT_BANNER_CRESCENTS: "pattern: khajiit banner, crescents",
+  PATTERN_KHAJIIT_BANNER_HOOKED: "pattern: khajiit banner, hooked",
   PATTERN_KHAJIIT_BANNER_MOONS: "pattern: khajiit banner, moons",
   PATTERN_KHAJIIT_BED_FUR: "pattern: khajiit bed, fur",
   PATTERN_KHAJIIT_BEDDING_PADDED: "pattern: khajiit bedding, padded",
@@ -325,10 +331,12 @@ const Recipe = {
   PATTERN_WOOD_ELF_DIVIDER_NARROW: "pattern: wood elf divider, narrow",
   PATTERN_WOOD_ELF_DIVIDER_RELAXED: "pattern: wood elf divider, relaxed",
   PATTERN_WOOD_ELF_DIVIDER_STRETCHED: "pattern: wood elf divider, stretched",
+  PATTERN_WOOD_ELF_RACK_DOUBLE: "pattern: wood elf rack, double",
   PATTERN_WOOD_ELF_SHELF_TIERED: "pattern: wood elf shelf, tiered",
   PATTERN_WOOD_ELF_STOOL_LEATHER: "pattern: wood elf stool, leather",
   PATTERN_WOOD_ELF_TABLE_LEATHER: "pattern: wood elf table, leather",
 
+  PRAXIS_ALINOR_POST_TALL_FENCE: "praxis: alinor post, tall fence",
   PRAXIS_ALINOR_POT_LIMESTONE: "praxis: alinor pot, limestone",
   PRAXIS_ALINOR_WALL_STONE: "praxis: alinor wall, stone",
   PRAXIS_ARGONIAN_PAN_FRYING: "praxis: argonian pan, frying",
@@ -3147,6 +3155,21 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "diagram: high elf basin, gilded",
   },
+  "diagram: high elf basin, winged": {
+    name: "Diagram: High Elf Basin, Winged",
+    categoryKey: Category.UNDERCROFT,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 11),
+      resourceIngredient(Resource.MUNDANE_RUNE, 7),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 7),
+      resourceIngredient(Resource.ADAMANTITE, 10),
+      resourceIngredient(Resource.DWARVEN_OIL, 6),
+    ],
+    output: productIngredient(Product.HIGH_ELF_BASIN_WINGED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: high elf basin, winged",
+  },
   "diagram: high elf candleholder, sturdy": {
     name: "Diagram: High Elf Candleholder, Sturdy",
     categoryKey: Category.LIGHTING,
@@ -3329,6 +3352,19 @@ Recipe.properties = {
     output: productIngredient(Product.ORCISH_VESSEL_SEALED),
     key: "diagram: orcish vessel, sealed",
   },
+  "diagram: redguard cup, empty": {
+    name: "Diagram: Redguard Cup, Empty",
+    categoryKey: Category.HEARTH,
+    craftKey: Craft.BLACKSMITHING,
+    inputs: [
+      resourceIngredient(Resource.REGULUS, 4),
+      resourceIngredient(Resource.STARMETAL, 5),
+      resourceIngredient(Resource.HONING_STONE, 9),
+    ],
+    output: productIngredient(Product.REDGUARD_CUP_EMPTY),
+    ownerKey: Character.FRAK_LOCK,
+    key: "diagram: redguard cup, empty",
+  },
   "diagram: redguard streetlamp, single": {
     name: "Diagram: Redguard Streetlamp, Single",
     categoryKey: Category.LIGHTING,
@@ -3458,7 +3494,7 @@ Recipe.properties = {
       resourceIngredient(Resource.OBSIDIAN, 6),
     ],
     output: productIngredient(Product.INDORIL_SHELF_BLOCK),
-    ownerKey: Character.KALED_LOCK,
+    ownerKey: Character.FRAK_LOCK,
     key: "formula: indoril shelf, block",
   },
   "formula: indoril streetlight, full stone": {
@@ -3489,6 +3525,21 @@ Recipe.properties = {
   },
   // ///////////////////////////////////////////////////////////////////////////
   // Pattern
+  "pattern: alinor rug, alinor seal": {
+    name: "Pattern: Alinor Rug, Alinor Seal",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 10),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 5),
+      resourceIngredient(Resource.DECORATIVE_WAX, 5),
+      resourceIngredient(Resource.CULANDA_LACQUER, 1),
+      resourceIngredient(Resource.EMBROIDERY, 6),
+    ],
+    output: productIngredient(Product.ALINOR_RUG_ALINOR_SEAL),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: alinor rug, alinor seal",
+  },
   "pattern: argonian banner, hanging": {
     name: "Pattern: Argonian Banner, Hanging",
     categoryKey: Category.PARLOR,
@@ -3648,6 +3699,21 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: common pack, satchel",
   },
+  "pattern: dark elf carpet, mossy": {
+    name: "Pattern: Dark Elf Carpet, Mossy",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 9),
+      resourceIngredient(Resource.MUNDANE_RUNE, 6),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 6),
+      resourceIngredient(Resource.OBSIDIAN, 10),
+      resourceIngredient(Resource.EMBROIDERY, 6),
+    ],
+    output: productIngredient(Product.DARK_ELF_CARPET_MOSSY),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: dark elf carpet, mossy",
+  },
   "pattern: dark elf carpet, mottled": {
     name: "Pattern: Dark Elf Carpet, Mottled",
     categoryKey: Category.PARLOR,
@@ -3743,6 +3809,19 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: hlaalu bed, single",
   },
+  "pattern: hlaalu mat, welcoming": {
+    name: "Pattern: Hlaalu Mat, Welcoming",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 6),
+      resourceIngredient(Resource.OBSIDIAN, 8),
+      resourceIngredient(Resource.HEMMING, 9),
+    ],
+    output: productIngredient(Product.HLAALU_MAT_WELCOMING),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: hlaalu mat, welcoming",
+  },
   "pattern: khajiit banner, crescents": {
     name: "Pattern: Khajiit Banner, Crescents",
     categoryKey: Category.PARLOR,
@@ -3756,6 +3835,21 @@ Recipe.properties = {
     output: productIngredient(Product.KHAJIIT_BANNER_CRESCENTS),
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: khajiit banner, crescents",
+  },
+  "pattern: khajiit banner, hooked": {
+    name: "Pattern: Khajiit Banner, Hooked",
+    categoryKey: Category.PARLOR,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.BAST, 7),
+      resourceIngredient(Resource.REGULUS, 5),
+      resourceIngredient(Resource.ALCHEMICAL_RESIN, 5),
+      resourceIngredient(Resource.MOONSTONE, 10),
+      resourceIngredient(Resource.EMBROIDERY, 6),
+    ],
+    output: productIngredient(Product.KHAJIIT_BANNER_HOOKED),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: khajiit banner, hooked",
   },
   "pattern: khajiit banner, moons": {
     name: "Pattern: Khajiit Banner, Moons",
@@ -4302,6 +4396,21 @@ Recipe.properties = {
     ownerKey: Character.FRAK_LOCK,
     key: "pattern: wood elf divider, stretched",
   },
+  "pattern: wood elf rack, double": {
+    name: "Pattern: Wood Elf Rack, Double",
+    categoryKey: Category.LIBRARY,
+    craftKey: Craft.CLOTHING,
+    inputs: [
+      resourceIngredient(Resource.CLEAN_PELT, 9),
+      resourceIngredient(Resource.DECORATIVE_WAX, 6),
+      resourceIngredient(Resource.HEARTWOOD, 6),
+      resourceIngredient(Resource.BONE, 10),
+      resourceIngredient(Resource.EMBROIDERY, 6),
+    ],
+    output: productIngredient(Product.WOOD_ELF_RACK_DOUBLE),
+    ownerKey: Character.FRAK_LOCK,
+    key: "pattern: wood elf rack, double",
+  },
   "pattern: wood elf shelf, tiered": {
     name: "Pattern: Wood Elf Shelf, Tiered",
     categoryKey: Category.LIBRARY,
@@ -4343,6 +4452,20 @@ Recipe.properties = {
   },
   // ///////////////////////////////////////////////////////////////////////////
   // Praxis
+  "praxis: alinor post, tall fence": {
+    name: "Praxis: Alinor Post, Tall Fence",
+    categoryKey: Category.STRUCTURES,
+    craftKey: Craft.ENCHANTING,
+    inputs: [
+      resourceIngredient(Resource.MUNDANE_RUNE, 8),
+      resourceIngredient(Resource.OCHRE, 5),
+      resourceIngredient(Resource.CULANDA_LACQUER, 1),
+      resourceIngredient(Resource.DENATA, 6),
+    ],
+    output: productIngredient(Product.ALINOR_POST_TALL_FENCE),
+    ownerKey: Character.FRAK_LOCK,
+    key: "praxis: alinor post, tall fence",
+  },
   "praxis: alinor pot, limestone": {
     name: "Praxis: Alinor Pot, Limestone",
     categoryKey: Category.COURTYARD,

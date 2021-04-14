@@ -12,7 +12,9 @@ const Product = {
   ALINOR_CANDLES_STAND: "alinor candles, stand",
   ALINOR_DESK_POLISHED: "alinor desk, polished",
   ALINOR_MEAL_INDIVIDUAL: "alinor meal, individual",
+  ALINOR_POST_TALL_FENCE: "alinor post, tall fence",
   ALINOR_POT_LIMESTONE: "alinor pot, limestone",
+  ALINOR_RUG_ALINOR_SEAL: "alinor rug, alinor seal",
   ALINOR_SCONCE_CRENELLATED: "alinor sconce, crenellated",
   ALINOR_TABLE_SETTING_COMPLETE: "alinor table setting, complete",
   ALINOR_WALL_STONE: "alinor wall, stone",
@@ -85,6 +87,7 @@ const Product = {
   COMMON_WASHTUB_EMPTY: "common washtub, empty",
   DAEDRIC_PEDESTAL_RITUAL: "daedric pedestal, ritual",
   DARK_ELF_CANDLE_CLAW_BASE: "dark elf candle, claw base",
+  DARK_ELF_CARPET_MOSSY: "dark elf carpet, mossy",
   DARK_ELF_CARPET_MOTTLED: "dark elf carpet, mottled",
   DARK_ELF_CARPET_PATTERNED: "dark elf carpet, patterned",
   DARK_ELF_CART_MERCHANT: "dark elf cart, merchant",
@@ -125,6 +128,7 @@ const Product = {
   GRAPES_WAX: "grapes, wax",
   HAGRAVEN_CAULDRON_RITUAL: "hagraven cauldron, ritual",
   HIGH_ELF_BASIN_GILDED: "high elf basin, gilded",
+  HIGH_ELF_BASIN_WINGED: "high elf basin, winged",
   HIGH_ELF_BED_BUNK: "high elf bed, bunk",
   HIGH_ELF_BED_SINGLE: "high elf bed, single",
   HIGH_ELF_CANDLEHOLDER_STURDY: "high elf candleholder, sturdy",
@@ -140,6 +144,7 @@ const Product = {
   HLAALU_BED_SINGLE: "hlaalu bed, single",
   HLAALU_DRESSER_SCROLL_DRAWERS: "hlaalu dresser, scroll drawers",
   HLAALU_HANGER_MOUNTED: "hlaalu hanger, mounted",
+  HLAALU_MAT_WELCOMING: "hlaalu mat, welcoming",
   HLAALU_RACK_BARREL: "hlaalu rack, barrel",
   HLAALU_STOOL_POLISHED: "hlaalu stool, polished",
   HLAALU_VASE_GILDED: "hlaalu vase, gilded",
@@ -147,6 +152,7 @@ const Product = {
   INDORIL_STREETLIGHT_FULL_STONE: "indoril streetlight, full stone",
   INDORIL_STREETLIGHT_STONE: "indoril streetlight, stone",
   KHAJIIT_BANNER_CRESCENTS: "khajiit banner, crescents",
+  KHAJIIT_BANNER_HOOKED: "khajiit banner, hooked",
   KHAJIIT_BANNER_MOONS: "khajiit banner, moons",
   KHAJIIT_BED_FUR: "khajiit bed, fur",
   KHAJIIT_BEDDING_PADDED: "khajiit bedding, padded",
@@ -230,6 +236,7 @@ const Product = {
   REDGUARD_CARPET_DUNES: "redguard carpet, dunes",
   REDGUARD_COUCH_PADDED: "redguard couch, padded",
   REDGUARD_COUCH_SLATTED: "redguard couch, slatted",
+  REDGUARD_CUP_EMPTY: "redguard cup, empty",
   REDGUARD_CUPBOARD_LATTICE: "redguard cupboard, lattice",
   REDGUARD_CURTAIN_DESERT_ROSE: "redguard curtain, desert rose",
   REDGUARD_CURTAIN_SMOKY: "redguard curtain, smoky",
@@ -302,6 +309,7 @@ const Product = {
   WOOD_ELF_DIVIDER_STRETCHED: "wood elf divider, stretched",
   WOOD_ELF_GRINDING_STONE: "wood elf grinding stone",
   WOOD_ELF_PITCHER_PAINTED: "wood elf pitcher, painted",
+  WOOD_ELF_RACK_DOUBLE: "wood elf rack, double",
   WOOD_ELF_SHELF_TIERED: "wood elf shelf, tiered",
   WOOD_ELF_STOOL_LEATHER: "wood elf stool, leather",
   WOOD_ELF_TABLE_LEATHER: "wood elf table, leather",
@@ -359,10 +367,20 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "alinor meal, individual",
   },
+  "alinor post, tall fence": {
+    name: "Alinor Post, Tall Fence",
+    qualityKey: Quality.SUPERIOR,
+    key: "alinor post, tall fence",
+  },
   "alinor pot, limestone": {
     name: "Alinor Pot, Limestone",
     qualityKey: Quality.FINE,
     key: "alinor pot, limestone",
+  },
+  "alinor rug, alinor seal": {
+    name: "Alinor Rug, Alinor Seal",
+    qualityKey: Quality.SUPERIOR,
+    key: "alinor rug, alinor seal",
   },
   "alinor sconce, crenellated": {
     name: "Alinor Sconce, Crenellated",
@@ -732,6 +750,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "dark elf candle, claw base",
   },
+  "dark elf carpet, mossy": {
+    name: "Dark Elf Carpet, Mossy",
+    qualityKey: Quality.SUPERIOR,
+    key: "dark elf carpet, mossy",
+  },
   "dark elf carpet, mottled": {
     name: "Dark Elf Carpet, Mottled",
     qualityKey: Quality.FINE,
@@ -977,6 +1000,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "high elf basin, gilded",
   },
+  "high elf basin, winged": {
+    name: "High Elf Basin, Winged",
+    qualityKey: Quality.SUPERIOR,
+    key: "high elf basin, winged",
+  },
   "high elf bed, bunk": {
     name: "High Elf Bed, Bunk",
     qualityKey: Quality.FINE,
@@ -1054,6 +1082,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "hlaalu hanger, mounted",
   },
+  "hlaalu mat, welcoming": {
+    name: "Hlaalu Mat, Welcoming",
+    qualityKey: Quality.FINE,
+    key: "hlaalu mat, welcoming",
+  },
   "hlaalu rack, barrel": {
     name: "Hlaalu Rack, Barrel",
     qualityKey: Quality.FINE,
@@ -1088,6 +1121,11 @@ Product.properties = {
     name: "Khajiit Banner, Crescents",
     qualityKey: Quality.FINE,
     key: "khajiit banner, crescents",
+  },
+  "khajiit banner, hooked": {
+    name: "Khajiit Banner, Hooked",
+    qualityKey: Quality.SUPERIOR,
+    key: "khajiit banner, hooked",
   },
   "khajiit banner, moons": {
     name: "Khajiit Banner, Moons",
@@ -1517,6 +1555,13 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "redguard couch, slatted",
   },
+  "redguard cup, empty": {
+    name: "Redguard Cup, Empty",
+    iconUrl:
+      "https://images.uesp.net/b/ba/ON-item-furnishing-Redguard_Cup%2C_Empty.jpg",
+    qualityKey: Quality.FINE,
+    key: "redguard cup, empty",
+  },
   "redguard cupboard, lattice": {
     name: "Redguard Cupboard, Lattice",
     qualityKey: Quality.SUPERIOR,
@@ -1891,6 +1936,11 @@ Product.properties = {
     name: "Wood Elf Pitcher, Painted",
     qualityKey: Quality.SUPERIOR,
     key: "wood elf pitcher, painted",
+  },
+  "wood elf rack, double": {
+    name: "Wood Elf Rack, Double",
+    qualityKey: Quality.SUPERIOR,
+    key: "wood elf rack, double",
   },
   "wood elf shelf, tiered": {
     name: "Wood Elf Shelf, Tiered",
