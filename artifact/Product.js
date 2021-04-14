@@ -38,6 +38,7 @@ const Product = {
   BASKET_OF_CORN: "basket of corn",
   BEETS_DISPLAY: "beets, display",
   BOWL_SERVING: "bowl, serving",
+  BOX_OF_PLUMS: "box of plums",
   BRETON_AMPHORA_CERAMIC: "breton amphora, ceramic",
   BRETON_AMPHORA_GLAZED: "breton amphora, glazed",
   BRETON_BED_BUNK: "breton bed, bunk",
@@ -174,8 +175,10 @@ const Product = {
   NORD_POT_CERAMIC: "nord pot, ceramic",
   NORD_POT_COVERED: "nord pot, covered",
   NORD_POT_STEW: "nord pot, stew",
+  NORD_RACK_WINE: "nord rack, wine",
   NORD_SHELF_WALL: "nord shelf, wall",
   NORD_TABLE_KITCHEN: "nord table, kitchen",
+  NORD_TABLE_ROUND: "nord table, round",
   NORD_TRUNK_HEAVY: "nord trunk, heavy",
   NORD_URN_CERAMIC: "nord urn, ceramic",
   NORD_VASE_BENT: "nord vase, bent",
@@ -224,6 +227,7 @@ const Product = {
   REDGUARD_CURTAIN_DESERT_ROSE: "redguard curtain, desert rose",
   REDGUARD_CURTAIN_SMOKY: "redguard curtain, smoky",
   REDGUARD_DESK_BOLTED: "redguard desk, bolted",
+  REDGUARD_DESK_STURDY: "redguard desk, sturdy",
   REDGUARD_DIVIDER_FLORID: "redguard divider, florid",
   REDGUARD_DIVIDER_GILDED: "redguard divider, gilded",
   REDGUARD_DIVIDER_LATTICE: "redguard divider, lattice",
@@ -236,6 +240,7 @@ const Product = {
   REDGUARD_NIGHTSTAND_STURDY: "redguard nightstand, sturdy",
   REDGUARD_POT_CAPPED: "redguard pot, capped",
   REDGUARD_POT_SEALED: "redguard pot, sealed",
+  REDGUARD_RACK_BARREL: "redguard rack, barrel",
   REDGUARD_RUNNER_SUN: "redguard runner, sun",
   REDGUARD_SHELF_BOLTED: "redguard shelf, bolted",
   REDGUARD_SOFA_DESERT_FLAME: "redguard sofa, desert flame",
@@ -250,8 +255,10 @@ const Product = {
   REDGUARD_VASE_LACQUERED: "redguard vase, lacquered",
   REDGUARD_WAGON_MERCHANT: "redguard wagon, merchant",
   REDGUARD_WELL_COVERED: "redguard well, covered",
-  REDORAN_CARPET_VOLCANIC_SANDS: "redoran carpet, volcanic sands",
   REDORAN_AMPHORA_SEALED_MARBLE: "redoran amphora, sealed marble",
+  REDORAN_BENCH_SANDED: "redoran bench, sanded",
+  REDORAN_CARPET_VOLCANIC_SANDS: "redoran carpet, volcanic sands",
+  REDORAN_END_TABLE_SANDED: "redoran end table, sanded",
   REDORAN_SPOON_WOODEN: "redoran spoon, wooden",
   REDORAN_STOOL_SANDED: "redoran stool, sanded",
   ROUGH_BAG_BURLAP: "rough bag, burlap",
@@ -268,6 +275,8 @@ const Product = {
   ROUGH_STRETCHER_MILITARY: "rough stretcher, military",
   SCRIMSHAW_ANCIENT_VESSEL: "scrimshaw, ancient vessel",
   SIMPLE_BLUE_BANNER: "simple blue banner",
+  SOLITUDE_BASKET_WICKER_WIDE: "solitude basket, wicker wide",
+  SOLITUDE_BOOKCASE_NOBLE_FILLED: "solitude bookcase, noble filled",
   SOLITUDE_VASE_LARGE_SEALED: "solitude vase, large sealed",
   STOOL_CARVED: "stool, carved",
   SUGAR_PUMPKIN_WAX: "sugar pumpkin, wax",
@@ -470,6 +479,11 @@ Product.properties = {
     name: "Bowl, Serving",
     qualityKey: Quality.FINE,
     key: "bowl, serving",
+  },
+  "box of plums": {
+    name: "Box of Plums",
+    qualityKey: Quality.SUPERIOR,
+    key: "box of plums",
   },
   "breton amphora, ceramic": {
     name: "Breton Amphora, Ceramic",
@@ -1211,6 +1225,13 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "nord pot, stew",
   },
+  "nord rack, wine": {
+    name: "Nord Rack, Wine",
+    iconUrl:
+      "https://images.uesp.net/0/0c/ON-item-furnishing-Nord_Rack%2C_Wine.jpg",
+    qualityKey: Quality.SUPERIOR,
+    key: "nord rack, wine",
+  },
   "nord shelf, wall": {
     name: "Nord Shelf, Wall",
     qualityKey: Quality.FINE,
@@ -1220,6 +1241,11 @@ Product.properties = {
     name: "Nord Table, Kitchen",
     qualityKey: Quality.FINE,
     key: "nord table, kitchen",
+  },
+  "nord table, round": {
+    name: "Nord Table, Round",
+    qualityKey: Quality.SUPERIOR,
+    key: "nord table, round",
   },
   "nord trunk, heavy": {
     name: "Nord Trunk, Heavy",
@@ -1463,6 +1489,11 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "redguard desk, bolted",
   },
+  "redguard desk, sturdy": {
+    name: "Redguard Desk, Sturdy",
+    qualityKey: Quality.FINE,
+    key: "redguard desk, sturdy",
+  },
   "redguard divider, florid": {
     name: "Redguard Divider, Florid",
     qualityKey: Quality.SUPERIOR,
@@ -1522,6 +1553,11 @@ Product.properties = {
     name: "Redguard Pot, Sealed",
     qualityKey: Quality.FINE,
     key: "redguard pot, sealed",
+  },
+  "redguard rack, barrel": {
+    name: "Redguard Rack, Barrel",
+    qualityKey: Quality.FINE,
+    key: "redguard rack, barrel",
   },
   "redguard runner, sun": {
     name: "Redguard Runner, Sun",
@@ -1598,10 +1634,20 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "redoran amphora, sealed marble",
   },
+  "redoran bench, sanded": {
+    name: "Redoran Bench, Sanded",
+    qualityKey: Quality.SUPERIOR,
+    key: "redoran bench, sanded",
+  },
   "redoran carpet, volcanic sands": {
     name: "Redoran Carpet, Volcanic Sands",
     qualityKey: Quality.FINE,
     key: "redoran carpet, volcanic sands",
+  },
+  "redoran end table, sanded": {
+    name: "Redoran End Table, Sanded",
+    qualityKey: Quality.SUPERIOR,
+    key: "redoran end table, sanded",
   },
   "redoran spoon, wooden": {
     name: "Redoran Spoon, Wooden",
@@ -1684,6 +1730,20 @@ Product.properties = {
     name: "Simple Blue Banner",
     qualityKey: Quality.FINE,
     key: "simple blue banner",
+  },
+  "solitude basket, wicker wide": {
+    name: "Solitude Basket, Wicker Wide",
+    iconUrl:
+      "https://images.uesp.net/8/8d/ON-item-furnishing-Solitude_Basket%2C_Wicker_Wide.jpg",
+    qualityKey: Quality.SUPERIOR,
+    key: "solitude basket, wicker wide",
+  },
+  "solitude bookcase, noble filled": {
+    name: "Solitude Bookcase, Noble Filled",
+    iconUrl:
+      "https://images.uesp.net/9/93/ON-item-furnishing-Solitude_Bookcase%2C_Noble_Filled.jpg",
+    qualityKey: Quality.EPIC,
+    key: "solitude bookcase, noble filled",
   },
   "solitude vase, large sealed": {
     name: "Solitude Vase, Large Sealed",

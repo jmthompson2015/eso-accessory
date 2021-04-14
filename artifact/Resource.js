@@ -7,6 +7,7 @@ const Resource = {
   ALCHEMICAL_RESIN: "alchemical resin",
   ALMANDINE: "almandine",
   AMETHYST: "amethyst",
+  APPLES: "apples",
   ARKTHZAND_SPROCKET: "arkthzand sprocket",
   ASH_CANVAS: "ash canvas",
   BARLEY: "barley",
@@ -151,6 +152,12 @@ Resource.properties = {
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.GEM,
     key: "amethyst",
+  },
+  apples: {
+    name: "Apples",
+    qualityKey: Quality.NORMAL,
+    resourceTypeKey: ResourceType.PROVISION,
+    key: "apples",
   },
   "arkthzand sprocket": {
     name: "Arkthzand Sprocket",
