@@ -7,8 +7,10 @@ const Product = {
   ALINOR_AMPHORA_EMBOSSED: "alinor amphora, embossed",
   ALINOR_AMPHORA_PORTRAIT: "alinor amphora, portrait",
   ALINOR_AMPHORA_SLENDER: "alinor amphora, slender",
+  ALINOR_BED_POLISHED_SINGLE: "alinor bed, polished single",
   ALINOR_BOWL_MILLET: "alinor bowl, millet",
   ALINOR_CANDLES_STAND: "alinor candles, stand",
+  ALINOR_DESK_POLISHED: "alinor desk, polished",
   ALINOR_MEAL_INDIVIDUAL: "alinor meal, individual",
   ALINOR_POT_LIMESTONE: "alinor pot, limestone",
   ALINOR_SCONCE_CRENELLATED: "alinor sconce, crenellated",
@@ -88,6 +90,7 @@ const Product = {
   DARK_ELF_RUG_STRIATED: "dark elf rug, striated",
   DARK_ELF_SHELF_WALL: "dark elf shelf, wall",
   DARK_ELF_TABLE_FORMAL: "dark elf table, formal",
+  DARK_ELF_WAGON_MERCHANT: "dark elf wagon, merchant",
   DRES_BOWL_DINNER: "dres bowl, dinner",
   DRES_BOWL_EMPTY: "dres bowl, empty",
   DRES_CANDLES_MEDITATION: "dres candles, meditation",
@@ -123,11 +126,13 @@ const Product = {
   HIGH_ELF_COUNTER_LONG_CABINET: "high elf counter, long cabinet",
   HIGH_ELF_CUP_GILDED: "high elf cup, gilded",
   HIGH_ELF_PLATE_DINNER: "high elf plate, dinner",
+  HIGH_ELF_STOOL_CURVED: "high elf stool, curved",
   HIGH_ELF_TRESTLE_STURDY: "high elf trestle, sturdy",
   HIGH_ELF_VASE_GILDED: "high elf vase, gilded",
   HIGH_ELF_VASE_WINGED: "high elf vase, winged",
   HLAALU_AMPHORA_SEALED_ORICHALCUM: "hlaalu amphora, sealed orichalcum",
   HLAALU_BED_SINGLE: "hlaalu bed, single",
+  HLAALU_DRESSER_SCROLL_DRAWERS: "hlaalu dresser, scroll drawers",
   HLAALU_HANGER_MOUNTED: "hlaalu hanger, mounted",
   HLAALU_RACK_BARREL: "hlaalu rack, barrel",
   HLAALU_STOOL_POLISHED: "hlaalu stool, polished",
@@ -149,10 +154,15 @@ const Product = {
   KHAJIIT_RUG_MOONS: "khajiit rug, moons",
   KHAJIIT_RUG_SUN: "khajiit rug, sun",
   KHAJIIT_SIGNPOST_FORTIFIED: "khajiit signpost, fortified",
+  KHAJIIT_TABLE_FORMAL: "khajiit table, formal",
+  KHAJIIT_TENT_MERCANTILE: "khajiit tent, mercantile",
   KHAJIIT_VESSEL_AMBER: "khajiit vessel, amber",
   LAVA_FOOT_SOUP_AND_SALTRICE: "lava foot soup-and-saltrice",
   LETTUCE_DISPLAY: "lettuce, display",
+  MURKMIRE_WALL_CORNER_CURVE: "murkmire wall, corner curve",
+  MURKMIRE_WARDROBE_WOVEN: "murkmire wardrobe, woven",
   NORD_AMPHORA_GLAZED: "nord amphora, glazed",
+  NORD_ARMOIRE_LATTICE: "nord armoire, lattice",
   NORD_CANDLE_TEALIGHT: "nord candle, tealight",
   NORD_CANDLEHOLDER_CUP: "nord candleholder, cup",
   NORD_CART_HAY: "nord cart, hay",
@@ -306,6 +316,11 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "alinor amphora, slender",
   },
+  "alinor bed, polished single": {
+    name: "Alinor Bed, Polished Single",
+    qualityKey: Quality.SUPERIOR,
+    key: "alinor bed, polished single",
+  },
   "alinor bowl, millet": {
     name: "Alinor Bowl, Millet",
     qualityKey: Quality.FINE,
@@ -315,6 +330,11 @@ Product.properties = {
     name: "Alinor Candles, Stand",
     qualityKey: Quality.SUPERIOR,
     key: "alinor candles, stand",
+  },
+  "alinor desk, polished": {
+    name: "Alinor Desk, Polished",
+    qualityKey: Quality.SUPERIOR,
+    key: "alinor desk, polished",
   },
   "alinor meal, individual": {
     name: "Alinor Meal, Individual",
@@ -719,6 +739,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "dark elf table, formal",
   },
+  "dark elf wagon, merchant": {
+    name: "Dark Elf Wagon, Merchant",
+    qualityKey: Quality.SUPERIOR,
+    key: "dark elf wagon, merchant",
+  },
   "dres bowl, dinner": {
     name: "Dres Bowl, Dinner",
     qualityKey: Quality.FINE,
@@ -939,6 +964,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "high elf plate, dinner",
   },
+  "high elf stool, curved": {
+    name: "High Elf Stool, Curved",
+    qualityKey: Quality.FINE,
+    key: "high elf stool, curved",
+  },
   "high elf trestle, sturdy": {
     name: "High Elf Trestle, Sturdy",
     qualityKey: Quality.FINE,
@@ -963,6 +993,11 @@ Product.properties = {
     name: "Hlaalu Bed, Single",
     qualityKey: Quality.FINE,
     key: "hlaalu bed, single",
+  },
+  "hlaalu dresser, scroll drawers": {
+    name: "Hlaalu Dresser, Scroll Drawers",
+    qualityKey: Quality.SUPERIOR,
+    key: "hlaalu dresser, scroll drawers",
   },
   "hlaalu hanger, mounted": {
     name: "Hlaalu Hanger, Mounted",
@@ -1069,6 +1104,16 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "khajiit signpost, fortified",
   },
+  "khajiit table, formal": {
+    name: "Khajiit Table, Formal",
+    qualityKey: Quality.SUPERIOR,
+    key: "khajiit table, formal",
+  },
+  "khajiit tent, mercantile": {
+    name: "Khajiit Tent, Mercantile",
+    qualityKey: Quality.SUPERIOR,
+    key: "khajiit tent, mercantile",
+  },
   "khajiit vessel, amber": {
     name: "Khajiit Vessel, Amber",
     qualityKey: Quality.EPIC,
@@ -1087,10 +1132,29 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "lettuce, display",
   },
+  "murkmire wall, corner curve": {
+    name: "Murkmire Wall, Corner Curve",
+    iconUrl:
+      "https://images.uesp.net/7/79/ON-item-furnishing-Murkmire_Wall%2C_Corner_Curve.jpg",
+    qualityKey: Quality.SUPERIOR,
+    key: "murkmire wall, corner curve",
+  },
+  "murkmire wardrobe, woven": {
+    name: "Murkmire Wardrobe, Woven",
+    iconUrl:
+      "https://images.uesp.net/b/b4/ON-item-furnishing-Murkmire_Wardrobe%2C_Woven.jpg",
+    qualityKey: Quality.SUPERIOR,
+    key: "murkmire wardrobe, woven",
+  },
   "nord amphora, glazed": {
     name: "Nord Amphora, Glazed",
     qualityKey: Quality.SUPERIOR,
     key: "nord amphora, glazed",
+  },
+  "nord armoire, lattice": {
+    name: "Nord Armoire, Lattice",
+    qualityKey: Quality.SUPERIOR,
+    key: "nord armoire, lattice",
   },
   "nord candle, tealight": {
     name: "Nord Candle, Tealight",

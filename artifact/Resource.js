@@ -59,6 +59,7 @@ const Resource = {
   GARNET: "garnet",
   GRAIN_SOLVENT: "grain solvent",
   GREENS: "greens",
+  HACKWING_PLUMAGE: "hackwing plumage",
   HEARTWOOD: "heartwood",
   HEMMING: "hemming",
   HONING_STONE: "honing stone",
@@ -497,6 +498,14 @@ Resource.properties = {
     qualityKey: Quality.FINE,
     resourceTypeKey: ResourceType.PROVISION,
     key: "greens",
+  },
+  "hackwing plumage": {
+    name: "Hackwing Plumage",
+    iconUrl:
+      "https://images.uesp.net/2/20/ON-icon-style_material-Hackwing_Plumage.png",
+    qualityKey: Quality.NORMAL,
+    resourceTypeKey: ResourceType.STYLE,
+    key: "hackwing plumage",
   },
   heartwood: {
     name: "Heartwood",
