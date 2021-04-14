@@ -97,7 +97,7 @@ QUnit.test("keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 273;
+  const length = 283;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Recipe.ALCHEMY_ESSENCE_OF_HEALTH_1);
   assert.equal(R.last(result), Recipe.SKETCH_SCRIMSHAW_ANCIENT_VESSEL);

@@ -26,6 +26,7 @@ const Product = {
   ARGONIAN_PAN_FRYING: "argonian pan, frying",
   ARGONIAN_POLE_SPLIT: "argonian pole, split",
   ARGONIAN_POST_ROUGH: "argonian post, rough",
+  ARGONIAN_SHELVES_HALF: "argonian shelves, half",
   ARGONIAN_STOOL_ROPED: "argonian stool, roped",
   ARGONIAN_TABLE_ROUGH: "argonian table, rough",
   ARGONIAN_TARP_STURDY: "argonian tarp, sturdy",
@@ -55,6 +56,8 @@ const Product = {
   BRETON_VASE_CERAMIC: "breton vase, ceramic",
   BRETON_VASE_DELICATE: "breton vase, delicate",
   BRETON_VASE_GLAZED: "breton vase, glazed",
+  CLOCKWORK_CUP_RECYCLED_WATER: "clockwork cup, recycled water",
+  CLOCKWORK_SEQUENCE_PLAQUES_UNFOLDED: "clockwork sequence plaques, unfolded",
   COMMON_BARREL_SEALED: "common barrel, sealed",
   COMMON_BASKET_OPEN: "common basket, open",
   COMMON_BASKET_TALL: "common basket, tall",
@@ -109,6 +112,7 @@ const Product = {
   ESSENCE_OF_SPELL_POWER: "essence of spell power",
   ESSENCE_OF_WEAPON_CRIT: "essence of weapon crit",
   ESSENCE_OF_WEAPON_POWER: "essence of weapon power",
+  FABRICANT_SHRUB_COPPER: "fabricant shrub, copper",
   FOOTSTOOL_BLOCK: "footstool, block",
   GRAPES_WAX: "grapes, wax",
   HAGRAVEN_CAULDRON_RITUAL: "hagraven cauldron, ritual",
@@ -116,6 +120,7 @@ const Product = {
   HIGH_ELF_BED_SINGLE: "high elf bed, single",
   HIGH_ELF_CANDLEHOLDER_STURDY: "high elf candleholder, sturdy",
   HIGH_ELF_CARPET_RUSTIC: "high elf carpet, rustic",
+  HIGH_ELF_COUNTER_LONG_CABINET: "high elf counter, long cabinet",
   HIGH_ELF_CUP_GILDED: "high elf cup, gilded",
   HIGH_ELF_PLATE_DINNER: "high elf plate, dinner",
   HIGH_ELF_TRESTLE_STURDY: "high elf trestle, sturdy",
@@ -143,6 +148,7 @@ const Product = {
   KHAJIIT_FRAME_ARCHED: "khajiit frame, arched",
   KHAJIIT_RUG_MOONS: "khajiit rug, moons",
   KHAJIIT_RUG_SUN: "khajiit rug, sun",
+  KHAJIIT_SIGNPOST_FORTIFIED: "khajiit signpost, fortified",
   KHAJIIT_VESSEL_AMBER: "khajiit vessel, amber",
   LAVA_FOOT_SOUP_AND_SALTRICE: "lava foot soup-and-saltrice",
   LETTUCE_DISPLAY: "lettuce, display",
@@ -151,8 +157,10 @@ const Product = {
   NORD_CANDLEHOLDER_CUP: "nord candleholder, cup",
   NORD_CART_HAY: "nord cart, hay",
   NORD_CROCKPOT_COVERED: "nord crockpot, covered",
+  NORD_DRESSER_BRACED: "nord dresser, braced",
   NORD_DRESSER_ROUGH: "nord dresser, rough",
   NORD_LANTERN_CAGE: "nord lantern, cage",
+  NORD_NIGHTSTAND_ROUGH: "nord nightstand, rough",
   NORD_POT_CERAMIC: "nord pot, ceramic",
   NORD_POT_COVERED: "nord pot, covered",
   NORD_POT_STEW: "nord pot, stew",
@@ -178,6 +186,7 @@ const Product = {
   ORCISH_SACK_FLOUR: "orcish sack, flour",
   ORCISH_SHELF_LONG: "orcish shelf, long",
   ORCISH_SHELF_SHORT: "orcish shelf, short",
+  ORCISH_SHELVES_BRACED: "orcish shelves, braced",
   ORCISH_TABLE_BLOCK: "orcish table, block",
   ORCISH_TRUNK_BRACED: "orcish trunk, braced",
   ORCISH_VESSEL_SEALED: "orcish vessel, sealed",
@@ -219,6 +228,7 @@ const Product = {
   REDGUARD_POT_SEALED: "redguard pot, sealed",
   REDGUARD_RUNNER_SUN: "redguard runner, sun",
   REDGUARD_SHELF_BOLTED: "redguard shelf, bolted",
+  REDGUARD_SOFA_DESERT_FLAME: "redguard sofa, desert flame",
   REDGUARD_STREETLAMP_SINGLE: "redguard streetlamp, single",
   REDGUARD_TABLE_FORMAL: "redguard table, formal",
   REDGUARD_TABLE_GAME: "redguard table, game",
@@ -391,6 +401,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "argonian post, rough",
   },
+  "argonian shelves, half": {
+    name: "Argonian Shelves, Half",
+    qualityKey: Quality.FINE,
+    key: "argonian shelves, half",
+  },
   "argonian stool, roped": {
     name: "Argonian Stool, Roped",
     qualityKey: Quality.FINE,
@@ -541,6 +556,16 @@ Product.properties = {
     name: "Breton Vase, Glazed",
     qualityKey: Quality.SUPERIOR,
     key: "breton vase, glazed",
+  },
+  "clockwork cup, recycled water": {
+    name: "Clockwork Cup, Recycled Water",
+    qualityKey: Quality.FINE,
+    key: "clockwork cup, recycled water",
+  },
+  "clockwork sequence plaques, unfolded": {
+    name: "Clockwork Sequence Plaques, Unfolded",
+    qualityKey: Quality.SUPERIOR,
+    key: "clockwork sequence plaques, unfolded",
   },
   "common barrel, sealed": {
     name: "Common Barrel, Sealed",
@@ -853,6 +878,11 @@ Product.properties = {
       "http://benevolentbowd.ca/games/esotu/esotu-alchemy-potions-with-three-ingredients/#weapon-power",
     key: "essence of weapon power",
   },
+  "fabricant shrub, copper": {
+    name: "Fabricant Shrub, Copper",
+    qualityKey: Quality.FINE,
+    key: "fabricant shrub, copper",
+  },
   "footstool, block": {
     name: "Footstool, Block",
     qualityKey: Quality.FINE,
@@ -893,6 +923,11 @@ Product.properties = {
     name: "High Elf Carpet, Rustic",
     qualityKey: Quality.FINE,
     key: "high elf carpet, rustic",
+  },
+  "high elf counter, long cabinet": {
+    name: "High Elf Counter, Long Cabinet",
+    qualityKey: Quality.FINE,
+    key: "high elf counter, long cabinet",
   },
   "high elf cup, gilded": {
     name: "High Elf Cup, Gilded",
@@ -1029,6 +1064,11 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "khajiit rug, sun",
   },
+  "khajiit signpost, fortified": {
+    name: "Khajiit Signpost, Fortified",
+    qualityKey: Quality.FINE,
+    key: "khajiit signpost, fortified",
+  },
   "khajiit vessel, amber": {
     name: "Khajiit Vessel, Amber",
     qualityKey: Quality.EPIC,
@@ -1072,6 +1112,11 @@ Product.properties = {
     qualityKey: Quality.SUPERIOR,
     key: "nord crockpot, covered",
   },
+  "nord dresser, braced": {
+    name: "Nord Dresser, Braced",
+    qualityKey: Quality.SUPERIOR,
+    key: "nord dresser, braced",
+  },
   "nord dresser, rough": {
     name: "Nord Dresser, Rough",
     qualityKey: Quality.FINE,
@@ -1081,6 +1126,11 @@ Product.properties = {
     name: "Nord Lantern, Cage",
     qualityKey: Quality.FINE,
     key: "nord lantern, cage",
+  },
+  "nord nightstand, rough": {
+    name: "Nord Nightstand, Rough",
+    qualityKey: Quality.FINE,
+    key: "nord nightstand, rough",
   },
   "nord pot, ceramic": {
     name: "Nord Pot, Ceramic",
@@ -1206,6 +1256,11 @@ Product.properties = {
     name: "Orcish Shelf, Short",
     qualityKey: Quality.FINE,
     key: "orcish shelf, short",
+  },
+  "orcish shelves, braced": {
+    name: "Orcish Shelves, Braced",
+    qualityKey: Quality.FINE,
+    key: "orcish shelves, braced",
   },
   "orcish table, block": {
     name: "Orcish Table, Block",
@@ -1413,6 +1468,11 @@ Product.properties = {
     name: "Redguard Shelf, Bolted",
     qualityKey: Quality.EPIC,
     key: "redguard shelf, bolted",
+  },
+  "redguard sofa, desert flame": {
+    name: "Redguard Sofa, Desert Flame",
+    qualityKey: Quality.SUPERIOR,
+    key: "redguard sofa, desert flame",
   },
   "redguard streetlamp, single": {
     name: "Redguard Streetlamp, Single",

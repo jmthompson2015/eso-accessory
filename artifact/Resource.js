@@ -110,6 +110,7 @@ const Resource = {
   STARMETAL: "starmetal",
   STINKHORN: "stinkhorn",
   TA: "ta",
+  TEMPERED_BRASS: "tempered brass",
   TEMPERING_ALLOY: "tempering alloy",
   TERNE_PLATING: "terne plating",
   TORCHBUG_THORAX: "torchbug thorax",
@@ -825,6 +826,14 @@ Resource.properties = {
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.RUNESTONE,
     key: "ta",
+  },
+  "tempered brass": {
+    name: "Tempered Brass",
+    iconUrl:
+      "https://images.uesp.net/e/e7/ON-icon-style_material-Tempered_Brass.png",
+    qualityKey: Quality.NORMAL,
+    resourceTypeKey: ResourceType.STYLE,
+    key: "tempered brass",
   },
   "tempering alloy": {
     name: "Tempering Alloy",
