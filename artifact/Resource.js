@@ -52,6 +52,7 @@ const Resource = {
   EMERALD: "emerald",
   EMETIC_RUSSULA: "emetic russula",
   FIRE_OPAL: "fire opal",
+  FISH: "fish",
   FLESHFLY_LARVA: "fleshfly larva",
   FLINT: "flint",
   FLOUR: "flour",
@@ -451,6 +452,12 @@ Resource.properties = {
     qualityKey: Quality.NORMAL,
     resourceTypeKey: ResourceType.GEM,
     key: "fire opal",
+  },
+  fish: {
+    name: "Fish",
+    qualityKey: Quality.NORMAL,
+    resourceTypeKey: ResourceType.PROVISION,
+    key: "fish",
   },
   "fleshfly larva": {
     name: "Fleshfly Larva",

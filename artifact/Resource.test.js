@@ -42,7 +42,7 @@ QUnit.test("keys()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  const length = 121;
+  const length = 122;
   assert.equal(result.length, length);
   assert.equal(R.head(result), Resource.ADAMANTITE);
   assert.equal(R.last(result), Resource.ZIRCON_PLATING);

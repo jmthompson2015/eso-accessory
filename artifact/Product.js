@@ -14,6 +14,7 @@ const Product = {
   ALINOR_MEAL_INDIVIDUAL: "alinor meal, individual",
   ALINOR_POT_LIMESTONE: "alinor pot, limestone",
   ALINOR_SCONCE_CRENELLATED: "alinor sconce, crenellated",
+  ALINOR_TABLE_SETTING_COMPLETE: "alinor table setting, complete",
   ALINOR_WALL_STONE: "alinor wall, stone",
   ARGONIAN_BANNER_HANGING: "argonian banner, hanging",
   ARGONIAN_BASKETS_DOUBLE: "argonian baskets, double",
@@ -59,6 +60,7 @@ const Product = {
   BRETON_VASE_CERAMIC: "breton vase, ceramic",
   BRETON_VASE_DELICATE: "breton vase, delicate",
   BRETON_VASE_GLAZED: "breton vase, glazed",
+  CANDLE_GROUP: "candle, group",
   CLOCKWORK_CUP_RECYCLED_WATER: "clockwork cup, recycled water",
   CLOCKWORK_SEQUENCE_PLAQUES_UNFOLDED: "clockwork sequence plaques, unfolded",
   COMMON_BARREL_SEALED: "common barrel, sealed",
@@ -103,8 +105,10 @@ const Product = {
   DWARVEN_AMPHORA_ORNATE_POLISHED: "dwarven amphora, ornate polished",
   DWARVEN_AMPHORA_SEALED: "dwarven amphora, sealed",
   DWARVEN_CANNISTER_SEALED: "dwarven cannister, sealed",
+  DWARVEN_PIPE_CAP_BOLTED: "dwarven pipe cap, bolted",
   DWARVEN_VASE_FORGED: "dwarven vase, forged",
   DWARVEN_VESSEL_SEALED: "dwarven vessel, sealed",
+  ELSWEYR_BOWL_SHALLOW_CERAMIC: "elsweyr bowl, shallow ceramic",
   ELSWEYR_CARPET_GOLD_EMERALD: "elsweyr carpet, gold-emerald",
   ELSWEYR_CARPET_GOLD_RUBY: "elsweyr carpet, gold-ruby",
   ELSWEYR_CUP_OF_RICE_GILDED: "elsweyr cup of rice, gilded",
@@ -120,6 +124,7 @@ const Product = {
   FOOTSTOOL_BLOCK: "footstool, block",
   GRAPES_WAX: "grapes, wax",
   HAGRAVEN_CAULDRON_RITUAL: "hagraven cauldron, ritual",
+  HIGH_ELF_BASIN_GILDED: "high elf basin, gilded",
   HIGH_ELF_BED_BUNK: "high elf bed, bunk",
   HIGH_ELF_BED_SINGLE: "high elf bed, single",
   HIGH_ELF_CANDLEHOLDER_STURDY: "high elf candleholder, sturdy",
@@ -152,6 +157,7 @@ const Product = {
   KHAJIIT_END_TABLE_FADED: "khajiit end table, faded",
   KHAJIIT_FLASK_AMBER: "khajiit flask, amber",
   KHAJIIT_FRAME_ARCHED: "khajiit frame, arched",
+  KHAJIIT_JUG_AMBER: "khajiit jug, amber",
   KHAJIIT_RUG_MOONS: "khajiit rug, moons",
   KHAJIIT_RUG_SUN: "khajiit rug, sun",
   KHAJIIT_SIGNPOST_FORTIFIED: "khajiit signpost, fortified",
@@ -205,6 +211,7 @@ const Product = {
   ORCISH_VESSEL_SEALED: "orcish vessel, sealed",
   ORCISH_VESSEL_SEALED_CERAMIC: "orcish vessel, sealed ceramic",
   PIE_DISH_DISPLAY: "pie dish, display",
+  POTATO_WAX: "potato, wax",
   PUMPKIN_DISPLAY: "pumpkin, display",
   RADISH_WAX: "radish, wax",
   REDGUARD_AMPHORA_POLISHED: "redguard amphora, polished",
@@ -277,6 +284,7 @@ const Product = {
   SIMPLE_BLUE_BANNER: "simple blue banner",
   SOLITUDE_BASKET_WICKER_WIDE: "solitude basket, wicker wide",
   SOLITUDE_BOOKCASE_NOBLE_FILLED: "solitude bookcase, noble filled",
+  SOLITUDE_TRAY_FRESH_EEL: "solitude tray, fresh eel",
   SOLITUDE_VASE_LARGE_SEALED: "solitude vase, large sealed",
   STOOL_CARVED: "stool, carved",
   SUGAR_PUMPKIN_WAX: "sugar pumpkin, wax",
@@ -285,6 +293,7 @@ const Product = {
   WOOD_ELF_AWNING_LEATHER: "wood elf awning, leather",
   WOOD_ELF_BAR_SHORT: "wood elf bar, short",
   WOOD_ELF_BONE_CHIMES: "wood elf bone chimes",
+  WOOD_ELF_BOWL_STRIPED: "wood elf bowl, striped",
   WOOD_ELF_CANOPY_LEATHER: "wood elf canopy, leather",
   WOOD_ELF_COUNTER_LONG_LEATHER: "wood elf counter, long leather",
   WOOD_ELF_CUP_CERAMIC: "wood elf cup, ceramic",
@@ -359,6 +368,11 @@ Product.properties = {
     name: "Alinor Sconce, Crenellated",
     qualityKey: Quality.SUPERIOR,
     key: "alinor sconce, crenellated",
+  },
+  "alinor table setting, complete": {
+    name: "Alinor Table Setting, Complete",
+    qualityKey: Quality.SUPERIOR,
+    key: "alinor table setting, complete",
   },
   "alinor wall, stone": {
     name: "Alinor Wall, Stone",
@@ -591,6 +605,11 @@ Product.properties = {
     qualityKey: Quality.SUPERIOR,
     key: "breton vase, glazed",
   },
+  "candle, group": {
+    name: "Candle, Group",
+    qualityKey: Quality.SUPERIOR,
+    key: "candle, group",
+  },
   "clockwork cup, recycled water": {
     name: "Clockwork Cup, Recycled Water",
     qualityKey: Quality.FINE,
@@ -819,6 +838,11 @@ Product.properties = {
     qualityKey: Quality.FINE,
     key: "dwarven cannister, sealed",
   },
+  "dwarven pipe cap, bolted": {
+    name: "Dwarven Pipe Cap, Bolted",
+    qualityKey: Quality.FINE,
+    key: "dwarven pipe cap, bolted",
+  },
   "dwarven vase, forged": {
     name: "Dwarven Vase, Forged",
     qualityKey: Quality.SUPERIOR,
@@ -828,6 +852,13 @@ Product.properties = {
     name: "Dwarven Vessel, Sealed",
     qualityKey: Quality.SUPERIOR,
     key: "dwarven vessel, sealed",
+  },
+  "elsweyr bowl, shallow ceramic": {
+    name: "Elsweyr Bowl, Shallow Ceramic",
+    iconUrl:
+      "https://images.uesp.net/6/64/ON-item-furnishing-Elsweyr_Bowl%2C_Shallow_Ceramic.jpg",
+    qualityKey: Quality.SUPERIOR,
+    key: "elsweyr bowl, shallow ceramic",
   },
   "elsweyr carpet, gold-emerald": {
     name: "Elsweyr Carpet, Gold-Emerald",
@@ -940,6 +971,11 @@ Product.properties = {
       "https://images.uesp.net/1/14/ON-item-furnishing-Hagraven_Cauldron%2C_Ritual.jpg",
     qualityKey: Quality.SUPERIOR,
     key: "hagraven cauldron, ritual",
+  },
+  "high elf basin, gilded": {
+    name: "High Elf Basin, Gilded",
+    qualityKey: Quality.FINE,
+    key: "high elf basin, gilded",
   },
   "high elf bed, bunk": {
     name: "High Elf Bed, Bunk",
@@ -1102,6 +1138,11 @@ Product.properties = {
     name: "Khajiit Frame, Arched",
     qualityKey: Quality.FINE,
     key: "khajiit frame, arched",
+  },
+  "khajiit jug, amber": {
+    name: "Khajiit Jug, Amber",
+    qualityKey: Quality.SUPERIOR,
+    key: "khajiit jug, amber",
   },
   "khajiit rug, moons": {
     name: "Khajiit Rug, Moons",
@@ -1376,6 +1417,13 @@ Product.properties = {
     name: "Pie Dish, Display",
     qualityKey: Quality.EPIC,
     key: "pie dish, display",
+  },
+  "potato, wax": {
+    name: "Potato, Wax",
+    iconUrl:
+      "https://images.uesp.net/2/22/ON-item-furnishing-Potato%2C_Wax.jpg",
+    qualityKey: Quality.FINE,
+    key: "potato, wax",
   },
   "pumpkin, display": {
     name: "Pumpkin, Display",
@@ -1745,6 +1793,13 @@ Product.properties = {
     qualityKey: Quality.EPIC,
     key: "solitude bookcase, noble filled",
   },
+  "solitude tray, fresh eel": {
+    name: "Solitude Tray, Fresh Eel",
+    iconUrl:
+      "https://images.uesp.net/8/83/ON-item-furnishing-Solitude_Tray%2C_Fresh_Eel.jpg",
+    qualityKey: Quality.EPIC,
+    key: "solitude tray, fresh eel",
+  },
   "solitude vase, large sealed": {
     name: "Solitude Vase, Large Sealed",
     iconUrl:
@@ -1789,6 +1844,11 @@ Product.properties = {
     name: "Wood Elf Bone Chimes",
     qualityKey: Quality.EPIC,
     key: "wood elf bone chimes",
+  },
+  "wood elf bowl, striped": {
+    name: "Wood Elf Bowl, Striped",
+    qualityKey: Quality.SUPERIOR,
+    key: "wood elf bowl, striped",
   },
   "wood elf canopy, leather": {
     name: "Wood Elf Canopy, Leather",
