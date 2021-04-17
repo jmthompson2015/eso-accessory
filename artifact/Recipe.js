@@ -1975,7 +1975,7 @@ Recipe.properties = {
   },
   "blueprint: solitude bookcase, noble filled": {
     name: "Blueprint: Solitude Bookcase, Noble Filled",
-    categoryKey: Category.HEARTH,
+    categoryKey: Category.LIBRARY,
     craftKey: Craft.WOODWORKING,
     inputs: [
       resourceIngredient(Resource.HEARTWOOD, 13),

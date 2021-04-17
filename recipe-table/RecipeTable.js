@@ -50,14 +50,14 @@ const onShowColumnChange = (columnToChecked) => {
   );
 };
 const isVerbose = false;
-const frt = new FilteredReactTable(
-  TableColumns,
+const frt = new FilteredReactTable({
+  tableColumns: TableColumns,
   tableRows,
   appName,
   onFilterChange,
   onShowColumnChange,
-  isVerbose
-);
+  isVerbose,
+});
 
 const collapsiblePaneProps = {
   className: "bg-eso-dark ma1",
